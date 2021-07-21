@@ -1,0 +1,2615 @@
+Sentence,Intent
+I am in San Jose. Also I want to see a 3D movie.,INFORM
+"Yes, please find me some other movies. I want to see something at CineLux Almaden.",INFORM
+What times do you have available for Curse of La Llorona? I've been wanting to see that!,INFORM_INTENT
+March 5th.,INFORM
+That will work! That is all I need.,SELECT
+Can you help me find a movie to watch?,INFORM_INTENT
+I like Horror movies and would also like to see a movie in Concord. Can you search for one there?,INFORM
+"That sounds great, The Curse of La Llorona it is!",SELECT
+"No, I am not ready to buy tickets but I would like to know the available times for the movie.",INFORM_INTENT
+I am thinking of going on March 2nd and I would like to see it at Veranda LUXE Cinema.,INFORM
+Can you please give me the address for the theater?,REQUEST
+Can you also please tell me the price of the ticket?,REQUEST
+"Ok, that will work. That's all I need.",SELECT
+Find me a movie,INFORM_INTENT
+Make it movies in Santa Clara,INFORM
+Yeah. I want to see Dumbo,SELECT
+Not right now thanks.,NEGATE_INTENT
+What time does it show?,INFORM_INTENT
+I'll see it this Saturday,INFORM
+And how much does it cost?,REQUEST
+Great,SELECT
+No. Thanks so much,NEGATE
+A friend and I want to see an imax show at CineLux Tennant Station. What movies are out?,INFORM
+What fantasy movies are being shown in Morgan Hill?,INFORM
+Hellboy would be the perfect movie!,SELECT
+"No, not right now. What times is it playing on March 2nd?",INFORM
+That's perfect. I don't need any more help.,SELECT
+I'mm interested in seeing an imax movie in Petaluma.,INFORM
+I would like to see Little. What time is it playing?,INFORM_INTENT
+I plan on seeing it on the 2nd of March.,INFORM
+That is great. I don't need anything further.,SELECT
+"Hey, I would like to watch a movie.",INFORM_INTENT
+"I am currently at Sebastopol, could you find for movies currently showing in this area?",INFORM
+"Not really, could help search for other movies?",REQUEST_ALTS
+Wild Nights with Emily is perfect!,SELECT
+"No, I am just inquiring. I would not like to purchase the tickets now.",NEGATE_INTENT
+What are the show times available for this movie? Would it be possible on the March 5th for a 3d version of this movie?,INFORM
+That sounds great!,SELECT
+"No, that will be all. Thank you very much!",NEGATE
+I want to go to the cinema.,INFORM_INTENT
+I'm in Livermore.,INFORM
+Captain Marvel is perfect.,SELECT
+"No, not right now. I want to watch it on Tuesday next week, at Livermore Cinema.",INFORM
+How much is the ticket? And what's the address of the theater?,REQUEST
+Sounds good. That's everything for now.,SELECT
+I really want to find a movie to watch. I was thinking we could go to an imax show.,INFORM
+What movies are showing in Fremont?,INFORM
+Are there any other movies playing?,REQUEST_ALTS
+Shazam! sounds great. What time is it showing on the 8th of March?,INFORM
+What genre is it and how much are tickets?,REQUEST
+"Great, thank you!",SELECT
+I want to find a movie to wathc,INFORM_INTENT
+can you search for movies shown in San Jose.i like Adventure movies.,INFORM
+please find some other movies.,REQUEST_ALTS
+I like Documentary movies. could you try again?,INFORM
+Can you search for moveis shown SFO. I want to watch at Roxie Theater. Please find some other movies.,INFORM
+Jt Leroy is perfect.,SELECT
+What time can I watch it ?,INFORM_INTENT
+I want to watch a regular show. I want to want it on 3rd of this month.,INFORM
+How much is the ticket? What's the address of the theater?,REQUEST
+Sounds good.,SELECT
+"No, I don't want to purchase now.",NEGATE_INTENT
+No. thank you for your help.,NEGATE
+"Hey, I'm looking for a movie to watch in Oakland. Is there anything available?",INFORM
+Please find some different movies. Any showing is fine.,INFORM
+"No, is there anything else?",REQUEST_ALTS
+Red Joan is great. When is it showing?,INFORM_INTENT
+"March 7th, please.",INFORM
+What genre is it? How much does it cost?,REQUEST
+Sounds perfect. That's all thanks.,SELECT
+"I want to watch a movie, where is the best place to watch?",INFORM_INTENT
+I'm currently looking at the Embarcadero Center Cinema. I want to watch a movie on a big imax screen. Can you find some good movies in the San Francisco area?,INFORM
+"Yeah, Knock Down The House sounds good. When does this movie start? I want to go see it on the 8th of March.",INFORM
+Yeah that will work thanks.,SELECT
+I need to find a movie to watch at Roxie Theater.,INFORM
+Can you find a movie shown in SFO.,INFORM
+Penguin Highway is good and at what time can i watch it?,INFORM_INTENT
+I like to watch it on 9th of this month.,INFORM
+What is the location of the theater?,REQUEST
+What is the cost for the ticket?,REQUEST
+sounds cool.,SELECT
+"No, i don't want to buy it now.",NEGATE_INTENT
+"No, thanks a lot for your help.",NEGATE
+I'm searching for a movie to watch at Livermore Cinema.,INFORM
+Are you able to find movies playing at Livermore?,INFORM
+After sounds great! I plan on watching it on the 2nd of this month. Can you tell me what time is the showing?,INFORM
+That sounds just fine.,SELECT
+"Not right now, thanks. I'm all set.",NEGATE_INTENT
+"Could you help me finding a movie to watch in Union City, please?",INFORM
+"could you please find me something else, like a scary movie at Century Union Landing?",INFORM
+Curse of La Llorona is perfect. What time can I watch a imax on the 7th,INFORM
+"Perfect, that's all I needed",SELECT
+I feel like seeing a movie.,INFORM_INTENT
+Find me a good flick in SFO.,INFORM
+Nah. Find me something regular.,INFORM
+Keep going. I'm flexible.,INFORM
+Lets go with Say Anything.,INFORM_INTENT
+On March 1st.,INFORM
+Any other times.,REQUEST_ALTS
+No thank you.,NEGATE
+I am meeting up with a friend and we want to watch a good movie. Do you have any suggestions?,INFORM_INTENT
+"I am in Brentwood, there are a few theaters. What movies are around here?",INFORM
+I don't like those options. Show me imax shows.,INFORM
+"Shazam! sounds good, the trailer looked cool.",SELECT
+No I don't want to buy them now. What are the showtimes at theaters?,INFORM_INTENT
+CineLux Delta Cinema Saver is the closest theater I think. I want to see it on March 2nd.,INFORM
+Sounds great!,SELECT
+No that is all I needed. Thank you.,NEGATE
+"I want to find a movie to watch, Can you search for the movies shown in Petaluma?",INFORM
+Please find some other movies.,REQUEST_ALTS
+Shazam! is perfect.,SELECT
+"No, I don't want to purchase now. What time can I watch it? I want to watch a 3d show.",INFORM
+I want to watch is on March 4th. I want to watch at Boulevard Cinema,INFORM
+Sounds good. That is all I need.,SELECT
+I need to find a movie to watch in Livermore. I'd like to see an imax show.,INFORM
+Please go with another option.,REQUEST_ALTS
+Look for something else. Something regular.,INFORM
+I'll see Viva Las Vegas.,SELECT
+Not right now. When is it showing at Vine Cinema?,INFORM
+I'd like to see it on the 2nd of this month.,INFORM
+That sounds great.,SELECT
+I'd like to discover a film to watch. Can you search for San Bruno shown films.,INFORM
+It is ideal for Captain Marvel.,SELECT
+"No, I don't want to buy now.",NEGATE_INTENT
+How long can I watch it? Every theater is okay.,INFORM
+I'm waiting to see it on 2nd of March .,INFORM
+Sounds fine. That's everything I need.,SELECT
+"Hi, there! Can you help me find a movie?",INFORM_INTENT
+I live in Walnut Creek.,INFORM
+I would love to see Captain Marvel!,SELECT
+Not right now? I just want to know showtimes on March 2nd.,INFORM
+That's great! Thanks for your help!,SELECT
+Hi. I want to find a comedy movie to watch at Century Oakridge. Can you help me with that?,INFORM
+I'm in San Jose.,INFORM
+Little sounds perfect.,SELECT
+"No, I don't want to purchase tickets now. But can you tell me when I can see it? I want to see it in 3d next Tuesday.",INFORM
+Perfect.,SELECT
+"No, thank you!",NEGATE
+What movies are showing in San Jose? I really want to go see a movie.,INFORM
+I'm not sure I would like any of those. What else is showing?,REQUEST_ALTS
+"Nah, those aren't what I'm looking for. What imax shows are out?",INFORM
+"Yes, Long Shot would actually be perfect. I forgot that was out. What time is it showing?",INFORM_INTENT
+"Oh, sorry. I would like to see it on the 9th of March.",INFORM
+That will work for me.,SELECT
+"No, I will have to get the tickets later. I might have to do something with my brother that day.",NEGATE_INTENT
+"No, that's all I need. Thanks for your help!",NEGATE
+I am looking for a movie that I can enjoy tonight.,INFORM_INTENT
+"I'm in Union City, can you suggest any movies there?",INFORM
+"I'm not really into those, do you know any other good ones?",REQUEST_ALTS
+"Those don't sound like my type of movies either, do you know of any others?",REQUEST_ALTS
+"Little sounds like a good movie, I've seen the previews.",SELECT
+"Not right now, do you know what times it is available?",INFORM_INTENT
+I want to watch a regular showing on the 5th.,INFORM
+Thank you. Sounds good.,SELECT
+"Nope, you've been great, thanks for your help.",NEGATE
+I want to watch a movie.,INFORM_INTENT
+Can you show me movies shown in Morgan Hill.,INFORM
+Breakthrough sounds awesome.,SELECT
+"No, I want to watch it on Sunday this week. What times is it showing?",INFORM
+What is the cost of the ticket?,REQUEST
+What type of movie is it? Where is the theater located?,REQUEST
+No. Thank you for your help.,NEGATE
+I want to watch a movie in Morgan Hill.,INFORM
+No thanks. I like fantasy movies. Can you now search in Campbell?,INFORM
+"Yes, Hellboy is good. What time?",INFORM_INTENT
+On the 2nd.,INFORM
+"That's great, thanks.",SELECT
+Im looking to watch a movie that is in 3d.,INFORM
+I want to watch the movie at Boulevard Cinema. Can you find movies that are showing in Petaluma? I enjoy comedy movies.,INFORM
+The Missing Link is perfect. What times are available for me to watch it?,INFORM_INTENT
+I would like to watch the movie on the 4th.,INFORM
+That sounds good.,SELECT
+No I don't want to purchase tickets right now. That is all that I need.,NEGATE_INTENT
+"Hey, I want to go see a movie. Any theater is cool for me.",INFORM
+I am in Santa Rosa and want the closest theater. What movies are there now?,INFORM
+Are there any other movie choices?,REQUEST_ALTS
+"Find some more options, please. I want to see 3rd Street Cinema.",INFORM
+"Yes, The Upside is what I want to see then. What are the showtimes for today?",INFORM
+What's the address of the theater? What sort of movie is it?,REQUEST
+"OK, that's all the info I wanted. Thank you.",SELECT
+Can you find me a movie to watch?,INFORM_INTENT
+"Brentwood, please. I'd like to watch an Adventure movie at AMC Brentwood.",INFORM
+Shazam sounds great!,SELECT
+"Not at the moment. I'd like to watch an imax show, what are the available times?",INFORM
+"March 2nd, please.",INFORM
+"No, thank you.",NEGATE
+I would like to find a movie to watch.,INFORM_INTENT
+I would like to watch a regular show at the Century at Tanforan. Could you make the search for movies in San Bruno?,INFORM
+Little is just what i'm looking for. What time is it playing?,INFORM_INTENT
+The 5th of this month would be perfect.,INFORM
+How much are the tickets?,REQUEST
+"Thanks, sounds good to me.",SELECT
+"No, i'm not interested in purchasing just yet.",NEGATE_INTENT
+"No, that is all. Thanks for the help.",NEGATE
+I al looking for a movie to watch.,INFORM_INTENT
+I am looking for a 3d suspense movie in Santa Clara.,INFORM
+Pet Sematary is perfect. What time is it showing at AMC Mercado?,INFORM
+the 1st please.,INFORM
+Sounds good. That's all.,SELECT
+It's movie night! I'm trying to decide what to watch. Can you find movies shown in Sonoma?,INFORM
+"No, not those. Please find some other titles.",REQUEST_ALTS
+Yes! I think Shazam! is just right.,SELECT
+"No, not right now. What are the show times for this movie?",INFORM_INTENT
+I'd like to see it on March 5th.,INFORM
+"Yes, that'll work.",SELECT
+"No, that's all for now. Thanks for your help.",NEGATE
+I'm looking for a movie to watch tonight. My favorites are scary movies.,INFORM
+A theater in Berkeley would be most convenient.,INFORM
+The Curse of La Llorona sounds like a movie I'd enjoy.,SELECT
+"No, I'm not ready to buy them yet. What times are available?",INFORM_INTENT
+I want to go sometime today. I think the United Artists Berkeley would be the closest to where I am.,INFORM
+How much do the tickets cost?,REQUEST
+"No, I appreciate your help.",NEGATE
+Can you find a funny movie for me at AMC Brentwood?,INFORM
+Find a 3d movie in Brentwood.,INFORM
+Missing Link sounds awesome.,SELECT
+"No, not right now. At what time is the show?",INFORM_INTENT
+I want to go later today.,INFORM
+Is there another show time? I want to watch it on March 2nd.,INFORM
+Where is the theater located?,REQUEST
+That sounds amazing. I don't need any more hlep.,SELECT
+I would like to watch a movie.,INFORM_INTENT
+Find movies in Larkspur,INFORM
+Shine a Light sounds good.,SELECT
+"Not now, what times are available and any theatre is fine.",INFORM
+1st of this month,INFORM
+What is the cost and type of movie.,REQUEST
+Thank you,SELECT
+I would like to find a 3d movie to watch.,INFORM
+Could you search for movies playing in Union City. Preferably at Century Union Landing.,INFORM
+Could you find some other movies?,REQUEST_ALTS
+Pet Sematary sounds good.,SELECT
+"No, I don't want to buy tickets now. What times are the movies playing? I want to watch it on March 2nd.",INFORM
+How much does the ticket cost and what is the address of the theater?,REQUEST
+Sounds perfect. That's all I need.,SELECT
+I haven't seen a new movie a months. Can you find me an Imax show in Campbell to watch?,INFORM
+"Ooh, Hellboy sounds good.",SELECT
+"No, not now. I'm going to do it in person.",NEGATE_INTENT
+Can you tell me if it's playing on the 2nd at Pruneyard cinemas?,INFORM
+What's the genre of Hellboy?,REQUEST
+"Cool, I love fantasy. What's the address of the theater, and how much would a ticket cost?",REQUEST
+Good looks. You've been a lot of help.,SELECT
+"No, that will be all.",NEGATE
+"I'm looking for a Comedy to watch in a theatre today, can you help me pick one?",INFORM
+I'm in Oakland right now.,INFORM
+"Not really - can you find some others? I'd like to go to the New Parkway Theater, a regular show, nothing 3D, they make me queasy.",INFORM
+"Yeah, Stockholm sounds good - what times are available?",INFORM_INTENT
+I'm thinking the 7th of this month.,INFORM
+What's the price of a ticket?,REQUEST
+"That's kind of pricy. Alright, what's the address of the theater?",REQUEST
+"Okay, yeah, that sounds alright.",SELECT
+"Not right now thanks, I don't think I need anything else.",NEGATE_INTENT
+I want to go to the movies. Find me a drama,INFORM
+In Sebastopol,INFORM
+I want to see Hackers on the 7th of this month. What time does it play?,INFORM
+Where is that? How much does it cost?,REQUEST
+Ok,SELECT
+No not now. I'm fine for now.,NEGATE_INTENT
+Please find me a movie at a theatre.,INFORM_INTENT
+I would like it in San Bruno.,INFORM
+I want Captain Marvel.,SELECT
+No not yet. What are listed times?,INFORM_INTENT
+This Saturday at Century at Tanforan.,INFORM
+That sounds good to me.,SELECT
+No that is all I need.,NEGATE
+Search for movies being shown in Newark.,INFORM
+Can you find some other movies at AMC NewPark.,INFORM
+"Find some other movies, any type of movie is fine.",INFORM
+I want to watch Pet Sematary.,SELECT
+"No, I don't want to but tickets right now.",NEGATE_INTENT
+What time can I watch the movie on the 2nd?,INFORM
+"No, thanks for your help.",NEGATE
+My friend and I want to watch a movie at Century Daly City,INFORM
+I am in Daly City - can you find Adventure movies for us?,INFORM
+Shazam! sounds good! What times are available on the 4th of March?,INFORM
+Not at the moment,NEGATE_INTENT
+I ant to find a movie to watch.,INFORM_INTENT
+I want to watch a imax show for movies in Fremont.And I want to watch at Century at Pacific Commons.,INFORM
+I like adventure movies.Please find some other movies.,INFORM
+Shazam! is perfect.I want to watch it on Friday next week . What time can I watch it?,INFORM
+Sounds good.That is I need.,SELECT
+I want to watch a movie,INFORM_INTENT
+I am in Vallejo,INFORM
+I want to watch Captain Marvel. What time do they have available,INFORM
+I want to watch on March 2nd,INFORM
+That works,SELECT
+No not right now,NEGATE_INTENT
+"I'm bored, I think I want to watch something. Can you find me a good movie?",INFORM_INTENT
+I'm on Oakland. Can you show me movies from here?,INFORM
+I changed my mind. Can you show me regular shows?,INFORM
+I choose Little.,SELECT
+It's not necessary to buy now. What time on March 1st can I watch it?,INFORM
+"I have never seen that movie, what kind is it? What about the address?",REQUEST
+Perfect! It is just something that I'm needing.,SELECT
+I would like to see a movie.,INFORM_INTENT
+Please look for a movie in Emeryville.,INFORM
+"No, please look for something else.",REQUEST_ALTS
+I'd like to see something else.,REQUEST_ALTS
+"Yes, Teen Spirit would be great. What time is an imax showing playing?",INFORM
+I want to see the movie on the 1st of this month please.,INFORM
+What type of movie is it and what is the price of a ticket?,REQUEST
+Great! That's all for now.,SELECT
+San Francisco.,INFORM
+Body Double sounds good.,SELECT
+"No, not right now.",NEGATE_INTENT
+What are the show times for it?,INFORM_INTENT
+On the 15th.,INFORM
+Sounds good. That's all I need.,SELECT
+My friend and I are looking to watch a movie later. Can you find movies in Walnut Creek?,INFORM
+We would like to see Little. Is there any times available for Tuesday next week?,INFORM
+Thank you for your help.,SELECT
+Hey! I wish to go to the movies this weekend? Can you find me some good one to watch?,INFORM_INTENT
+Please can you look for some good movies in Santa Rosa of Sonoma County?,INFORM
+"Not exactly for the debut movies but might for the latest one. Please can you suggest some other movies? If you can find the one shown in Oakland, that would be perfect.",INFORM
+"Nope, I would like to watch Funny movies especially a imax show. Please can you find any such movies?",INFORM
+"The Gloria Bell, the where she thrusts herself in an unexpected romance filled with joys of love, right? Perfect! At what time is the show?",INFORM_INTENT
+I will be available on March 9th. That day would work.,INFORM
+Please choose 4 pm. That sounds good.,SELECT
+"Nope, I don't need it right now.",NEGATE_INTENT
+"Nope, thanks much.",NEGATE
+"I feel, I need to watch a movie now to relax, can you help me in this?",INFORM_INTENT
+"in Pleasant Hill, Is there any nice movie you can find here?",INFORM
+"may be Little, I think which is perfect.",SELECT
+"No, not now",NEGATE_INTENT
+"Yes, I need to clarify, at what time, I can watch this movie on 2nd of this month.",INFORM
+Let me know the address of the theater along with ticket cost.,REQUEST
+"Yes, that is Okay, that's all, thanks.",SELECT
+I'm in Brentwood,INFORM
+Okay. I would like to see some other choices.,REQUEST_ALTS
+Long Shot sounds perfect. What are the show times? I would like to watch a 3d show.,INFORM
+I prefer the 1st of March.,INFORM
+What is the genre of this movie. How much is the ticket?,REQUEST
+Terrific. That's all I need for now.,SELECT
+I am looking for a movie to watch. Can you find movies that are showing in Morgan Hill?,INFORM
+Please look for other movies. Are you able to do a search for movies in Emeryville? I would like to see something in IMax.,INFORM
+Can you find other movies?,REQUEST_ALTS
+Teen Spirit will be perfect. What time will I be able to watch it? I would like to see it at AMC Bay Street?,INFORM
+I would like to see it today?,INFORM
+That sounds fine.,SELECT
+"No, I'm not ready to buy right now. That was all I wanted.",NEGATE_INTENT
+I'd like to watch a movie.,INFORM_INTENT
+Can you search around Sebastopol?,INFORM
+Can I have some more options? And can you search in Union City?,INFORM
+No. Can I have some more?,REQUEST_ALTS
+Hellboy is good. What time?,INFORM_INTENT
+9th of March.,INFORM
+That's great. Thanks.,SELECT
+I feel like watching a movie.,INFORM_INTENT
+I'm in Berkeley. Any good movies here?,INFORM
+Captain Marvel sounds great.,SELECT
+"Nah, not right now. What time is Captain Marvel playing?",INFORM_INTENT
+I would like to go today.,INFORM
+That is perfect.,SELECT
+"No, that's all. Thanks.",NEGATE
+I'd like to see a movie at Century Rowland Plaza.,INFORM
+I'd like to see an imax movie in Novato.,INFORM
+Captain Marvel works great. What time is the showing?,INFORM_INTENT
+I'd like to see it on March 1st.,INFORM
+What's the address of the theatre and how much is the ticket?,REQUEST
+"Perfect, that's what I was looking for.",SELECT
+I want to find a movie to watch,INFORM_INTENT
+Can you search in Brentwood.,INFORM
+Please find some other movies in San Ramon. Any theatre is fine.,INFORM
+"I want to watch 3d show, pls find other movies",INFORM
+Teen Spirit is perfect.,SELECT
+No. I want to watch on 2nd of March. What time can i watch?,INFORM
+Yes. Good,SELECT
+No. Thanks a lot,NEGATE
+Can you find me a movie to watch at CineLux Tennant Station,INFORM
+Look for movies in Morgan Hill,INFORM
+Captain Marvel sounds perf. What Time can I watch? I want a regular show time,INFORM
+On march 7th.,INFORM
+How much is it gonna cost?,REQUEST
+"That's good then, that's all I need",SELECT
+I'd like to a show. Can you help me find a 3d movie near me?,INFORM
+I'm in Cloverdale.,INFORM
+"Perfect, I've been meaning to see Hellboy.",SELECT
+"Another time, please. What are the times available for it?",INFORM_INTENT
+I'd like to see it on the 2nd.,INFORM
+That sounds perfect!,SELECT
+"No, that's all. Thank you for your help!",NEGATE
+I feel like watching a movie. What's available in San Jose?,INFORM
+Can you search for other ones? Something at CineLux Almaden.,INFORM
+Please search for other ones.,REQUEST_ALTS
+The Curse of La Llorona is great. What time is it available in March 5th?,INFORM
+What's their address and how much is the ticket?,REQUEST
+Awesome. That's all I need.,SELECT
+"This week, I have a lot to do and meeting to attend. I think I'll deserve some time to relax and watch a movie, something I could really use your help choosing. I want to see a Non-fiction movie that I can watch on imax. You have any ideas for me?",INFORM
+Please recommend a movie that's showing in San Bruno.,INFORM
+"Breakthrough, huh? That's very fitting.",SELECT
+"No, thanks. Let's wait on purchasing tickets.",NEGATE_INTENT
+"Oh, yes. What time does the movie start?",INFORM_INTENT
+Please set the date for the 8th of March.,INFORM
+Great. I'll take that.,SELECT
+"No, I guess that's all I need for now. Thanks mucho.",NEGATE
+Im looking for a movie.,INFORM_INTENT
+I want to find movies in San Ramon.,INFORM
+Is there anything else/,REQUEST_ALTS
+Please find something else.,REQUEST_ALTS
+The Curse of La Llorona sounds good. When can i see it?,INFORM_INTENT
+I want to see it on Saturday this week.,INFORM
+Whats the address?,REQUEST
+"Awesome, Thats what i need",SELECT
+What's the address for Cinelux Tennant Station?,INFORM
+Do you know which movies are showing in Morgan Hill?,INFORM
+Are there any other movies option?,REQUEST_ALTS
+I would like to watch Hellboy.,SELECT
+Is there a imax show nearby?,INFORM
+March 2nd is perfect for me.,INFORM
+Thank you for your help. Have a nice day.,SELECT
+I want to watch a movie in San Francisco.,INFORM
+Find some comic movies. I want to watch at United Artists Stonestown Twin.,INFORM
+Family is Perfect. When is the show?,INFORM_INTENT
+I want to watch tomorrow.,INFORM
+How much is the ticket and what is the address?,REQUEST
+Yeah. Sounds good. Thank you,SELECT
+I am looking for a movie.,INFORM_INTENT
+Look for movies shown in SFO.,INFORM
+I want to watch Ash Is Purest White?,SELECT
+No. What time is it showing?,INFORM_INTENT
+I want to watch it at Embarcadero Center Cinema on the 2nd of this month.,INFORM
+How much is the ticket? What is the genere?,REQUEST
+Thanks.,SELECT
+"A fun movie is on the agenda for our upcoming family night out. It's kind of a big deal because we're still celebrating graduation, and we want to see a movie that's 3d, lighthearted and rated for all ages. What's your take on a movie recommendation, please?",INFORM
+"How about a search in San Ramon. Any kind of movie is fine, just as long as it's fun.",INFORM
+"I'll go with Dumbo. That's a perfect choice. What time does that movie start, please?",INFORM_INTENT
+"Okay, I expect we'll go see the movie on the 5th at THE LOT City Center.",INFORM
+"Beautiful. Now, what address do you have for the theater?",REQUEST
+Fantastic.,SELECT
+"No, I'm not ready to get the tickets yet. You've helped me with what I need for now. Thanks so much.",NEGATE_INTENT
+I am planning to watch a movie. Can you help me find some?,INFORM_INTENT
+I want movies shown in Union City.,INFORM
+Can you still find some other movies?,REQUEST_ALTS
+Dumbo is a good one. What time is that available to watch?,INFORM_INTENT
+I prefer tomorrow at Century Union Landing. Whatever type of show is absolutely fine.,INFORM
+May I know the address of the theater and the kind of movie it is?,REQUEST
+Is there any other time for the availability of that movie?,REQUEST_ALTS
+I've got all I want. Thanks a lot.,NEGATE
+I am looking for movie tickets.,INFORM_INTENT
+Search for movies in SFO please.,INFORM
+Can you find some other movies? I like the War genre.,INFORM
+Aftermath sounds great! What are the showtimes for IMAX showings?,INFORM
+I want to see it on the 1st.,INFORM
+How much does it cost and what is the address of the theatre?,REQUEST
+I'd like to find a movie to watch.,INFORM_INTENT
+Can you help me find movies in Oakland?,INFORM
+Dr. Strangelove sounds great.,SELECT
+"Not right now, but when are the showtimes?",INFORM_INTENT
+I'd like to see it at New Parkway Theater on the 10th of March.,INFORM
+What genre of movie is it?,REQUEST
+"Awesome, sounds great.",SELECT
+A movie will help me overcome the monotonous of the day. Is there any good movie?,INFORM_INTENT
+It will be fine in SFO,INFORM
+Look for any other movies,REQUEST_ALTS
+"Try some other particularly in Vallejo, imax show.",INFORM
+"Thats great, Hellboy will do. Show time please",INFORM_INTENT
+On 2nd of March.,INFORM
+Do you know the genre of movie and fare of ticket.,REQUEST
+Is there any other show time for that.,REQUEST_ALTS
+"Yeah, I have changed the date to March 1st and at Century Vallejo.",INFORM
+"Great, that will be fine.",SELECT
+Find theaters playing 3D movies in San Jose.,INFORM
+Find Drama movies on imax.,INFORM
+When is The Mustang playing?,INFORM_INTENT
+This Saturday.,INFORM
+"Sounds good, that's all I need.",SELECT
+I am going to watch a movie at the Piedmont Theatre,INFORM
+Have you tried searching for movies in Oakland,INFORM
+The movie Red Joan is a perfect movie,SELECT
+I will purchase a ticket later what time will be good so I can watch a imax show,INFORM
+How about the 7th of March,INFORM
+Is the movie playing at some other time?,REQUEST_ALTS
+"No, Thanks you for your help",NEGATE
+I'd like to catch a movie.,INFORM_INTENT
+What are some flicks in Oakland?,INFORM
+"Dr. Strangelove sounds good. I don't care about the theater, but what times are available?",INFORM
+I'd like to catch it on the 10th.,INFORM
+Where's the theater at?,REQUEST
+What genre is the flick?,REQUEST
+"Awesome, thanks. That'll be everything.",SELECT
+Search for movies only shown in Vacaville.,INFORM
+Try some different movies?,REQUEST_ALTS
+Try to find movies shown in Albany.,INFORM
+"Red Joan is good, what time is playing?",INFORM_INTENT
+On the 5th at Albany Twin will be good.,INFORM
+Tell the genre of movie it is?,REQUEST
+Good.,SELECT
+Not at the present time.,NEGATE_INTENT
+Thank you that will be all.,NEGATE
+"I'd like to see a movie, can you find me one?",INFORM_INTENT
+Please find a movie in San Francisco.,INFORM
+Ash Is Purest White would be great.,SELECT
+"No thanks, I don't need them right now. What time is it on?",INFORM_INTENT
+Please check the showtimes for this Saturday.,INFORM
+Is it on at any other times? I'd actually like to go to the Embarcadero Center Cinema.,INFORM
+What's the address? And how much does it cost?,REQUEST
+"That's great, that'll be all for today.",SELECT
+I need the movies being shown in Brentwood.,INFORM
+"No, something else. An imax show is what I am looking for.",INFORM
+Shazam! sounds like the perfect movie.,SELECT
+"No, don't buy them now.",NEGATE_INTENT
+Tell me the show timings. What time can I watch it?,INFORM_INTENT
+I am planning to watch it on March 2nd.,INFORM
+"No, that would be all. Thanks so much.",NEGATE
+Find me a theater to go see a movie,INFORM_INTENT
+Search for movies at Menlo Park.,INFORM
+"Red Joan sounds good, what time is it at?",INFORM_INTENT
+I would like to see it March 9th.,INFORM
+Is it available at another time? How about on March 4th?,INFORM
+"Thanks, that is all.",SELECT
+Find movies in SF.,INFORM
+What other movies are there?,REQUEST_ALTS
+Citizen Kane sounds good.,SELECT
+"No, what time is it playing?",INFORM_INTENT
+"I want a 3D showing, on March 2nd, at the Vogue Theatre.",INFORM
+"No that's all, thank you for your help.",NEGATE
+I wish to see a move at AMC NewPark.,INFORM
+Kindly find a movie in Newark.,INFORM
+Could you please search for some other movies? I wish to see a Fantasy movie at imax show.,INFORM
+Hellboy is a good movie.,SELECT
+Which time would you like to see the movie?,INFORM_INTENT
+I wish to see it on the 1st.,INFORM
+It is great. That is what I want.,SELECT
+Can you search a comic movie for me?,INFORM
+"I am in Santa Clara, can you search here?",INFORM
+"Long shot is good, let me know the time of movie.",INFORM_INTENT
+search for March 11th.,INFORM
+and what is the ticket cost?,REQUEST
+get the address of that theater,REQUEST
+That's perfect. Thanks.,SELECT
+I would like to watch a horror movie.,INFORM
+Search for movies in San Jose area,INFORM
+The Curse of La Llorona sounds great.,SELECT
+"No I will purchase another day, what times are available?",INFORM_INTENT
+Tuesday next week would be best,INFORM
+Sounds great.,SELECT
+"No that is all, Thanks.",NEGATE
+I'm looking for a movie to see.,INFORM_INTENT
+Can you find movies in Martinez?,INFORM
+Long Shot will work. What time is that?,INFORM_INTENT
+The 9th of this month and I would like a regular show.,INFORM
+What other times are there?,REQUEST_ALTS
+"I don't think so, thank you.",NEGATE
+I would like to go to Vine Cinema in Livermore.,INFORM
+High Life will be perfect.,SELECT
+"No, not right now. What are the showtimes?",INFORM_INTENT
+I would like to watch it on the 3rd.,INFORM
+"No, thank you for your help.",NEGATE
+I'm going out with a friend today and I would like to find a movie to watch.,INFORM_INTENT
+"I would like to search for movies in Santa Rosa, please.",INFORM
+I hear the movie After is getting great reviews. What are the showtimes?,INFORM_INTENT
+I would like to watch the movie at any theater today.,INFORM
+Can you give me the address to the theater?,REQUEST
+Do you know what genre the movie is?,REQUEST
+"Perfect, I'm in the mood for Romance.",SELECT
+"No, I will wait to confirm with my friend before purchasing tickets.",NEGATE_INTENT
+"No, that is everything for today. Thank you for your time.",NEGATE
+I want to find a movie to watch.,INFORM_INTENT
+I want movies in Vacaville.,INFORM
+Hellboy sounds good.,SELECT
+Not right now. What time can I see the show? I want to watch a regular show.,INFORM
+I want to watch it tomorrow.,INFORM
+"What's the theater address, and what's the type of move?",REQUEST
+"Thanks, that's all I need.",SELECT
+I'd like to find a movie to watch at Century San Francisco Centre.,INFORM
+Help me find movies showing in San Francisco.,INFORM
+Can you help me find some other movies?,REQUEST_ALTS
+Not right now. What times were available?,INFORM_INTENT
+How about next Thursday?,INFORM
+Where is the theatre and how much is the ticket?,REQUEST
+Great.,SELECT
+No. Thank you.,NEGATE
+Can you find me a movie?,INFORM_INTENT
+In Vacaville please,INFORM
+No I want something else. What's playing in San Bruno. I don't care which theater.,INFORM
+None of those sound good,REQUEST_ALTS
+Yes. When can I see Teen Spirit,INFORM_INTENT
+On the 2nd of this month. Does it come in imax?,INFORM
+How much does that cost? Where's the theater?,REQUEST
+Not right now thanks,NEGATE_INTENT
+No thanks,NEGATE
+The Redwood City,INFORM
+after is perfect,SELECT
+the Century Redwood city the March 1st,INFORM
+the answer is below,REQUEST
+the good sounds,SELECT
+"San Rafael, please. I'd like to see a Drama movie.",INFORM
+High Life sounds good. What are the available times?,INFORM_INTENT
+"March 1st, please.",INFORM
+Sounds good to me.,SELECT
+"No, not at the moment. Thank you, that will be all.",NEGATE_INTENT
+Where do I find a movie to watch?,INFORM_INTENT
+Can you search Larkspur for Drama movies?,INFORM
+"Lets go see Transit, What time is it? Ill go to any theater.",INFORM
+Next Tuesday is when i want to see it.,INFORM
+Where is the theater and how much is it?,REQUEST
+"Sounds great, Im ready.",SELECT
+I want to find a movie to watch at AMC Saratoga.,INFORM
+Search for 3d movies in San Jose.,INFORM
+Missing link would be great. When is it showing?,INFORM_INTENT
+Thanks! That's all I need!,SELECT
+I wish to search for a movie.,INFORM_INTENT
+Please find movies in Union City.,INFORM
+Could you find some other movies? I prefer Adventure movies.,INFORM
+Shazam! is great. Which time shall I see it?,INFORM_INTENT
+I wish to see it on March 4th.,INFORM
+What is the cost of the ticket? Where it is located?,REQUEST
+It is great. It is what I want.,SELECT
+Are there any good movies showing in Pleasant Hill?,INFORM
+Little sounds like a good movie.,SELECT
+Is there a time I can watch it?,INFORM_INTENT
+I would like to see it on March 2nd in a 3d showing.,INFORM
+Thats perfect.,SELECT
+"No, thats it. Thanks.",NEGATE
+I feel like going to the movies. I'd like to go see a 3d movie at Guild Theatre.,INFORM
+Can you look for films which are playing in Menlo Park?,INFORM
+Red Joan sounds great. What time is it playing on March 9th?,INFORM
+That's perfect. Thanks for your help.,SELECT
+I really want to watch a movie.,INFORM_INTENT
+Search for movies playing right now in Napa.,INFORM
+"Yes, I want to see Captain Marvel. What time is it playing?",INFORM_INTENT
+Let's go with Sunday this week.,INFORM
+"Thanks. How much does the ticket cost? Also, what kind of movie is it again?",REQUEST
+"Sounds good, that's perfect. Thanks for helping.",SELECT
+"Find me a movie to watch,please!",INFORM_INTENT
+Comedy movies are my favorites.Search for me movies shown in SF .I would love to watch a imax show.,INFORM
+I want to watch at Century San Francisco Centre the movie Missing Link .At what time can it be?,INFORM
+I would like to be on 1st of this month.,INFORM
+What is the cost of the ticket and what is the address?,REQUEST
+"Sounds perfect,that's what I needed now.",SELECT
+I would like to see a movie in Santa Rosa.,INFORM
+"Dumbo would be great, what are the playing times on March 1st at any theater.",INFORM
+That sounds perfect.,SELECT
+Not at this time. Thanks.,NEGATE_INTENT
+I'm looking for movies in Santa Clara.,INFORM
+Are there any other movies?,REQUEST_ALTS
+I'd like to see Little.,SELECT
+Not right now.,NEGATE_INTENT
+What time is the movie showing at AMC Mercado?,INFORM
+Wednesday next week.,INFORM
+"That's all, thank you.",NEGATE
+I'm interested in watching a movie soon.,INFORM_INTENT
+"I am in Oakland, so can you find me any nearby movies?",INFORM
+"I am interested in seeing something else, preferably at the Regal Jack London.",INFORM
+"The Best of Enemies sounds good to watch, can you tell me 3d showtimes for Saturday this week?",INFORM
+"How much will the ticket cost, and where is the theater located?",REQUEST
+"Alright, thanks for that, that will be all.",SELECT
+I'd like to watch a movie at THE LOT City Center.,INFORM
+Look for movies plating San Ramon.,INFORM
+Captain Marvel sounds good.,SELECT
+Not right now. What time is the movie?,INFORM_INTENT
+I'm looking forward to seeing it on the 1st.,INFORM
+Where's the theater at and how much are tickets?,REQUEST
+Awesome. That about does it.,SELECT
+I'm looking for a movie to watch.,INFORM_INTENT
+Can you find movies in Albany?,INFORM
+Red Joan would be great.,SELECT
+"Not right now, thank you. What times can I see it?",INFORM_INTENT
+Next Tuesday please.,INFORM
+What type of movie is it? And what's the theater's address?,REQUEST
+"That sounds perfect, I'm all set.",SELECT
+"I would like to go to an Imax movie, can you find me a Comedy to watch?",INFORM
+I'm located in Oakland.,INFORM
+"Gloria Bell would be good - I'd like to see it on the 9th of this month, what time does it start at?",INFORM
+What is the theater's address and how much is a ticket?,REQUEST
+I want to find a movie to watch at Century Walnut Creek.,INFORM
+Can you search for movies shown in Walnut Creek? I'd like to watch a regular show.,INFORM
+I'd like to watch Captain Marvel.,SELECT
+"No, not now. What are the viewing times and dates? I want to watch it on March 2nd.",INFORM
+I would like to watch a movie in Morgan Hill.,INFORM
+Please find some more options.,REQUEST_ALTS
+Pet Sematary sounds great. When is it showing?,INFORM_INTENT
+I would like to watch it on the 1st of March.,INFORM
+How much is it?,REQUEST
+Where's the theater?,REQUEST
+Sounds great to me.,SELECT
+"No, I don't want them now.",NEGATE_INTENT
+"Nope, thanks so much!",NEGATE
+"I want to go out to watch a movie, please help me find a good one.",INFORM_INTENT
+I'm in Santa Rosa. I'm in the mood for a fantasy movie.,INFORM
+"I want to watch Hellboy, what time is it showing?",INFORM_INTENT
+"I want to go on 6th of March, to a regular show at 3rd Street cinema.",INFORM
+For how much? What's the address?,REQUEST
+"No, not yet.",NEGATE_INTENT
+"No thanks, that's all for now.",NEGATE
+I'm in San Francisco. What's available?,INFORM
+"No, I want something else please. Any theater will do.",INFORM
+Please find something else. I'm interested in drama movies. Are there any regular showings available?,INFORM
+Suburban Birds will be good.,SELECT
+"No, thanks. What time can I see that movie?",INFORM_INTENT
+I am looking for showtimes on the 17th.,INFORM
+That sounds good. Thanks.,SELECT
+I want to see a movie in San Bruno. What's available?,INFORM
+"No, what else is there? I want to see a regular show.",INFORM
+Shazam is perfect.,SELECT
+"No, I will do it later.",NEGATE_INTENT
+What time is it? I want to go to Century at Tanforan.,INFORM
+I'd like to go on the 1st.,INFORM
+"Perfect, that's all.",SELECT
+I want to watch a movie in SF,INFORM
+I want Horror movies,INFORM
+the curse of la llorona sound good. what time do they have it available,INFORM_INTENT
+I am available to watch on 7th of this month,INFORM
+ok thats all i need,SELECT
+I need to find a movie to watch.,INFORM_INTENT
+Can you search movies in San Ramon.,INFORM
+I would like Scary movies. I would like to watch THE LOT City Center.,INFORM
+"Can you find some other movies, I like all kinds.",INFORM
+I would like to see Little. I would like to watch it on March 1st.,INFORM
+Does the movie play any other time?,REQUEST_ALTS
+"No, that will do it. Thank you for your help.",NEGATE
+"I like Biographical movies, can you search for movies shown in Vallejo? I want to watch a 3d show.",INFORM
+What time can I see it? Breakthrough seems perfect.,INFORM_INTENT
+Monday next week would be superb. I'd prefer to see it at Century Vallejo,INFORM
+That is perfect for me.,SELECT
+I am bored and would like to see a movie.,INFORM_INTENT
+What's showing in San Jose?,INFORM
+I would rather see Breakthrough.,SELECT
+Not yet.,NEGATE_INTENT
+What time is it showing at CineLux Almaden?,INFORM
+I am available on the 3rd.,INFORM
+That seems awesome.,SELECT
+"No, that would be all. Thanks.",NEGATE
+I would like to go to a movie in San Ramon. Can you tell me what movies are playing?,INFORM
+Breakthrough is perfect. What day and time is it showing?,INFORM_INTENT
+The 9th is the date I am looking to watch it.,INFORM
+Is the movie playing at another time?,REQUEST_ALTS
+What is the address of The Lot City Center?,REQUEST
+Can you do a search for me? I'm looking for 3d movies in San Jose.,INFORM
+What time is How to Train Your Dragon: The Hidden World playing at?,INFORM_INTENT
+"That sounds great, that's all I need for now.",SELECT
+"I'd like to watch a movie, can you find a showing for me?",INFORM_INTENT
+"I'm in San Ramon, please find a movie there.",INFORM
+Breakthrough sounds great.,SELECT
+"No, I don't need tickets right away. What time is their imax showing?",INFORM
+Please check the 9th of this month.,INFORM
+Where's that theater?,REQUEST
+"Oh great, thanks a lot. That's all.",SELECT
+Look for a movie for me to watch.,INFORM_INTENT
+Find me movies in Union City.,INFORM
+Captain Marvel sounds great. At what time could I watch it?,INFORM_INTENT
+I'd like to watch it on the 7th of March.,INFORM
+"No, I do not want to buy them right now.",NEGATE_INTENT
+"No, thanks.",NEGATE
+I'd like to see an imax show at Century at Pacific Commons. I want to watch it.,INFORM
+Can you check for a movie in Fremont?,INFORM
+Check for other movies.,REQUEST_ALTS
+Lets do Shazam.,SELECT
+When can I see it on the 8th of March?,INFORM
+Where is it? What genre?,REQUEST
+"Great, i like that",SELECT
+No thank you,NEGATE
+Please look for movies in SFO.,INFORM
+Please find other options.,REQUEST_ALTS
+Please find some other options in imax.,INFORM
+Hotel Mumbai is perfect.,SELECT
+"No,not yet.",NEGATE_INTENT
+What time is the showtimes on March 1st?,INFORM
+I am meeting a friend later and we are planning to watch a movie. Can you find movies nearby?,INFORM_INTENT
+Can you find all movies in Pleasant Hill?,INFORM
+I would like to watch Hotel Mumbai. What time is it playing?,INFORM_INTENT
+"On the 2nd of this month, I want to watch a 3d movie. Can you tell me what 3d movies are playing near me?",INFORM
+Thank you for the information.,SELECT
+No. I just needed information about the movie.,NEGATE_INTENT
+"Hey, they got any Fantasy movies playing at THE LOT City Center?",INFORM
+Look in San Ramon.,INFORM
+Lets go with Hellboy.,SELECT
+No. Don't do that. What time is the movie.,INFORM_INTENT
+The 1st of this month. Look for the 3d version.,INFORM
+What's the damage? And where is the theater?,REQUEST
+Sounds like a plan. I'm good for now.,SELECT
+I want to watch movie. Any kind of movie works for me.,INFORM
+Can you find movies playing in Martinez.,INFORM
+What else is playing?,REQUEST_ALTS
+Missing Link is great! What time I see it? I want to see it on the 1st of March at Contra Costa.,INFORM
+What is the address?,REQUEST
+What kind of film is it? How much does it cost?,REQUEST
+Sounds excellent. That is all I wanted?,SELECT
+I would like to search for a movie to watch.,INFORM_INTENT
+Can you find me movies shown in Emeryville,INFORM
+Please find some more movies. I would like to watch at AMC Bay Street for a 3d show.,INFORM
+Pet Sematary is so good. What time can I watch it? My preferred date is March 8th.,INFORM
+Is there any other time the movie is playing?,REQUEST_ALTS
+Could you try once? I wanna watch it on Saturday this week.,INFORM
+Sounds great. Thats all I need.,SELECT
+Find me a regular movie to watch.,INFORM
+I am in Concord.,INFORM
+Dumbo works for me.,SELECT
+"No, not right now. What time is it playing?",INFORM_INTENT
+I want to see it on March 1st.,INFORM
+What is their address and what is the price of a ticket?,REQUEST
+That is great.,SELECT
+"No, that is all. Thanks.",NEGATE
+I want to find a movie to watch. I want to watch a regular show.,INFORM
+Can you search for movies shown in SF.,INFORM
+Ash Is Purest White is perfect.,SELECT
+"No, I don't want to purchase now. What time can I watch it?",INFORM_INTENT
+I want to watch it on 2nd of March.,INFORM
+No. Thank you for you help.,NEGATE
+My husband and I want to watch a 3d movie. Where is the closest place?,INFORM
+I'm in San Jose. Can you look around there?,INFORM
+What time is Breakthrough? That sounds great!,INFORM_INTENT
+"No, Sunday this week when we have a babysitter. We want the CineLux Almaden.",INFORM
+Where is the theater? And what kind of movie is it?,REQUEST
+Perfect!,SELECT
+"No, I don't want to do it right now. That's all the info I wanted.",NEGATE_INTENT
+I am looking for a movie to watch.,INFORM_INTENT
+I would love to see a 3d show in Menlo Park.Can you help me find one?,INFORM
+Red Joan sounds perfect for me.,SELECT
+"No,not now.",NEGATE_INTENT
+"It will be great to watch at Guild Theatre,tell me please at what time can I watch it.",INFORM
+In 9th of this month it will be great for me.,INFORM
+Where can I find the theater?,REQUEST
+You can tell me please the cost of ticket and what type of movie is?,REQUEST
+That is great .That was all that I needed for now.,SELECT
+"I have got two day leave jointly , i wish to watch a move. Will you find a movie to watch?",INFORM_INTENT
+I wish to watch a movies shown in Morgan Hill. So Find it in that place.,INFORM
+"No, Not at all. Please search for other movies. Will you search for movies shown in Union City and I like to watch at Century Union Landing location.",INFORM
+"No, Not interested . Find some other movies, will you find me 3d movies",INFORM
+"Ok i got it ,Movie Pet Sematary is Perfect and it suits my taste.",SELECT
+At what time i shall able to watch that movie? Whether i could able to watch it on 2nd of this month.,INFORM
+"Ok , great. will you tell me the address of that theater?",REQUEST
+What about its ticket cost?,REQUEST
+"That's great , and thanks a lot",SELECT
+Can you find me a 3D movie to watch?,INFORM
+Please find me movies in Brentwood.,INFORM
+What else do you have?,REQUEST_ALTS
+I don't like those. Show me movies in Pleasant Hill.,INFORM
+I'd like to watch Hotel Mumbai. What time is the show?,INFORM_INTENT
+I'd like to see it on 2nd of March.,INFORM
+What is the genre?,REQUEST
+That sounds perfect. That's all I need for now.,SELECT
+"I interested in watching a movie, can you give me a suggestion?",INFORM_INTENT
+"I am in Antioch, can you search for nearby movies?",INFORM
+"I am more interested in fantasy movies, can you give me movie recommendations for the AMC Deer Valley?",INFORM
+"Hellboy would be perfect to watch, at what time is the showing?",INFORM_INTENT
+I want to see the movie on the 4th of this month.,INFORM
+"That sounds good, that is all I needed.",SELECT
+Can you search a movie shown in Palo Alto? I want to watch a movie.,INFORM
+Pillow Talk sounds good. What time is the movie?,INFORM
+I am planning to watch a regular show on 5th of this month.,INFORM
+"No, I am not ready to purchase the ticket now.",NEGATE_INTENT
+No that is all i need.,NEGATE
+Find a movie for me please.,INFORM_INTENT
+I am looking for a movie in Alameda.,INFORM
+Give me some more choices please Check the Alameda Theatre & Cineplex for an imax show.,INFORM
+The Poseidon Adventure is exactly what I want. When does it start?,INFORM_INTENT
+Next Friday would be perfect for me.,INFORM
+What would you call that type of movie?,REQUEST
+That sounds right thank you.,SELECT
+Nothing I can think of and thank you again for your help.,NEGATE
+I really want to watch a Fantasy movie. Is there anything available?,INFORM
+I'm in Campbell. I'd like to go to Pruneyard Cinemas.,INFORM
+Dumbo sounds good. When is it?,INFORM_INTENT
+I want to watch the imax show next Friday.,INFORM
+Are there any other showtimes?,REQUEST_ALTS
+"No thanks, that's all.",NEGATE
+Please help me find a movie to watch.,INFORM_INTENT
+Please search for movies showing in Mill Valley.,INFORM
+The Best of Enemies sounds great.,SELECT
+"No, I'm not going to buy right away.",NEGATE_INTENT
+Please find out the screening times for 3d shows.,INFORM
+"Yes, I'd love to watch it later today.",INFORM
+That works for me.,SELECT
+No. You've been very helpful.,NEGATE
+I am planning to catch a movie with my friend later. Can you recommend a 3d movie?,INFORM
+I want to know what movies are showing in Emeryville. I am particularly interested in movies of the Thriller genre.,INFORM
+"Yes, Pet Sematary sounds great!",SELECT
+"No, I will buy the tickets later.",NEGATE_INTENT
+I would like to catch the movie on 8th of March. Can you find me the screen times for this show on that date?,INFORM
+That's perfect.,SELECT
+No. I appreciate your help so far.,NEGATE
+Can you find me a funny movie to watch?,INFORM_INTENT
+Can you find me a 3d show at the Guild Theatre at Menlo Park?,INFORM
+Red Joan will work. what times are avaliable for the 9th of this month.,INFORM
+Thanks thats everything,SELECT
+Can you tell me what movies are playing at Century Cinemas?,INFORM
+In San Leandro. I'd like to watch the 3d show.,INFORM
+Breakthrough sound great! I'd like to watch it on the 2nd. What time is it playing?,INFORM
+Sounds good. I don't need anything else.,SELECT
+I want to watch a movie at the theater.,INFORM_INTENT
+Can you look for movies in Livermore?,INFORM
+No thanks. I like adventure movies and I want to watch an Imax show.,INFORM
+Shazam! sounds perfect!,SELECT
+No thank you. What times is it showing?,INFORM_INTENT
+2nd of March.,INFORM
+How about Friday next week at Livermore Cinema?,INFORM
+What is the price?,REQUEST
+"Sounds good, that is all.",SELECT
+I want to watch a 3d movice in Emeryville.,INFORM
+I love to watch Pet Sematary.,SELECT
+"No, I want to buy tickets later.",NEGATE_INTENT
+I want to watch the movie on the 8th at AMC Bay Street.,INFORM
+Where is the theater? What is this movie about?,REQUEST
+That' s all.,SELECT
+"Hi, I would like to search for movies currently shown at Albany Twin.",INFORM
+I would prefer movies shown in Albany.,INFORM
+Red Joan is great!,SELECT
+"Not yet, what are the available time slots for this movie next Tuesday?",INFORM
+That's great! How much does the ticket cost?,REQUEST
+Nope! That's all the help I need.,NEGATE
+Can you find me a movie to watch at Edwards Fairfield?,INFORM
+Sure. Search any kind of movies in Fairfield.,INFORM
+I'd particularly like a 3d movie.,INFORM
+How to Train Your Dragon: The Hidden World sounds awesome!,SELECT
+"No, not at this moment? At what time is it screening? I'd like to go on the 1st of this month.",INFORM
+How much for a ticket?,REQUEST
+"No, not at the moment. Thanks a lot!",NEGATE
+Can you help me search for movies that are playing in Emeryville?,INFORM
+"I like Comedy movies, can you please help me find one?",INFORM
+Missing Link is perfect. What time would I be able to watch it? I would like to watch it on the 8th of this month.,INFORM
+"Sounds good, thanks. That's all I need!",SELECT
+I want to watch something in Imax in San Francisco,INFORM
+I don't really like any of those. How about some Drama films? I want to watch it at United Artists Stonestown Twin.,INFORM
+The Mustang sounds good. What are the times if I want to watch it Wednesday next week?,INFORM
+Where's the theater located?,REQUEST
+"Okay, sounds good. That's everything.",SELECT
+I want to find a movie to watch. I like comic movies. I want to watch at Century Napa Valley.,INFORM
+I want to watch a 3D show. Can you search for movies in Napa?,INFORM
+Little is perfect.,SELECT
+What time can I watch it?,INFORM_INTENT
+I want to watch it on the 1st of March.,INFORM
+I am interested in watching adventure movies in imax show.,INFORM
+I want you to have a search for movies which are shown in walnut creek,INFORM
+I feel Shazam is good for me and i want to watch it in Century Walnut Creek and what is the show time?,INFORM
+I am interested in watching the movie on Monday next week.,INFORM
+Sounds very good. That is all i want,SELECT
+I think a movie will relax me. can you help?,INFORM_INTENT
+I want to watch in San Ramon,INFORM
+No. please look for any other.,REQUEST_ALTS
+I choose Missing Link.,SELECT
+Not needed. Showtime please.,INFORM_INTENT
+On 2nd of this month.,INFORM
+"What is the ticket charge, where is it located?",REQUEST
+Great. It will do.,SELECT
+I would like to find a movie.,INFORM_INTENT
+Can you search for movies in San Jose.,INFORM
+Please find other movies.,REQUEST_ALTS
+I want to watch 3 Below Theaters and lounge.,INFORM
+Mary Magdalene is good I would like to watch it this Saturday a imax show.,INFORM
+Yes that is good information.,SELECT
+"No, I will purchase later thank you.",NEGATE_INTENT
+Check what's playing in Union City please.,INFORM
+Captain Marvel it is that's just the kind of movie I was looking to see.,SELECT
+"No, I'll hold off that for now.",NEGATE_INTENT
+What are the showtimes?,INFORM_INTENT
+I wanted to go to the movies next Thursday.,INFORM
+That would be great.,SELECT
+Thanks for your help but I don't think I'll be needing anything else today.,NEGATE
+I want to go out to a movie.,INFORM_INTENT
+Look for movies in San Jose.,INFORM
+"None of those sound good, what else is there?",REQUEST_ALTS
+"No, can you find an imax show in Concord?",INFORM
+Shazam! works just fine.,SELECT
+What time is the movie?,INFORM_INTENT
+I want to see it on Wednesday next week.,INFORM
+Nope! I'm good!,NEGATE
+I'm looking for something to do with my evening. What movies are showing in San Jose?,INFORM
+Is there anything else?,REQUEST_ALTS
+"Nah, none of those.",REQUEST_ALTS
+How to Train Your Dragon: The Hidden World sounds good.,SELECT
+"No, not now.",NEGATE_INTENT
+What time is the movie showing?,INFORM_INTENT
+I'm thinking today at the AMC Eastridge.,INFORM
+How about another time?,REQUEST_ALTS
+No. Thanks anyways.,NEGATE
+I want to watch a movie in Union City.,INFORM
+I want to watch a Scary movie in imax.,INFORM
+The Curse of La Llorona is perfect.,SELECT
+"No, I'm not ready.",NEGATE_INTENT
+What time is the movie playing?,INFORM_INTENT
+I want to see it on March 7th.,INFORM
+How much is the ticket? What is the address?,REQUEST
+"That is all, thanks.",SELECT
+I want to watch a movie that's been shown in Fairfield.,INFORM
+What are my other choices?,REQUEST_ALTS
+I want to Watch How to Train Your Dragon: The Hidden World.,SELECT
+No.I'll buy tickets later. Can you find a 3d show?,INFORM
+The 1st of this month.,INFORM
+Great. Thanks for the information.,SELECT
+I'm interested in finding a good movie to watch.,INFORM_INTENT
+"San Jose, so search for movies there.",INFORM
+"Actually, Breakthrough sounds great. I want to see it on the 3rd so what times is it playing then?",INFORM
+What's the theater's address?,REQUEST
+"Okay, sounds fine. That's all I the help I need.",SELECT
+Can you find me a movie? I'm in the mood for action,INFORM
+In Oakland please,INFORM
+"Yeah, The Last Dragon sounds great",SELECT
+"No thanks, I think I'll buy them later",NEGATE_INTENT
+Can you let me know what time its on?,INFORM_INTENT
+The day after tomorrow please,INFORM
+"Cool. Thanks, I don't need anything else",SELECT
+I want to watch a Rom-com movie.,INFORM
+I am looking for a movie in Santa Rosa.,INFORM
+After sounds like a good movie.,SELECT
+Not at this time.,NEGATE_INTENT
+When is the movie?,INFORM_INTENT
+I want to go on the 1st.,INFORM
+I'm looking for a movie in Santa Rosa.,INFORM
+Anything else?,REQUEST_ALTS
+No. What's showing at Summerfield Cinemas?,INFORM
+Wild Nights with Emily sounds good.,SELECT
+No. what time is it showing?,INFORM_INTENT
+I'm looking for an imax show this Saturday.,INFORM
+Any other times?,REQUEST_ALTS
+I wanna go to the cinema.,INFORM_INTENT
+I'm in Oakland.,INFORM
+"Could you find some other movies, please?",REQUEST_ALTS
+Shazam! sounds perfect.,SELECT
+"Nope, not right now.",NEGATE_INTENT
+What time can I watch the movie?,INFORM_INTENT
+I wanna watch it on 1st of this month.,INFORM
+What kind of movie is it?,REQUEST
+Nope. Thanks for your help.,NEGATE
+I want to see a movie.,INFORM_INTENT
+I want to see it at Century Union Landing. What movies are playing in Union City?,INFORM
+No. What else is playing?,REQUEST_ALTS
+No I'm not interested in those. Are any other movies playing?,REQUEST_ALTS
+I want to see Pet Sematary!,SELECT
+"No, not now. When is it showing?",INFORM_INTENT
+I'd like to see it on Saturday this week.,INFORM
+I want the see the 3d version on the 1st of this month. Is it showing then?,INFORM
+How much does a ticket cost?,REQUEST
+Great!,SELECT
+I want to watch a movie at AMC Bay Street,INFORM
+"Searc in Emeryville, please",INFORM
+Do you have any other suggestions?,REQUEST_ALTS
+I would prefer other proposals,REQUEST_ALTS
+"Oh, Teen Spirit is good!",SELECT
+"Not now, thanks",NEGATE_INTENT
+"Yes, I want to watch a imax show: what time is it?",INFORM
+On later today,INFORM
+"Oh, It's perfect!",SELECT
+"No, thanks, It's all",NEGATE
+I think that I want to find a movie to watch at Roxie Theater.,INFORM
+Does SF have any movies showing?,INFORM
+I think we should do Suburban Birds. I think I want something regular on the 17th. Do you have any times?,INFORM
+Works for me!,SELECT
+I think we should wait to purchase them.,NEGATE_INTENT
+I think this will do it. Thank you for your help.,NEGATE
+Can you look for movies in SF.,INFORM
+"Can you please look for some other movies, I'd like to see an imax show.",INFORM
+Can you find some other movies I'd like to go see them at the Embarcadero Center Cinema. Any kind of movie will do.,INFORM
+Knock Down The House sounds great to me.,SELECT
+"Not at the moment, no.",NEGATE_INTENT
+"Oh yeah, what time is the movie? I'd like to watch it on the 8th?",INFORM
+"Awesome, thats all I needed to know.",SELECT
+I like Ghost movies. Search for movies in San Jose.,INFORM
+The Curse of La Llorona is about perfect!,SELECT
+"No, I don't need them.",NEGATE_INTENT
+I want to see it Tuesday next week,INFORM
+"Great, That's all I need",SELECT
+"Can you tell me which movies are playing at Lark Theater, please. I'd like to find a good one to watch.",INFORM
+Search for movies in Larkspur.,INFORM
+Shine a light sounds perfect. When is it screening? Any show type is OK.,INFORM
+"I'd like the 1st of March, if possible.",INFORM
+That's perfect. That will be all?,SELECT
+I have not gone to see a movie in a while. I would like to go see one. Can you tell me what is playing?,INFORM_INTENT
+I would like to see a movie in San Ramon.,INFORM
+"I am more in to adventure movies. Could you look for some different movies. Also, I would like to watch at THE LOT City Center.",INFORM
+Shazam! would be great.,SELECT
+"No, I don't think so right now.",NEGATE_INTENT
+"I would like to watch the regular showing next Monday. What time do they have available, then?",INFORM
+Are there any other show times available?,REQUEST_ALTS
+"No, not right now. Thanks so much for your help.",NEGATE
+I am trying to find an interesting movie to watch later.,INFORM_INTENT
+I would like to see a thriller movie located in Brentwood.,INFORM
+Oh i think Pet Sematary may be a great movie to watch,SELECT
+Not this second no,NEGATE_INTENT
+What are the show times at AMC Brentwood?,INFORM
+Definitely on March 5th. Is it available,INFORM
+what is the cost of the tickets and what is the address,REQUEST
+great,SELECT
+Nope. but thanks for your help,NEGATE
+"Hey there, I want to see a movie.",INFORM_INTENT
+Can you show me movies in San Jose.,INFORM
+No they don't sound like my cup of tea. What about a 3d film.,INFORM
+Little sounds good. What time is it showing?,INFORM_INTENT
+I want to go next Friday.,INFORM
+How much is that?,REQUEST
+"Sounds perfect, that's all I wanted.",SELECT
+My husband and I are going out tonight and would like to know of a good movie to watch.,INFORM_INTENT
+Would you look for theaters around Emeryville? That's where we're eating.,INFORM
+"I'd like to see something at the AMC Bay Street. Preferably a comic book-type movie. If you can find one of those, that would be great!",INFORM
+We'd love to see Missing Link. What are the showtimes?,INFORM_INTENT
+I forgot. I wanted to see it on Imax and March 8th would be the date.,INFORM
+That's great.,SELECT
+I'm not going to buy them right now.,NEGATE_INTENT
+Thank you but no. I'm good.,NEGATE
+Please find me a movie to watch.,INFORM_INTENT
+Please search for movies in downtown San Fran.,INFORM
+Please search for other movies to see in downtown San Fran.,REQUEST_ALTS
+Please search for even more movies.,REQUEST_ALTS
+I would like to see Family.,SELECT
+I want to know when I can go see that movies. What are the regular show times?,INFORM
+I would like to see this movie on the 2nd.,INFORM
+I would like to see that showing.,SELECT
+"No thank you, I do not require further help.",NEGATE_INTENT
+"Hey, I'm looking for a movie.",INFORM_INTENT
+Can you tell me what's on in San Francisco.,INFORM
+Find something else.,REQUEST_ALTS
+Gloria Bell sounds like it's right up my street.,SELECT
+"No, that's okay, not right now.",NEGATE_INTENT
+What time is it playing on 3rd of March.,INFORM
+Sounds great. That's everything.,SELECT
+I want to find an imax movie to watch later tonight.,INFORM
+I am located near Hillsborough.,INFORM
+That would be great. What time would I be able to watch The Curse of La Llorona?,INFORM_INTENT
+I'd like to try and watch it on the 1st of March.,INFORM
+Awesome. Thank you for your help.,SELECT
+San Jose. I want to watch a regular show.,INFORM
+"No, something else please.",REQUEST_ALTS
+"No, something else, in 3D, please.",INFORM
+Breakthrough sounds good. What are the show times?,INFORM_INTENT
+On the 3rd.,INFORM
+Thanks. That's all I need.,SELECT
+I like Life history movies and want to find a movie to watch. I would like to watch Century at Hayward.,INFORM
+Please find movies in Hayward.,INFORM
+Breakthrough sounds great. What time is it available to watch? I am interested in a regular show.,INFORM
+I want to see it on the 7th.,INFORM
+How much does the ticket cost?,REQUEST
+That sounds fine. That does it for me.,SELECT
+I would like to watch a 3d movie.,INFORM
+I would like movies in Petaluma.,INFORM
+No not at present. What time is it on? I am interested in showing on the 4th at Boulevard Cinema.,INFORM
+Do you know the address of the theater?,REQUEST
+How much do tickets cost?,REQUEST
+That all sounds good.,SELECT
+No that is everything thanks.,NEGATE
+Can you help me find a good movie please?,INFORM_INTENT
+I would like hear about movies being played in Brentwood.,INFORM
+I would like to see Dumbo!,SELECT
+"No not right now, can I have the show times and can you look for the movie in 3d?",INFORM
+I would like to watch a imax show on the 2nd of this month.,INFORM
+Can I have the price of the ticket and the address to the theater?,REQUEST
+I feel like being spooked out. Can you help me find some scary movies?,INFORM
+Please look for movies showing in Campbell.,INFORM
+The Curse of La Llorona works good for me. What time is it showing? I'd like to go on the 9th.,INFORM
+"That's perfect, that's all I needed.",SELECT
+I want to find a comedy movie. Search for movies now showing in Oakland.,INFORM
+Let's try something else. I want a regular show. Something like a Biographical movie.,INFORM
+Breakthrough is great.,SELECT
+"No, not right now. What time does it play? I also want to watch Regal Jack London next Friday.",INFORM
+What is the theater address?,REQUEST
+"Great, that's all I need.",SELECT
+"I want to watch a movie, can you search for movies shown in San Jose.",INFORM
+"No thanks, can you find some others.",REQUEST_ALTS
+Dogman is great thanks.,SELECT
+"No, not at the moment. What time is it on?",INFORM_INTENT
+"I want to go on the 11th, at 3 Below Theaters And Lounge.",INFORM
+Sounds great thanks.,SELECT
+No thanks.,NEGATE
+Can you find for movies shown in Santa Clara.,INFORM
+The movie Hotel Mumbai is good.,SELECT
+"No, i don't want to buy now and what time can i see it?",INFORM_INTENT
+I like to watch imax show on 1st of March.,INFORM
+What is the theater location?,REQUEST
+What type of the movie and what is the ticket cost?,REQUEST
+It's cool. That is all i want.,SELECT
+I wanna go to the cinema. I don't mind the theatre.,INFORM
+Can you search movies in San Francisco?,INFORM
+Dumbo is perfect. What time can I watch it? I'd like to watch it on March 3rd.,INFORM
+"Nope, I don't wanna purchase now.",NEGATE_INTENT
+"Nope, thanks a lot!",NEGATE
+Can you search for movies showing in Pleasant Hill?,INFORM
+I would like to see After. Any type of show is fine. What times is it showing?,INFORM
+I'd like to see it on the 1st of this month.,INFORM
+"No, I don't want to purchase them now.",NEGATE_INTENT
+No. Thanks for your help today.,NEGATE
+Find me some good movies to watch.,INFORM_INTENT
+Search for Fantasy movies in San Jose.,INFORM
+"Okay, Dumbo sounds great.",SELECT
+"No, I don't want to buy the ticket right now. Can you find me the timing of the movie on March 1st at Cinemark?",INFORM
+"Okay, That sounds great.",SELECT
+No. That will be all. Thank you.,NEGATE
+What are some movies playing in Emeryville right now?,INFORM
+"Family sounds good, what are the times?",INFORM_INTENT
+On the 4th of this month.,INFORM
+How much per ticket?,REQUEST
+What type of movie is it?,REQUEST
+"Okay, that works.",SELECT
+"No, not now. That's it.",NEGATE_INTENT
+Give me a 3d show.,INFORM
+I am in Petaluma.,INFORM
+Give me The Curse of La Llorona please.,SELECT
+"Um, not now.",NEGATE_INTENT
+What times are available on the 2nd of this month at Boulevard Cinema.,INFORM
+"Sound good, thanks.",SELECT
+"Hey, can you help me find a movie to watch?",INFORM_INTENT
+I'm in San Francisco. Try searching for movies shown there.,INFORM
+Can you find some other movies? I want to watch one at an imax show in the AMC Metreon nearby.,INFORM
+I would love to see Missing Link!,SELECT
+"No, I don't want to right now.",NEGATE_INTENT
+Yes. What are the available times for the movie?,INFORM_INTENT
+March 2nd would be nice.,INFORM
+No. Thanks for your help!,NEGATE
+I want a recommendation on a movie to watch.,INFORM_INTENT
+"I am in San Francisco, can you search for movies in this city?",INFORM
+"Can you give me more movie recommendations, I want to see an IMAX show and I do like seeing comic movies.",INFORM
+Missing Link sounds perfect.,SELECT
+"At what time can I watch the movie, if I plan on seeing it on the 1st of this month?",INFORM
+"I think I am not ready to purchase tickets, so no.",NEGATE_INTENT
+"No, that will be all, thank you for your help.",NEGATE
+I am looking for something to do tonight and would like to find a movie that I can watch.,INFORM_INTENT
+I would like to find movies shown in Moraga tonight.,INFORM
+What time is Hotel Mumbai being shown?,INFORM_INTENT
+Lets watch it on the 2nd of this month and right now I will watch a regular T.V. show.,INFORM
+That is good! Thank you.,SELECT
+What movies are being shown in Healdsburg?,INFORM
+I love Dumbo.,SELECT
+I don't want to buy them now.,NEGATE_INTENT
+What times are available?,INFORM_INTENT
+"I want to see it 1st of March, in imax, at Raven Film center.",INFORM
+Okay.,SELECT
+No. Thanks for your help.,NEGATE
+I wish to search for a movie at Tiburon Playhouse.,INFORM
+Could you please find the movie in Tiburon?,INFORM
+I prefer Long Shot.,SELECT
+Nope. This time I not interested in booking now. Which time shall I see it?,INFORM_INTENT
+I wish to see it on the 9th.,INFORM
+Can you find me a movie shown in Vallejo,INFORM
+Can you search regular show movies shown in Santa Clara,INFORM
+Any other movies available?,INFORM
+Long shot sounds great. I want to watch on the 11th at AMC Mercado,INFORM
+ok perfect,SELECT
+No not now,NEGATE_INTENT
+No thats it,NEGATE
+I want to watch a movie in Larkspur. I want to watch some Horror movies.,INFORM
+"Yes, I want to watch The Curse of La Llorona.",SELECT
+What are the showtimes for the 1st of March?,INFORM
+Great! That's all I need.,SELECT
+I need help finding a movie to watch.,INFORM_INTENT
+I'm in Redwood City. Are there any Adventure movies playing at Century Redwood City?,INFORM
+Shazam! sounds good. What times are available?,INFORM_INTENT
+On March 4th.,INFORM
+How much is a ticket?,REQUEST
+Sounds good. That's what I needed.,SELECT
+I'm looking for a movie at CineLux Tennant Station.,INFORM
+"Something in Adventure at Morgan Hill, a regular show.",INFORM
+"Shazam sounds good, what times are there for Monday next week?",INFORM
+"No, that's all.",NEGATE
+I'm looking for a movie.,INFORM_INTENT
+Look in Santa Rosa.,INFORM
+What time is After playing later today?,INFORM
+I need an address.,REQUEST
+Awesome. I don't need anything else.,SELECT
+I'm looking for a movie to see preferably in Livermore.,INFORM
+I'd like to see High Life. I'd like to see a 3d show. What time could I see it?,INFORM
+The day after tomorrow.,INFORM
+"That's perfect, I'm all set.",SELECT
+I would love to watch a movie right now. What's playing right now?,INFORM_INTENT
+Find movies in the Santa Rosa area please.,INFORM
+"Eh, I kind of want to watching something a little more regular. Can you find what is playing at the Airport Stadium Cinemas?",INFORM
+Curse of La Llorona sounds great. What time is it playing?,INFORM_INTENT
+I plan on going to the theater Friday next week.,INFORM
+"Gosh, that's kind of late. How much is a ticket?",REQUEST
+That's not too bad.,SELECT
+"No, not right now, but thank you.",NEGATE_INTENT
+Find me please a movie to watch at Airport Stadium Cinemas,INFORM
+In Santa Rosa search me please.,INFORM
+Find me something else please.,REQUEST_ALTS
+Is perfect The Curse of La Llorona.At what time can I watch?,INFORM_INTENT
+It will be perfect for me to watch on next Friday.,INFORM
+Sounds perfect.,SELECT
+"No,I dont want now.That is all I need now",NEGATE_INTENT
+"Hey, I want a movie. Find me one in San Ramon, please. A good one this time!",INFORM
+"Cool, but find some other ones too please. I love Adventure movies.",INFORM
+"Yeah, I heard of that one! I want to see Shazam then. What showtimes are there today? Actually I'm free on the 2nd.",INFORM
+Yeah! That works.,SELECT
+"No, I don't want to purchase them ahead of time. I don't need to. But thank you!",NEGATE_INTENT
+I prefer Union City.,INFORM
+Can you find some other choices? I prefer an adventure movie at Century Union Landing.,INFORM
+Shazam! sounds good.,SELECT
+Not at this time. What time is it playing?,INFORM_INTENT
+I would like to see it at an imax show on March 4th.,INFORM
+Are there any other times available?,REQUEST_ALTS
+Please find me a non-fiction movie at the Roxie Theater.,INFORM
+Please search in the San Francisco area.,INFORM
+JT LeRoy works for me.,SELECT
+No. That's ok. I'm interested in the time for a regular show.,INFORM
+Let's try the day after tomorrow.,INFORM
+Ok. Great. That's all for now.,SELECT
+Can you help me find an adventure movie showing in concord?,INFORM
+Shazam! sounds great!,SELECT
+"No, not at the moment.",NEGATE_INTENT
+"Yeah, what time can I go see the movie?",INFORM_INTENT
+I'd like to go watch it next wednesday.,INFORM
+"Awesome, thats all I need to know.",SELECT
+I'm looking for a 3d movie in Brentwood.,INFORM
+"No. Also, you can look at any theatre.",INFORM
+"No, what other movies are there?",REQUEST_ALTS
+"Perfect, I'll go with The Curse of La Llorona.",SELECT
+"no, please don't purchase it now.",NEGATE_INTENT
+What time is it available to watch?,INFORM_INTENT
+On the 7th.,INFORM
+"Nope, I'm all set.",NEGATE
+I'm really bored. Can you find me a movie to watch in Union City?,INFORM
+Nah I've already seen those. Find me something else.,REQUEST_ALTS
+Hotel Mumbai! Yes! Will there be a showing at Century Union Landing?,INFORM
+"That's a little late, but it sounds good. Thank you that will be all I need.",SELECT
+I am looking for something to see in the movies. What is there in theaters?,INFORM_INTENT
+I am looking for movies in San Ramon.,INFORM
+"I am not interested in those, are there any Adventure movies?",INFORM
+"Yes, I want to go see Shazam!",SELECT
+What are the schedules for the movie on the 2nd of March?,INFORM
+"No, that would be all.",NEGATE
+I wanna find a movie to watch. Can you search for movies in Alameda?,INFORM
+Hellboy sounds good to me.,SELECT
+"Nope, not now. What time can I watch it? I wanna watch it at Alameda Theatre & Cineplex. Any type of show is fine.",INFORM
+I wanna watch it on the 1st.,INFORM
+What's the address?,REQUEST
+Sounds good. That's all I need for now.,SELECT
+I want to watch a Suspense movie at Century Cinemas.,INFORM
+Century Cinemas is in San Leandro.,INFORM
+Pet Sematary is perfect.,SELECT
+"No, not now. What time is the showing?",INFORM_INTENT
+I want to go on March 3rd.,INFORM
+"That is perfect, that is all.",SELECT
+Yes. Search in San Bruno.,INFORM
+"I want to want at Century at Tanforan, find some other movies.",INFORM
+How to Train Your Dragon: The Hidden World is perfect,SELECT
+No i don't want. What time i can watch,INFORM_INTENT
+I want to watch on 1st of this month.,INFORM
+Ok. That is all i need,SELECT
+Can you check for a regular showing of a horror movie in Redwood City.,INFORM
+No. That's ok. What time is it playing.,INFORM_INTENT
+Please check the 1st of this month.,INFORM
+Sounds perfect. That's all.,SELECT
+Can you help me find a Comic movie?,INFORM
+I also like drama movies. Can you find a movie in Sebastopol?,INFORM
+Can you find other movies? I want to see an IMAX movie at Rialto Cinemas.,INFORM
+The Best of Enemies sounds good.,SELECT
+What times do you have available? I don't want to buy them right now.,INFORM_INTENT
+March 1st.,INFORM
+What is the theater's address?,REQUEST
+"That is all I need, thank you.",SELECT
+"Life is very enthuastic and energitic , i need to enjoy it almost every moment in my life. Will you find a movie to watch? Any type of movies is opt for me.",INFORM
+Find movies in San Francisco area?,INFORM
+I like Ash Is Purest White.,SELECT
+"No, thanks , I don't want it now?",NEGATE_INTENT
+I need the time to watch that movie. will you find the time to watch?,INFORM_INTENT
+I want it on Saturday this week.,INFORM
+whether any other time is available and i need to watch a imax show and need to watch at Embarcadero Center Cinema.,INFORM
+Ok its great and its suits me,SELECT
+"No ,Thanks for your immense help",NEGATE
+Can you help me find Biographical movies to watch? It's been a while since I've seen one in the theatre.,INFORM
+I'm looking for movies in Morgan Hill.,INFORM
+Breakthrough is perfect. Are there any times for the 3rd?,INFORM
+Are there any other times?,REQUEST_ALTS
+Can you try March 1st at CineLux Tennant Station?,INFORM
+"Sounds good, that's what I needed.",SELECT
+Can you find me an Imax movie Show?,INFORM
+search for me in Sebastopol.,INFORM
+"The best of enemies will be good, find the show time.",INFORM_INTENT
+make a search for 1st of this month.,INFORM
+Find me the details about ticket cost and the theater address.,REQUEST
+That will okay for me.,SELECT
+"No, not now, thanks.",NEGATE_INTENT
+"I'm so bored. I want to get out of the house, maybe see a movie.",INFORM_INTENT
+Find me a movie in Santa Clara.,INFORM
+I've seen the trailer for Hellboy and it looks pretty sick. I want to see that.,SELECT
+"Yea, when is the movie playing?",INFORM_INTENT
+"I'm planning on going to see it on the 4th of this month, as I have off from work. I'm hoping to catch the imax show at AMC Mercado.",INFORM
+"Okay, nice. What genre is Hellboy listed as?",REQUEST
+"Nice, I love fantasy.",SELECT
+"No, that will be all, but thank you very much for your help.",NEGATE
+I want to watch a a imax movie. I love the Ghost movies.,INFORM
+Show me movies for Mountain View.,INFORM
+The Curse of La Llorona sounds good.,SELECT
+No not right now. What time is it playing?,INFORM_INTENT
+Tomorrow at Century Cinema,INFORM
+Is there any other show times?,REQUEST_ALTS
+No that will be all.,NEGATE
+I'm searching for movies to watch. I prefer Drama movies,INFORM
+Could you search for movies in Menlo Park.,INFORM
+Red Joan is an excellent one.,SELECT
+No. I dont want to buy now.,NEGATE_INTENT
+What time can I see it? I want to watch on the 9th and a 3d show.,INFORM
+Whats the ticket fare and address of the theatre?,REQUEST
+Sounds great for me,SELECT
+No Thats all. Thanks a lot,NEGATE
+Will you help me find a movie?,INFORM_INTENT
+Pleasant Hill.,INFORM
+Anything else? I am looking for Scary movies.,INFORM
+Curse of La Llorona sounds great. Is it playing on 6th of March?,INFORM
+How much?,REQUEST
+I'd like to find a movie to see.,INFORM_INTENT
+"I'd like to see the movie in Union City, and I'd like it to be a Thriller movie.",INFORM
+"Oh, I'd love Pet Sematary.",SELECT
+"No, I'm not looking to buy right now.",NEGATE_INTENT
+"Yes, what's the time of that movie?",INFORM_INTENT
+"I'd like to see it on March 2nd, and I want it to be a 3d show.",INFORM
+I want to go to a movie. What's playing?,INFORM_INTENT
+Somewhere in San Fran.,INFORM
+Let's hear the others.,REQUEST_ALTS
+Tell me what is showing at the CineLux Tennant Station in Morgan Hill.,INFORM
+Ooh. I want to see Pet Sematary.,SELECT
+Not right now. What times are available. I'd liek to see it in Imax if possible.,INFORM
+On the 1st of March.,INFORM
+What genre is this movie? And where is the theatre's located,REQUEST
+No. Thanks for you help.,NEGATE
+Can you search for movies shown in Sonoma?,INFORM
+Long Shot sounds great.,SELECT
+"No, Don't buy it now.",NEGATE_INTENT
+"I want to watch the movie on 9th of this month, can you tell me the timing?",INFORM
+Can you tell me the address of the theater and the price of the ticket?,REQUEST
+Can you find movies being shown in Vallejo?,INFORM
+Dumbo seem like a good choice.,SELECT
+"No, I don't want to get them right now.",NEGATE_INTENT
+Do you know the time I can watch it? I want it to be an imax show.,INFORM
+Probably later today.,INFORM
+What sort of movie is it?,REQUEST
+That seems good. That'll be all.,SELECT
+Find me a movie please,INFORM_INTENT
+Make it San Bruno,INFORM
+No. Maybe look at the Century at Tanforan,INFORM
+I'll see Shazam,SELECT
+"I'll go on March 1st, a regular screening",INFORM
+Not right this minute. Thanks,NEGATE_INTENT
+What are some movies I can watch in Hayward?,INFORM
+Dumbo sounds good.,SELECT
+What time can I watch it on Wednesday next week?,INFORM
+How much is it for a ticket?,REQUEST
+"Perfect, thanks.",SELECT
+I'm looking for a movie to watch at THE LOT City Center.,INFORM
+"I'm in San Ramon, so search for movies near there.",INFORM
+"I'm not interested in any of those, can search some more. And I want to watch the movie in imax.",INFORM
+Little would work well.,SELECT
+"No, don't get me tickets. But can you tell me what time I can see it. I want to see it on March 1st?",INFORM
+Are there any other times it's playing?,REQUEST_ALTS
+"No, thanks for helping me.",NEGATE
+I am looking for a regular movie to watch.,INFORM
+Search for Morgan Hill.,INFORM
+What time is Dumbo showing?,INFORM_INTENT
+March 1st please.,INFORM
+How much does it cost?,REQUEST
+No not now. That is everything for now thanks.,NEGATE_INTENT
+I will have some free time coming up and am thinking I might go see a movie. What movies are showing in Alameda at the Alameda Theatre & Cineplex?,INFORM
+"No, are there any adventure movies showing in 3d?",INFORM
+"Ok, Shazam will be perfect! I can't wait to see it!",SELECT
+"Yes, actually, what time is the movie?",INFORM_INTENT
+I will probably be going on the 2nd.,INFORM
+"Alright, that sounds great!",SELECT
+"No thanks, I don't want to buy them yet. I am not positive that I will be able to go that day. I don't need anything else.",NEGATE_INTENT
+I want to go see a movie.,INFORM_INTENT
+"I love adventure movies a lot and I want to see one of those. Can you find me a movie like that in San Jose? Preferably IMAX too, please.",INFORM
+"Yeah, I heard of that one! Captain Marvel sounds good. What are the showtimes?",INFORM_INTENT
+I want to watch it on the 1st of this month. Are there any good showtimes at AMC Saratoga?,INFORM
+"Yeah, that sounds really good.",SELECT
+I don't want to buy them just yet. I might be busy at that time.,NEGATE_INTENT
+"No, but thank you!",NEGATE
+Look for movies shown in Martinez,INFORM
+Find other movies and any type of show,INFORM
+Missing Link is good,SELECT
+No I will not purchase now,NEGATE_INTENT
+I want to watch it today,INFORM
+sounds very good. That is all I will be needing,SELECT
+I want to find a Suspense movie to watch in Moraga.,INFORM
+Hotel Mumbai works for me.,SELECT
+Not right now. What time can I watch it at Rheem Theatre?,INFORM
+I want to see it on the 2nd.,INFORM
+"That's perfect, thanks",SELECT
+I have just finished my business meeting and have free time on my hands. Could you please help me find a movie to watch?,INFORM_INTENT
+Please search for movies showing at the Pruneyard Cinemas in Campbell.,INFORM
+I would love to watch Hellboy.,SELECT
+"No, thank you. I don't want to buy right away.",NEGATE_INTENT
+What time can I watch an imax show?,INFORM
+March 2nd would be perfect.,INFORM
+"Could you please find out the theater address, as well as the ticket price?",REQUEST
+Sounds perfect. That will be all.,SELECT
+I want to find a 3d movie.,INFORM
+I'll be in Brentwood. Could you look for movies there?,INFORM
+I think Dumbo will be the best choice.,SELECT
+Not yet. What are the times for Dumbo?,INFORM_INTENT
+We'll be ready to watch it on the 1st of March.,INFORM
+That sounds good. I will get tickets later.,SELECT
+"No, thanks. That's it for now.",NEGATE
+I am looking for a movie I can watch.,INFORM_INTENT
+I enjoy documentary movies. Are you able to look for movies showing in Morgan Hill?,INFORM
+Breakthrough sound perfect.,SELECT
+"No, not right now. What is the time that I can see it? I want to see it on the 3rd.",INFORM
+"No, that's it. Thanks very much for your help.",NEGATE
+Hi! Can you help me find a movie?,INFORM_INTENT
+I live in San Bruno.,INFORM
+I would love to see Dumbo! Can I see it this Saturday?,INFORM
+What genre is the movie? What's the theater's address?,REQUEST
+I'm not sure I can make the 1 pm showing. Is there another time the movie is showing?,REQUEST_ALTS
+"Oh, darn. No, that will be all.",NEGATE
+I'd like to find a movie to watch. I like all movies.,INFORM
+Can you help me find movies showing in Newark?,INFORM
+Breakthrough sounds great. What times were available?,INFORM_INTENT
+I'd like to watch it on the 5th.,INFORM
+How much is the ticket for?,REQUEST
+Sounds great. That's all I need for now.,SELECT
+I'd like to go somewhere in Oakland.,INFORM
+Anything else available to watch?,REQUEST_ALTS
+I'd like something else. I forgot to mention but I'm into Comic movies.,INFORM
+Stockholm sounds perfect? When can I watch it?,INFORM_INTENT
+I'd like to go on the 7th.,INFORM
+Do you know the theater's address as well as the ticket price?,REQUEST
+That sound perfect.,SELECT
+"No, thanks. That will be all for now!",NEGATE
+"Please can you look for a good movie to watch for this week end, might be in San Jose?",INFORM
+"Nope, not the hilarious nightmare movies. Please find something else.",REQUEST_ALTS
+"Do you mean the adventurous movies? Nope, Please find something else for I like all kinds if its good to watch.",INFORM
+"Yup, Little would be perfect. What time is the show? Do they have 3d shows? Will tickets be available to watch at CineLux Almaden?",INFORM
+"Probably, on March 8th.",INFORM
+I would like to know how much the ticket costs?,REQUEST
+"Can I have the correct location of the theatre? I mean, address..",REQUEST
+Perfect! Sounds nice.,SELECT
+"Nope, thanks. Done.",NEGATE
+"Hello, could you help me find a movie currently showing in Oakland?",INFORM
+Fighting with My family sounds great!,SELECT
+"No, I do not wish to reserve the tickets now.",NEGATE_INTENT
+What are the showtimes for this movie at New Parkway Theater?,INFORM
+I would like to watch it on 5th of March.,INFORM
+What genre does this movie belong to and how much does the ticket cost?,REQUEST
+"No, that's all. Thank you very much!",NEGATE
+"I want to go out to watch a movie in San Francisco, can you search for options?",INFORM
+What else is there?,REQUEST_ALTS
+Please keep searching. I'd like to see a drama at the Embarcadero Center Cinema.,INFORM
+Red Joan is perfect! What time can I see a 3d show on March 5th?,INFORM
+"How much is it, and what's the address of the theater?",REQUEST
+"Thanks a lot, that's all I need.",SELECT
+I would like to see a movie at the AMC Bay Street.,INFORM
+Please search for movies in Emeryville.,INFORM
+No. Please search for a Comic imax show.,INFORM
+What time is Missing Link playing?,INFORM_INTENT
+I would like to watch the movie Friday next week.,INFORM
+What is the ticket cost and what is the theater address?,REQUEST
+I'd like to watch a movie at Reading Cinemas Rohnert Park.,INFORM
+I'm in Rohnert Park. Please find me a scary movie.,INFORM
+"No, not at the moment. What are the available times for March 1st?",INFORM
+"Sound good. Thank you, that's all.",SELECT
+"My brother and I want to go see an adventure movie, can you help find one?",INFORM
+"Alameda is a good half way point between my brother and I , let's search there.",INFORM
+I've heard Shazam! is really good. I think we'll watch that one.,SELECT
+"No, not at this very moment.",NEGATE_INTENT
+What time is the movie playing at the Alameda Theatre & Cineplex?,INFORM
+How about tomorrow.,INFORM
+"Okay, how much do the tickets cost and can you provide me with the location of the theatre?",REQUEST
+No that is all I needed for now.,NEGATE
+find me a movie to watch please. Any show will work,INFORM
+please search Mill Valley for movies.,INFORM
+The Best of Enemies sound great.,SELECT
+No. Not right now. What are the show times?,INFORM_INTENT
+How about on the 1st.,INFORM
+Wait. How much are the tickets? Is this a Horror movie?,REQUEST
+Sounds really good.,SELECT
+No. That's all for today.,NEGATE
+Santa Rosa. Any good movies around here?,INFORM
+After sounds great.,SELECT
+"Nah, I'm not going to get them yet.",NEGATE_INTENT
+What time is After playing? I would like to see a regular show at Roxy Stadium Cinemas.,INFORM
+"Preferably, the 1st of this month.",INFORM
+Perfect. Thanks for your help.,SELECT
+"I'm planning on seeing a movie, I don't know what to watch.",INFORM_INTENT
+"Its Santa Clara, so please search for movies nearby.",INFORM
+"Not really, can you recommend me something else?",REQUEST_ALTS
+"Is there anything else, any type of movie will do.",INFORM
+"I think I will watch Missing Link, what are its showtimes?",INFORM_INTENT
+"I want to watch it at AMC Mercado, on the 4th of this month.",INFORM
+"How much are the tickets going to cost, and what is the genre of the movie?",REQUEST
+"Great, that all sounds good.",SELECT
+"No, that will be all for now, thank you.",NEGATE
+I'm interested in watching a movie.,INFORM_INTENT
+Search for movies in Vallejo.,INFORM
+"Oh, I want to watch Captain Marvel.",SELECT
+"No, not at the moment. What time is it showing?",INFORM_INTENT
+the 2nd of this month.,INFORM
+I'm looking to watch a movie.,INFORM_INTENT
+Look for movies in San Fran.,INFORM
+What else is there? I want to see an imax movie.,INFORM
+Hotel Mumbai is good. What time is it showing?,INFORM_INTENT
+The 1st of this month at Presidio Theatre.,INFORM
+How much is it? And what's the address?,REQUEST
+"No, I don't need to now.",NEGATE_INTENT
+"No, I'm good.",NEGATE
+I want to see a film.,INFORM_INTENT
+Please search for movies in San Francisco.,INFORM
+I want to watch something different like a 3D show. And I want to see it at Century San Francisco Centre.,INFORM
+The Curse of La Llorona is excellent? What time is it playing?,INFORM_INTENT
+How about Thursday next week.,INFORM
+No thank you. That's all I wanted.,NEGATE_INTENT
+I am in San Francisco.,INFORM
+I want another movie. Any theater in Moraga is fine.,INFORM
+Hotel Mumbai is a good movie.,SELECT
+Not at this time. When is the movie showing?,INFORM_INTENT
+I want to see it tomorrow.,INFORM
+Is there another time? I want to see it on the 5th of this month.,INFORM
+I am feeling bored. Is there any Fantasy movies laying?,INFORM
+I want to see the movie in San Fran.,INFORM
+Is there anything else showing?,REQUEST_ALTS
+"Yes, I would like to see Penguin Highway.",SELECT
+Not just yet.,NEGATE_INTENT
+What time is it showing?,INFORM_INTENT
+I would like to see it on the 9th of this month.,INFORM
+"Ok, fine. That would be all.",SELECT
+"I want to go out in Petaluma, can you see what movies there are?",INFORM
+Can you see what else there is? I'm in the mood for adventure films. Can you look at Boulevard Cinema?,INFORM
+"Shazam! sounds great, when is it on?",INFORM_INTENT
+The 4th of this month,INFORM
+"Yeah that sounds good. Thanks, I don't need anything else",SELECT
+"Hey, I'd like to watch a movie, can you help me?",INFORM_INTENT
+"I'm in San Jose, please find me a movie to watch around here.",INFORM
+"Breakthrough sounds great, thanks. I'd like to see it in 3D, when is it on?",INFORM
+"On the 3rd of this month, if possible.",INFORM
+That's perfect. That'll be all.,SELECT
+I'd like to look for a film to watch. I like adventure films.,INFORM
+Could you look for films shown in Napa?,INFORM
+I'd love Captain Marvel. When can I watch it? I'd like to watch a regular show.,INFORM
+I'd like to watch it on the day after tomorrow.,INFORM
+That sounds wonderful; that's all.,SELECT
+"I want to go out and see a movie, can you find a good one for me?",INFORM_INTENT
+I'm in Larkspur.,INFORM
+Auntie Mame is perfect!,SELECT
+"No, not yet. But what time will I be able to watch a regular show?",INFORM
+I want to watch it on March 7th.,INFORM
+"No, that's all for now, thanks.",NEGATE
+Can you help me to find a movie to watch?,INFORM_INTENT
+I prefer movies shown in Santa Rosa.,INFORM
+No thank you. Can you search for movies showing at Century at Tanforan in San Bruno.,INFORM
+Can you please list other movies? I'd prefer a regular show.,INFORM
+I would like to see Little. What time is the show?,INFORM_INTENT
+On the 5th please.,INFORM
+Can you get me the address of the theater and ticket price please?,REQUEST
+Wonderful thanks. That is all.,SELECT
+I want all kinds of movies,INFORM
+Find movies in San Leandro,INFORM
+Breakthrough works,SELECT
+I wanna watch at the Century Cinemas,INFORM
+I wanna see it on the 2nd,INFORM
+sounds very good,SELECT
+No thanks for the help,NEGATE
+I feel good right now and would like to watch a movie. Can you search for movies shown in San Bruno?,INFORM
+Can you search for another one? I would like to watch Century at Tanforan.,INFORM
+Little is perfect. I want to watch it.,SELECT
+"No, I don't want to purchase it right now.",NEGATE_INTENT
+What time is the movie available on Tuesday next week?,INFORM
+That's great for me.,SELECT
+No. That was all. Thank you.,NEGATE
+I want a 3d movie to watch.,INFORM
+Can you search in San Jose?,INFORM
+Find something else. Can you show what is on in Union City?,INFORM
+"Find something else, please.",REQUEST_ALTS
+Pet Sematary is perfect. What time is it on? I want to watch at Century Union Landing.,INFORM
+I want to see it this Saturday.,INFORM
+Find me movies showing around Brentwood.,INFORM
+Find me some other movies showing at AMC Brentwood.,INFORM
+No. Any other options?,REQUEST_ALTS
+Pet Sematary will be perfect!,SELECT
+No. Hold on. Maybe later.,NEGATE_INTENT
+What's the showtime for Pet Sematary on next Tuesday?,INFORM
+How much the ticket cost?,REQUEST
+Sounds good to to me.,SELECT
+No. Thank you for the help.,NEGATE
+I want to find a movie to watch?,INFORM_INTENT
+Can you search for movies in Santa Rosa.,INFORM
+Please find some other movies at Airport Stadium Cinemas.,INFORM
+Little is perfect. What time can i watch it?,INFORM_INTENT
+I want to watch 3d show on 1st of March,INFORM
+"Yes, that works for me",SELECT
+"No, I don't want now. That is all i need.",NEGATE_INTENT
+Can you recommend a movie for me to see?,INFORM_INTENT
+I want to see a movie in San Fran.,INFORM
+"I'd prefer something else, in Menlo Park, any theater.",INFORM
+Red Joan sounds great.,SELECT
+"Not now, no.",NEGATE_INTENT
+What time is the movie on?,INFORM_INTENT
+The 9th of March.,INFORM
+"Thanks, that's all.",SELECT
+I'm looking for a good movie.,INFORM_INTENT
+Look in Morgan Hill.,INFORM
+What other movies are playing?,REQUEST_ALTS
+What time later today is Pet Sematary playing?,INFORM
+"Not right now, thank you.",NEGATE_INTENT
+"I'm fine, thank you.",NEGATE
+My friends came to my house and i am in joyful mood .will you find any adventure movies to watch along with my friends?,INFORM
+find any movies which is shown in Daly City?,INFORM
+Shazam is good one.I like to watch it with my friends.,SELECT
+"No, I Don't want it now but later.",NEGATE_INTENT
+Can you tell me the time i shall able to watch that movie on 4th of March at Century Daly City?,INFORM
+Tell me about the cost of the ticket for that movie?,REQUEST
+Ok that's great and sounds good to me.,SELECT
+Find movies to watch please.,INFORM_INTENT
+I would like to watch a regular show. Please search in San Jose.,INFORM
+Oh yes! A Madea Family Funeral. I've been wanting to see this picture.,SELECT
+No. I don't want to buy any tickets.,NEGATE_INTENT
+I would like to know what time it's playing at the West Wind Capitol Drive-in?,INFORM
+Look up for 1st of March please.,INFORM
+Perfect. Thanks for your help. That will be all.,SELECT
+I want to watch a movie at Sonoma Cinema.,INFORM
+I want to find movies in Sonoma.,INFORM
+Are there any other movies? I want to watch something in 3d.,INFORM
+Shazam! sounds great! I want to watch in Tuesday next week. What times are there?,INFORM
+"No, I'll purchase later. That is all.",NEGATE_INTENT
+"I want to go out to watch a movie, can you find me some good shows in Pleasant Hill?",INFORM
+I like the sound of The Curse of La Llorona. What time can I watch it if I want to see a regular show at Century Downtown?,INFORM
+I want to watch it on 6th of this month.,INFORM
+That sounds good. That's all I need for now.,SELECT
+Can you find me a movie to see?,INFORM_INTENT
+Find me movies in Morgan Hill.,INFORM
+Find me something else like a regular show.,INFORM
+Shazam! works for me.,SELECT
+"No, now right now. I want to see it at CineLux Tennant Station on the 4th of this month. What time is it playing then?",INFORM
+I am in a mood to watch some movie.,INFORM_INTENT
+Show me movies in Santa Clara. I would prefer a regular show.,INFORM
+I think Dumbo sounds great. What are the timings for it and I want to see it on the 1st.,INFORM
+OK. That is all.,SELECT
+I'd like a location in San Ramon.,INFORM
+Anything else available?,REQUEST_ALTS
+I'd like a Ghost movie. Can you find anything else?,INFORM
+The Curse of La Llorona sounds awesome!,SELECT
+Do you know screening times for this movie for Saturday this week.,INFORM
+Any other showtimes? I'd prefer watching it in 3d at Regal Crow Canyon.,INFORM
+Perfect. Do you know the theater's address?,REQUEST
+Can you please tell me the ticket price?,REQUEST
+That's perfect. That will be all for now!,SELECT
+"Hey, can you help me find a movie theater?",INFORM_INTENT
+Could you look in Union City?,INFORM
+Captain Marvel works. What are the times?,INFORM_INTENT
+It will be on the 7th of this month.,INFORM
+I am in Alameda.,INFORM
+What are the other options?,REQUEST_ALTS
+Missing Link sounds good. What time is it on at?,INFORM_INTENT
+March 2nd please.,INFORM
+How much is the ticket and what genre is the movie?,REQUEST
+No not right now. That is everything for now thanks.,NEGATE_INTENT
+I would like to see a Fantasy movie.,INFORM
+I want to see a movie in Mountain View.,INFORM
+I would like to see Dumbo. What time is it showing at ShowPlace ICON?,INFORM
+Any time on the 1st of March,INFORM
+That would be awesome.,SELECT
+No. You have already been helpful.,NEGATE
+My friend and I are looking for a movie to go to. What movies are showing in San Rafael?,INFORM
+"Oh, I forgot about Captain Marvel. That one would be perfect.",SELECT
+"No, I am not going to purchase a ticket yet.",NEGATE_INTENT
+"Actually, what time is the movie. I want to see it in an imax theater.",INFORM
+I am hoping to go on the 1st of March.,INFORM
+"Alright, how much is that ticket?",REQUEST
+What type of movie is Captain Marvel? I just want to make sure it is the one I had in mind.,REQUEST
+"OK, I think that is the right one. That's all I need today.",SELECT
+I am looking for movies being show in San Jose.,INFORM
+"No, find some other movies.",REQUEST_ALTS
+"No, find some other movies. Search for movies being shown in Santa Rosa instead. Any type of movie is fine.",INFORM
+I want to watch How to Train Your Dragon: The Hidden World.,SELECT
+"No, I do not want to purchase tickets right now?",NEGATE_INTENT
+What time can I watch it on March 2nd at 3rd Street Cinema.,INFORM
+I would like to find a movie to watch in Sonoma.,INFORM
+Shazam would be great. What time is it showing?,INFORM_INTENT
+I want to watch a 3d showing of it on the 5th of March.,INFORM
+Where's the theater at? And how much is it?,REQUEST
+"No, I don't want to buy them right now.",NEGATE_INTENT
+"Nope, that'll be all. Thanks again!",NEGATE
+I wanna see movies to watch,INFORM_INTENT
+search for movies shown in SFO,INFORM
+Ash Is Purest White is good,SELECT
+I would like to see it tomorrow,INFORM
+I wanna see Embarcadero Center Cinema and in imax,INFORM
+what is the ticket cost?,REQUEST
+I'd like to search for a fun film to watch.,INFORM_INTENT
+Could you find films shown in San Ramon for me?,INFORM
+Please look for other films. I would like to watch at The Lot City Center.,INFORM
+Little is the one for me. When can I watch it? I'd like to watch it today.,INFORM
+That sounds perfect for me.,SELECT
+"Nah, I don't feel like buying right now. That's all.",NEGATE_INTENT
+I want to go to the movies. Is there something in theaters in Newark?,INFORM
+Are there other movies playing?,REQUEST_ALTS
+What are the show times of Missing Link?,INFORM_INTENT
+I want to go the 1st of this month.,INFORM
+Do you know the price of the ticket? Where is that theater?,REQUEST
+Around SFO would be good.,INFORM
+Body Double sounds good. What time is it showing on the 15th of March at the Alamo Drafthouse Cinema,INFORM
+Whis is the price of the ticket and where is it located at?,REQUEST
+Thanks that will be all.,SELECT
+"Hi there, could you help me find a nice movie to watch?",INFORM_INTENT
+Could you help search for movies shown in Livermore?,INFORM
+Could you help find movies of the Adventure genre?,INFORM
+"No, I do not intend to purchase the tickets now.",NEGATE_INTENT
+What are the available showtimes for this movie?,INFORM_INTENT
+I would like to watch it on the 2nd.,INFORM
+That sounds amazing!,SELECT
+"No, thank you for your help!",NEGATE
+I would like to find the movie at AMC Mercado,INFORM
+In Santa Clara and would like to watch a regular show.,INFORM
+Can you fin another movie.,INFORM
+Dumbo is good what time can I watch it?,INFORM_INTENT
+On Saturday this week.,INFORM
+"Yes, that is good.",SELECT
+"No, thank you for the information.",NEGATE_INTENT
+I have a lot of leisure time and i am going to make use of it. Will you find a movie to watch? Actually i like Drama kind of movies,INFORM
+Is it possible to check for movies shown in Albany? I need to watch a regular show.,INFORM
+Ok Red Joan is perfect. Please tell the time to watch it. I prefer the date is on the 5th,INFORM
+ok that's all i needed.,SELECT
+"No, I don't want . Thanks a lot for you kind help.",NEGATE_INTENT
+I think I'd like to see a movie.,INFORM_INTENT
+I'd like to go to the AMC NewPark.  Can you tell me what movies are showing in Newark?,INFORM
+I want to see Captain Marvel.  Are tickets available on the 3rd?  I'd rather see it in 3d.,INFORM
+I think I'll hold off.,NEGATE_INTENT
+"Not now, thanks.",NEGATE
+Can you recommend a movie to watch?,INFORM_INTENT
+I am in the Santa Clara area.,INFORM
+What time does Hotel Mumbai play at AMC Mercado IMAX?,INFORM
+I want to go see it today.,INFORM
+Thank you that is all I need.,SELECT
+What movies are there to watch?,INFORM_INTENT
+At the Concord area. I want to watch an Adventure movie at the Veranda Luxe Cinema. ,INFORM
+What time is Shazam! showing?,INFORM_INTENT
+Sometime on the 6th of this month. ,INFORM
+Is there another time?,REQUEST_ALTS
+"No, thanks. ",NEGATE
+I've always been interested in edwards fairfield. are there any biographical movies showing?,INFORM
+Can you do a search for any movies in fairfield?,INFORM
+Breakthrough sounds like a winner to me!,SELECT
+"No, don't purchase them now. When are the showtimes?",INFORM_INTENT
+The 2nd of March would be great and if you could book a regular show that would be even better!,INFORM
+"Sounds like a plan, and thanks for your assistance!",SELECT
+I'm searching for a movie to watch at Century at Pacific Commons.,INFORM
+I'm specifically looking for movies in Fremont. ,INFORM
+"I'm interested in Hotel Mumbai, thanks. What are the times this movie is available? I'd like to watch a regular show. ",INFORM
+"Tomorrow would be great, thanks. ",INFORM
+"Awesome. What will a ticket cost me? Also, what's this movie about?",REQUEST
+You've been very helpful. Thanks.,SELECT
+I would like to watch a movie in 3d from the Drama movie genre that I like.,INFORM
+Could you find me movies in Menlo Park?,INFORM
+Red Joan sounds good to me.,SELECT
+"No, I will hold off on buying them. What times is it playing?",INFORM_INTENT
+I think I would like to see it on March 9th.,INFORM
+Alright. What is the address and how much does the ticket cost?,REQUEST
+That sounds great. That is all I need help with today.,SELECT
+I want to find a movie to watch at Edwards Fairfield.,INFORM
+Please search for movies shown in Fairfield.,INFORM
+Are any other movies playing?,REQUEST_ALTS
+I want to watch The Curse of La Llorona.  What time is an imax show available on March 1st?,INFORM
+Can you suggest any movies?,INFORM_INTENT
+Can you search for movies at Stanford Theatre around Palo Alto?,INFORM
+Pillow talk sounds good to me.,SELECT
+I don't want any tickets right now. What time is the movie showing?,INFORM_INTENT
+How about the 5th of this month?,INFORM
+What type of movie is this?,REQUEST
+That sounds like a plan.,SELECT
+No that's all for now. Thanks for your help. ,NEGATE
+I would like to watch a Biographical movie near Morgan Hill.,INFORM
+Breakthrough sounds perfect.,SELECT
+"No, not now. I want to watch it at regular show times at CineLux Tennant Station. What time can I watch it?",INFORM
+This Sunday.,INFORM
+"Sounds good thank you, that's all I need.",SELECT
+"Hi, I want to find a movie to watch this weekend. ",INFORM_INTENT
+I like crime movies. Can you search for movies shown in San Francisco?,INFORM
+What times do they have available for me to watch it? I want to watch it This Saturday. I want to watch a Imax Show. ,INFORM
+Sure that will work for me . What is the address of the theater?,REQUEST
+Sounds good. That is all I need thank you very much. ,SELECT
+I want to watch it at Century at Hayward. ,INFORM
+I like Missing Link.,SELECT
+What times could I watch it? Are there any imax shows?,INFORM
+I want to watch it this Saturday.,INFORM
+Thank you. That is all.,SELECT
+I really enjoy Biographical movies and was thinking of watching Century at Hayward.,INFORM
+"I think Breakthrough is perfect, good choice.",SELECT
+"No. I would like to watch it on the 7th, and nothing fancy a regular show please.",INFORM
+Sounds good,SELECT
+Can you find me an IMAX showing of a comedy movie?,INFORM
+"Search for movies in the San Francisco Area, specifically at the Balboa Theatre.",INFORM
+Josie and the Pussycats would be perfect. I want to see it.,SELECT
+No. I will buy the tickets later.,NEGATE_INTENT
+"I want to watch the movie on 15th of March, are there any timing available on that day?",INFORM
+That will work.,SELECT
+"I'd like to see a Fantasy movie, what is playing at Contra Costa in Martinez?",INFORM
+Dumbo sounds great!,SELECT
+I was thinking a regular showing on March 8th would be good. ,INFORM
+Sounds good. That's all I need. ,SELECT
+I was thinking about seeing a 3d movie at the Lark Theater. Can you search for the movies playing in Larkspur right now?,INFORM
+"The Invisibles sounds great, what time is it playing?",INFORM_INTENT
+I want to see it Friday next week.,INFORM
+"Sounds good, that's all the information I need.",SELECT
+I want to find Animation movies that are 3d showing in Santa Rosa tonight.,INFORM
+How to Train your Dragon: The Hidden World will work. ,SELECT
+No not now.,NEGATE_INTENT
+What times do they show?,INFORM_INTENT
+Tomorrow please.,INFORM
+"Are there other times?
+",REQUEST_ALTS
+I'm looking for a comedy to watch in San Jose at the AMC Saratoga. What movies are available?,INFORM
+Missing Link sounds good.,SELECT
+"No thanks, I will buy tickets later.",NEGATE_INTENT
+What are the showtimes for Missing Link?,INFORM_INTENT
+I want to go on the 2nd of March.,INFORM
+I'm good. Thanks for the help.,NEGATE
+"Hey, could you please find me regular movie tickets for Friday next week at 22:45?",INFORM
+"I'd like three tickets, please.",INFORM
+Please search for IT two in Milpitas.,INFORM
+"Yes, that is correct.",AFFIRM
+Thank you very much. You've been very helpful.,THANK_YOU
+No. Thank you very much. You've been very helpful.,NEGATE
+I am looking to purchase movie tickets.,INFORM_INTENT
+I would like to watch an imax show on the 5th of this month. I want 1 ticket.,INFORM
+I want to watch Hustlers in Livermore at ten in the night.,INFORM
+"Yes, that is all correct.",AFFIRM
+How much was the ticket?,REQUEST
+"Thank you for your help, that is all I need.",THANK_YOU
+Can you get me one ticket to the movie Hobbs and Shaw in San Leandro?,INFORM
+Can you find me an imax show on the 6th of this month at night 10:30?,INFORM
+No. That'll be all.,NEGATE
+Hey. Can you help me purchase two movie tickets to a showing Wednesday next week in Santa Rosa?,INFORM
+I would like to see a regular showing of Hustlers. Look for something in Livermore around 21:45.,INFORM
+"Yes, confirmed. What genre is Hustlers?",REQUEST
+"Awesome, thank you for your help.",THANK_YOU
+"Yes, that will be all for now.",NEGATE
+I wish to purchase movie tickets to watch it on Wednesday next week.,INFORM
+I wish to see a 3d show.,INFORM
+I wish to see The Lord of the Rings at evening 6.,INFORM
+I wish to see movies depicted in Livermore and I need one ticket.,INFORM
+It is good.,AFFIRM
+Please try again. I wish to see a imax show at 6:15 in the evening.,INFORM
+It is good. What is the name of the theater and their address?,REQUEST
+Thank you very much for your help. That is what I want.,THANK_YOU
+Can you help me to buy movie tickets?,INFORM_INTENT
+I'd like 4 tickets to watch the show at nine pm.,INFORM
+I'd like to watch IT2 in imax.,INFORM
+Find me shows for the 8th in Campbell.,INFORM
+That's right. What type of movie is it and how much does the ticket cost?,REQUEST
+Thank you very much for the assistance. That's all I need for now.,THANK_YOU
+I would like 1 ticket to see a 3D movie called Ad Astra.,INFORM
+"I would like the 16th of March, in San Francisco at seven pm.",INFORM
+"Yes, what is the address of the theater ans price of ticket?",REQUEST
+"Great, thank you.",THANK_YOU
+I want to watch a movie and I need your help to purchase the tickets for the movie.,INFORM_INTENT
+I need to buy it in Pittsburg.,INFORM
+I need the tickets for regular show for the movie Overcomer on 2nd of March.,INFORM
+Buy 1 ticket for the show time night 10.,INFORM
+"Yes, confirmed.",AFFIRM
+Thanks and that's all.,THANK_YOU
+Can you get me tickets to watch the movie Good Boys on the 9th of this month?,INFORM
+I'd like four tickets to the regular show t half past 9 in the night.,INFORM
+In Santa Rosa please.,INFORM
+Sounds perfect to me.,AFFIRM
+What is the genre of the movie? Can you get me the address of the theater?,REQUEST
+Thank you for the assistance. That's all I need for now.,THANK_YOU
+Search please some movies shown in Newark on Wednesday next week because I want to buy tickets.,INFORM
+Imax show will be perfect.,INFORM
+Hustlers will be perfect for four people at 22:15.,INFORM
+Yes is perfect for me.,AFFIRM
+Thank you.That is all for now.,THANK_YOU
+Please get me tickets to the movie Official Secrets.,INFORM
+I just want one ticket to a regular show on 4th of March.,INFORM
+I need Santa Rosa at 8:15 in the night.,INFORM
+"Fine, that works.",REQUEST
+"Fine, what kind of movie is it? How much must I pay?",REQUEST
+"Wow, great. Thank you.",THANK_YOU
+"Hi, I'm wanting to see a movie. I want something at 8:30 pm.",INFORM
+Just regular please.,INFORM
+I want IT two. I need 4 for the Brentwood theatre.,INFORM
+I want tickets for March 7th.,INFORM
+That's a go.,AFFIRM
+What style movie is this?,REQUEST
+What is the street address?,REQUEST
+Thanks that's a real load off.,THANK_YOU
+I want to watch the regular showing of Ad Astra tonight. I want to watch the showing at night 9 pm-ish,INFORM
+"I want to watch on the night of the 16th of March, and I only need one ticket in San Jose",INFORM
+Yes that's all correct,AFFIRM
+"No it's ok for now, thanks though",NEGATE
+I am looking to book movie tickets.,INFORM_INTENT
+I would like to watch the show at 10:30 pm.,INFORM
+I want one ticket for Saturday this week.,INFORM
+I want to watch a regular show of Angel Has Fallen shown in Concord.,INFORM
+No. I would like to book 2 tickets in Newark.,INFORM
+"Yes, That sounds perfect.",AFFIRM
+Okay. Thank you so much!,THANK_YOU
+No. That will be all. Thank you!,NEGATE
+"I would like to buy a movie ticket in San Jose at 11 o""clock in the night.",INFORM
+I want to book three tickets for regular show.,INFORM
+I want to want Angel has fallen on day after tomorrow.,INFORM
+Yes. This sounds good.,AFFIRM
+No. Thanks for all your help.,NEGATE
+I would like to buy some movie tickets.,INFORM_INTENT
+I want to go half past 6 in the evening to see the show.,INFORM
+I want to watch the imax on the 9th to watch The Lord of the Rings three.,INFORM
+I want to watch the movie in Santa Rosa. Can you check there?,INFORM
+I only need 1 ticket for the movie.,INFORM
+Yes. Which theatre is bes.,REQUEST
+Can you tell me the cost of the movie and what kind of movie is it?,REQUEST
+Thanks for everything.,THANK_YOU
+I'm looking for two movie tickets for Good Boys.,INFORM
+I want to see the a regular show in Milpitas.,INFORM
+I want to see IT Chapter Two on the 7th of March.,INFORM
+I want to see it at eleven pm.,INFORM
+"Yes, that sounds good. What theatre is the movie at?",REQUEST
+What is the address of the theatre and how much are the tickets?,REQUEST
+Thank you!,THANK_YOU
+I'd like to get movie tickets to go watch After The Wedding.,INFORM
+I would like to see a regular show on March 10th in the San Jose area.,INFORM
+I think I'd like to get 1 ticket for the evening 7:30 pm showing.,INFORM
+"That's right, good deal.",AFFIRM
+Please give it a go again and look in San Francisco. I'd like a showing at 6:30 in the evening for Fiddler: A Miracle of Miracles.,INFORM
+"Yep, that is correct.",AFFIRM
+I really thank you for your help.,THANK_YOU
+"No, that's it and thanks.",NEGATE
+Hello! I'm interested in seeing a movie. Can you help me get tickets?,INFORM_INTENT
+I'd like 1 regular movie ticket for a show this Sunday.,INFORM
+I'd like to find a showing of Brittany Runs a Marathon in San Francisco.,INFORM
+I'm interested in 3d shows at 6:45 in the evening. You can search in Palo Alto as well.,INFORM
+"No, I'm sorry. I need to make that 2 tickets for March 9th.",INFORM
+Great. Thanks for the assistance.,THANK_YOU
+"Hey, I'd like to buy some movie tickets.",INFORM_INTENT
+Can you find a regular show at around 2:30 in the afternoon?,INFORM
+Find tickets for the movie Farewell.,INFORM
+I'm going on a date so I will need two tickets please.,INFORM
+Can you search for something in Santa Clara on the 1st of march.,INFORM
+No. Thanks for trying.,NEGATE
+I have an extra day off work and want to go see a movie. Can you buy me a ticket?,INFORM_INTENT
+I'd like to see an imax show actually.,INFORM
+I'd like to see Chhichhore in Santa Clara. Just one ticket is good.,INFORM
+This would be Tuesday next week.,INFORM
+"Yes, I'd like to go at 22:30 if possible.",INFORM
+"Yes, that's right. What kind of movie is it and how much is the ticket?",REQUEST
+"No, that's all. Thanks anyways.",NEGATE
+"I need movie tickets for Toy Story Four, now please.",INFORM
+I need it in Union City at 11 in the night. I need four tickets.,INFORM
+"Regular, please.",INFORM
+I want today.,INFORM
+"Yes, that's it.",AFFIRM
+Can you try again? But I want Angel Has Fallen at quarter past 10 in the night.,INFORM
+"Yes, what's the address? What's a good one?",REQUEST
+Thanks for that.,THANK_YOU
+"Hi, i need a help, i had like to buy movie tickets, could you help me?",INFORM_INTENT
+I want three tickets,INFORM
+I need to watch it on 1st of March at night 10:15.,INFORM
+i am interested to watch a regular show,INFORM
+I need to watch 47 Meters Down,INFORM
+Search for movies in San Jose,INFORM
+"yes, it seems good for me. give me their address?",REQUEST
+"Okay, Thank you, Please tell me the ticket cost and Which theater do you prefer for me?",REQUEST
+"Okay, thank you for your great help",THANK_YOU
+"I will need 2 tickets, please.",INFORM
+I would like 1 ticket for IT Chapter Two in Union City on the 3rd of this month.,INFORM
+I prefer a regular showing. Please get a ticket for the showing at 11 in the night.,INFORM
+"Yes, that all sounds correct.",AFFIRM
+"No, I'm all set, thank you.",NEGATE
+Can you buy me some movie tickets?,INFORM_INTENT
+Find me movies in San Francisco.,INFORM
+"I need just one ticket, and a showing at 21:15 would be perfect.",INFORM
+Yes. I'd like to see This Is Not Berlin.,INFORM
+"I'd like just a regular show, and something on the 4th of this month would be best.",INFORM
+"Yes, that is exactly what I would like. Confirmed.",AFFIRM
+"Umm, no. I need to figure this out. I'll let you know if I need anything further.",NEGATE
+Can you find me seats for Once Upon a Time In Hollywood?,INFORM
+I would prefer to see it around 10:30 in the night.,INFORM
+"The date would be March 4th, just a regular show is find, some kind of movie around San Ramon would do.",INFORM
+Just two of us.,INFORM
+"Super, what genre is that movie considered? Can I get the address of the place?",REQUEST
+Thanks a bunch for your assistance.,THANK_YOU
+"No, you've done enough thanks.",NEGATE
+I want to watch a movie. I would like to buy movie tickets.,INFORM_INTENT
+I would like four tickets to IT2 on March 3rd in Mountain View.,INFORM
+Let's make that a regular showing at 22:45.,INFORM
+"Actually, you know what, I changed my mind. I think I want to watch Hustlers in Santa Clara, can you search there please?",INFORM
+"Yes, that sounds good.",AFFIRM
+How much were the tickets? What is the address of the movie theater?,REQUEST
+"Thank you for you help, that's all I need now.",THANK_YOU
+I would love to buy some movie tickets please,INFORM_INTENT
+"I want to catch a night showing, maybe around quarter to 7 in the evening?",INFORM
+It's gonna be 3 of us,INFORM
+"I wanna watch IT Chapter Two on the 7th, preferably in Mill Valley",INFORM
+A regular one is fine for us,INFORM
+Yes please. What theater is good? And what would the address of that theater be?,REQUEST
+"OK, thanks so much, that's all for now then",THANK_YOU
+"I'm interested in getting 2 movie tickets please, something for a regular show.",INFORM
+"I want to see something on Wednesday next week, around ten pm or so. And I'm in San Rafael.",INFORM
+"Yeah, I want to see Hustlers.",INFORM
+"Perfect, thanks so much.",AFFIRM
+Let's try that ticket purchase again please. How about a 10:45 pm imax show?,INFORM
+"Whoops, let's make that next Friday instead. And I think I want to go in Santa Clara.",INFORM
+"Excellent, thanks for that.",AFFIRM
+"I appreciate your help, thank you.",THANK_YOU
+"Not right now, you did it all!",NEGATE
+Please help me buy a movie tickets.,INFORM_INTENT
+I want 2 tickets at 11 in the night.,INFORM
+I like Brittany Runs a Marathon.,INFORM
+"Please find movies shown in Redwood CIty on the 2nd, I want a regular show.",INFORM
+"No, please search movies shown in Palo Alto at evening 7:15.",INFORM
+"No, I want Stage Door.",INFORM
+"Yes, how much is the ticket and what is the address of the theater?",REQUEST
+Thank you.,THANK_YOU
+I am in the mood to go to the movie theater. I would like to purchase tickets in advance.,INFORM_INTENT
+I would like to go to a theater in Mill Valley. I only need one ticket.,INFORM
+I was hoping to see IT2. A regular show would be fine.,INFORM
+I am thinking the 2nd of March would be a good day.,INFORM
+"Yes, thanks for asking. I would like to visit at 6:45 in the evening.",INFORM
+You are one hundred percent correct.,AFFIRM
+I don't need anything else. Thank you so much.,THANK_YOU
+I'm looking for some 3d movie tickets in San Jose.,INFORM
+I need 1 ticket for a movie at 8:15 pm.,INFORM
+I want to see it on the 5th of March.,INFORM
+I want to watch The Load.,INFORM
+"Hey, can you help me get movie tickets to IT Chapter Two.",INFORM
+Only 1 ticket.,INFORM
+I want to go on March 6th. And I'm located in San Jose.,INFORM
+I think an imax showing would be cool. And I want to see it at the evening 7:45. Also can you look for shows on the 1st in San Ramon?,INFORM
+"Wait, no. Can I actually do 3d.",INFORM
+"Yes, that's good. Is there a theater that you recommend? And what's the address for it?",REQUEST
+Thanks for all the assistance.,THANK_YOU
+"Nope, thanks again.",NEGATE
+I would like to buy a movie ticket in Concord on the 9th for four people.,INFORM
+I would like to watch Hustlers.,INFORM
+I want to watch in a imax show at 9:30 in the night.,INFORM
+Yes. That's sounds good.,AFFIRM
+Thanks for all your help. That's all I needed for now.,THANK_YOU
+I want to go out this evening. How about some tickets to see a movie at quarter past 6 in the evening?,INFORM
+I want to see Luce at Oakland on the 2nd of March.,INFORM
+A regular show would be ok.,INFORM
+Just 1 would be needed.,INFORM
+"Yes, that would be fine.",AFFIRM
+Thanks a lot.,THANK_YOU
+No. I am good.,NEGATE
+I want to purchase film tickets to a regular movie. Could you look for films playing in Santa Clara?,INFORM
+I'd like to view it on March 9th.,INFORM
+I desire 1 ticket.,INFORM
+I'd like to see Hustlers.,INFORM
+I'd like to see the film at 11 in the night.,INFORM
+"Yeah, that's perfect for me. What type of film is it, and where is the theater located?",REQUEST
+"Can you attempt to buy again? I'd like to watch it at Walnut creek on next Tuesday, during night 9:45.",INFORM
+"Yeah, that's right.",AFFIRM
+Thank you for your assistance; that's all.,THANK_YOU
+Hey can you buy movie tickets for me?,INFORM_INTENT
+I want to watch The Farewell in 3d,INFORM
+I'm going on a date so I need 2 tickets on Saturday this week in SF,INFORM
+Our date is gonna be at night so maybe at quarter to 7 in the evening?,INFORM
+"Yes that's perfect, what's the theater address so I can find it?",REQUEST
+Thanks for doing that,THANK_YOU
+"No, for now you've done what I need, thanks for that",NEGATE
+Can you buy me movie tickets for movie shown in Rohnert Park?,INFORM
+I want 2 tickets for the show on March 1st.,INFORM
+I would like to watch Good Boys.,INFORM
+I would like to watch it at night 9:45.,INFORM
+I prefer imax show.,INFORM
+"Yes, That is correct. Can you find me the address of the theater and the cost of the ticket?",REQUEST
+Thank you so much!,THANK_YOU
+I'm ready to buy movie tickets.,INFORM_INTENT
+I need one ticket to a regular show.,INFORM
+I want to see Hustlers in Brentwood at 7:30 pm.,INFORM
+On the 3rd of this month.,INFORM
+"Yes, that will be great.",AFFIRM
+Could you try March 4th at 10:30 pm in Santa Clara.,INFORM
+"Yes, that will be perfect.",AFFIRM
+Thanks for everything! That is all I need.,THANK_YOU
+I'm looking to buy tickets to see a movie.,INFORM_INTENT
+Just 1 ticket please.,INFORM
+"Just a regular show, nothing special.",INFORM
+I want to watch Good Boys at 22:00.,INFORM
+Please find movies in Santa Rosa on March 2nd.,INFORM
+Yes that's correct.,AFFIRM
+No that's all for now thanks.,NEGATE
+"I was thinking about going to the cinema, I need three tickets.",INFORM
+A regular show is just fine. The movie is Good Boys and the date is the 5th of this month.,INFORM
+Nine pm.,INFORM
+Brentwood please.,INFORM
+That's absolutely correct.,AFFIRM
+Great! You helped me a lot! Bye!,THANK_YOU
+I find boring myself to proceed in my routine life. i need a break so i plan to watch movies. will you buy movie tickets. i like to watch the show at 7 pm.,INFORM
+I like to watch The Lord of the Rings three and i need it on 6th of this month.,INFORM
+I need 1 tickets that should be a imax show.,INFORM
+i need to watch at IT2. Will you search for movies that shown in Mill Valley?,INFORM
+ok that sounds good. Which theater the movie is?,REQUEST
+ok. thanks a lot for your help. thats all i need.,THANK_YOU
+"Hi, could you help me find some nice Action movies to watch please?",INFORM
+A show in Danville will be great.,INFORM
+Saaho sounds great! Could you get me the tickets please?,INFORM_INTENT
+Likely at 6:30 pm.,INFORM
+Four tickets for later today please.,INFORM
+An IMAX show will be great!,INFORM
+That sounds great! Which theater will that be at?,REQUEST
+"Sure, that is all I need. Thank you!",THANK_YOU
+Are there any Cartoon movies showing at imax in Union City?,INFORM
+"Hey Toy Story 4, that is the one I've been wanting to see, get me tickets for it please.",INFORM_INTENT
+There will be two of us.,INFORM
+If I had my rathers I'd like the tickets for Wednesday next week for a 10:15 in the night showing.,INFORM
+You got it.,AFFIRM
+I really do thank you for your help.,THANK_YOU
+No not at the moment thank you though.,NEGATE
+I want to spend my free time by watching a nice Movie like the one with Dramatic Story. Can you find something for me and I want to watch it at Century 20 Oakridge and XD.,INFORM
+Search it in San Jose.,INFORM
+I prefer to go with Brittany Runs a Marathon.,SELECT
+"Yes, I want the same and please book 2 tickets on the 4th for a 3D show.",AFFIRM_INTENT
+Book the show at ten pm.,INFORM
+That is okay to proceed. Also I want to know the address and cost details.,REQUEST
+Please try for some other time like half past 10 in the night on March 5th for a regular show.,INFORM
+That is confirmed to proceed.,AFFIRM
+Nothing for now and thanks.,NEGATE
+Search for me movies shown in Napa.I would like to watch at Century Napa Valley and XD.,INFORM
+Find me something else.I want to watch a regular show.,INFORM
+The Angry Birds Movie 2 is very good.Buy for me tickets please.,INFORM_INTENT
+At 22:15 will be okay.,INFORM
+Three tickets will be great.,INFORM
+I want four tickets for tomorrow.,INFORM
+Yeah that's good.,AFFIRM
+What is the ticket price?,REQUEST
+Tell me the address of the theater and what kind of movie is it?,REQUEST
+Thanks for helping me.,THANK_YOU
+No thank you a lot.,NEGATE
+"I am interested in seeing an Imax show, preferrably a cartoon movie. Would you search for this in Santa Rosa?",INFORM
+I would love to see Toy Story Four and would like to buy tickets.,INFORM_INTENT
+I am interested in seeing the movie on the 4th at the quarter to 5 in the evening show and would lke 3 tickets.,INFORM
+"Yes, that is right. What is the ticket price?",REQUEST
+Would you please try purchasing the tickets again but for 1 ticket to the quarter past 4 in the evening movie later today?,INFORM
+That is correct.,AFFIRM
+Thank you for your assistance.,THANK_YOU
+Not at this time. Thank you for your assistance.,NEGATE
+Can you find me a regular movie show that I can watch in Santa Rosa?,INFORM
+I think After the Wedding would be perfect. Can you get me three tickets for the 4:30 pm show on March 10th?,INFORM
+"Yes, that's right. Which is the preferred theater?",REQUEST
+Can you check whether tickets are available for the show at quarter to 4 in the afternoon on March 7th?,INFORM
+That's correct.,AFFIRM
+Thank you. That's all I need for now.,THANK_YOU
+I have some free time and I want to relax on that time. Can you search for some nice movies to watch?,INFORM_INTENT
+I want to search for the movies in Mountain View.,INFORM
+I think I will go with Hobbs and Shaw. Do you buy the tickets for me?,INFORM_INTENT
+Make it on 2nd of this month.,INFORM
+Book it for one person at ten in the night.,INFORM
+"No, regular show is enough to me.",INFORM
+That is perfect. please go ahead. What is the name of the theater that you have booked the show for me?,REQUEST
+"No, that is okay. Thanks.",NEGATE
+Find me a movie to watch.,INFORM_INTENT
+Find movies in Larkspur. I would like a 3d show.,INFORM
+Find me something else.,REQUEST_ALTS
+Farewell is perfect. I want movie tickets.,INFORM_INTENT
+I'd like to watch it on 7th of this month. I need two tickets.,INFORM
+I want to watch the show at afternoon 3:30,INFORM
+"No, but thanks for helping.",NEGATE
+I'd like to find a movie to watch. Would you find me movies in Santa Rosa? A regular show would be good.,INFORM
+Good Boys is excellent. I'd lik to buy four movie tickets for 9:15 pm.,INFORM
+I'd like to watch it on Tuesday next week.,INFORM
+What sort of movie is it and which theater is best?,REQUEST
+Thanks for helping.,THANK_YOU
+Can you find me a movie to watch at a Regal Jack London theater in Oakland? It should be a regular show.,INFORM
+"I would like to buy tickets to IT two, it sounds perfect.",INFORM_INTENT
+Reserve 2 tickets for the movie at 21:45 for next Thursday.,INFORM
+"That is all correct, what is the address of the theater?",REQUEST
+"Quick question, what genre is this movie classified as?",REQUEST
+"Great, thanks for the help?",THANK_YOU
+"That is all, once again thanks for the help.",NEGATE
+I want to find a movie in Campbell.,INFORM
+Can you find some other movies? Find something at the Balboa Theatre in SFO.,INFORM
+Official Secrets sounds prefect.,SELECT
+"Yes, I would like to buy them now.",AFFIRM_INTENT
+A regular show.,INFORM
+I need 2 tickets for the 2:30 pm show on March 10th.,INFORM
+"Yes, that sounds good. How much will this cost? Can you get me the address of the theater?",REQUEST
+Thanks for your help.,THANK_YOU
+I'm looking for a movie to go see.,INFORM_INTENT
+Try Healdsburg please.,INFORM
+IT2 sounds great.,SELECT
+Yes. Please book for Saturday this week.,AFFIRM_INTENT
+A regular show is fine. I need one ticket for 7:45 pm.,INFORM
+Actually can you make that a 3d showing for later today?,INFORM
+Yes and please give me their address.,REQUEST
+Thanks so much!,THANK_YOU
+No. That will be all.,NEGATE
+"My friends want to go see a movie, can you help?",INFORM_INTENT
+Can you start your search by looking for Eccentric Story movies in the San Fran area?,INFORM
+Once Upon a Time In Hollywood sounds great.,SELECT
+"Yes, let's go ahead and purchase them now before they sell out.",AFFIRM_INTENT
+I will need three tickets for the 8:15 pm show if available.,INFORM
+I think we would all much prefer the 3d show.,INFORM
+The March 2nd show I think will be the best option.,INFORM
+"Yes, all the information you have is correct. What theater would you suggest and how much will the tickets cost?",REQUEST
+"Great, you've been an amazing help, thank you.",THANK_YOU
+Can you find me a movie to watch in Berkeley?,INFORM
+"Oh great, I want to watch A Faithful Man!",SELECT
+"Yes, get me one ticket for next Tuesday",AFFIRM_INTENT
+I want to watch the 21:15 imax please,INFORM
+Yes that's correct,AFFIRM
+No for now it's OK,NEGATE
+I would like to find a movie I can watch.,INFORM_INTENT
+Can you look for movies showing in Healdsburg?,INFORM
+"IT two sounds perfect for me, please buy me tickets for it.",INFORM_INTENT
+I would like to see an imax show tomorrow and I would like two tickets.,INFORM
+I would like to see the show at half past 8 in the night.,INFORM
+Yes that sounds fine.,AFFIRM
+Thanks very much for your help. That's all I needed help with.,THANK_YOU
+I would liek to watch a Scientific fiction in San Bruno at Century at Tanforan and XD.,INFORM
+Ad Astra is a good movie.,SELECT
+"Yes, I would like to buy tickets.",AFFIRM_INTENT
+I would like two tickets.,INFORM
+I would like to go on the 10th at 11:30 in the night.,INFORM
+I would like a regular show.,INFORM
+How much are the tickets and what is the address?,REQUEST
+My cable is messing up so can you help me find a movie to watch?,INFORM_INTENT
+"Somewhere close to home so I don't have to drive far would be great, start with Brentwood.",INFORM
+"Yes, I've heard great things about Ad Astra, let's purchase those tickets.",INFORM_INTENT
+"I prefer a regular show, playing at 7:45 pm, on the 16th.",INFORM
+"It will only be me, so 1 is fine.",INFORM
+"Yes, everything you have have is correct.",AFFIRM
+"Thanks for helping, I appreciate it.",THANK_YOU
+"Nope, that will be all for now but thanks for asking.",NEGATE
+"Hi, could you get me a regular Imaginative fiction movie in Hayward please?",INFORM
+Ad Astra sounds great to me! Could you help me purchase the tickets please?,INFORM_INTENT
+I will need 3 tickets for the 9:45 pm movie on the 10th of this month.,INFORM
+"That is fine with me, may I have their address please?",REQUEST
+"I see, that is all I need. Thank you so much!",THANK_YOU
+I want to spend my free time with some relaxing process and I want to watch a movie to refresh myself. Can you help me to find a nice movie to watch?,INFORM_INTENT
+I want to search for it in San Jose and I would like to prefer a 3D show.,INFORM
+I want to find some other movies and I think Supernatural movies will be perfect for me and search for the one showing at AMC Saratoga.,INFORM
+"Yes, IT two is the nice one and Please also purchase the tickets for me.",INFORM_INTENT
+I want to watch it at 8:30 pm and please buy 2 tickets.,INFORM
+Book it on the 7th.,INFORM
+Please change the date and time to 1st of March at half past 9 in the night.,INFORM
+Also book for 4 tickets.,INFORM
+All are okay to proceed.,AFFIRM
+It's okay. Thank you and that's all.,NEGATE
+I'd like to look for a film to view at the raven Film Center. Could you look for a film playing in Healdsburg? I'd like to view a 3d film.,INFORM
+The film Where would you go is fine for me.,SELECT
+"Yeah, I'd like to purchase three tickets right now.",AFFIRM_INTENT
+I'd like to view the film on the 2nd of this month.,INFORM
+I'd like to view the show during 5:15 in the evening.,INFORM
+"Yeah, that's perfect for me. What is the ticket price?",REQUEST
+I am interested in going for a movie in mountain view. Can you help in this?,INFORM
+I would like to buy tickets for the movie Ad Astra and want to see it on 10th of this month at 22:00. I need 3 tickets.,INFORM
+Regular show is okay for me.,INFORM
+Okay..this is perfect...can i know the ticket cost?,REQUEST
+"No, thanks a lot",NEGATE
+Life is boring and i need to spend my leisure time by watching movie. Will you find a good movie to watch?,INFORM_INTENT
+Can you search for movies in Santa ROsa.,INFORM
+Fiddler is perfect.,SELECT
+"yes, Please buy the ticket and i need to watch in on tuesday next week.",AFFIRM_INTENT
+i need 1 tickets.,INFORM
+I need to watch at half past 11 in the morning. i want to watch a regular show.,INFORM
+Ok that sounds good. How much is the ticket costs? what is the address of the theater?,REQUEST
+Ok thanks a lot.,THANK_YOU
+"no, thanks for now.",NEGATE
+Can you find me a regular screening of a Supernatural genre movie at AMC NewPark,INFORM
+Can you look in the Newark area?,INFORM
+IT2 is great! Buy me three tickets for the 10:15 in the night showing on the 10th of March,INFORM
+Yes that's right,AFFIRM
+"Great, how do I get there?",REQUEST
+Thanks so much for booking those tickets and helping me,THANK_YOU
+No it's all good for now,NEGATE
+I need a movie to see please.,INFORM_INTENT
+"I need it at Century 20 Great Mall and XD, for movies in Milpitas. I want to see Action.",INFORM
+I want tickets for Mission Mangal.,INFORM_INTENT
+"I want it at 10 o""clock in the night on the 2nd of March.",INFORM
+I want a regular one.,INFORM
+I need 2 tickets.,INFORM
+"Yes, perfect.",AFFIRM
+I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?,INFORM_INTENT
+I want to watch it in Dublin.,INFORM
+Hustlers is great and can you purchase tickets for me?,INFORM_INTENT
+"I need 2 tickets for the movie on Tuesday next week at 11 o""clock in the night.",INFORM
+I like to prefer with regular one.,INFORM
+That is correct. Let me know the type of movie and location of the theater.,REQUEST
+"No, thanks. That's all now.",NEGATE
+I would like to watch a regular show at 3rd Street Cinema in Santa Rosa.,INFORM
+Toy story four is perfect.,SELECT
+"Yes, I would like three tickets.",AFFIRM_INTENT
+I would like to go in the evening 4:45.,INFORM
+I would like to watch it next Thursday.,INFORM
+"Yes, that is perfect.",AFFIRM
+Thank you for your time.,THANK_YOU
+"No, that is all I needed.",NEGATE
+Will you search for movies shown in Santa Rosa.,INFORM
+Fiddler is the right one. I want to buy movie tickets for 1 ticket.,INFORM
+I'd like to watch a regular show.,INFORM
+I would like to watch the show at 11:15 am on the 9th.,INFORM
+Thanks for the help and that is everything I need.,THANK_YOU
+I am looking for a movie to watch at AMC NewPark.,INFORM
+Can you look for the movie in Newark?,INFORM
+47 Meters DOwn: Uncaged sounds great. Can you book me 1 movie ticket for the regular show at two in the afternoon.,INFORM
+I would like to watch it on Sunday this week.,INFORM
+"Yes, That sounds nice to me.",AFFIRM
+That will be all for now. Thank you!,THANK_YOU
+Can you help me find a movie?,INFORM_INTENT
+I want to find movies in Palo Alto.,INFORM
+Can you find something else?,REQUEST_ALTS
+Ladykillers is perfect. Can you buy me some tickets for quarter to 8 in the evening? I want to watch the movie in 3d.,INFORM
+Get me one ticket for March 1st.,INFORM
+That sounds good. What is the address of the theater?,REQUEST
+"Hi, could you help me find a regular show to watch at Roxy Stadium Cinemas in Santa Rosa please?",INFORM
+Good Boys sounds great!,SELECT
+Could you get me the movie tickets please?,INFORM_INTENT
+I need two tickets for the movie at half past 9 in the night.,INFORM
+On the March 3rd please.,INFORM
+That sounds great! How much does this cost?,REQUEST
+May I have the theater's address please?,REQUEST
+"I see, that is all I need. Thank you!",THANK_YOU
+I'm going out with some friends this weekend and we'd like to see a movie.,INFORM_INTENT
+Can you help me find movies in El Cerrito?,INFORM
+"Yes, let's get the tickets now.",AFFIRM_INTENT
+I'd like to see the movie on Sunday this week at 19:15. A regular show is fine.,INFORM
+I'd like four tickets.,INFORM
+"Yes, that's perfect.",AFFIRM
+No that's all thanks.,NEGATE
+I need to find a movie in Santa Rosa.,INFORM
+Good Boys sounds great.,SELECT
+"Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.",AFFIRM_INTENT
+I would like to purchase 2 tickets.,INFORM
+No. This Saturday would work better.,INFORM
+Yes I do.,AFFIRM
+No. I am all set. Thank You.,NEGATE
+Will you find a movie?,INFORM_INTENT
+Anything in Mill Valley?,INFORM
+IT Chapter Two sounds great. Will you buy tickets?,INFORM_INTENT
+Anything at seven in the evening on March 1st. I would like three tickets.,INFORM
+Just a regular show.,INFORM
+Sounds great. What genre? Address of theater?,REQUEST
+Thanks. That's all for now.,THANK_YOU
+i have to search for a movie to watch,INFORM_INTENT
+I need you to find me movies in San Jose,INFORM
+I prefer Ad Astra and need four tickets,INFORM
+I have to see a regular show movie at 10:30 in the night,INFORM
+I prefer to see it on 16th of this Month,INFORM
+That is cool,AFFIRM
+Thank you very much,THANK_YOU
+"No,Thank you very much",NEGATE
+Can you please help me find a 3d family movie shown in San Jose.,INFORM
+Farewell is great. I'm buying tickets for ten pm on 4th of March.,INFORM
+Just one ticket.,INFORM
+That would be all. Thank you!,NEGATE
+I have some free time and I want to spend it with some nice movies. Can you search for the one for me?,INFORM_INTENT
+I want to search it in San Leandro.,INFORM
+I think all are nice but I need to search for something else.,REQUEST_ALTS
+"Yes, Overcomer is good and I want to purchase the tickets now. Please buy one ticket on March 7th for the show time at 10:30 pm.",INFORM
+I need to watch a Imax Show. Make it accordingly.,INFORM
+That is perfect. Please proceed and let me know the type of movie.,REQUEST
+Thanks so much for your work.,THANK_YOU
+"No, thanks and that's all.",NEGATE
+i need to spend my leisure hours by watching a movie. will you find a movie to watch?,INFORM_INTENT
+will you find me movies in Hayward?,INFORM
+"Please find some other movies, I need to watch movies at CineLux Tennant Station. Will you find movies which are shown in Morgan Hill?",INFORM
+Hobbs and Shaw is Perfect and i like to buy movie tickets. I need to watch it a regular show and the day is on this saturday.,INFORM
+I need to watch the show at 9:30 pm.,INFORM
+i need 3 tickets.,INFORM
+Ok that sounds good to me.,AFFIRM
+How much is the ticket cost? What kind of a movie is it?,REQUEST
+Thanks for your immense help,THANK_YOU
+"no, not for now.",NEGATE
+Would you look in San Jose for some movies to see?,INFORM
+"Look around for some other movie options, such as a Dramatic story.",INFORM
+See if you can find some other movies in San Rafael please.,INFORM
+I want to get some movie tickets to a 3d show of A Faithful Man. It' sounds great.,INFORM
+I need 3 tickets to see it on the 8th of this month for the evening 6:15 show.,INFORM
+"Right, that's great.",AFFIRM
+Your help has been invaluable.,THANK_YOU
+"Actually, no, but thanks so much.",NEGATE
+I want to watch a movie at Century 25 Union Landing and XD. I like dramatic story movies.,INFORM
+Look for movies in Union City.,INFORM
+Hustlers is perfect.,SELECT
+I want 1 ticket to a regular movie on Friday next week.,INFORM
+I want to watch it at quarter to 11 in the night.,INFORM
+"Yes, that is correct. What is the address of the cinema.",REQUEST
+"No, that is all.",NEGATE
+I would like a regular drama movie at Regal Crow Canyon.,INFORM
+"Please look in San Ramon,",INFORM
+I would like 3 tickets for Hustlers at quarter past 7 in the evening.,INFORM
+On the 3rd of March.,INFORM
+"Yes, what is the address>",REQUEST
+"Thanks, I am good now.",THANK_YOU
+I'm after an Imax film at Century Blackhawk Plaza in Danville can you tell me whats on?,INFORM
+Yes IT2 please.,SELECT
+Yes can I get them now? book for the 3rd of this month at night 10:30.,AFFIRM_INTENT
+Just one please,INFORM
+Yes thank you. How much is it and what kind of movie is it?,REQUEST
+No that's it.,NEGATE
+I'm going out for a date this weekend and I'd like to go see a movie.,INFORM_INTENT
+Let's look for movies in Oakland.,INFORM
+I'd love to see Hobbs and Shaw.,SELECT
+"Yes, let's buy the tickets.",AFFIRM_INTENT
+Let's get three tickets.,INFORM
+I'd like to see the show at night 10 on the 2nd. I'm fine with a regular show.,INFORM
+"Yes, that's perfect. What's the address of the theater?",REQUEST
+"Thanks for your help, that's it for now.",THANK_YOU
+I need some help finding a movie please.,INFORM_INTENT
+"That sounds awesome, that's all I needed.",SELECT
+"Hi, could you help me search for some nice Anime movies please?",INFORM
+May I know who played in this movie?,REQUEST
+"I see, and who directed the movie?",REQUEST
+That sounds great to me!,SELECT
+"No, that is all I need. Thank you for your kind assistance!",NEGATE
+"I'm at home alone and it is awfully quiet, so it's the perfect time to sit back and watch a movie. Can you find me a movie with Michaela Watkins starring in it and preferably directed by Paul Downs Colaizzo?",INFORM
+Can you tell me the genre of the movie please.,REQUEST
+"Okay, great, that's all I need for now.",SELECT
+I want to find a new movie to see.,INFORM_INTENT
+Are there any movies with actor Josh Gad in them?,INFORM
+Who directed Angry Birds 2? Is that a comedy or what?,REQUEST
+That sounds like something I'd like.,SELECT
+"No, I think that's all I need. Thanks for your help.",NEGATE
+I want to find a good film to watch with Duane Whitaker and I want something directed by Quentin Tarantino.,INFORM
+"Yeah, this sounds great.",SELECT
+Nothing else that will be all.,NEGATE
+Can you find me a nice movie to watch?,INFORM_INTENT
+Can you tell me the genre of the movie?,REQUEST
+Can you tell me the names of the actors and the director of this movie?,REQUEST
+I would like to find a movie to watch in the Imaginative fiction genre.,INFORM
+"That sounds good, that will be all.",SELECT
+"i want to watch a movie, maybe a thriller directed by Riley Stearns.",INFORM
+"Okay sounds good, thank for that.",SELECT
+I want to watch a movie that Ian Hendry is in.,INFORM
+That's a good one.,SELECT
+That's all. Thanks.,NEGATE
+I am bored and want to watch a movie.,INFORM_INTENT
+I saw that already. I would rather see a family genre directed by Herbert Ross.,INFORM
+"Yes, I want to see that. Thanks.",SELECT
+Who acted in this movie and what genre is it?,REQUEST
+That sounds fine. That's all I needed.,SELECT
+I'd like to watch a movie directed by Alex Kendrick.,INFORM
+Can you tell me which genre this movie is in and who stars in it?,REQUEST
+Perfect! Thank you for your help.,SELECT
+I want to watch a Zoe Bell movie.,INFORM
+That's all. Thank you.,NEGATE
+Can you find me a nice movie directed by James Gray to watch?,INFORM
+Who is the actor in the movie?,REQUEST
+That sounds great. That is all I need for now.,SELECT
+I would like to choose a movie to watch. Can you help me find a movie in the Comic genre with James Corden in it?,INFORM
+Who directed the movie?,REQUEST
+"OK, sounds great, thanks, that is all.",SELECT
+"It's suppose to be raining all day so I'm cooped up in the house and bored. Can you help find me a movie to watch, preferably one that is classified as a Comic and directed by Nitesh Tiwari?",INFORM
+That doesn't sound like something I would like. Is there anything else?,REQUEST_ALTS
+"Okay, let's try something else. How about a movie directed by Gene Stupnitsky instead?",INFORM
+Can you tell me the names of the Actors and Actresses that star in this movie?,REQUEST
+"Okay, that more along the lines of what I was looking for.",SELECT
+"No, you were a great help, thank you!",NEGATE
+Who acted and directed the movie?,REQUEST
+"No, that is all thank you.",NEGATE
+"Hi, I was hoping to get some help finding a movie to watch.",INFORM_INTENT
+"I haven't heard of it, are there any well-known actors in the movie?",REQUEST
+"Alright, that sounds fine. I don't need help with anything else.",SELECT
+Can you find a movie for me to watch?,INFORM_INTENT
+Who starred in it?,REQUEST
+That one sounds good.,SELECT
+"No thank you, that'll be all.",NEGATE
+"Hi, I'd like to watch a movie, do you have any suggestions?",INFORM_INTENT
+What genre is it?,REQUEST
+"That one sounds good, thank you. That's all I need.",SELECT
+Can you find me a thriller movie directed by Alexander Mackendrick?,INFORM
+Who's in it?,REQUEST
+That one sounds great.,SELECT
+I want to watch a McKinley Belcher III movie. I want something directed by Simon Curtis. It should be a drama.,INFORM
+Nothing. That's all.,NEGATE
+"Hi, could you search for some nice movies I could watch?",INFORM_INTENT
+May I know who directed this movie please?,REQUEST
+"I see, that sounds great! That is all I need for now.",SELECT
+I want to watch a movie staring Daniel Camp and directed by Herbert Ross.,INFORM
+"That is perfect, thanks!",SELECT
+Can you find a movie. I'm interested in a movie by the director Quentin Tarantino.,INFORM
+I like the sound of that. I don't need anything else.,SELECT
+"Let me enjoy movie directed by Nitesh Tiwari, is there any one?",INFORM
+Which type movie is it?,REQUEST
+That will be suitable.,SELECT
+My friend and I want to go see a movie but we can't find one we like. We really want to see a Drama.,INFORM
+"Yeah, we already saw that one. Is there anything directed by Hari Sama?",INFORM
+"Yes, that one sounds really good. That's all I needed today.",SELECT
+"Hey I need help finding a movie please, I like movies by Satoshi Kon.",INFORM
+"No, that's all, thanks.",NEGATE
+Find me a movie directed by Quentin Tarantino.,INFORM
+What genre is this movie and who are the cast?,REQUEST
+That sounds good. That's all I need. Thank you.,SELECT
+Any good movies for me to watch?,INFORM_INTENT
+"What genre is that, and who's in it?",REQUEST
+"Anything else, preferably something with Eugene Dynarski?",INFORM
+"Nope, that's a lot.",NEGATE
+"There is nothing good on TV, can you help me find a movie?",INFORM_INTENT
+"I'm not familiar with it, can you tell me who stars in the movie?",REQUEST
+I've never heard of her. What genre is the movie classified as and who directed it?,REQUEST
+"Okay, I'll try that one. That is all I needed.",SELECT
+I would like to find an Exotic movie.,INFORM
+Who acted in the movie?,REQUEST
+Who is the director of the movie?,REQUEST
+That is all I needed.,SELECT
+Can you tell me the name of the director of the movie?,REQUEST
+Can you find me the name of the actor and the genre of the movie?,REQUEST
+I am in a nice mood and I like to watch a movie now. How about finding a nice movie for me?,INFORM_INTENT
+"Yes, okay,but I need to find some other movies especially the one directed by Jovanka Vuckovic. Do you have something like this in your options?",INFORM
+Let me know the type of this movie to decide.,REQUEST
+"Yes, I like it and thanks for your help to search the same. That's all",SELECT
+I'm looking to watch an action movie directed by David Leitch starring Alex King.,INFORM
+Can you help me search for a Horror movie to watch?,INFORM
+How about a different movie? What else have you got?,REQUEST_ALTS
+Who is the director and who acted in the movie?,REQUEST
+"OK, sounds good, thank you.",SELECT
+"No, thanks for your help, I'm good.",NEGATE
+I have some leisure time so that i could watch a movie. Will you find me a movie directed by Kirill Mikhanovsky and find something like Comedy-drama genre?,INFORM
+Who played in this movie?,REQUEST
+Ok that sounds good.,SELECT
+"no , thanks for your help . not now.",NEGATE
+"I am in a mood to watch a movie, can you find one?",INFORM_INTENT
+Who directed it?,REQUEST
+What is the type?,REQUEST
+That is ok.,SELECT
+I'd like to find something an Eccentric story movie to watch. What do you recommend?,INFORM
+Can you tell me who directed it and which actors are featured in the film?,REQUEST
+Perfect! I love Quentin Tarantino movies. Thanks for the help!,SELECT
+I like to watch a movie. will you find me a movie which has sterling K. Brown as a actor and it should be directed by Thurop Van Orman,INFORM
+What is the genre of that movie?,REQUEST
+ok that sounds good . thats all i need.,SELECT
+I want to watch a suspense movie directed by Josephine Decker.,INFORM
+"No, that's all I need.",NEGATE
+Can you help me find a movie to stream in the Play genre?,INFORM
+Can you tell me who directed it?,REQUEST
+I like his movies! Thank you for the help.,SELECT
+I wish to see the movie which is directed by David Leitch and acted by Lori Pelenise Tuisano.,INFORM
+What type of movie it is?,REQUEST
+Looking nice.,SELECT
+Nope. Thank you so much for your help.,NEGATE
+I want to see a movie by Peter Jackson that is a Fantasy.,INFORM
+Who was in that?,REQUEST
+"Fine, I appreciate the idea.",SELECT
+Its boring to have a routing life and i plan to watch a movie. will you find me a good movie?,INFORM_INTENT
+"No , i am not interested. Any other movies?",REQUEST_ALTS
+Not interested. Any other movies which are directed by QUentin Tarantino? type of movie should be Cult genre.,INFORM
+Who played in that movie?,REQUEST
+Ok that sounds good. that's all i need,SELECT
+I need help finding a movie.,INFORM_INTENT
+What's the genre?,REQUEST
+"Great, thanks.",SELECT
+Anything else? I like films directed by Steven Spielberg in the Imaginative fiction genre.,INFORM
+What other movies are there? I want something with Conleth Hill in it.,INFORM
