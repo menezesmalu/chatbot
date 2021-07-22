@@ -1,4 +1,5 @@
 Sentence,Intent
+Can you show me some movie listings?,INFORM_INTENT
 I am in San Jose. Also I want to see a 3D movie.,INFORM
 "Yes, please find me some other movies. I want to see something at CineLux Almaden.",INFORM
 What times do you have available for Curse of La Llorona? I've been wanting to see that!,INFORM_INTENT
