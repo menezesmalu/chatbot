@@ -28,3 +28,38 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: genre path - happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request
+      entities:
+      - genre: "Horror"
+      - location: "San Jose"
+  - action: inform
+  - intent: thank_you
+   
+- story: genre path - unhappy dislike
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request
+      entities:
+      - genre: "Horror"
+      - location: "San Jose"
+  - action: inform
+  - intent: request_alt
+  - action: inform
+  
+- story: genre path - unhappy not found
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request
+      entities:
+      - genre: "Horror"
+      - location: "San Jose"
+  - action: negate
+  - intent: request_alt
+  
