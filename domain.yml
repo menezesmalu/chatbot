@@ -28,6 +28,10 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  
+  utter_notfound: 
+    - text: Can't help you with that. Do you have other option?
+    - intent: not_found
 
 session_config:
   session_expiration_time: 60

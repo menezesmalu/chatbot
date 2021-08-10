@@ -90,3 +90,19 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: request
+  examples: |
+    - can you help find a [Documentary](Genre) movie?
+    - can you help find a [Horror](Genre) movie?
+    - can you help find a [Comedy](Genre) movie?
+    - can you help find a movie in [San Francisco](Location)?
+    - can you help find a movie in [Petaluma](Location)?
+    - can you help find a movie in [San Jose](Location)?
+
+- intent: thank_you
+  examples: |
+    - thanks!
+    - thank you
+    - amazing
+    

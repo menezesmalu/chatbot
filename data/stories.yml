@@ -2,14 +2,15 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+# bloco de exemplos base do proprio rasa
+- story: happy path - basico
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: sad path 1 - basico
   steps:
   - intent: greet
   - action: utter_greet
@@ -19,7 +20,7 @@ stories:
   - intent: affirm
   - action: utter_happy
 
-- story: sad path 2
+- story: sad path 2 - basico
   steps:
   - intent: greet
   - action: utter_greet
@@ -28,38 +29,56 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+# fim do bloco
 
-- story: genre path - happy
+#Conversa base
+- story: busca de filme bem sucedida
   steps:
   - intent: greet
   - action: utter_greet
   - intent: request
       entities:
       - genre: "Horror"
-      - location: "San Jose"
+      - location: "Livermore"
   - action: inform
-  - intent: thank_you
+  - or:
+    - intent: thank_you
+    - intent: goodbye
+  - action: utter_goodbye
    
-- story: genre path - unhappy dislike
+- story: busca de filme mal sucedida - filme fora da base
   steps:
   - intent: greet
   - action: utter_greet
   - intent: request
       entities:
       - genre: "Horror"
-      - location: "San Jose"
+      - location: "Livermore"
   - action: inform
   - intent: request_alt
   - action: inform
   
-- story: genre path - unhappy not found
+- story: busca de filme mal sucedida - a pessoa quer outro
   steps:
   - intent: greet
   - action: utter_greet
   - intent: request
       entities:
       - genre: "Horror"
-      - location: "San Jose"
+      - location: "Livermore"
   - action: negate
-  - intent: request_alt
+  - intent: request_alt 
+
+- story: busca de filme mal sucedida - nao tem
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: request
+      entities:
+      - genre: "Horror"
+      - location: "Livermore"
+  - action: inform
+  - intent: negate_intent
+
+
   
