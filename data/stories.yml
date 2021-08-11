@@ -29,7 +29,6 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
-# fim do bloco
 
 #Conversa base
 - story: busca de filme bem sucedida
@@ -69,16 +68,6 @@ stories:
   - action: negate
   - intent: request_alt 
 
-- story: busca de filme mal sucedida - nao tem
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: request
-      entities:
-      - genre: "Horror"
-      - location: "Livermore"
-  - action: inform
-  - intent: negate_intent
 
 
   
