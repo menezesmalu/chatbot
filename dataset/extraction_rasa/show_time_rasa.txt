@@ -1,96 +1,69 @@
-night 10
-22:45
-ten in the night
-night 10:30
-21:45
-evening 6
-6:15 in the evening
-nine pm
-seven pm
-night 10
-half past 9 in the night
-22:15
-8:15 in the night
-8:30 pm
-night 9
-10:30 pm
-11 o"clock in the night
-half past 6 in the evening
-eleven pm
-evening 7:30
-6:30 in the evening
+evening 7:15
+10:30 in the night
 6:45 in the evening
 2:30 in the afternoon
-22:30
-11 in the night
-quarter past 10 in the night
-night 10:15
-11 in the night
-21:15
-10:30 in the night
-22:45
-quarter to 7 in the evening
-ten pm
-10:45 pm
-11 in the night
-evening 7:15
-6:45 in the evening
-8:15 pm
-evening 7:45
-9:30 in the night
-quarter past 6 in the evening
-11 in the night
-night 9:45
-quarter to 7 in the evening
-night 9:45
-7:30 pm
-10:30 pm
-22:00
-Nine pm
-7 pm
-6:30 pm
-10:15 in the night
-ten pm
-half past 10 in the night
-22:15
-quarter to 5 in the evening
-quarter past 4 in the evening
-4:30 pm
-quarter to 4 in the afternoon
+evening 6
 ten in the night
+night 10:15
+quarter past 6 in the evening
+9:45 pm
+22:30
+two in the afternoon
+seven in the evening
+evening 6:15
+quarter to 7 in the evening
+evening 7:30
+10:30 pm
+22:45
+8:30 pm
+quarter to 5 in the evening
+quarter to 11 in the night
+19:15
+evening 7:45
+8:15 in the night
+21:15
+seven pm
+half past 9 in the night
+quarter past 10 in the night
+22:15
+quarter past 4 in the evening
+6:30 in the evening
+eleven pm
+2:30 pm
+21:45
+10:45 pm
 afternoon 3:30
 9:15 pm
-21:45
-2:30 pm
-7:45 pm
-8:15 pm
-21:15
-half past 8 in the night
-11:30 in the night
-7:45 pm
-9:45 pm
-8:30 pm
-half past 9 in the night
-5:15 in the evening
-22:00
-half past 11 in the morning
-10:15 in the night
-10 o"clock in the night
-11 o"clock in the night
-evening 4:45
+9:30 in the night
 11:15 am
-two in the afternoon
 quarter to 8 in the evening
-half past 9 in the night
-19:15
-10:15 pm
-seven in the evening
-10:30 in the night
-ten pm
-10:30 pm
+6:30 pm
+half past 11 in the morning
+night 9
+evening 4:45
+10:15 in the night
+quarter to 4 in the afternoon
+half past 6 in the evening
+8:15 pm
+22:00
+7:45 pm
+night 9:45
 9:30 pm
-evening 6:15
-quarter to 11 in the night
-quarter past 7 in the evening
-night 10:30
 night 10
+4:30 pm
+ten pm
+11:30 in the night
+11 in the night
+11 o"clock in the night
+10:15 pm
+6:15 in the evening
+7 pm
+night 10:30
+10 o"clock in the night
+Nine pm
+nine pm
+half past 10 in the night
+quarter past 7 in the evening
+half past 8 in the night
+7:30 pm
+5:15 in the evening

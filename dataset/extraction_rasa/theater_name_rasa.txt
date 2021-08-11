@@ -1,196 +1,80 @@
-Century Blackhawk Plaza
-CineLux Almaden
-Veranda LUXE Cinema
-CineLux Tennant Station
-Livermore Cinema
-Roxie Theater
-Embarcadero Center Cinema
-Roxie Theater
-Livermore Cinema
-Century Union Landing
-Boulevard Cinema
-Vine Cinema
-dontcare
-Century Oakridge
-Boulevard Cinema
-3rd Street Cinema
-AMC Brentwood
-Century at Tanforan
-AMC Mercado
-United Artists Berkeley
-AMC Brentwood
-dontcare
-Century Union Landing
-Pruneyard cinemas
-New Parkway Theater
-Century at Tanforan
-AMC NewPark
-Century Daly City
-Century at Pacific Commons
-dontcare
-AMC Bay Street
-dontcare
-Century Rowland Plaza
-dontcare
-CineLux Tennant Station
-CineLux Almaden
-Cinelux Tennant Station
-United Artists Stonestown Twin
-Embarcadero Center Cinema
+Sonoma Cinema
+The Lot City Center
+Century Napa Valley and XD
 THE LOT City Center
-Century Union Landing
 New Parkway Theater
-Century Vallejo
-dontcare
-Piedmont Theatre
-dontcare
-Albany Twin
+Boulevard Cinema
 Embarcadero Center Cinema
+United Artists Stonestown Twin
+Reading Cinemas Rohnert Park
+Airport Stadium Cinemas
+AMC Saratoga
+Alamo Drafthouse Cinema
+Alameda Theatre & Cineplex
+Summerfield Cinemas
+Rheem Theatre
 Vogue Theatre
-AMC NewPark
-Vine Cinema
-dontcare
+Century Rowland Plaza
+Century at Tanforan
+Cinelux Tennant Station
+Pruneyard Cinemas
+Century Redwood City
+Century Daly City
+Century at Tanforan and XD
+3rd Street Cinema
+Stanford Theatre
+Piedmont Theatre
+AMC Deer Valley
+Roxy Stadium Cinemas
+Century 25 Union Landing and XD
+Century Downtown
+Century Cinemas
+Century at Pacific Commons
+Edwards Fairfield
+AMC Eastridge
+AMC Metreon
+Century Napa Valley
+3 Below Theaters and lounge
+Veranda Luxe Cinema
+Century 20 Oakridge and XD
 Century San Francisco Centre
 dontcare
 Century Redwood city
-dontcare
-AMC Saratoga
-Guild Theatre
-Century San Francisco Centre
-dontcare
-AMC Mercado
-Regal Jack London
-THE LOT City Center
-dontcare
+AMC Brentwood
 Century Walnut Creek
-3rd Street cinema
-dontcare
-Century at Tanforan
-THE LOT City Center
-Century Vallejo
-CineLux Almaden
-Century at Pacific Commons
-THE LOT City Center
-Contra Costa
-AMC Bay Street
-CineLux Almaden
-Guild Theatre
-Century Union Landing
-AMC Deer Valley
-Alameda Theatre & Cineplex
-Pruneyard Cinemas
-Guild Theatre
-Century Cinemas
 Livermore Cinema
 AMC Bay Street
-Albany Twin
-Edwards Fairfield
-United Artists Stonestown Twin
-Century Napa Valley
-Century Walnut Creek
-3 Below Theaters and lounge
-AMC Eastridge
-Summerfield Cinemas
-Century Union Landing
-AMC Bay Street
-Roxie Theater
-Embarcadero Center Cinema
-Lark Theater
-THE LOT City Center
-AMC Brentwood
-AMC Bay Street
-Century at Hayward
-Boulevard Cinema
+United Artists Berkeley
+CineLux Tennant Station
 Regal Jack London
-3 Below Theaters And Lounge
-dontcare
-Cinemark
-Boulevard Cinema
-AMC Metreon
-Raven Film center
 Tiburon Playhouse
-AMC Mercado
-Century Redwood City
-CineLux Tennant Station
-Airport Stadium Cinemas
-Airport Stadium Cinemas
-Century Union Landing
-Roxie Theater
-dontcare
-Century Union Landing
-Alameda Theatre & Cineplex
-Century Cinemas
-Century at Tanforan
 Rialto Cinemas
-Embarcadero Center Cinema
-CineLux Tennant Station
-AMC Mercado
-Century Cinema
-CineLux Tennant Station
-Century at Tanforan
-THE LOT City Center
-Alameda Theatre & Cineplex
-AMC Saratoga
-Rheem Theatre
-Pruneyard Cinemas
-CineLux Almaden
-New Parkway Theater
-Embarcadero Center Cinema
-AMC Bay Street
-Reading Cinemas Rohnert Park
-Alameda Theatre & Cineplex
-Roxy Stadium Cinemas
-AMC Mercado
-Presidio Theatre
-Century San Francisco Centre
-dontcare
-Boulevard Cinema
-Century at Tanforan
-Century Cinemas
-Century at Tanforan
-Century Union Landing
-AMC Brentwood
-Airport Stadium Cinemas
-dontcare
-Century Daly City
 West Wind Capitol Drive-in
-Sonoma Cinema
-Century Downtown
-CineLux Tennant Station
-Regal Crow Canyon
 ShowPlace ICON
-3rd Street Cinema
-Embarcadero Center Cinema
-The Lot City Center
-Alamo Drafthouse Cinema
-AMC Mercado
+Pruneyard cinemas
+Century at Hayward
 AMC NewPark
-AMC Mercado
-Veranda Luxe Cinema
-edwards fairfield
-Century at Pacific Commons
-Edwards Fairfield
-Stanford Theatre
-CineLux Tennant Station
-Century at Hayward
-Century at Hayward
-Balboa Theatre
-Contra Costa
+Veranda LUXE Cinema
+Century Union Landing
+Vine Cinema
+Albany Twin
 Lark Theater
-AMC Saratoga
-Century 20 Oakridge and XD
-Century Napa Valley and XD
-Regal Jack London
-Balboa Theatre
-Century at Tanforan and XD
-AMC Saratoga
-raven Film Center
-AMC NewPark
-Century 20 Great Mall and XD
-3rd Street Cinema
-AMC NewPark
-Roxy Stadium Cinemas
-CineLux Tennant Station
-Century 25 Union Landing and XD
-Regal Crow Canyon
 Century Blackhawk Plaza
+Presidio Theatre
+3 Below Theaters And Lounge
+Century Oakridge
+Roxie Theater
+AMC Mercado
+Contra Costa
+Balboa Theatre
+Century Cinema
+raven Film Center
+3rd Street cinema
+edwards fairfield
+Century 20 Great Mall and XD
+Guild Theatre
+Regal Crow Canyon
+Cinemark
+Raven Film center
+CineLux Almaden
+Century Vallejo
