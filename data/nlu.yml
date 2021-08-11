@@ -1,6 +1,28 @@
 version: "2.0"
 
 nlu:
+
+- lookup : cast
+  ../dataset/extraction_rasa/cast_rasa.txt
+- lookup : director
+  ../dataset/extraction_rasa/director_rasa.txt
+- lookup : genre
+  ../dataset/extraction_rasa/genre_rasa.txt
+- lookup : location
+  ../dataset/extraction_rasa/location_by_rasa.txt
+- lookup : movie_name
+  ../dataset/extraction_rasa/movie_name_rasa.txt
+- lookup : number_of_tickets
+  ../dataset/extraction_rasa/number_of_tickets_rasa.txt
+- lookup : show_date
+  ../dataset/extraction_rasa/show_date_rasa.txt
+- lookup : show_time
+  ../dataset/extraction_rasa/show_time_rasa.txt
+- lookup : show_type
+  ../dataset/extraction_rasa/show_type_rasa.txt
+- lookup : theater_name
+  ../dataset/extraction_rasa/theater_name_Rasa.txt
+
 - intent: greet
   examples: |
     - hey
