@@ -2,79 +2,136 @@ version: "2.0"
 
 stories:
 
-# bloco de exemplos base do proprio rasa
-- story: happy path - basico
+- story: request movie - thanks
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+    - intent: greet
+    - action: introduce
+    - intent: request
+      entities:
+        - location: "San Fran"
+        - theater_name: "Century Daly City"
+    - action: when
+    - or:
+        - intent: inform
+          entities:
+            - show_time: "10:30 pm"
+        - intent: inform
+          entities:
+            - show_date: "3rd of this month"
+    - action: suggest_movie
+    - intent: thank_you
+    - action: goodbye        
 
-- story: sad path 1 - basico
+- story: request movie - negate
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2 - basico
+    - intent: greet
+    - action: introduce
+    - intent: request
+      entities:
+        - location: "San Fran"
+        - theater_name: "Century Daly City"
+    - action: when
+    - or:
+        - intent: inform
+          entities:
+            - show_time: "10:30 pm"
+        - intent: inform
+          entities:
+            - show_date: "3rd of this month"
+    - action: suggest_movie
+    - intent: negate
+    - action: sorry
+    - action: bye  
+          
+- story: request movie - request_alt
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: affirm story
+    - intent: greet
+    - action: introduce
+    - intent: request
+      entities:
+        - location: "San Fran"
+        - theater_name: "Century Daly City"
+    - action: when
+    - or:
+        - intent: inform
+          entities:
+            - show_time: "10:30 pm"
+        - intent: inform
+          entities:
+            - show_date: "3rd of this month"
+    - action: suggest_movie
+    - intent: request_alt
+    - action: suggest_movie  
+          
+- story: show time - thanks
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: affirm_intent
-  - action: afirm
+    - intent: request
+      entities:
+        - movie_name: "Hellboy"
+    - action: where
+    - or:
+      - intent: inform
+        entities:
+        - location: "San Francisco"
+      - intent: inform
+        entities:
+        - theater_name: "Century Daly City"
+    - action: suggest_session
+    - intent: thank_you
+    - action: goodbye
 
-#Conversa base
-# - story: busca de filme bem sucedida
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: request
-#       entities:
-#       - genre: "Horror"
-#       - location: "Livermore"
-#   - action: inform
-#   - or:
-#     - intent: thank_you
-#     - intent: goodbye
-#   - action: utter_goodbye
-   
-# - story: busca de filme mal sucedida - filme fora da base
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: request
-#       entities:
-#       - genre: "Horror"
-#       - location: "Livermore"
-#   - action: inform
-#   - intent: request_alt
-#   - action: inform
-  
-# - story: busca de filme mal sucedida - a pessoa quer outro
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: request
-#       entities:
-#       - genre: "Horror"
-#       - location: "Livermore"
-#   - action: negate
-#   - intent: request_alt 
+- story: show time - request alt
+  steps:
+    - intent: request
+      entities:
+        - movie_name: "Hellboy"
+    - action: where
+    - intent: inform
+      entities:
+      - location: San Francisco
+    - action: suggest_session
+    - intent: request_alt
+    - action: suggest_session
 
+- story: show time - negate
+  steps:
+    - intent: request
+      entities:
+        - movie_name: "Hellboy"
+    - action: where
+    - intent: inform
+      entities:
+      - location: San Francisco
+    - action: suggest_session
+    - intent: negate
+    - action: sorry
+    - action: bye
+
+- story: show time - can't find negate
+  steps:
+    - intent: request
+      entities:
+        - movie_name: "Hellboy"
+    - action: where
+    - intent: inform
+      entities:
+      - theater_name: "Century Daly City"
+    - action: cant_find
+    - intent: negate
+    - action: sorry
+    - action: bye
+
+- story: show time - can't find request alt
+  steps:
+    - intent: request
+      entities:
+        - movie_name: "Hellboy"
+    - action: where
+    - intent: inform
+      entities:
+      - theater_name: "Century Daly City"
+    - action: cant_find
+    - intent: request_alt
 
 
   

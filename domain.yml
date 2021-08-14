@@ -3,37 +3,50 @@ version: "2.0"
 
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
-  - affirm_intent
   - affirm
+  - inform
+  - negate
+  - request
+  - request_alt
+  - select
+  - thank_you
+  - goodbye
 
 responses:
-  utter_greet:
-    - text: "Hey! How are you?"
+  introduce:
+    - text: "Hey! I'm here to help you buy movie tickets. how can I help you?"
 
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-    - text: "Did that help you?"
-
-  utter_happy:
-    - text: "Great, carry on!"
-
-  utter_goodbye:
-    - text: "Bye"
-
-  utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
-
-  utter_notfound:
+  notfound:
     - text: Can't help you with that. Do you have other option?
+  
+  when:
+    - text: when do you plan to watch?
+  
+  where:
+    - text: where's the best place for you?
+    - text: where are you?
+
+  cant_find:
+    - text: i'm sorry, but {movie_name} is not on display there. Anywhere else?
+
+  sorry:
+    - text: i'm sorry I coudn't help you.
+    - text: that's a shame for me. 
+    - text: sorry :(
+
+  goodbye:
+    - text: Grab your popcorn and enjoy your movie! See you next time.
+  
+  bye:
+    - text: It was nice talk to you. Bye
+  
+  suggest_movie:
+    - text: I've found {movie_name} for you. Does it work?
+    - text: how about {movie_name}?
+
+  suggest_session:
+    - text: you can watch this movie by {show_time}.
 
 session_config:
   session_expiration_time: 60
