@@ -2,7 +2,7 @@ version: "2.0"
 
 stories:
 
-- story: request movie - thanks
+- story: request movie by time - thanks
   steps:
     - intent: greet
     - action: introduce
@@ -11,18 +11,14 @@ stories:
         - location: "San Fran"
         - theater_name: "Century Daly City"
     - action: when
-    - or:
-        - intent: inform
-          entities:
-            - show_time: "10:30 pm"
-        - intent: inform
-          entities:
-            - show_date: "3rd of this month"
+    - intent: inform
+      entities:
+        - show_time: "10:30 pm"
     - action: suggest_movie
     - intent: thank_you
-    - action: goodbye        
+    - action: goodbye
 
-- story: request movie - negate
+- story: request movie by date - thanks
   steps:
     - intent: greet
     - action: introduce
@@ -31,19 +27,31 @@ stories:
         - location: "San Fran"
         - theater_name: "Century Daly City"
     - action: when
-    - or:
-        - intent: inform
-          entities:
-            - show_time: "10:30 pm"
-        - intent: inform
-          entities:
-            - show_date: "3rd of this month"
+    - intent: inform
+      entities:
+        - show_date: "3rd of this month"
+    - action: suggest_movie
+    - intent: thank_you
+    - action: goodbye
+
+- story: request movie by time - negate
+  steps:
+    - intent: greet
+    - action: introduce
+    - intent: request
+      entities:
+        - location: "San Fran"
+        - theater_name: "Century Daly City"
+    - action: when
+    - intent: inform
+      entities:
+        - show_time: "10:30 pm"
     - action: suggest_movie
     - intent: negate
     - action: sorry
-    - action: bye  
-          
-- story: request movie - request_alt
+    - action: bye
+
+- story: request movie by date - negate
   steps:
     - intent: greet
     - action: introduce
@@ -52,30 +60,68 @@ stories:
         - location: "San Fran"
         - theater_name: "Century Daly City"
     - action: when
-    - or:
-        - intent: inform
-          entities:
-            - show_time: "10:30 pm"
-        - intent: inform
-          entities:
-            - show_date: "3rd of this month"
+    - intent: inform
+      entities:
+        - show_date: "3rd of this month"
+    - action: suggest_movie
+    - intent: negate
+    - action: sorry
+    - action: bye
+
+- story: request movie by hour - request_alt
+  steps:
+    - intent: greet
+    - action: introduce
+    - intent: request
+      entities:
+        - location: "San Fran"
+        - theater_name: "Century Daly City"
+    - action: when
+    - intent: inform
+      entities:
+        - show_time: "10:30 pm"
     - action: suggest_movie
     - intent: request_alt
-    - action: suggest_movie  
-          
-- story: show time - thanks
+    - action: suggest_movie
+
+- story: request movie by date - request_alt
+  steps:
+    - intent: greet
+    - action: introduce
+    - intent: request
+      entities:
+        - location: "San Fran"
+        - theater_name: "Century Daly City"
+    - action: when
+    - intent: inform
+      entities:
+        - show_date: "3rd of this month"
+    - action: suggest_movie
+    - intent: request_alt
+    - action: suggest_movie
+
+- story: show time by city - thanks
   steps:
     - intent: request
       entities:
         - movie_name: "Hellboy"
     - action: where
-    - or:
-      - intent: inform
-        entities:
-        - location: "San Francisco"
-      - intent: inform
-        entities:
-        - theater_name: "Century Daly City"
+    - intent: inform
+      entities:
+      - location: "San Francisco"
+    - action: suggest_session
+    - intent: thank_you
+    - action: goodbye
+
+  - story: show time by theater - thanks
+  steps:
+    - intent: request
+      entities:
+        - movie_name: "Hellboy"
+    - action: where
+    - intent: inform
+      entities:
+      - theater_name: "Century Daly City"
     - action: suggest_session
     - intent: thank_you
     - action: goodbye
