@@ -14,9 +14,7 @@ stories:
     - intent: inform
       entities:
         - show_time: "10:30 pm"
-    - action: suggest_movie
-    - intent: thank_you
-    - action: goodbye
+    - checkpoint: suggest_movie
 
 - story: request movie by date - thanks
   steps:
@@ -30,9 +28,7 @@ stories:
     - intent: inform
       entities:
         - show_date: "3rd of this month"
-    - action: suggest_movie
-    - intent: thank_you
-    - action: goodbye
+    - checkpoint: suggest_movie
 
 - story: request movie by time - negate
   steps:
@@ -46,10 +42,7 @@ stories:
     - intent: inform
       entities:
         - show_time: "10:30 pm"
-    - action: suggest_movie
-    - intent: negate
-    - action: sorry
-    - action: bye
+    - checkpoint: suggest_movie
 
 - story: request movie by date - negate
   steps:
@@ -63,10 +56,7 @@ stories:
     - intent: inform
       entities:
         - show_date: "3rd of this month"
-    - action: suggest_movie
-    - intent: negate
-    - action: sorry
-    - action: bye
+    - checkpoint: suggest_movie
 
 - story: request movie by hour - request_alt
   steps:
@@ -100,84 +90,17 @@ stories:
     - intent: request_alt
     - action: suggest_movie
 
-- story: show time by city - thanks
+- story: accept suggested movie
   steps:
-    - intent: request
-      entities:
-        - movie_name: "Hellboy"
-    - action: where
-    - intent: inform
-      entities:
-      - location: "San Francisco"
-    - action: suggest_session
+    - checkpoint: suggest_movie
+    - action: suggest_movie
     - intent: thank_you
     - action: goodbye
 
-  - story: show time by theater - thanks
+- story: deny suggested movie
   steps:
-    - intent: request
-      entities:
-        - movie_name: "Hellboy"
-    - action: where
-    - intent: inform
-      entities:
-      - theater_name: "Century Daly City"
-    - action: suggest_session
-    - intent: thank_you
-    - action: goodbye
-
-- story: show time - request alt
-  steps:
-    - intent: request
-      entities:
-        - movie_name: "Hellboy"
-    - action: where
-    - intent: inform
-      entities:
-      - location: San Francisco
-    - action: suggest_session
-    - intent: request_alt
-    - action: suggest_session
-
-- story: show time - negate
-  steps:
-    - intent: request
-      entities:
-        - movie_name: "Hellboy"
-    - action: where
-    - intent: inform
-      entities:
-      - location: San Francisco
-    - action: suggest_session
+    - checkpoint: suggest_movie
+    - action: suggest_movie
     - intent: negate
     - action: sorry
     - action: bye
-
-- story: show time - can't find negate
-  steps:
-    - intent: request
-      entities:
-        - movie_name: "Hellboy"
-    - action: where
-    - intent: inform
-      entities:
-      - theater_name: "Century Daly City"
-    - action: cant_find
-    - intent: negate
-    - action: sorry
-    - action: bye
-
-- story: show time - can't find request alt
-  steps:
-    - intent: request
-      entities:
-        - movie_name: "Hellboy"
-    - action: where
-    - intent: inform
-      entities:
-      - theater_name: "Century Daly City"
-    - action: cant_find
-    - intent: request_alt
-
-
-  
