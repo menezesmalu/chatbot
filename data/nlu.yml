@@ -56,7 +56,7 @@ nlu:
       - Life history
       - scary
       - Rom-com
-  - lookup: location
+  - lookup: GPE
     examples: |
       - fairfield
       - San Bruno
@@ -120,7 +120,7 @@ nlu:
       - concord
       - Sonoma
       - Mill Valley
-  - lookup: movie_name
+  - lookup: WORK_OF_ART
     examples: |
       - How to Train your Dragon: The Hidden World
       - Citizen Kane
@@ -216,7 +216,7 @@ nlu:
       - The Mustang
       - Good Boys
       - Fiddler: A Miracle of Miracles
-  - lookup: number_of_tickets
+  - lookup: CARDINAL
     examples: |
       - 4
       - 3
@@ -226,7 +226,7 @@ nlu:
       - two
       - three
       - four
-  - lookup: show_date
+  - lookup: DATE
     examples: |
       - 10th of March
       - Next Tuesday
@@ -303,166 +303,7 @@ nlu:
       - next Thursday
       - Tuesday next week
       - 9th of March
-  - lookup: show_time
-    examples: |
-      - evening 7:15
-      - 10:30 in the night
-      - 6:45 in the evening
-      - 2:30 in the afternoon
-      - evening 6
-      - ten in the night
-      - night 10:15
-      - quarter past 6 in the evening
-      - 9:45 pm
-      - 22:30
-      - two in the afternoon
-      - seven in the evening
-      - evening 6:15
-      - quarter to 7 in the evening
-      - evening 7:30
-      - 10:30 pm
-      - 22:45
-      - 8:30 pm
-      - quarter to 5 in the evening
-      - quarter to 11 in the night
-      - 19:15
-      - evening 7:45
-      - 8:15 in the night
-      - 21:15
-      - seven pm
-      - half past 9 in the night
-      - quarter past 10 in the night
-      - 22:15
-      - quarter past 4 in the evening
-      - 6:30 in the evening
-      - eleven pm
-      - 2:30 pm
-      - 21:45
-      - 10:45 pm
-      - afternoon 3:30
-      - 9:15 pm
-      - 9:30 in the night
-      - 11:15 am
-      - quarter to 8 in the evening
-      - 6:30 pm
-      - half past 11 in the morning
-      - night 9
-      - evening 4:45
-      - 10:15 in the night
-      - quarter to 4 in the afternoon
-      - half past 6 in the evening
-      - 8:15 pm
-      - 22:00
-      - 7:45 pm
-      - night 9:45
-      - 9:30 pm
-      - night 10
-      - 4:30 pm
-      - ten pm
-      - 11:30 in the night
-      - 11 in the night
-      - 11 o"clock in the night
-      - 10:15 pm
-      - 6:15 in the evening
-      - 7 pm
-      - night 10:30
-      - 10 o"clock in the night
-      - Nine pm
-      - nine pm
-      - half past 10 in the night
-      - quarter past 7 in the evening
-      - half past 8 in the night
-      - 7:30 pm
-      - 5:15 in the evening
-  - lookup: show_type
-    examples: |
-      - imax
-      - regular
-      - 3d
-      - dontcare
-  - lookup: theater_name
-    examples: |
-      - Sonoma Cinema
-      - The Lot City Center
-      - Century Napa Valley and XD
-      - THE LOT City Center
-      - New Parkway Theater
-      - Boulevard Cinema
-      - Embarcadero Center Cinema
-      - United Artists Stonestown Twin
-      - Reading Cinemas Rohnert Park
-      - Airport Stadium Cinemas
-      - AMC Saratoga
-      - Alamo Drafthouse Cinema
-      - Alameda Theatre & Cineplex
-      - Summerfield Cinemas
-      - Rheem Theatre
-      - Vogue Theatre
-      - Century Rowland Plaza
-      - Century at Tanforan
-      - Cinelux Tennant Station
-      - Pruneyard Cinemas
-      - Century Redwood City
-      - Century Daly City
-      - Century at Tanforan and XD
-      - 3rd Street Cinema
-      - Stanford Theatre
-      - Piedmont Theatre
-      - AMC Deer Valley
-      - Roxy Stadium Cinemas
-      - Century 25 Union Landing and XD
-      - Century Downtown
-      - Century Cinemas
-      - Century at Pacific Commons
-      - Edwards Fairfield
-      - AMC Eastridge
-      - AMC Metreon
-      - Century Napa Valley
-      - 3 Below Theaters and lounge
-      - Veranda Luxe Cinema
-      - Century 20 Oakridge and XD
-      - Century San Francisco Centre
-      - dontcare
-      - Century Redwood city
-      - AMC Brentwood
-      - Century Walnut Creek
-      - Livermore Cinema
-      - AMC Bay Street
-      - United Artists Berkeley
-      - CineLux Tennant Station
-      - Regal Jack London
-      - Tiburon Playhouse
-      - Rialto Cinemas
-      - West Wind Capitol Drive-in
-      - ShowPlace ICON
-      - Pruneyard cinemas
-      - Century at Hayward
-      - AMC NewPark
-      - Veranda LUXE Cinema
-      - Century Union Landing
-      - Vine Cinema
-      - Albany Twin
-      - Lark Theater
-      - Century Blackhawk Plaza
-      - Presidio Theatre
-      - 3 Below Theaters And Lounge
-      - Century Oakridge
-      - Roxie Theater
-      - AMC Mercado
-      - Contra Costa
-      - Balboa Theatre
-      - Century Cinema
-      - raven Film Center
-      - 3rd Street cinema
-      - edwards fairfield
-      - Century 20 Great Mall and XD
-      - Guild Theatre
-      - Regal Crow Canyon
-      - Cinemark
-      - Raven Film center
-      - CineLux Almaden
-      - Century Vallejo
- 
+
   - intent: greet
     examples: |
       - hey
@@ -498,17 +339,15 @@ nlu:
       - am I talking to a human?
   - intent: affirm_intent
     examples: |
-      - Yes, I want the same and please book [2](number_of_tickets) tickets on the [4th](show_date) for a [3D](show_type) show.
       - Yes, I would like to buy them now.
-      - Yes. Please book for [Saturday this week](show_date).
-      - Yes, get me [one](number_of_tickets) ticket for next [Tuesday](show_date)
+      - Yes. Please book for [Saturday this week](DATE).
+      - Yes, get me [one](CARDINAL) ticket for next [Tuesday](DATE)
       - Yes, I would like to buy tickets.
-      - Yeah, I'd like to purchase [three](number_of_tickets) tickets right now.
-      - yes, Please buy the ticket and i need to watch in on [tuesday next week](show_date).
-      - Yes, I would like [three](number_of_tickets) tickets.
+      - Yeah, I'd like to purchase [three](CARDINAL) tickets right now.
+      - yes, Please buy the ticket and i need to watch in on [tuesday next week](DATE).
+      - Yes, I would like [three](CARDINAL) tickets.
       - Yes, let's get the tickets now.
-      - Yes, I would like a [regular](show_type) show on the [3rd of this month](show_date) for a [10:15 pm](show_time) showing.
-      - Yes can I get them now? book for the [3rd of this month](show_date) at [night 10:30](show_time).
+      - Yes can I get them now? book for the [3rd of this month](DATE).
       - Yes, let's buy the tickets.
       - Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.
       - Yes, let's go ahead and purchase them now before they sell out.
@@ -925,14 +764,14 @@ nlu:
       - tks
   - intent: inform_intent
     examples: |
-      - Thats great, [Hellboy](movie_name) will do. Show time please
-      - Hey [Toy Story 4](movie_name), that is the one I've been wanting to see, get me tickets for it please.
+      - Thats great, [Hellboy](WORK_OF_ART) will do. Show time please
+      - Hey [Toy Story 4](WORK_OF_ART), that is the one I've been wanting to see, get me tickets for it please.
       - i have to search for a movie to watch
-      - I would like to see [Little](movie_name). What time is it playing?
+      - I would like to see [Little](WORK_OF_ART). What time is it playing?
       - What movies are there to watch?
       - Hey, I'm looking for a movie.
       - I am bored and want to watch a movie.
-      - [Hustlers](movie_name) is great and can you purchase tickets for me?
+      - [Hustlers](WORK_OF_ART) is great and can you purchase tickets for me?
       - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
       - Another time, please. What are the times available for it?
       - My friends want to go see a movie, can you help?
@@ -941,81 +780,68 @@ nlu:
       - I want to find a movie.
       - Can you find me a movie?
       - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
-      - [Shazam](movie_name) would be great. What time is it showing?
-      - I would like to buy tickets to [IT two](movie_name), it sounds perfect.
+      - [Shazam](WORK_OF_ART) would be great. What time is it showing?
+      - I would like to buy tickets to [IT two](WORK_OF_ART), it sounds perfect.
       - What time is the movie showing?
-      - [Red Joan](movie_name) is great. When is it showing?
+      - [Red Joan](WORK_OF_ART) is great. When is it showing?
       - Not at this time. What time is it playing?
       - The best of enemies will be good, find the show time.
       - Please help me find a movie to watch.
-      - We'd love to see [Missing Link](movie_name). What are the showtimes?
-      - [Captain Marvel](movie_name) works. What are the times?
+      - We'd love to see [Missing Link](WORK_OF_ART). What are the showtimes?
+      - [Captain Marvel](WORK_OF_ART) works. What are the times?
       - I want to watch a movie and I need your help to purchase the tickets for the movie.
-      - [Penguin Highway](movie_name) is good and at what time can i watch it?
-      - [The Curse of La Llorona](movie_name) sounds good. When can i see it?
-      - What are the showtimes for [Missing Link](movie_name)?
+      - [Penguin Highway](WORK_OF_ART) is good and at what time can i watch it?
+      - [The Curse of La Llorona](WORK_OF_ART) sounds good. When can i see it?
+      - What are the showtimes for [Missing Link](WORK_OF_ART)?
       - Find me a movie to watch.
-      - I'd like to watch [Hotel Mumbai](movie_name). What time is the show?
+      - I'd like to watch [Hotel Mumbai](WORK_OF_ART). What time is the show?
       - Hey, can you help me find a movie to watch?
       - Hi! Can you help me find a movie?
       - What time can I watch the movie?
       - IT two sounds perfect for me, please buy me tickets for it.
       - I need to utilize my day in a very calm way for that watching movie is a good choice. Will you find me a movie to watch?
-      - What time is [How to Train Your Dragon: The Hidden World](movie_name) playing at?
-      - Yeah, I heard of that one! [Captain Marvel](movie_name) sounds good. What are the showtimes?
-      - [Breakthrough](movie_name) is perfect. What day and time is it showing?
-      - [Breakthrough](movie_name) sounds great. What times were available?
+      - What time is [How to Train Your Dragon: The Hidden World](WORK_OF_ART) playing at?
+      - Yeah, I heard of that one! [Captain Marvel](WORK_OF_ART) sounds good. What are the showtimes?
+      - [Breakthrough](WORK_OF_ART) is perfect. What day and time is it showing?
+      - [Breakthrough](WORK_OF_ART) sounds great. What times were available?
       - I am searching for a movie to watch.
       - I'd like to see a movie, can you find me one?
-      - What time is [Breakthrough](movie_name)? That sounds great! 
+      - What time is [Breakthrough](WORK_OF_ART)? That sounds great! 
+      - i want to buy tickets
+      - i wanna buy tickets
+      - i would like to buy tickets
+      - i want to watch a movie
   - intent: inform
     examples: |
-      - On the [3rd of this month](show_date), if possible.
-      - I am planning to catch a movie with my friend later. Can you recommend a [3d](show_type) movie?
-      - [March 7th](show_date), please.
-      - Search for movies playing right now in [Napa](location).
-      - I want to see the movie in [San Fran](location).
-      - Hey, can you help me get movie tickets to [IT Chapter Two](movie_name).
-      - Find movies in [Larkspur](location). I would like a [3d](show_type) show.
-      - I will need [three](number_of_tickets) tickets for the [8:15 pm](show_type) show if available.
-      - Not at the moment. I'd like to watch an [imax](show_type) show, what are the available times?
-      - I haven't seen a new movie a months. Can you find me an [Imax](show_type) show in [Campbell](location) to watch?
-      - Is it on at any other times? I'd actually like to go to the [Embarcadero Center Cinema](theater_name).
-      - Can you help me find an [adventure](genre) movie showing in [concord](location)?
-      - Can you find other movies? I want to see an [IMAX](show_type) movie at [Rialto Cinemas](theater_name).
+      - On the [3rd of this month](DATE), if possible.
+      - [March 7th](DATE), please.
+      - Search for movies playing right now in [Napa](GPE).
+      - I want to see the movie in [San Fran](GPE).
+      - Hey, can you help me get movie tickets to [IT Chapter Two](WORK_OF_ART).
+      - Can you help me find an [adventure](genre) movie showing in [concord](GPE)?
       - I would like to find a movie to watch in the [Imaginative fiction](genre) genre.
       - I'd like to see a movie, any genre is fine
-      - Please find some other options in [imax](show_type).
-      - Let's try something else. I want a [regular](show_type) show. Something like a [Biographical](genre) movie.
-      - I would like to watch the [regular](show_type) showing [next Monday](show_date). What time do they have available, then?
-      - I'd like to see the movie on [Sunday this week](show_date) at [19:15](show_type). A [regular](show_type) show is fine.
-      - What time is the movie available on [Tuesday next week](show_date)?
-      - Find movies in [Larkspur](location)
-      - I'm in [San Jose](location).
-      - I wish to see it on the [9th](show_date).
-      - Is it available at another time? How about on [March 4th](show_date)?
-      - Please can you look for a good movie to watch for this week end, might be in [San Jose](location)?
-      - I would like to buy a movie ticket in [Concord](location) on the [9th](show_date) for [four](number_of_tickets) people.
-      - I'm in [San Ramon](location), please find a movie there.
-      - I want movies shown in [Union City](location).
-      - Not right now. What times are available. I'd liek to see it in [Imax](show_type) if possible.
-      - Find me something else like a [regular](show_type) show.
-      - I'd like a location in [San Ramon](location).
-      - I am in [Oakland](location), so can you find me any nearby movies?
-      - In [Santa Rosa](location) please.
-      - I want to go [half past 6 in the evening](show_time) to see the show.
-      - [Long Shot](movie_name) sounds perfect. What are the show times? I would like to watch a [3d](show_type) show.
-      - Can you look in the [Newark](location) area?
-      - I want to watch a movie at [Century 25 Union Landing and XD](theater_name). I like [dramatic](genre) story movies.
-      - Help me find movies showing in [San Francisco](location).
-      - Are there any good movies showing in [Pleasant Hill](location)?
-      - I'd prefer something else, in [Menlo Park](location), any theater.
-      - Nah. Find me something [regular](show_type).
-      - I'd like [three](number_of_tickets) tickets, please.
-      - I am in [Palo Alto](location)
-      - I'm in [Palo Alto](location)
-      - I want to go to [Palo Alto](location)
-      - I wanna go to [Palo Alto](location)
+      - What time is the movie available on [Tuesday next week](DATE)?
+      - Find movies in [Larkspur](GPE)
+      - I'm in [San Jose](GPE).
+      - I wish to see it on the [9th](DATE).
+      - Is it available at another time? How about on [March 4th](DATE)?
+      - Please can you look for a good movie to watch for this week end, might be in [San Jose](GPE)?
+      - I would like to buy a movie ticket in [Concord](GPE) on the [9th](DATE) for [four](CARDINAL) people.
+      - I'm in [San Ramon](GPE), please find a movie there.
+      - I want movies shown in [Union City](GPE).
+      - I'd like a GPE in [San Ramon](GPE).
+      - I am in [Oakland](GPE), so can you find me any nearby movies?
+      - In [Santa Rosa](GPE) please.
+      - Can you look in the [Newark](GPE) area?
+      - Help me find movies showing in [San Francisco](GPE).
+      - Are there any good movies showing in [Pleasant Hill](GPE)?
+      - I'd prefer something else, in [Menlo Park](GPE), any theater.
+      - I'd like [three](CARDINAL) tickets, please.
+      - I am in [Palo Alto](GPE)
+      - I'm in [Palo Alto](GPE)
+      - I want to go to [Palo Alto](GPE)
+      - I wanna go to [Palo Alto](GPE)
   - intent: request_alts
     examples: |
       - Nope, not the hilarious nightmare movies. Please find something else.
@@ -1106,7 +932,7 @@ nlu:
       - Any other times?
       - Do you have other proposals?
       - Not really, could help search for other movies?
-      - Please search for other movies to see in downtown [San Fran](location).
+      - Please search for other movies to see in downtown [San Fran](GPE).
       - Please go with another option.
       - No, find some other movies.
       - What else do you have?
@@ -1117,7 +943,6 @@ nlu:
       - I'm not sure I would like any of those. What else is showing?
       - Try some different movies?
       - No, what other movies are there?
-      - I'm not sure I can make the [1 pm](show_time) showing. Is there another time the movie is showing?
       - Nah, none of those.
       - What else is there?
   - intent: request
@@ -1133,7 +958,7 @@ nlu:
       - can you tell me, Who is the director of that movie?
       - Yes. Which theatre is bes.
       - What genre is that, and who's in it?
-      - Okay, how much do the tickets cost and can you provide me with the location of the theatre?
+      - Okay, how much do the tickets cost and can you provide me with the GPE of the theatre?
       - Okay..this is perfect...can i know the ticket cost?
       - Who acted in this movie and who is the director?
       - and what is the ticket cost?
@@ -1169,7 +994,7 @@ nlu:
       - Yes thank you. How much is it and what kind of movie is it?
       - May I know the address of the theater and the kind of movie it is?
       - Who directed this movie?
-      - Who directed [Angry Birds 2](movie_name)? Is that a [comedy](genre) or what?
+      - Who directed [Angry Birds 2](WORK_OF_ART)? Is that a [comedy](genre) or what?
       - What type of movie is this?
       - What genre is this movie? And where is the theatre's located
       - Can you please give me the address for the theater?
@@ -1218,7 +1043,7 @@ nlu:
       - Tell me about the cost of the ticket for that movie?
       - Who directed this movie and what genre is it?
       - Where is the theater located?
-      - What is the location of the theater?
+      - What is the GPE of the theater?
       - Okay, Thank you, Please tell me the ticket cost and Which theater do you prefer for me?
       - Who is the actor in the movie?
       - the answer is below
@@ -1226,12 +1051,11 @@ nlu:
       - Please tell me who's starring in the film, as well as the genre.
       - Yes, that sounds good. How much will this cost? Can you get me the address of the theater?
       - What genre is it and how much are tickets?
-      - What is the address of [The Lot City Center](theater_name)?
       - Can you tell me which genre this movie is in and who stars in it?
       - Can you tell me the cost of the movie and what kind of movie is it?
       - Who directed the movie?
       - What's the address?
-      - What type of movie is [Captain Marvel](movie_name)? I just want to make sure it is the one I had in mind.
+      - What type of movie is [Captain Marvel](WORK_OF_ART)? I just want to make sure it is the one I had in mind.
       - Okay, nice. What genre is [Hellboy](genre) listed as?
       - Who directed this?
       - Who starred in the movie?
@@ -1248,7 +1072,6 @@ nlu:
       - Yes, that is correct. What is the address of the cinema.
       - That is perfect. Please proceed and let me know the type of movie.
       - Who starred in it?
-      - Let me know the cast and crew details of this movie to choose.
       - Yes, That is correct. Can you find me the address of the theater and the cost of the ticket?
       - Alright, how much is that ticket?
       - Do you know the theater's address as well as the ticket price?
@@ -1318,7 +1141,7 @@ nlu:
       - Who is the director? What kind of movie is it?
       - What's the address of the theatre and how much is the ticket?
       - How much does that cost? Where's the theater?
-      - Can I have the correct location of the theatre? I mean, address..
+      - Can I have the correct GPE of the theatre? I mean, address..
       - Whats the address?
       - Can you also please tell me the price of the ticket?
       - How much is it?
@@ -1360,7 +1183,7 @@ nlu:
       - How much is the ticket? And what's the address of the theater?
       - How much is the ticket and what genre is the movie?
       - What is the cost of the ticket and what is the address?
-      - That is correct. Let me know the type of movie and location of the theater.
+      - That is correct. Let me know the type of movie and GPE of the theater.
       - Where is that? How much does it cost?
       - Do you know the genre of movie and fare of ticket.
       - How much is the ticket for?
@@ -1375,127 +1198,127 @@ nlu:
       - Where's that theater?
       - Ok , great. will you tell me the address of that theater?
       - Yes, that's perfect. What's the address of the theater?
-      - What is the theater location?
+      - What is the theater GPE?
   - intent: select
     examples: |
       - Thanks. That's all I need.
-      - [Long Shot](movie_name) sounds great.
+      - [Long Shot](WORK_OF_ART) sounds great.
       - I want to see that.
       - Sounds perfect, that's all I wanted.
       - That's great, that'll be all for today.
-      - Yes, [Pet Sematary](movie_name) sounds great!
+      - Yes, [Pet Sematary](WORK_OF_ART) sounds great!
       - Yeah! That works.
       - That sounds just fine.
-      - may be [Little](movie_name), I think which is perfect.
+      - may be [Little](WORK_OF_ART), I think which is perfect.
       - That is great. I don't need anything further.
       - Sounds good
-      - Oh, I forgot about [Captain Marvel](movie_name). That one would be perfect.
+      - Oh, I forgot about [Captain Marvel](WORK_OF_ART). That one would be perfect.
       - That is great .That was all that I needed for now.
       - Sure thing.
       - Oh, It sounds good.
-      - [Breakthrough](movie_name) sounds great.
+      - [Breakthrough](WORK_OF_ART) sounds great.
       - That's perfect, I'm all set.
       - I see, that sounds great! That is all I need for now.
       - Sounds good, thanks. That's all I need!
       - That sounds perfect. That's all I need for now.
       - Awesome, thats all I need to know.
-      - Yes, I want to watch [The Curse of La Llorona](movie_name).
-      - [The Curse of La Llorona](movie_name) sounds good.
+      - Yes, I want to watch [The Curse of La Llorona](WORK_OF_ART).
+      - [The Curse of La Llorona](WORK_OF_ART) sounds good.
       - Awesome. Thank you for your help.
       - Yes, that one sounds really good. That's all I needed today.
-      - [Captain Marvel](movie_name) sounds great.
-      - [Breakthrough](movie_name) sound perfect.
-      - I've heard [Shazam](movie_name)! is really good. I think we'll watch that one.
+      - [Captain Marvel](WORK_OF_ART) sounds great.
+      - [Breakthrough](WORK_OF_ART) sound perfect.
+      - I've heard [Shazam](WORK_OF_ART)! is really good. I think we'll watch that one.
       - Sure. I've never heard of it, but we'll give it a shot.
       - Great, That's all I need
       - That sounds good.
       - Sounds good. That's everything for now.
       - That seems good. That'll be all.
-      - [Missing Link](movie_name) is good
-      - Yes, I would like to see [Penguin Highway](movie_name).
+      - [Missing Link](WORK_OF_ART) is good
+      - Yes, I would like to see [Penguin Highway](WORK_OF_ART).
       - Awesome, thanks. That'll be everything.
       - That sounds great!
-      - [Official Secrets](movie_name) sounds prefect.
+      - [Official Secrets](WORK_OF_ART) sounds prefect.
       - Thanks thats everything
-      - [Red Joan](movie_name) sounds great.
-      - Lets go with [Hellboy](movie_name).
+      - [Red Joan](WORK_OF_ART) sounds great.
+      - Lets go with [Hellboy](WORK_OF_ART).
       - That will work.
       - That is perfect for me.
       - That one sounds good, thank you. That's all I need.
       - Ok. This is perfect
       - Ok that sounds good.
-      - [Pillow talk](movie_name) sounds good to me.
+      - [Pillow talk](WORK_OF_ART) sounds good to me.
       - That sounds perfect.
       - I might like it, thank you for the advice, bye.
       - Thanks, that is all.
       - Thank you for the information.
-      - [Ash Is Purest White](movie_name) would be great.
+      - [Ash Is Purest White](WORK_OF_ART) would be great.
       - Awesome. That about does it.
       - That seems awesome.
       - Terrific. That's all I need for now.
       - Yeah that one sounds better
-      - [Hotel Mumbai](movie_name) is a good movie.
-      - [Fiddler is perfect](movie_name).
-      - [Shazam!](movie_name) sounds perfect!
-      - [Ad Astra](movie_name) is a good movie.
+      - [Hotel Mumbai](WORK_OF_ART) is a good movie.
+      - [Fiddler is perfect](WORK_OF_ART).
+      - [shazam](WORK_OF_ART) sounds perfect!
+      - [Ad Astra](WORK_OF_ART) is a good movie.
       - Perfect.
-      - Ok i got it ,Movie [Pet Sematary](movie_name) is Perfect and it suits my taste.
+      - Ok i got it ,Movie [Pet Sematary](WORK_OF_ART) is Perfect and it suits my taste.
       - Sounds good, that is all.
       - sounds very good
-      - [Shazam!](movie_name) works for me.
-      - Yeah, The [Last Dragon](movie_name) sounds great
-      - I love [Dumbo](movie_name).
+      - [shazam](WORK_OF_ART) works for me.
+      - Yeah, The [Last Dragon](WORK_OF_ART) sounds great
+      - I love [Dumbo](WORK_OF_ART).
       - That's not too bad.
       - Great. Thanks for the information.
-      - [Shine a Light](movie_name) sounds good.
+      - [Shine a Light](WORK_OF_ART) sounds good.
       - Yeah, this sounds great.
-      - [Captain Marvel](movie_name) it is that's just the kind of movie I was looking to see.
-      - [Dumbo](movie_name) seem like a good choice.
+      - [Captain Marvel](WORK_OF_ART) it is that's just the kind of movie I was looking to see.
+      - [Dumbo](WORK_OF_ART) seem like a good choice.
       - The film Where would you go is fine for me.
       - That is perfect, that is all.
-      - [Dumbo](movie_name) sounds great!
+      - [Dumbo](WORK_OF_ART) sounds great!
       - That sounds perfect, I'm all set.
       - That works
       - Sounds great. That's all I need for now.
       - Ok. That is all i need
-      - [Shazam!](movie_name) sounds good.
+      - [shazam](WORK_OF_ART) sounds good.
       - Perfect! Thank you for your help.
       - Wonderful thanks. That is all.
-      - I would rather see [Breakthrough](movie_name).
+      - I would rather see [Breakthrough](WORK_OF_ART).
       - Thank you
-      - [Teen Spirit](movie_name) is perfect.
+      - [Teen Spirit](WORK_OF_ART) is perfect.
       - Ok. Great. That's all for now.
       - That's good then, that's all I need
-      - It is ideal for [Captain Marvel](movie_name).
+      - It is ideal for [Captain Marvel](WORK_OF_ART).
       - That's great , and thanks a lot
       - Alright, that sounds fine. I don't need help with anything else.
       - Sure. That's all.
       - That will be suitable.
-      - [Little](movie_name) is perfect.
+      - [Little](WORK_OF_ART) is perfect.
       - Thank you. Sounds good.
       - Ok, that will work. That's all I need.
-      - Oh i think [Pet Sematary](movie_name) may be a great movie to watch
+      - Oh i think [Pet Sematary](WORK_OF_ART) may be a great movie to watch
       - That's great. Thanks.
       - That sounds perfect!
       - after is perfect
-      - Oh yes! [A Madea Family Funeral](movie_name). I've been wanting to see this picture.
+      - Oh yes! [A Madea Family Funeral](WORK_OF_ART). I've been wanting to see this picture.
       - ok thats great, thank you very much.
       - That sounds good, that will be all.
       - OK it's good
-      - I love to watch [Pet Sematary](movie_name).
-      - I want to watch [Ash Is Purest White](movie_name)?
-      - That sounds great, [The Curse of La Llorona](movie_name) it is!
+      - I love to watch [Pet Sematary](WORK_OF_ART).
+      - I want to watch [Ash Is Purest White](WORK_OF_ART)?
+      - That sounds great, [The Curse of La Llorona](WORK_OF_ART) it is!
       - I like that, thanks!
       - Sounds perfect. That will be all.
       - Great, thanks.
       - After sounds great.
       - Yes that is good information.
-      - I'd love to see [Hobbs and Shaw](movie_name).
+      - I'd love to see [Hobbs and Shaw](WORK_OF_ART).
       - Thank you for your help. Have a nice day.
-      - [The Curse of La Llorona](movie_name) sounds great.
+      - [The Curse of La Llorona](WORK_OF_ART) sounds great.
       - Okay, that's all the help I need.
-      - [Missing Link](movie_name) sounds perfect.
-      - [Red Joan](movie_name) is great!
+      - [Missing Link](WORK_OF_ART) sounds perfect.
+      - [Red Joan](WORK_OF_ART) is great!
       - Good looks. You've been a lot of help.
       - That sounds perfect for me.
       - Sure that sounds great
@@ -1504,18 +1327,18 @@ nlu:
       - Great, that will be fine.
       - Okay, sounds good.
       - Sounds great, Im ready.
-      - Ok, [Shazam](movie_name) will be perfect! I can't wait to see it!
-      - [Captain Marvel](movie_name) is perfect.
+      - Ok, [Shazam](WORK_OF_ART) will be perfect! I can't wait to see it!
+      - [Captain Marvel](WORK_OF_ART) is perfect.
       - That is fine.
-      - I would love to see [Captain Marvel](movie_name)!
+      - I would love to see [Captain Marvel](WORK_OF_ART)!
       - Yes, I want to see that. Thanks.
       - OK. That is all.
       - That sounds good. That's all I need for now.
       - That's good. That's all I need for now.
       - That sounds good, that is all I needed.
-      - [Hellboy](movie_name) is a good movie.
+      - [Hellboy](WORK_OF_ART) is a good movie.
       - That's a little late, but it sounds good. Thank you that will be all I need.
-      - I want [Captain Marvel](movie_name).
+      - I want [Captain Marvel](WORK_OF_ART).
       - Thanks, sounds good to me.
       - Yes, that works for me
-      - [How to Train Your Dragon: The Hidden World](movie_name) sounds good.
+      - [How to Train Your Dragon: The Hidden World](WORK_OF_ART) sounds good.
