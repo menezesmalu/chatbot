@@ -1,0 +1,47 @@
+version: "2.0"
+stories:
+- story: sad path 1 (./venv/lib/python3.6/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_introduce
+  - intent: mood_unhappy  # predicted: negate: not good
+  - action: utter_cheer_up  # predicted: utter_choose_movie
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm
+  - action: utter_happy  # predicted: utter_confirm
+- story: sad path 2 (./venv/lib/python3.6/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_introduce
+  - intent: mood_unhappy  # predicted: negate: not good
+  - action: utter_cheer_up  # predicted: utter_choose_movie
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: negate: not really
+  - action: utter_goodbye  # predicted: utter_choose_movie
+- story: sad path 3 (./venv/lib/python3.6/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_introduce
+  - intent: mood_unhappy  # predicted: select: very terrible
+  - action: utter_cheer_up  # predicted: utter_choose_movie
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: negate: no
+  - action: utter_goodbye  # predicted: utter_choose_movie
+- story: bot challenge (./venv/lib/python3.6/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot  # predicted: action_default_fallback
+- story: happy path 1 (./venv/lib64/python3.6/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_introduce
+  - intent: mood_great  # predicted: thank_you: amazing
+  - action: utter_happy  # predicted: utter_choose_movie
+- story: happy path 2 (./venv/lib64/python3.6/site-packages/rasa/cli/initial_project/tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet  # predicted: utter_introduce
+  - intent: mood_great  # predicted: thank_you: amazing
+  - action: utter_happy  # predicted: utter_choose_movie
+  - intent: goodbye
+  - action: utter_goodbye

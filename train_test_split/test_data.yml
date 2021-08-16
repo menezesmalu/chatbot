@@ -1,0 +1,694 @@
+version: "2.0"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - am I talking to a bot?
+- intent: goodbye
+  examples: |
+    - cu
+    - bye bye
+- intent: greet
+  examples: |
+    - good morning
+    - goodmorning
+    - goodevening
+- intent: affirm_intent
+  examples: |
+    - Yes, let's buy the tickets.
+    - Yes, I would like to buy tickets.
+    - Yes can I get them now? book for the [3rd of this month](show_date) at [night 10:30](show_time).
+- intent: inform_intent
+  examples: |
+    - What movies are there to watch?
+    - I want to find a movie.
+    - Yeah, I heard of that one! [Captain Marvel](movie_name) sounds good. What are the showtimes?
+    - The best of enemies will be good, find the show time.
+    - Hey, I'm looking for a movie.
+    - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
+    - IT two sounds perfect for me, please buy me tickets for it.
+    - [Hustlers](movie_name) is great and can you purchase tickets for me?
+- intent: inform
+  examples: |
+    - Let's try something else. I want a [regular](show_type) show. Something like a [Biographical](genre) movie.
+    - Can you help me find an [adventure](genre) movie showing in [concord](location)?
+    - Please find some other options in [imax](show_type).
+    - Not at the moment. I'd like to watch an [imax](show_type) show, what are the available times?
+    - Is it on at any other times? I'd actually like to go to the [Embarcadero Center Cinema](theater_name).
+    - On the [3rd of this month](show_date), if possible.
+    - I'm in [Palo Alto](location)
+    - [Long Shot](movie_name) sounds perfect. What are the show times? I would like to watch a [3d](show_type) show.
+    - I'd like [three](number_of_tickets) tickets, please.
+- intent: affirm
+  examples: |
+    - It is good.
+    - Yes I do.
+    - Yes, that's perfect.
+    - That is correct.
+    - Perfect, thanks so much.
+    - Yes, everything you have have is correct.
+    - That is confirmed to proceed.
+    - Yes is perfect for me.
+    - You are one hundred percent correct.
+    - yes
+- intent: thank_you
+  examples: |
+    - Thank you for you help, that's all I need now.
+    - Thanks so much for booking those tickets and helping me
+    - Great, thanks for the help?
+    - Wow, great. Thank you.
+    - Thank you for your time.
+    - Thanks for helping.
+    - Thanks very much for your help. That's all I needed help with.
+    - Thanks for doing that
+    - Thanks a bunch for your assistance.
+    - Thanks for everything.
+    - Great. Thanks for the assistance.
+    - I really thank you for your help.
+- intent: request_alts
+  examples: |
+    - Are there any other times it's playing?
+    - Is the movie playing at another time?
+    - Are there any other movies playing?
+    - Is there anything else?
+    - Can you find something else?
+    - No, what other movies are there?
+    - Those don't sound like my type of movies either, do you know of any others?
+    - Is there any other time the movie is playing?
+    - Is there anything else/
+    - What other movies are playing?
+    - Nah I've already seen those. Find me something else.
+    - No, please look for something else.
+    - Find me something else.
+    - Any other times.
+    - Do you have any other suggestions?
+    - Could you find some other movies, please?
+    - Find something else.
+    - Are any other movies playing?
+    - Is there any other movies?
+    - Look for any other movies
+    - Can you still find some other movies?
+- intent: negate_intent
+  examples: |
+    - No, I will wait to confirm with my friend before purchasing tickets.
+    - No, thanks , I don't want it now?
+    - No, not right now, but thank you.
+    - No, I don't want to purchase it right now.
+    - No, not at the moment. Thank you, that will be all.
+    - No not now
+    - No, I'm not ready to buy right now. That was all I wanted.
+    - No, I don't want them now.
+    - No, I don't need them.
+    - Nah, I'm not going to get them yet.
+    - No not right now
+    - No thank you, I do not require further help.
+    - Not this second no
+    - No, not now. That's it.
+    - No thanks, I don't want to buy them yet. I am not positive that I will be able to go that day. I don't need anything else.
+    - No, I'll purchase later. That is all.
+    - No thanks, I think I'll buy them later
+    - No, not now
+    - No thank you. That's all I wanted.
+    - Not right now.
+    - No, I will purchase later thank you.
+- intent: select
+  examples: |
+    - Thanks, sounds good to me.
+    - That sounds perfect.
+    - OK it's good
+    - That sounds just fine.
+    - That is fine.
+    - Sounds good
+    - After sounds great.
+    - That's great. Thanks.
+    - Thank you
+    - I might like it, thank you for the advice, bye.
+    - That will work.
+    - Yeah! That works.
+    - I'd love to see [Hobbs and Shaw](movie_name).
+    - Okay, that's all the help I need.
+    - OK. That is all.
+    - Ok. This is perfect
+    - I would rather see [Breakthrough](movie_name).
+    - That sounds good. That's all I need for now.
+    - That sounds good, that is all I needed.
+    - [Dumbo](movie_name) seem like a good choice.
+    - That sounds great, [The Curse of La Llorona](movie_name) it is!
+    - Awesome. That about does it.
+    - Sure. That's all.
+    - Awesome, thanks. That'll be everything.
+    - That's perfect, I'm all set.
+    - Ok, that will work. That's all I need.
+    - Thanks thats everything
+    - Ok. Great. That's all for now.
+    - Awesome, thats all I need to know.
+- intent: negate
+  examples: |
+    - No that's all for now. Thanks for your help.
+    - No, thanks. That's all now.
+    - No that's all for now thanks.
+    - No thank you.
+    - No. That will be all.
+    - No, Thanks you for your help
+    - No,Thank you very much
+    - No, that will be all. Thank you very much!
+    - No it's all good for now
+    - Thank you but no. I'm good.
+    - no way
+    - Umm, no. I need to figure this out. I'll let you know if I need anything further.
+    - No, you were a great help, thank you!
+    - No, that would be all. Thanks.
+    - Nothing for now and thanks.
+    - Not now. Thanks!
+    - No, that is all.
+    - Nope. but thanks for your help
+    - No. Thanks for all your help.
+    - No, thanks, It's all
+    - No it's ok for now, thanks though
+    - I think this will do it. Thank you for your help.
+    - Nope, that's a lot.
+    - I've got all I want. Thanks a lot.
+    - No. Thank you for your help.
+    - No, thats it. Thanks.
+    - No. Thanks so much
+    - n
+    - Nope. Nothing now
+    - No, that is all I need. Thank you for your kind assistance!
+    - Nope, that will be all for now but thanks for asking.
+    - No, that's it.
+    - No not at the moment thank you though.
+    - Nope, thanks. Done.
+    - No, you've done enough thanks.
+    - I don't think so, thank you.
+- intent: request
+  examples: |
+    - What is the location of the theater?
+    - How much does the ticket cost?
+    - Who is the actor in the movie?
+    - Yes, that sounds good. What theatre is the movie at?
+    - Yes, what is the address>
+    - Where's the theater?
+    - Can I have the price of the ticket and the address to the theater?
+    - How much per ticket?
+    - How much does the ticket cost and what is the address of the theater?
+    - Can you tell me which genre this movie is in and who stars in it?
+    - What is the genre?
+    - That sounds great! How much does this cost?
+    - And how much does it cost?
+    - Do you know the genre of movie and fare of ticket.
+    - Yes, what's the address? What's a good one?
+    - What genre is this movie? And where is the theatre's located
+    - How much do the tickets cost?
+    - That is fine with me, may I have their address please?
+    - How much is the ticket? What's the address of the theater?
+    - Who directed this?
+    - What would you call that type of movie?
+    - How much does it cost?
+    - Could you please find out the theater address, as well as the ticket price?
+    - Tell me the address of the theater and what kind of movie is it?
+    - How much is the ticket and what genre is the movie?
+    - What's the address of the theater? What sort of movie is it?
+    - I don't know, what genre is the movie classified as and can you tell me who directed it?
+    - Can you tell me who directed it?
+    - I'm not familiar with it, can you tell me who stars in the movie?
+    - Wait. How much are the tickets? Is this a [Horror](genre) movie?
+    - Okay, nice. What genre is [Hellboy](genre) listed as?
+    - What genre is it and how much are tickets?
+    - That sounds great! Which theater will that be at?
+    - Ok that sounds good. How much is the ticket costs? what is the address of the theater?
+    - How much will the ticket cost, and where is the theater located?
+    - Alright, how much is that ticket?
+    - Can you tell me the cost of the movie and what kind of movie is it?
+    - Who directed this movie and what genre is it?
+    - That is all correct, what is the address of the theater?
+    - What genre of movie is it?
+    - May I know who played in this movie?
+    - Can you give me the address to the theater?
+    - What genre is it?
+    - Where is the theater and how much is it?
+    - Where's the theater at and how much are tickets?
+    - May I have the theater's address please?
+    - How much is the ticket? What is the genere?
+    - and what is the ticket cost?
+    - Okay, Thank you, Please tell me the ticket cost and Which theater do you prefer for me?
+    - Can you please give me the address for the theater?
+    - Who is the director? What kind of movie is it?
+- lookup: genre
+  examples: |
+    - Suspense
+    - Drama
+    - Comedy-drama
+    - Animation
+    - comic
+    - Comedy
+    - Ghost
+    - Cult
+    - Action
+    - Play
+    - horror
+    - Supernatural
+    - Fantasy
+    - funny
+    - Imaginative fiction
+    - Dramatic story
+    - War
+    - Eccentric story
+    - Anime
+    - thriller
+    - Cartoon
+    - Eccentric Story
+    - Funny
+    - crime
+    - fantasy
+    - drama
+    - Scientific fiction
+    - Comic
+    - Dramatic Story
+    - biographical
+    - action
+    - dontcare
+    - adventure
+    - Romance
+    - comedy
+    - Non-fiction
+    - Biographical
+    - Scary
+    - dramatic story
+    - Documentary
+    - Exotic
+    - romance
+    - non-fiction
+    - documentary
+    - Horror
+    - cartoon
+    - Adventure
+    - Thriller
+    - family
+    - Life history
+    - scary
+    - Rom-com
+- lookup: location
+  examples: |
+    - fairfield
+    - San Bruno
+    - San Rafael
+    - Walnut creek
+    - Union City
+    - Concord
+    - Morgan Hill
+    - Berkeley
+    - Redwood City
+    - Sebastopol
+    - Brentwood
+    - Novato
+    - Hayward
+    - Walnut Creek
+    - Albany
+    - Vacaville
+    - Newark
+    - Menlo Park
+    - San Fran
+    - Larkspur
+    - Milpitas
+    - Vallejo
+    - Antioch
+    - Hillsborough
+    - SF
+    - Napa
+    - Santa Clara
+    - Tiburon
+    - Livermore
+    - San Leandro
+    - Dublin
+    - Redwood CIty
+    - Palo Alto
+    - Pleasant Hill
+    - Cloverdale
+    - Mountain View
+    - Santa ROsa
+    - Fremont
+    - Alameda
+    - Danville
+    - walnut creek
+    - Pittsburg
+    - mountain view
+    - San Jose
+    - Fairfield
+    - Moraga
+    - Santa Rosa
+    - Rohnert Park
+    - Petaluma
+    - Emeryville
+    - Martinez
+    - SFO
+    - Oakland
+    - San Francisco
+    - Campbell
+    - El Cerrito
+    - Daly City
+    - Healdsburg
+    - San Ramon
+    - concord
+    - Sonoma
+    - Mill Valley
+- lookup: movie_name
+  examples: |
+    - How to Train your Dragon: The Hidden World
+    - Citizen Kane
+    - Toy story four
+    - The Upside
+    - The best of enemies
+    - After The Wedding
+    - Stage Door
+    - Shine a light
+    - Saaho
+    - A Faithful Man
+    - Shazam
+    - Missing link
+    - The Lord of the Rings
+    - The Farewell
+    - The Best of Enemies
+    - Say Anything
+    - Pillow talk
+    - Long Shot
+    - The Angry Birds Movie 2
+    - Curse of La Llorona
+    - Suburban Birds
+    - Where would you go
+    - Stockholm
+    - Hustlers
+    - A Madea Family Funeral
+    - Ash Is Purest White
+    - Wild Nights with Emily
+    - Farewell
+    - Hobbs and Shaw
+    - Pillow Talk
+    - 47 Meters Down
+    - Penguin Highway
+    - Captain Marvel
+    - Chhichhore
+    - Little
+    - This Is Not Berlin
+    - Toy Story Four
+    - The Last Dragon
+    - Ad Astra
+    - IT Chapter Two
+    - IT2
+    - How to Train Your Dragon: The Hidden World
+    - The Lord of the Rings three
+    - Mary Magdalene
+    - Luce
+    - Aftermath
+    - Fiddler
+    - The Curse of La Llorona
+    - After the Wedding
+    - Hellboy
+    - JT LeRoy
+    - Overcomer
+    - Once Upon a Time In Hollywood
+    - After
+    - Dr. Strangelove
+    - Angel Has Fallen
+    - Fighting with My family
+    - Pet Sematary
+    - Hackers
+    - Official Secrets
+    - Hotel Mumbai
+    - Brittany Runs a Marathon
+    - Auntie Mame
+    - Family
+    - Breakthrough
+    - Mission Mangal
+    - Angel has fallen
+    - Gloria Bell
+    - Dumbo
+    - Long shot
+    - the curse of la llorona
+    - Dogman
+    - Viva Las Vegas
+    - Teen Spirit
+    - Knock Down The House
+    - The Load
+    - The Poseidon Adventure
+    - Red Joan
+    - IT two
+    - High Life
+    - Josie and the Pussycats
+    - 47 Meters DOwn: Uncaged
+    - Body Double
+    - Jt Leroy
+    - Transit
+    - Shine a Light
+    - The Invisibles
+    - Toy Story 4
+    - Missing Link
+    - after
+    - Ladykillers
+    - The Mustang
+    - Good Boys
+    - Fiddler: A Miracle of Miracles
+- lookup: number_of_tickets
+  examples: |
+    - 4
+    - 3
+    - 1
+    - 2
+    - one
+    - two
+    - three
+    - four
+- lookup: show_date
+  examples: |
+    - 10th of March
+    - Next Tuesday
+    - next wednesday
+    - 5th of March
+    - next Tuesday
+    - The 9th
+    - the 8th
+    - the 2nd
+    - March 9th
+    - the 3rd
+    - tuesday next week
+    - the 17th
+    - 6th of March
+    - 3rd of this month
+    - March 4th
+    - the 15th
+    - next Monday
+    - Thursday next week
+    - 6th of this month
+    - the 4th
+    - Next Friday
+    - 2nd of March
+    - this saturday
+    - march 7th
+    - 4th of March
+    - 9th of this month
+    - the 10th
+    - the 11th
+    - the 16th
+    - March 3rd
+    - 5th of this month
+    - 1st of March
+    - next Friday
+    - 8th of March
+    - today
+    - Saturday this week
+    - March 5th
+    - March 7th
+    - 8th of this month
+    - 16th of March
+    - March 10th
+    - the 1st
+    - 1st of march
+    - March 6th
+    - March 1st
+    - 7th of March
+    - this Sunday
+    - This Saturday
+    - March 11th
+    - 15th of March
+    - this Saturday
+    - March 8th
+    - 2nd of this month
+    - 1st of this month
+    - Friday next week
+    - tomorrow
+    - 4th of this month
+    - 3rd of March
+    - Tomorrow
+    - 10th of this month
+    - 7th of this month
+    - This Sunday
+    - Wednesday next week
+    - the 9th
+    - Sunday this week
+    - later today
+    - March 2nd
+    - Monday next week
+    - the 7th
+    - the 5th
+    - day after tomorrow
+    - 16th of this Month
+    - next Thursday
+    - Tuesday next week
+    - 9th of March
+- lookup: show_time
+  examples: |
+    - evening 7:15
+    - 10:30 in the night
+    - 6:45 in the evening
+    - 2:30 in the afternoon
+    - evening 6
+    - ten in the night
+    - night 10:15
+    - quarter past 6 in the evening
+    - 9:45 pm
+    - 22:30
+    - two in the afternoon
+    - seven in the evening
+    - evening 6:15
+    - quarter to 7 in the evening
+    - evening 7:30
+    - 10:30 pm
+    - 22:45
+    - 8:30 pm
+    - quarter to 5 in the evening
+    - quarter to 11 in the night
+    - 19:15
+    - evening 7:45
+    - 8:15 in the night
+    - 21:15
+    - seven pm
+    - half past 9 in the night
+    - quarter past 10 in the night
+    - 22:15
+    - quarter past 4 in the evening
+    - 6:30 in the evening
+    - eleven pm
+    - 2:30 pm
+    - 21:45
+    - 10:45 pm
+    - afternoon 3:30
+    - 9:15 pm
+    - 9:30 in the night
+    - 11:15 am
+    - quarter to 8 in the evening
+    - 6:30 pm
+    - half past 11 in the morning
+    - night 9
+    - evening 4:45
+    - 10:15 in the night
+    - quarter to 4 in the afternoon
+    - half past 6 in the evening
+    - 8:15 pm
+    - 22:00
+    - 7:45 pm
+    - night 9:45
+    - 9:30 pm
+    - night 10
+    - 4:30 pm
+    - ten pm
+    - 11:30 in the night
+    - 11 in the night
+    - 11 o"clock in the night
+    - 10:15 pm
+    - 6:15 in the evening
+    - 7 pm
+    - night 10:30
+    - 10 o"clock in the night
+    - Nine pm
+    - nine pm
+    - half past 10 in the night
+    - quarter past 7 in the evening
+    - half past 8 in the night
+    - 7:30 pm
+    - 5:15 in the evening
+- lookup: show_type
+  examples: |
+    - imax
+    - regular
+    - 3d
+    - dontcare
+- lookup: theater_name
+  examples: |
+    - Sonoma Cinema
+    - The Lot City Center
+    - Century Napa Valley and XD
+    - THE LOT City Center
+    - New Parkway Theater
+    - Boulevard Cinema
+    - Embarcadero Center Cinema
+    - United Artists Stonestown Twin
+    - Reading Cinemas Rohnert Park
+    - Airport Stadium Cinemas
+    - AMC Saratoga
+    - Alamo Drafthouse Cinema
+    - Alameda Theatre & Cineplex
+    - Summerfield Cinemas
+    - Rheem Theatre
+    - Vogue Theatre
+    - Century Rowland Plaza
+    - Century at Tanforan
+    - Cinelux Tennant Station
+    - Pruneyard Cinemas
+    - Century Redwood City
+    - Century Daly City
+    - Century at Tanforan and XD
+    - 3rd Street Cinema
+    - Stanford Theatre
+    - Piedmont Theatre
+    - AMC Deer Valley
+    - Roxy Stadium Cinemas
+    - Century 25 Union Landing and XD
+    - Century Downtown
+    - Century Cinemas
+    - Century at Pacific Commons
+    - Edwards Fairfield
+    - AMC Eastridge
+    - AMC Metreon
+    - Century Napa Valley
+    - 3 Below Theaters and lounge
+    - Veranda Luxe Cinema
+    - Century 20 Oakridge and XD
+    - Century San Francisco Centre
+    - dontcare
+    - Century Redwood city
+    - AMC Brentwood
+    - Century Walnut Creek
+    - Livermore Cinema
+    - AMC Bay Street
+    - United Artists Berkeley
+    - CineLux Tennant Station
+    - Regal Jack London
+    - Tiburon Playhouse
+    - Rialto Cinemas
+    - West Wind Capitol Drive-in
+    - ShowPlace ICON
+    - Pruneyard cinemas
+    - Century at Hayward
+    - AMC NewPark
+    - Veranda LUXE Cinema
+    - Century Union Landing
+    - Vine Cinema
+    - Albany Twin
+    - Lark Theater
+    - Century Blackhawk Plaza
+    - Presidio Theatre
+    - 3 Below Theaters And Lounge
+    - Century Oakridge
+    - Roxie Theater
+    - AMC Mercado
+    - Contra Costa
+    - Balboa Theatre
+    - Century Cinema
+    - raven Film Center
+    - 3rd Street cinema
+    - edwards fairfield
+    - Century 20 Great Mall and XD
+    - Guild Theatre
+    - Regal Crow Canyon
+    - Cinemark
+    - Raven Film center
+    - CineLux Almaden
+    - Century Vallejo

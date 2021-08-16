@@ -2,79 +2,6 @@
 version: "2.0"
 
 nlu:
-  - lookup: cast
-    examples: |
-      - Duane Whitaker
-      - Alex King
-      - McKinley Belcher III
-      - Zoe Bell
-      - Lori Pelenise Tuisano
-      - Josh Gad
-      - James Corden
-      - Eugene Dynarski
-      - Ian Hendry
-      - Daniel Camp
-      - Michaela Watkins
-      - sterling K. Brown
-      - Conleth Hill
-      - O'Shea Jackson Jr.
-      - Harmoni Everett
-      - Jeff Harding
-      - Rose Arrick
-      - Alan Arkin
-      - Frederick Preston
-      - Jacqueline Brogan
-      - dontcare
-      - Sam Rockwell
-      - Walter the Dog
-      - Michael Cumpsty
-      - Gordon Tanner
-      - Shayn Solberg
-      - Haaz Sleiman
-      - Mike Colter
-      - Taraji P. Henson
-      - Gladys Holland
-      - ALix Talton
-      - Huang Lu
-      - patric knowles
-  - lookup: director
-    examples: |
-      - Tom McCarthy
-      - Alfred Hitchcock
-      - Michael Chaves
-      - Robin Bissell
-      - Anna Boden
-      - Elaine May
-      - Jenny Gage
-      - Claire Denis
-      - Iain Softley
-      - Tina Gordon
-      - Morton DaCosta
-      - Malik Bendjelloul
-      - Neil Marshall
-      - Harry Elfont
-      - Jonathan Levine
-      - Martin Scorsese
-      - Paul Downs Colaizzo
-      - Simon Curtis
-      - David Leitch
-      - Jovanka Vuckovic
-      - Peter Jackson
-      - QUentin Tarantino
-      - Hari Sama
-      - Quentin Tarantino
-      - James Gray
-      - Gene Stupnitsky
-      - Alexander Mackendrick
-      - Herbert Ross
-      - Satoshi Kon
-      - Kirill Mikhanovsky
-      - Steven Spielberg
-      - Nitesh Tiwari
-      - Josephine Decker
-      - Thurop Van Orman
-      - Alex Kendrick
-      - Riley Stearns
   - lookup: genre
     examples: |
       - Suspense
@@ -535,6 +462,7 @@ nlu:
       - Raven Film center
       - CineLux Almaden
       - Century Vallejo
+ 
   - intent: greet
     examples: |
       - hey
@@ -568,7 +496,7 @@ nlu:
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
-  - intent: affirm
+  - intent: affirm_intent
     examples: |
       - Yes, I want the same and please book [2](number_of_tickets) tickets on the [4th](show_date) for a [3D](show_type) show.
       - Yes, I would like to buy them now.
@@ -584,6 +512,14 @@ nlu:
       - Yes, let's buy the tickets.
       - Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.
       - Yes, let's go ahead and purchase them now before they sell out.
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
       - Yes. This sounds good.
       - That is correct.
       - Yes is perfect for me.
@@ -628,7 +564,7 @@ nlu:
       - It is good.
       - Excellent, thanks for that.
       - That's right, good deal.
-  - intent: negate
+  - intent: negate_intent
     examples: |
       - No, I don't want to do it right now. That's all the info I wanted.
       - No, I don't need to now.
@@ -738,6 +674,15 @@ nlu:
       - I think we should wait to purchase them.
       - No thank you. That's all I wanted.
       - No,I dont want now.That is all I need now
+  - intent: negate
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
       - No, that will be all. Thank you very much!
       - No, that would be all. Thanks.
       - No, that's all. Thank you very much!
@@ -785,7 +730,7 @@ nlu:
       - No for now it's OK
       - Not right now, thanks.
       - Nope, thanks. Done.
-      - No that's all for now. Thanks for your help.
+      - No that's all for now. Thanks for your help. 
       - Nope! I'm good!
       - No, I'm good.
       - Nope, thanks a lot!
@@ -915,7 +860,7 @@ nlu:
       - No, thanks for your help, I'm good.
       - No, thanks. That's it for now.
       - No, thanks a lot!
-      - No, thanks.
+      - No, thanks. 
   - intent: thank_you
     examples: |
       - I really do thank you for your help.
@@ -978,96 +923,100 @@ nlu:
       - Thanks so much!
       - OK, thanks so much, that's all for now then
       - tks
+  - intent: inform_intent
+    examples: |
+      - Thats great, [Hellboy](movie_name) will do. Show time please
+      - Hey [Toy Story 4](movie_name), that is the one I've been wanting to see, get me tickets for it please.
+      - i have to search for a movie to watch
+      - I would like to see [Little](movie_name). What time is it playing?
+      - What movies are there to watch?
+      - Hey, I'm looking for a movie.
+      - I am bored and want to watch a movie.
+      - [Hustlers](movie_name) is great and can you purchase tickets for me?
+      - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
+      - Another time, please. What are the times available for it?
+      - My friends want to go see a movie, can you help?
+      - Not needed. Showtime please.
+      - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
+      - I want to find a movie.
+      - Can you find me a movie?
+      - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
+      - [Shazam](movie_name) would be great. What time is it showing?
+      - I would like to buy tickets to [IT two](movie_name), it sounds perfect.
+      - What time is the movie showing?
+      - [Red Joan](movie_name) is great. When is it showing?
+      - Not at this time. What time is it playing?
+      - The best of enemies will be good, find the show time.
+      - Please help me find a movie to watch.
+      - We'd love to see [Missing Link](movie_name). What are the showtimes?
+      - [Captain Marvel](movie_name) works. What are the times?
+      - I want to watch a movie and I need your help to purchase the tickets for the movie.
+      - [Penguin Highway](movie_name) is good and at what time can i watch it?
+      - [The Curse of La Llorona](movie_name) sounds good. When can i see it?
+      - What are the showtimes for [Missing Link](movie_name)?
+      - Find me a movie to watch.
+      - I'd like to watch [Hotel Mumbai](movie_name). What time is the show?
+      - Hey, can you help me find a movie to watch?
+      - Hi! Can you help me find a movie?
+      - What time can I watch the movie?
+      - IT two sounds perfect for me, please buy me tickets for it.
+      - I need to utilize my day in a very calm way for that watching movie is a good choice. Will you find me a movie to watch?
+      - What time is [How to Train Your Dragon: The Hidden World](movie_name) playing at?
+      - Yeah, I heard of that one! [Captain Marvel](movie_name) sounds good. What are the showtimes?
+      - [Breakthrough](movie_name) is perfect. What day and time is it showing?
+      - [Breakthrough](movie_name) sounds great. What times were available?
+      - I am searching for a movie to watch.
+      - I'd like to see a movie, can you find me one?
+      - What time is [Breakthrough](movie_name)? That sounds great! 
   - intent: inform
     examples: |
-     - Thats great, [Hellboy](movie_name) will do. Show time please
-     - Hey [Toy Story 4](movie_name), that is the one I've been wanting to see, get me tickets for it please.
-     - i have to search for a movie to watch
-     - I would like to see [Little](movie_name). What time is it playing?
-     - What movies are there to watch?
-     - Hey, I'm looking for a movie.
-     - I am bored and want to watch a movie.
-     - [Hustlers](movie_name) is great and can you purchase tickets for me?
-     - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
-     - Another time, please. What are the times available for it?
-     - My friends want to go see a movie, can you help?
-     - Not needed. Showtime please.
-     - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
-     - I want to find a movie.
-     - Can you find me a movie?
-     - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
-     - [Shazam](movie_name) would be great. What time is it showing?
-     - I would like to buy tickets to [IT two](movie_name), it sounds perfect.
-     - What time is the movie showing?
-     - [Red Joan](movie_name) is great. When is it showing?
-     - Not at this time. What time is it playing?
-     - The best of enemies will be good, find the show time.
-     - Please help me find a movie to watch.
-     - We'd love to see [Missing Link](movie_name). What are the showtimes?
-     - [Captain Marvel](movie_name) works. What are the times?
-     - I want to watch a movie and I need your help to purchase the tickets for the movie.
-     - [Penguin Highway](movie_name) is good and at what time can i watch it?
-     - [The Curse of La Llorona](movie_name) sounds good. When can i see it?
-     - What are the showtimes for [Missing Link](movie_name)?
-     - Find me a movie to watch.
-     - I'd like to watch [Hotel Mumbai](movie_name). What time is the show?
-     - Hey, can you help me find a movie to watch?
-     - Hi! Can you help me find a movie?
-     - What time can I watch the movie?
-     - IT two sounds perfect for me, please buy me tickets for it.
-     - I need to utilize my day in a very calm way for that watching movie is a good choice. Will you find me a movie to watch?
-     - What time is [How to Train Your Dragon: The Hidden World](movie_name) playing at?
-     - Yeah, I heard of that one! [Captain Marvel](movie_name) sounds good. What are the showtimes?
-     - [Breakthrough](movie_name) is perfect. What day and time is it showing?
-     - [Breakthrough](movie_name) sounds great. What times were available?
-     - I am searching for a movie to watch.
-     - I'd like to see a movie, can you find me one?
-     - What time is [Breakthrough](movie_name)? That sounds great!
-     - On the [3rd of this month](show_date), if possible.
-     - I am planning to catch a movie with my friend later. Can you recommend a [3d](show_type) movie?
-     - [March 7th](show_date), please.
-     - Search for movies playing right now in [Napa](location).
-     - I want to see the movie in [San Fran](location).
-     - Hey, can you help me get movie tickets to [IT Chapter Two](movie_name).
-     - Find movies in [Larkspur](location). I would like a [3d](show_type) show.
-     - I will need [three](number_of_tickets) tickets for the [8:15 pm](show_type) show if available.
-     - I want to watch a [McKinley Belcher III](movie_name) movie. I want something directed by [Simon Curtis](director). It should be a [drama](genre).
-     - Not at the moment. I'd like to watch an [imax](show_type) show, what are the available times?
-     - I haven't seen a new movie a months. Can you find me an [Imax](show_type) show in [Campbell](location) to watch?
-     - Is it on at any other times? I'd actually like to go to the [Embarcadero Center Cinema](theater_name).
-     - Can you help me find an [adventure](genre) movie showing in [concord](location)?
-     - Can you find other movies? I want to see an [IMAX](show_type) movie at [Rialto Cinemas](theater_name).
-     - I would like to find a movie to watch in the [Imaginative fiction](genre) genre.
-     - I'd like to see a movie, any genre is fine
-     - Please find some other options in [imax](show_type).
-     - Let's try something else. I want a [regular](show_type) show. Something like a [Biographical](genre) movie.
-     - I would like to watch the [regular](show_type) showing [next Monday](show_date). What time do they have available, then?
-     - I'd like to see the movie on [Sunday this week](show_date) at [19:15](show_type). A [regular](show_type) show is fine.
-     - What time is the movie available on [Tuesday next week](show_date)?
-     - No, don't really fancy that one either. Can you see if there's anything else? We quite like [fantasy](genre) films, especially stuff directed by [Neil Marshall](director).
-     - Find movies in [Larkspur](location)
-     - I'm in [San Jose](location).
-     - I wish to see it on the [9th](show_date).
-     - Is it available at another time? How about on [March 4th](show_date)?
-     - Please can you look for a good movie to watch for this week end, might be in [San Jose](location)?
-     - I would like to buy a movie ticket in [Concord](location) on the [9th](show_date) for [four](number_of_tickets) people.
-     - I'm in [San Ramon](location), please find a movie there.
-     - I want movies shown in [Union City](location).
-     - Not right now. What times are available. I'd liek to see it in [Imax](show_type) if possible.
-     - Find me something else like a [regular](show_type) show.
-     - I'd like a location in [San Ramon](location).
-     - I am in [Oakland](location), so can you find me any nearby movies?
-     - In [Santa Rosa](location) please.
-     - I want to go [half past 6 in the evening](show_time) to see the show.
-     - [Long Shot](movie_name) sounds perfect. What are the show times? I would like to watch a [3d](show_type) show.
-     - Can you look in the [Newark](location) area?
-     - I want to watch a movie at [Century 25 Union Landing and XD](theater_name). I like [dramatic](genre) story movies.
-     - Help me find movies showing in [San Francisco](location).
-     - Are there any good movies showing in [Pleasant Hill](location)?
-     - I'd prefer something else, in [Menlo Park](location), any theater.
-     - Nah. Find me something [regular](show_type).
-     - I'd like [three](number_of_tickets) tickets, please.
-  - intent: request_alt
+      - On the [3rd of this month](show_date), if possible.
+      - I am planning to catch a movie with my friend later. Can you recommend a [3d](show_type) movie?
+      - [March 7th](show_date), please.
+      - Search for movies playing right now in [Napa](location).
+      - I want to see the movie in [San Fran](location).
+      - Hey, can you help me get movie tickets to [IT Chapter Two](movie_name).
+      - Find movies in [Larkspur](location). I would like a [3d](show_type) show.
+      - I will need [three](number_of_tickets) tickets for the [8:15 pm](show_type) show if available.
+      - Not at the moment. I'd like to watch an [imax](show_type) show, what are the available times?
+      - I haven't seen a new movie a months. Can you find me an [Imax](show_type) show in [Campbell](location) to watch?
+      - Is it on at any other times? I'd actually like to go to the [Embarcadero Center Cinema](theater_name).
+      - Can you help me find an [adventure](genre) movie showing in [concord](location)?
+      - Can you find other movies? I want to see an [IMAX](show_type) movie at [Rialto Cinemas](theater_name).
+      - I would like to find a movie to watch in the [Imaginative fiction](genre) genre.
+      - I'd like to see a movie, any genre is fine
+      - Please find some other options in [imax](show_type).
+      - Let's try something else. I want a [regular](show_type) show. Something like a [Biographical](genre) movie.
+      - I would like to watch the [regular](show_type) showing [next Monday](show_date). What time do they have available, then?
+      - I'd like to see the movie on [Sunday this week](show_date) at [19:15](show_type). A [regular](show_type) show is fine.
+      - What time is the movie available on [Tuesday next week](show_date)?
+      - Find movies in [Larkspur](location)
+      - I'm in [San Jose](location).
+      - I wish to see it on the [9th](show_date).
+      - Is it available at another time? How about on [March 4th](show_date)?
+      - Please can you look for a good movie to watch for this week end, might be in [San Jose](location)?
+      - I would like to buy a movie ticket in [Concord](location) on the [9th](show_date) for [four](number_of_tickets) people.
+      - I'm in [San Ramon](location), please find a movie there.
+      - I want movies shown in [Union City](location).
+      - Not right now. What times are available. I'd liek to see it in [Imax](show_type) if possible.
+      - Find me something else like a [regular](show_type) show.
+      - I'd like a location in [San Ramon](location).
+      - I am in [Oakland](location), so can you find me any nearby movies?
+      - In [Santa Rosa](location) please.
+      - I want to go [half past 6 in the evening](show_time) to see the show.
+      - [Long Shot](movie_name) sounds perfect. What are the show times? I would like to watch a [3d](show_type) show.
+      - Can you look in the [Newark](location) area?
+      - I want to watch a movie at [Century 25 Union Landing and XD](theater_name). I like [dramatic](genre) story movies.
+      - Help me find movies showing in [San Francisco](location).
+      - Are there any good movies showing in [Pleasant Hill](location)?
+      - I'd prefer something else, in [Menlo Park](location), any theater.
+      - Nah. Find me something [regular](show_type).
+      - I'd like [three](number_of_tickets) tickets, please.
+      - I am in [Palo Alto](location)
+      - I'm in [Palo Alto](location)
+      - I want to go to [Palo Alto](location)
+      - I wanna go to [Palo Alto](location)
+  - intent: request_alts
     examples: |
       - Nope, not the hilarious nightmare movies. Please find something else.
       - Please find other movies.
@@ -1466,7 +1415,7 @@ nlu:
       - Yes, I would like to see [Penguin Highway](movie_name).
       - Awesome, thanks. That'll be everything.
       - That sounds great!
-      - [Official Secrets](movie name) sounds prefect.
+      - [Official Secrets](movie_name) sounds prefect.
       - Thanks thats everything
       - [Red Joan](movie_name) sounds great.
       - Lets go with [Hellboy](movie_name).
@@ -1487,13 +1436,13 @@ nlu:
       - Yeah that one sounds better
       - [Hotel Mumbai](movie_name) is a good movie.
       - [Fiddler is perfect](movie_name).
-      - [Shazam](movie_name) sounds perfect!
+      - [Shazam!](movie_name) sounds perfect!
       - [Ad Astra](movie_name) is a good movie.
       - Perfect.
       - Ok i got it ,Movie [Pet Sematary](movie_name) is Perfect and it suits my taste.
       - Sounds good, that is all.
       - sounds very good
-      - [Shazam](movie_name) works for me.
+      - [Shazam!](movie_name) works for me.
       - Yeah, The [Last Dragon](movie_name) sounds great
       - I love [Dumbo](movie_name).
       - That's not too bad.
@@ -1509,7 +1458,7 @@ nlu:
       - That works
       - Sounds great. That's all I need for now.
       - Ok. That is all i need
-      - [Shazam](movie_name) sounds good.
+      - [Shazam!](movie_name) sounds good.
       - Perfect! Thank you for your help.
       - Wonderful thanks. That is all.
       - I would rather see [Breakthrough](movie_name).

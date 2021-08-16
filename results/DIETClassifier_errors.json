@@ -1,0 +1,116 @@
+[
+  {
+    "text": "Yes, I want the same and please book 2 tickets on the 4th for a 3D show.",
+    "entities": [
+      {
+        "start": 37,
+        "end": 38,
+        "value": "2",
+        "entity": "number_of_tickets"
+      },
+      {
+        "start": 54,
+        "end": 57,
+        "value": "4th",
+        "entity": "show_date"
+      },
+      {
+        "start": 64,
+        "end": 66,
+        "value": "3D",
+        "entity": "show_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "show_time",
+        "start": 37,
+        "end": 38,
+        "confidence_entity": 0.5053638815879822,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "show_date",
+        "start": 54,
+        "end": 57,
+        "confidence_entity": 0.9123495817184448,
+        "value": "4th",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "show_type",
+        "start": 64,
+        "end": 66,
+        "confidence_entity": 0.9967778325080872,
+        "value": "3D",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "show_type",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9526626467704773,
+        "value": "regular",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "show_date",
+        "start": 40,
+        "end": 57,
+        "confidence_entity": 0.838620126247406,
+        "value": "3rd of this month",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "show_time",
+        "start": 64,
+        "end": 72,
+        "confidence_entity": 0.3336866497993469,
+        "value": "10:15 pm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I will need three tickets for the 8:15 pm show if available.",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "three",
+        "entity": "number_of_tickets"
+      },
+      {
+        "start": 34,
+        "end": 41,
+        "value": "8:15 pm",
+        "entity": "show_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "number_of_tickets",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.9975072741508484,
+        "value": "three",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "show_time",
+        "start": 34,
+        "end": 41,
+        "confidence_entity": 0.3188721537590027,
+        "value": "8:15 pm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

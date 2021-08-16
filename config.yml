@@ -9,12 +9,12 @@ pipeline:
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
   #Spacy
-  - name: SpacyNLP
-    model: en_core_web_md
-    case_sensitive: False
-  - name: "SpacyEntityExtractor"
-    dimensions: ["PERSON", "DATE", "TIME", "QUANTITY", "CARDINAL", "GPE", 'WORK_OF_ART']
-  #default
+  # - name: SpacyNLP
+  #   model: en_core_web_md
+  #   case_sensitive: False
+  # - name: "SpacyEntityExtractor"
+  #   dimensions: ["PERSON", "DATE", "TIME", "QUANTITY", "CARDINAL", "GPE", 'WORK_OF_ART']
+  # #default
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer

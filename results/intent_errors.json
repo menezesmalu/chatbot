@@ -1,0 +1,18 @@
+[
+  {
+    "text": "That sounds perfect.",
+    "intent": "select",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.5643654465675354
+    }
+  },
+  {
+    "text": "Thank you",
+    "intent": "select",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.9013852477073669
+    }
+  }
+]

@@ -1,53 +1,69 @@
----
-version: "2.0"
-
-intents:
-  - greet
-  - bot_challenge
-  - affirm
-  - inform
-  - negate
-  - request
-  - request_alt
-  - select
-  - thank_you
-  - goodbye
-
-responses:
-  introduce:
-    - text: "Hey! I'm here to help you buy movie tickets. how can I help you?"
-
-  notfound:
-    - text: Can't help you with that. Do you have other option?
-  
-  when:
-    - text: when do you plan to watch?
-  
-  where:
-    - text: where's the best place for you?
-    - text: where are you?
-
-  cant_find:
-    - text: i'm sorry, but {movie_name} is not on display there. Anywhere else?
-
-  sorry:
-    - text: i'm sorry I coudn't help you.
-    - text: that's a shame for me. 
-    - text: sorry :(
-
-  goodbye:
-    - text: Grab your popcorn and enjoy your movie! See you next time.
-  
-  bye:
-    - text: It was nice talk to you. Bye
-  
-  suggest_movie:
-    - text: I've found {movie_name} for you. Does it work?
-    - text: how about {movie_name}?
-
-  suggest_session:
-    - text: you can watch this movie by {show_time}.
-
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- select
+- inform
+- inform_intent
+- affirm
+- affirm_intent
+- greet
+- bot_challenge
+- negate
+- negate_intent
+- request
+- request_alts
+- thank_you
+- goodbye
+entities:
+- location
+- movie_name
+- number_of_tickets
+- show_date
+slots:
+  movie_name:
+    type: text
+    influence_conversation: true
+  number_of_tickets:
+    type: text
+    influence_conversation: true
+  location:
+    type: text
+    influence_conversation: true
+responses:
+  utter_introduce:
+  - text: Hey! I can help you you find a movie or buy tickets, what you want?
+  utter_notfound:
+  - text: Can't help you with that. Do you have other option?
+  utter_when:
+  - text: when do you plan to watch?
+  utter_where:
+  - text: where's the best place for you?
+  - text: where are you?
+  utter_cant_find:
+  - text: i'm sorry, but {movie_name} is not on display there. Anywhere else?
+  utter_sorry:
+  - text: i'm sorry I coudn't help you.
+  - text: that's a shame for me.
+  - text: sorry :(
+  utter_goodbye:
+  - text: Grab your popcorn and enjoy your movie! See you next time.
+  utter_suggest_movie:
+  - text: I've found {movie_name} for you. Does it work?
+  - text: how about {movie_name}?
+  utter_choose_movie:
+  - text: which movie you plan to watch?
+  - text: so, what do you wanna watch?
+  utter_nb_tickets:
+  - text: how many tickets you need?
+  utter_ask_confirm:
+  - text: you want {number_of_tickets} for {movie_name} in {location}, right?
+  utter_confirm:
+  - text: you're all set! Good movie
+  utter_try_again:
+  - text: sorry. let's try again.
+actions:
+- utter_confirm
+- utter_suggest_movie
+- utter_when
