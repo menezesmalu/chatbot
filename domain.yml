@@ -17,18 +17,18 @@ intents:
 - thank_you
 - goodbye
 entities:
-- location
-- movie_name
-- number_of_tickets
-- show_date
+- GPE
+- WORK_OF_ART
+- CARDINAL
+- DATE
 slots:
-  movie_name:
+  WORK_OF_ART:
     type: text
     influence_conversation: true
-  number_of_tickets:
+  CARDINAL:
     type: text
     influence_conversation: true
-  location:
+  GPE:
     type: text
     influence_conversation: true
 responses:
@@ -42,25 +42,26 @@ responses:
   - text: where's the best place for you?
   - text: where are you?
   utter_cant_find:
-  - text: i'm sorry, but {movie_name} is not on display there. Anywhere else?
+  - text: i'm sorry, but {WORK_OF_ART} is not on display there. Anywhere else?
   utter_sorry:
   - text: i'm sorry I coudn't help you.
-  - text: that's a shame for me.
   - text: sorry :(
   utter_goodbye:
-  - text: Grab your popcorn and enjoy your movie! See you next time.
+  - text: Goodbye. See you next time.
+  - text: see you later, bye
   utter_suggest_movie:
-  - text: I've found {movie_name} for you. Does it work?
-  - text: how about {movie_name}?
+  - text: I've found {WORK_OF_ART} for you. Does it work?
+  - text: how about {WORK_OF_ART}?
   utter_choose_movie:
   - text: which movie you plan to watch?
   - text: so, what do you wanna watch?
   utter_nb_tickets:
   - text: how many tickets you need?
   utter_ask_confirm:
-  - text: you want {number_of_tickets} for {movie_name} in {location}, right?
+  - text: you want {CARDINAL} for {WORK_OF_ART} in {GPE}, right?
   utter_confirm:
   - text: you're all set! Good movie
+  - text: grab your popcorn and enjoy your movie! it's all set
   utter_try_again:
   - text: sorry. let's try again.
 actions:

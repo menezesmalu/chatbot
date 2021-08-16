@@ -2,46 +2,17 @@ version: "2.0"
 
 stories:
 
-- story: request movie by time - thanks
-  steps:
-    - intent: greet
-    - action: utter_introduce
-    - intent: request
-      entities:
-        - location: "San Fran"
-        - theater_name: "Century Daly City"
-    - action: utter_when
-    - intent: inform
-      entities:
-        - show_time: "10:30 pm"
-    - checkpoint: suggest_movie
-
 - story: request movie by date - thanks
   steps:
     - intent: greet
     - action: utter_introduce
     - intent: request
       entities:
-        - location: "San Fran"
-        - theater_name: "Century Daly City"
+        - GPE: "San Fran"
     - action: utter_when
     - intent: inform
       entities:
-        - show_date: "3rd of this month"
-    - checkpoint: suggest_movie
-
-- story: request movie by time - negate
-  steps:
-    - intent: greet
-    - action: utter_introduce
-    - intent: request
-      entities:
-        - location: "San Fran"
-        - theater_name: "Century Daly City"
-    - action: utter_when
-    - intent: inform
-      entities:
-        - show_time: "10:30 pm"
+        - DATE: "3rd of this month"
     - checkpoint: suggest_movie
 
 - story: request movie by date - negate
@@ -50,29 +21,12 @@ stories:
     - action: utter_introduce
     - intent: request
       entities:
-        - location: "San Fran"
-        - theater_name: "Century Daly City"
+        - GPE: "San Fran"
     - action: utter_when
     - intent: inform
       entities:
-        - show_date: "3rd of this month"
+        - DATE: "3rd of this month"
     - checkpoint: suggest_movie
-
-- story: request movie by hour - request_alts
-  steps:
-    - intent: greet
-    - action: utter_introduce
-    - intent: request
-      entities:
-        - location: "San Fran"
-        - theater_name: "Century Daly City"
-    - action: utter_when
-    - intent: inform
-      entities:
-        - show_time: "10:30 pm"
-    - action: utter_suggest_movie
-    - intent: request_alts
-    - action: utter_suggest_movie
 
 - story: request movie by date - request_alts
   steps:
@@ -80,12 +34,11 @@ stories:
     - action: utter_introduce
     - intent: request
       entities:
-        - location: "San Fran"
-        - theater_name: "Century Daly City"
+        - GPE: "San Fran"
     - action: utter_when
     - intent: inform
       entities:
-        - show_date: "3rd of this month"
+        - DATE: "3rd of this month"
     - action: utter_suggest_movie
     - intent: request_alts
     - action: utter_suggest_movie
@@ -97,15 +50,7 @@ stories:
     - intent: thank_you
     - action: utter_goodbye
 
-- story: deny suggested movie
-  steps:
-    - checkpoint: suggest_movie
-    - action: utter_suggest_movie
-    - intent: negate
-    - action: utter_sorry
-    - action: utter_goodbye
-
-- story: buy tickets 1
+- story: buy tickets - infos
   steps:
   - intent: greet
   - action: utter_introduce
@@ -113,16 +58,21 @@ stories:
   - action: utter_choose_movie
   - intent: inform
   - slot_was_set:
-    - movie_name: captain marvel
+    - WORK_OF_ART: captain marvel
   - action: utter_where
   - intent: inform
   - slot_was_set:
-    - location: Palo Alto
+    - GPE: Palo Alto
   - action: utter_nb_tickets
   - intent: inform_intent
   - slot_was_set:
-    - number_of_tickets: 1
+    - CARDINAL: 1
   - action: utter_ask_confirm
+  - checkpoint: buy_ticket
+
+- story: buy ticket - right
+  steps:
+  - checkpoint: buy_ticket
   - intent: affirm
   - action: utter_confirm
 

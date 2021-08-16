@@ -7,848 +7,845 @@ nlu:
     - are you a bot?
 - intent: goodbye
   examples: |
-    - good by
-    - have a nice day
-    - see you around
-    - see you later
-    - cee you later
-    - goodbye
+    - cu
     - good night
+    - see you around
+    - bye bye
     - bye
+    - goodbye
+    - have a nice day
+    - good by
 - intent: greet
   examples: |
-    - good evening
-    - good afternoon
-    - hi
-    - hey there
     - hello
+    - goodmorning
     - moin
+    - goodevening
     - hey
-    - hello there
+    - good evening
     - let's go
+    - good morning
     - hey dude
+    - hi
 - intent: affirm_intent
   examples: |
-    - Yes. Please book for [Saturday this week](show_date).
-    - Yes, I would like to buy them now.
     - Yes, let's get the tickets now.
+    - Yes, get me [one](CARDINAL) ticket for next [Tuesday](DATE)
+    - Yes, I would like to buy tickets.
+    - Yes, I want the same and please book [2](CARDINAL) tickets on the [4th](DATE) for a [3D](show_type) show.
+    - Yes can I get them now? book for the [3rd of this month](DATE).
+    - Yes. Please book for [Saturday this week](DATE).
     - Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.
-    - Yes, get me [one](number_of_tickets) ticket for next [Tuesday](show_date)
-    - Yes, I would like [three](number_of_tickets) tickets.
-    - Yes, I want the same and please book [2](number_of_tickets) tickets on the [4th](show_date) for a [3D](show_type) show.
-    - Yes, I would like a [regular](show_type) show on the [3rd of this month](show_date) for a [10:15 pm](show_time) showing.
-    - yes, Please buy the ticket and i need to watch in on [tuesday next week](show_date).
-    - Yeah, I'd like to purchase [three](number_of_tickets) tickets right now.
-    - Yes, let's go ahead and purchase them now before they sell out.
-- intent: inform_intent
-  examples: |
-    - [Captain Marvel](movie_name) works. What are the times?
-    - Can you find me a movie?
-    - [Red Joan](movie_name) is great. When is it showing?
-    - [The Curse of La Llorona](movie_name) sounds good. When can i see it?
-    - I am bored and want to watch a movie.
-    - My friends want to go see a movie, can you help?
-    - I'd like to watch [Hotel Mumbai](movie_name). What time is the show?
-    - Thats great, [Hellboy](movie_name) will do. Show time please
-    - Hey [Toy Story 4](movie_name), that is the one I've been wanting to see, get me tickets for it please.
-    - What are the showtimes for [Missing Link](movie_name)?
-    - i have to search for a movie to watch
-    - I want to watch a movie and I need your help to purchase the tickets for the movie.
-    - [Breakthrough](movie_name) is perfect. What day and time is it showing?
-    - We'd love to see [Missing Link](movie_name). What are the showtimes?
-    - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
-    - I would like to see [Little](movie_name). What time is it playing?
-    - Hi! Can you help me find a movie?
-    - What time is [Breakthrough](movie_name)? That sounds great!
-    - [Penguin Highway](movie_name) is good and at what time can i watch it?
-    - Find me a movie to watch.
-    - Hey, can you help me find a movie to watch?
-    - I would like to buy tickets to [IT two](movie_name), it sounds perfect.
-    - [Breakthrough](movie_name) sounds great. What times were available?
-    - What time is the movie showing?
-    - What time is [How to Train Your Dragon: The Hidden World](movie_name) playing at?
-    - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
-    - What time can I watch the movie?
-    - Not at this time. What time is it playing?
-    - Not needed. Showtime please.
-    - [Shazam](movie_name) would be great. What time is it showing?
-    - Another time, please. What are the times available for it?
-    - Please help me find a movie to watch.
-    - I'd like to see a movie, can you find me one?
-    - I am searching for a movie to watch.
-    - I need to utilize my day in a very calm way for that watching movie is a good choice. Will you find me a movie to watch?
+    - Yes, I would like a [regular](show_type) show on the [3rd of this month](DATE).
+    - Yes, let's buy the tickets.
+    - yes, Please buy the ticket and i need to watch in on [tuesday next week](DATE).
+    - Yes, I would like [three](CARDINAL) tickets.
 - intent: inform
   examples: |
-    - I want to watch a movie at [Century 25 Union Landing and XD](theater_name). I like [dramatic](genre) story movies.
-    - I'd prefer something else, in [Menlo Park](location), any theater.
-    - I'd like to see a movie, any genre is fine
-    - I am planning to catch a movie with my friend later. Can you recommend a [3d](show_type) movie?
-    - I am in [Palo Alto](location)
-    - I want to go to [Palo Alto](location)
-    - I wanna go to [Palo Alto](location)
-    - In [Santa Rosa](location) please.
-    - Are there any good movies showing in [Pleasant Hill](location)?
-    - I'm in [San Ramon](location), please find a movie there.
-    - Can you find other movies? I want to see an [IMAX](show_type) movie at [Rialto Cinemas](theater_name).
-    - Search for movies playing right now in [Napa](location).
-    - Hey, can you help me get movie tickets to [IT Chapter Two](movie_name).
-    - Nah. Find me something [regular](show_type).
-    - Find movies in [Larkspur](location). I would like a [3d](show_type) show.
-    - Find me something else like a [regular](show_type) show.
-    - Not right now. What times are available. I'd liek to see it in [Imax](show_type) if possible.
-    - I want to see the movie in [San Fran](location).
-    - I would like to watch the [regular](show_type) showing [next Monday](show_date). What time do they have available, then?
-    - I am in [Oakland](location), so can you find me any nearby movies?
-    - Can you look in the [Newark](location) area?
-    - I haven't seen a new movie a months. Can you find me an [Imax](show_type) show in [Campbell](location) to watch?
-    - Help me find movies showing in [San Francisco](location).
-    - Please can you look for a good movie to watch for this week end, might be in [San Jose](location)?
-    - I'm in [San Jose](location).
-    - I want movies shown in [Union City](location).
-    - Is it available at another time? How about on [March 4th](show_date)?
-    - What time is the movie available on [Tuesday next week](show_date)?
-    - I want to go [half past 6 in the evening](show_time) to see the show.
-    - I will need [three](number_of_tickets) tickets for the [8:15 pm](show_type) show if available.
-    - Find movies in [Larkspur](location)
-    - I wish to see it on the [9th](show_date).
-    - [March 7th](show_date), please.
+    - Is it available at another time? How about on [March 4th](DATE)?
+    - Search for movies playing right now in [Napa](GPE).
+    - Hey, can you help me get movie tickets to [IT Chapter Two](WORK_OF_ART).
     - I would like to find a movie to watch in the [Imaginative fiction](genre) genre.
-    - I'd like a location in [San Ramon](location).
-    - I'd like to see the movie on [Sunday this week](show_date) at [19:15](show_type). A [regular](show_type) show is fine.
-    - I would like to buy a movie ticket in [Concord](location) on the [9th](show_date) for [four](number_of_tickets) people.
+    - I'd like to see a movie, any genre is fine
+    - I want to go to [Palo Alto](GPE)
+    - I'd like [three](CARDINAL) tickets, please.
+    - I would like to buy a movie ticket in [Concord](GPE) on the [9th](DATE) for [four](CARDINAL) people.
+    - [March 7th](DATE), please.
+    - I'd prefer something else, in [Menlo Park](GPE), any theater.
+    - I want movies shown in [Union City](GPE).
+    - Help me find movies showing in [San Francisco](GPE).
+    - Can you help me find an [adventure](genre) movie showing in [concord](GPE)?
+    - I am in [Palo Alto](GPE)
+    - I'd like to see the movie on [Sunday this week](DATE) at [19:15](show_type). A [regular](show_type) show is fine.
+    - Can you look in the [Newark](GPE) area?
+    - Are there any good movies showing in [Pleasant Hill](GPE)?
+    - I'm in [San Jose](GPE).
+    - Find me something else like a [regular](show_type) show.
+    - I want to see the movie in [San Fran](GPE).
+    - Let's try something else. I want a [regular](show_type) show. Something like a [Biographical](genre) movie.
+    - I wanna go to [Palo Alto](GPE)
+    - Please find some other options in [imax](show_type).
+    - Please can you look for a good movie to watch for this week end, might be in [San Jose](GPE)?
+    - I'd like a GPE in [San Ramon](GPE).
+    - I am planning to catch a movie with my friend later. Can you recommend a [3d](show_type) movie?
+    - Not at the moment. I'd like to watch an [imax](show_type) show, what are the available times?
+    - Nah. Find me something [regular](show_type).
+    - Not right now. What times are available. I'd liek to see it in [Imax](show_type) if possible.
+    - I will need [three](CARDINAL) tickets for the [8:15 pm](show_type) show if available.
+    - [Long Shot](WORK_OF_ART) sounds perfect. What are the show times? I would like to watch a [3d](show_type) show.
+    - I'm in [San Ramon](GPE), please find a movie there.
+    - Find movies in [Larkspur](GPE). I would like a [3d](show_type) show.
+    - I'm in [Palo Alto](GPE)
+- intent: inform_intent
+  examples: |
+    - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
+    - [Captain Marvel](WORK_OF_ART) works. What are the times?
+    - I would like to buy tickets to [IT two](WORK_OF_ART), it sounds perfect.
+    - What time is the movie showing?
+    - We'd love to see [Missing Link](WORK_OF_ART). What are the showtimes?
+    - The best of enemies will be good, find the show time.
+    - [Hustlers](WORK_OF_ART) is great and can you purchase tickets for me?
+    - i want to watch a movie
+    - What time is [How to Train Your Dragon: The Hidden World](WORK_OF_ART) playing at?
+    - Not needed. Showtime please.
+    - [Red Joan](WORK_OF_ART) is great. When is it showing?
+    - My friends want to go see a movie, can you help?
+    - I want to watch a movie and I need your help to purchase the tickets for the movie.
+    - I am bored and want to watch a movie.
+    - What time is [Breakthrough](WORK_OF_ART)? That sounds great!
+    - Please help me find a movie to watch.
+    - Hey [Toy Story 4](WORK_OF_ART), that is the one I've been wanting to see, get me tickets for it please.
+    - [The Curse of La Llorona](WORK_OF_ART) sounds good. When can i see it?
+    - Thats great, [Hellboy](WORK_OF_ART) will do. Show time please
+    - What time can I watch the movie?
+    - Hi! Can you help me find a movie?
+    - I'd like to watch [Hotel Mumbai](WORK_OF_ART). What time is the show?
+    - [Breakthrough](WORK_OF_ART) is perfect. What day and time is it showing?
+    - What are the showtimes for [Missing Link](WORK_OF_ART)?
+    - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
+    - Another time, please. What are the times available for it?
+    - i have to search for a movie to watch
+    - IT two sounds perfect for me, please buy me tickets for it.
+    - [Penguin Highway](WORK_OF_ART) is good and at what time can i watch it?
+    - i wanna buy tickets
+    - Not at this time. What time is it playing?
+    - i would like to buy tickets
+    - I want to find a movie.
+    - I am searching for a movie to watch.
+    - I would like to see [Little](WORK_OF_ART). What time is it playing?
+    - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
+    - Yeah, I heard of that one! [Captain Marvel](WORK_OF_ART) sounds good. What are the showtimes?
+    - Hey, I'm looking for a movie.
 - intent: affirm
   examples: |
-    - Yes. That's sounds good.
-    - You got it.
-    - Yes, confirmed.
-    - Yes, perfect.
-    - Excellent, thanks for that.
-    - Yes, that is exactly what I would like. Confirmed.
-    - Yes that sounds fine.
-    - y
-    - Yes, that will be perfect.
-    - All are okay to proceed.
+    - Perfect, thanks so much.
     - that sounds good
-    - Yes that's right
-    - Yes. This sounds good.
-    - Yes, that is all correct.
-    - Yes, that all sounds correct.
-    - That's absolutely correct.
-    - Yes, that would be fine.
-    - Yes, that's it.
-    - That is cool
-    - That's correct.
-    - Right, that's great.
-    - Yes, that sounds good.
-    - Yes, that is correct.
-    - Yes, That sounds nice to me.
-    - Yeah that's good.
     - Ok that sounds good to me.
     - indeed
-    - Yeah, that's right.
-    - Yes that's correct
+    - Yes. This sounds good.
     - correct
-    - That's a go.
-    - Yes, that is perfect.
-    - Yes that's all correct
-    - Yes, That sounds perfect.
-    - Yep, that is correct.
-    - of course
-    - Yes, that will be great.
-    - Sounds perfect to me.
-    - Yes that's correct.
+    - That's absolutely correct.
     - That's right, good deal.
+    - You got it.
+    - Yeah that's good.
+    - It is good.
+    - Yes, That sounds nice to me.
+    - Yes that's right
+    - That is confirmed to proceed.
+    - Yeah, that's right.
+    - Yes, perfect.
+    - Yes, everything you have have is correct.
+    - That is cool
+    - Yes that's correct
+    - Yes, that will be perfect.
+    - Yes I do.
+    - All are okay to proceed.
+    - Yes, that's perfect.
+    - You are one hundred percent correct.
+    - Yes that's all correct
+    - Yes, that all sounds correct.
+    - Sounds perfect to me.
+    - That's correct.
+    - Yes that's correct.
+    - Yes, that is exactly what I would like. Confirmed.
+    - Excellent, thanks for that.
+    - Right, that's great.
+    - Yes. That's sounds good.
+    - Yes, that will be great.
+    - Yes, that is perfect.
+    - Yes that sounds fine.
+    - of course
+    - Yes, confirmed.
+    - That's a go.
+    - Yes, that is all correct.
 - intent: thank_you
   examples: |
-    - Thanks for everything! That is all I need.
-    - Thanks for helping, I appreciate it.
-    - Thank you for your assistance; that's all.
-    - Thanks, I am good now.
-    - Thanks for the help and that is everything I need.
-    - Thank you. That's all I need for now.
-    - Ok thanks a lot.
+    - Thanks for helping.
+    - ok. thanks a lot for your help. thats all i need.
+    - Sure, that is all I need. Thank you!
     - Great! You helped me a lot! Bye!
-    - Great, thank you.
-    - Thank you very much
-    - Thank you for your assistance.
-    - Thanks that's a real load off.
-    - tks
+    - Okay. Thank you so much!
     - I don't need anything else. Thank you so much.
-    - Thanks. That's all for now.
-    - I see, that is all I need. Thank you so much!
-    - Thank you very much for the assistance. That's all I need for now.
-    - Awesome, thank you for your help.
-    - Thanks for all the assistance.
     - Thanks and that's all.
-    - Thank you so much!
-    - Thanks for helping me.
-    - OK, thanks so much, that's all for now then
-    - Thanks for all your help. That's all I needed for now.
-    - Thank you very much for your help. That is what I want.
-    - Thanks for your help.
-    - That will be all for now. Thank you!
+    - Thanks a bunch for your assistance.
+    - I see, that is all I need. Thank you!
+    - Great, thank you.
+    - Thank you for your assistance; that's all.
+    - Thanks for all the assistance.
+    - Thanks that's a real load off.
     - Thanks so much for your work.
-    - Thank you for your help, that is all I need.
-    - Your help has been invaluable.
+    - Thanks for your immense help
     - Thanks a lot.
-    - Thank you.
+    - Great, you've been an amazing help, thank you.
+    - Thanks very much for your help. That's all I needed help with.
+    - Thanks for helping, I appreciate it.
+    - Thanks for the help and that is everything I need.
+    - Thanks so much for booking those tickets and helping me
+    - Awesome, thank you for your help.
+    - I appreciate your help, thank you.
+    - Thanks so much!
+    - Thanks for everything! That is all I need.
+    - Thanks for everything.
+    - Thanks for doing that
+    - tks
+    - Thanks for your help, that's it for now.
+    - Thanks, I am good now.
+    - Ok thanks a lot.
+    - Thank you.That is all for now.
+    - Thank you for you help, that's all I need now.
+    - Thank you so much!
     - Okay, thank you for your great help
     - Thank you very much. You've been very helpful.
-    - Great, you've been an amazing help, thank you.
-    - Sure, that is all I need. Thank you!
-    - Thanks for your immense help
+    - I see, that is all I need. Thank you so much!
     - I really do thank you for your help.
-    - Thanks for that.
-    - Thank you.That is all for now.
-    - Thank you for the assistance. That's all I need for now.
-    - Thanks so much!
-    - Thanks for your help, that's it for now.
-    - Okay. Thank you so much!
     - Thank you!
-    - ok. thanks a lot for your help. thats all i need.
-    - I see, that is all I need. Thank you!
-    - I appreciate your help, thank you.
+    - Great. Thanks for the assistance.
+    - Thanks for all your help. That's all I needed for now.
+    - Thank you very much for your help. That is what I want.
+    - OK, thanks so much, that's all for now then
+    - Thank you.
+    - Wow, great. Thank you.
+    - Thank you very much
+    - Thank you very much for the assistance. That's all I need for now.
+    - Thank you for the assistance. That's all I need for now.
 - intent: request_alts
   examples: |
-    - sorry, whether can you find any other movies?
-    - Are there any other times?
-    - Are there any other movies?
-    - None of those sound good, what else is there?
-    - Any other films?
-    - No, something else please.
-    - Is there another time?
-    - Can you find anything else?
-    - Are there any other showtimes?
-    - What else is there?
+    - Is there any other show times?
+    - Try some different movies?
+    - How about a different movie? What else have you got?
+    - Is there any other movies?
+    - Is there anything else showing?
+    - Not sure.. is there anything else?
     - Anything else available to watch?
-    - That doesn't sound like something I would like. Is there anything else?
-    - What other movies are there?
-    - No , i am not interested. Any other movies?
-    - Do you have other proposals?
     - Okay. I would like to see some other choices.
-    - What other times are there?
-    - Please find something else.
-    - Not really, can you recommend me something else?
-    - What are my other choices?
-    - Is the movie playing at some other time?
-    - What are the others?
-    - Is there any other time for the availability of that movie?
-    - Not really, could help search for other movies?
-    - Please search for even more movies.
-    - Could you find some other movies?
-    - Are there any other movies option?
-    - How about another time?
-    - Find something else, please.
-    - No. please look for any other.
+    - Any other times.
     - Please find some more options.
     - Are there any other movie choices?
-    - I'm not really into those, do you know any other good ones?
-    - Does the movie play any other time?
-    - Try some different movies?
-    - Is there any other show time for that.
-    - Can you help me find some other movies?
-    - Let's hear the others.
-    - What about the other movies?
-    - No. Can I have some more?
+    - sorry, whether can you find any other movies?
     - please find some other movies.
-    - Anything else available?
-    - No thanks, can you find some others.
-    - I'm not sure I would like any of those. What else is showing?
-    - What are the other options?
-    - No, find some other movies.
-    - Anything else?
-    - What else is playing?
-    - Nope, not the hilarious nightmare movies. Please find something else.
-    - Please search for other movies to see in downtown [San Fran](location).
-    - Any other times?
-    - Can you find other movies?
-    - Please go with another option.
-    - Do you suggest me another movie?
-    - I'm not sure I can make the [1 pm](show_time) showing. Is there another time the movie is showing?
-    - What else do you propose to me?
-    - No I'm not interested in those. Are any other movies playing?
-    - What else do you have?
-    - I would prefer other proposals
-    - I'd like to see something else.
+    - Those don't sound like my type of movies either, do you know of any others?
     - No, not those. Please find some other titles.
-    - Check for other movies.
-    - Please find other movies.
-    - Are there other times?
-    - Are there any other times available?
-    - Not sure.. is there anything else?
-    - No. Any other options?
-    - Are there other movies playing?
-    - No. What else is playing?
+    - Is there anything else?
+    - Is there another time?
+    - I would prefer other proposals
+    - Can you find something else?
+    - Do you have other proposals?
+    - Are there any other showtimes?
     - None of those sound good
-    - Please find some other movies.
-    - Please find other options.
-    - Find me something else please.
-    - No, is there anything else?
+    - What other movies are playing?
+    - Find me something else.
+    - Are there any other times?
     - Are there any other show times available?
-    - I think all are nice but I need to search for something else.
+    - Are there any other movies?
+    - What else do you propose to me?
+    - Do you suggest me another movie?
+    - Please go with another option.
+    - That doesn't sound like something I would like. Is there anything else?
+    - Is there any other time for the availability of that movie?
+    - Can you help me find some other movies?
+    - Are there other times?
+    - Let's hear the others.
+    - Not really, could help search for other movies?
+    - Are there any other movies playing?
+    - What other times are there?
+    - What about the other movies?
+    - None of those sound good, what else is there?
+    - Find something else, please.
+    - Nah I've already seen those. Find me something else.
+    - What else do you have?
+    - What are the others?
+    - Anything else available?
+    - Is the movie playing at another time?
+    - Can you still find some other movies?
+    - No. What else is playing?
+    - Is there any other time the movie is playing?
+    - Any other films?
+    - Please find some other movies.
+    - No, find some other movies.
+    - Do you have any other suggestions?
+    - Are there any other times available?
+    - Are there other movies playing?
+    - Is the movie playing at some other time?
+    - Please find other movies.
+    - No thanks, can you find some others.
+    - No. Can I have some more?
+    - Could you find some other movies?
+    - What are the other options?
+    - Please find something else.
+    - No, is there anything else?
     - Nah, none of those.
-    - Is there any other show times?
-    - Is there anything else showing?
-    - How about a different movie? What else have you got?
+    - What else is playing?
+    - Can you find anything else?
+    - No, something else please.
     - Please search for other ones.
+    - What other movies are there?
+    - Are there any other movies option?
+    - Please find other options.
+    - Please search for even more movies.
+    - Are there any other times it's playing?
+    - What else is there?
+    - Anything else?
+    - Find me something else please.
+    - Not really, can you recommend me something else?
+    - No I'm not interested in those. Are any other movies playing?
+    - How about another time?
+    - What are my other choices?
 - intent: negate_intent
   examples: |
-    - No, I do not wish to reserve the tickets now.
     - No, i'm not interested in purchasing just yet.
-    - No, I don't want to buy now.
-    - No,not now.
-    - No, I don't think so right now.
-    - No,I dont want now.That is all I need now
-    - No, Don't buy it now.
-    - I don't want to buy them now.
-    - I think we should wait to purchase them.
-    - No, I don't want to purchase them ahead of time. I don't need to. But thank you!
-    - Not yet.
-    - No, not now. I'm going to do it in person.
-    - No, I Don't want it now but later.
-    - No, I will have to get the tickets later. I might have to do something with my brother that day.
-    - No, don't buy them now.
-    - No, not yet.
-    - No, not now.
-    - No. I just needed information about the movie.
-    - Nope, not right now.
-    - No. I dont want to buy now.
-    - No,not yet.
-    - Not at this time. Thanks.
-    - I think I'll hold off.
-    - No, not right now.
-    - No, that's okay, not right now.
-    - No, I don't want now. That is all i need.
-    - No, I'm not looking to buy right now.
-    - No, thank you. I don't want to buy right away.
-    - I think I am not ready to purchase tickets, so no.
     - No, thank you for the information.
-    - Not right now thanks
-    - Not at the present time.
+    - No. I dont want to buy now.
+    - No thanks, I don't want to buy them yet. I am not positive that I will be able to go that day. I don't need anything else.
     - No not now. That is everything for now thanks.
-    - No, I don't want to right now.
-    - No not now.
-    - No, I will buy the tickets later.
-    - Nope, I don't wanna purchase now.
+    - Not at the moment
     - No, I do not want to purchase tickets right now?
-    - No not now. I'm fine for now.
-    - Not right now thanks.
-    - No, not at this very moment.
-    - Not just yet.
-    - No thanks, I will buy tickets later.
-    - No, thanks. Let's wait on purchasing tickets.
-    - No, i don't want to buy it now.
-    - No. I will buy the tickets later.
-    - No, I'll hold off that for now.
     - No, I am just inquiring. I would not like to purchase the tickets now.
-    - No, I don't want to purchase now.
+    - I think we should wait to purchase them.
+    - No, I don't want to right now.
+    - No thank you, I do not require further help.
+    - No, I don't want to but tickets right now.
+    - No, I don't want to buy now.
+    - Not now, thanks
+    - No not now
+    - No, I don't want to purchase it right now.
+    - No, thank you. I don't want to buy right away.
+    - No, I don't want to get them right now.
+    - Not right now thanks
+    - No, not now, thanks.
+    - Not right now thanks, I don't think I need anything else.
+    - No, I'm not going to buy right away.
+    - Not just yet.
+    - No, not now.
+    - no, please don't purchase it now.
+    - No,not yet.
+    - No. I don't want to buy any tickets.
+    - No, I don't need to now.
+    - No, i don't want to buy it now.
+    - I'm not going to buy them right now.
+    - No, not at this very moment.
+    - No, not at the moment.
+    - No, not right now.
+    - No, I will purchase later thank you.
+    - No, not now
+    - I think I'll hold off.
+    - No, thanks , I don't want it now?
+    - Not yet.
+    - No, I do not intend to purchase the tickets now.
+    - I don't want to buy them just yet. I might be busy at that time.
     - No, I am not going to purchase a ticket yet.
     - Um, not now.
-    - Not at the moment, no.
-    - No, I don't want to do it right now. That's all the info I wanted.
-    - No, I do not intend to purchase the tickets now.
-    - Not right now, thank you.
-    - No. I don't want to buy any tickets.
-    - No, I don't want to get them right now.
-    - Not now, thanks
-    - Nah, I don't feel like buying right now. That's all.
-    - No, I will do it later.
-    - No, I don't want . Thanks a lot for you kind help.
-    - No I don't want to purchase tickets right now. That is all that I need.
-    - No, I'm not ready.
-    - Not at the moment
+    - No, not now. I'm going to do it in person.
     - No, I want to buy tickets later.
-    - No, I'm not ready to get the tickets yet. You've helped me with what I need for now. Thanks so much.
-    - No, not at the moment.
-    - Nope, I don't need it right now.
-    - Not right now thanks, I don't think I need anything else.
-    - No I will not purchase now
-    - No, I don't want to purchase them now.
-    - Not right now, thanks. I'm all set.
-    - I'm not going to buy them right now.
-    - No, I am not ready to purchase the ticket now.
-    - No, I don't want to but tickets right now.
-    - No, I don't want to buy them right now.
-    - no, please don't purchase it now.
-    - No, I don't need to now.
-    - No, not now, thanks.
-    - No, I'm not going to buy right away.
-    - No not right now. That is everything for now thanks.
-    - No. Hold on. Maybe later.
-    - Not right this minute. Thanks
+    - No, not now. That's it.
+    - No, I don't want to do it right now. That's all the info I wanted.
     - Not now, no.
+    - Nope, not right now.
+    - No, I don't want to purchase them now.
+    - No not now. I'm fine for now.
+    - No, that's okay, not right now.
+    - No. Hold on. Maybe later.
     - Not at this time.
-    - No, I do not want to buy them right now.
-    - I don't want to buy them just yet. I might be busy at that time.
+    - Nope, I don't need it right now.
+    - No, don't buy them now.
+    - No, I don't want now. That is all i need.
+    - No thank you. That's all I wanted.
+    - No, I will do it later.
+    - Not right now.
+    - No, I Don't want it now but later.
+    - No, I am not ready to purchase the ticket now.
+    - No, I will have to get the tickets later. I might have to do something with my brother that day.
+    - Not right now thanks.
+    - No not right now
+    - No, thanks. Let's wait on purchasing tickets.
+    - Not right this minute. Thanks
+    - Not right now, thank you.
+    - No, I will buy the tickets later.
+    - Not this second no
+    - Nope, I don't wanna purchase now.
+    - Not at the moment, no.
+    - Nah, I don't feel like buying right now. That's all.
+    - No, I don't want to purchase them ahead of time. I don't need to. But thank you!
+    - I don't want to buy them now.
+    - No, not right now, but thank you.
+    - No thanks, I will buy tickets later.
+    - No,I dont want now.That is all I need now
+    - Not right now, thanks. I'm all set.
+    - No, I don't need them.
+    - No, I do not wish to reserve the tickets now.
+    - No. I just needed information about the movie.
+    - I think I am not ready to purchase tickets, so no.
+    - No, I don't think so right now.
+    - No, I'll hold off that for now.
+    - No, I'm not ready to buy right now. That was all I wanted.
+    - No I don't want to purchase tickets right now. That is all that I need.
+    - No, I don't want . Thanks a lot for you kind help.
 - intent: select
   examples: |
-    - Oh yes! [A Madea Family Funeral](movie_name). I've been wanting to see this picture.
-    - I want [Captain Marvel](movie_name).
-    - [Hellboy](movie_name) is a good movie.
-    - That is perfect for me.
-    - Ok, [Shazam](movie_name) will be perfect! I can't wait to see it!
-    - I see, that sounds great! That is all I need for now.
-    - [Captain Marvel](movie_name) it is that's just the kind of movie I was looking to see.
-    - Yes, I want to see that. Thanks.
-    - I want to see that.
-    - Sounds great. That's all I need for now.
-    - Yes, [Pet Sematary](movie_name) sounds great!
-    - Yes, that works for me
-    - That is perfect, that is all.
-    - [Red Joan](movie_name) is great!
-    - Lets go with [Hellboy](movie_name).
-    - [Captain Marvel](movie_name) sounds great.
-    - I love to watch [Pet Sematary](movie_name).
-    - Ok. That is all i need
-    - Sounds good, thanks. That's all I need!
-    - That sounds perfect for me.
-    - Thanks, that is all.
-    - I love [Dumbo](movie_name).
-    - Sure that sounds great
-    - [Captain Marvel](movie_name) is perfect.
-    - Sounds perfect. That will be all.
-    - Thank you for the information.
-    - [How to Train Your Dragon: The Hidden World](movie_name) sounds good.
-    - Ok that sounds good.
-    - [Teen Spirit](movie_name) is perfect.
-    - Yes, I want to watch [The Curse of La Llorona](movie_name).
-    - may be [Little](movie_name), I think which is perfect.
-    - [Dumbo](movie_name) sounds great!
-    - [Official Secrets](movie_name) sounds prefect.
-    - That sounds good, that will be all.
-    - Oh i think [Pet Sematary](movie_name) may be a great movie to watch
-    - It is ideal for [Captain Marvel](movie_name).
-    - [Little](movie_name) is perfect.
-    - That is great .That was all that I needed for now.
-    - ok thats great, thank you very much.
-    - Yeah, The [Last Dragon](movie_name) sounds great
-    - That is great. I don't need anything further.
-    - That's great , and thanks a lot
-    - Yes, I would like to see [Penguin Highway](movie_name).
-    - Great, that will be fine.
-    - That sounds perfect!
-    - Great. Thanks for the information.
-    - [Hotel Mumbai](movie_name) is a good movie.
-    - Sure. I've never heard of it, but we'll give it a shot.
-    - I've heard [Shazam](movie_name)! is really good. I think we'll watch that one.
-    - Thank you. Sounds good.
-    - Sure thing.
-    - Perfect.
-    - after is perfect
-    - sounds very good
-    - I like that, thanks!
-    - Awesome. Thank you for your help.
-    - That will be suitable.
-    - That's not too bad.
-    - Okay, that works.
-    - Yeah that one sounds better
-    - Wonderful thanks. That is all.
-    - [Long Shot](movie_name) sounds great.
-    - Ok i got it ,Movie [Pet Sematary](movie_name) is Perfect and it suits my taste.
-    - That's good. That's all I need for now.
-    - The film Where would you go is fine for me.
-    - That sounds perfect. That's all I need for now.
-    - [Red Joan](movie_name) sounds great.
-    - [Ash Is Purest White](movie_name) would be great.
-    - [Breakthrough](movie_name) sound perfect.
-    - That works for me.
-    - [Shine a Light](movie_name) sounds good.
-    - Oh, It sounds good.
-    - [The Curse of La Llorona](movie_name) sounds good.
-    - Good looks. You've been a lot of help.
-    - Okay, sounds good.
-    - [Missing Link](movie_name) is good
-    - [Shazam!](movie_name) works for me.
-    - [Shazam!](movie_name) sounds good.
-    - Yes that is good information.
-    - Oh, I forgot about [Captain Marvel](movie_name). That one would be perfect.
-    - Great, thanks.
-    - Perfect! Thank you for your help.
-    - That works
-    - I want to watch [Ash Is Purest White](movie_name)?
-    - That one sounds good, thank you. That's all I need.
-    - That seems awesome.
-    - That seems good. That'll be all.
-    - Alright, that sounds fine. I don't need help with anything else.
-    - Yes, that one sounds really good. That's all I needed today.
-    - That's good then, that's all I need
-    - I would love to see [Captain Marvel](movie_name)!
-    - Sounds great, Im ready.
-    - Thank you for your help. Have a nice day.
-    - Great, That's all I need
-    - That sounds great!
-    - [The Curse of La Llorona](movie_name) sounds great.
-    - [Fiddler is perfect](movie_name).
-    - Yeah, this sounds great.
-    - That sounds good.
-    - [Pillow talk](movie_name) sounds good to me.
-    - That's great, that'll be all for today.
-    - [Ad Astra](movie_name) is a good movie.
-    - That sounds perfect, I'm all set.
+    - That's perfect, I'm all set.
+    - I'd love to see [Hobbs and Shaw](WORK_OF_ART).
     - Terrific. That's all I need for now.
-    - [Shazam!](movie_name) sounds perfect!
-    - [Breakthrough](movie_name) sounds great.
-    - That's a little late, but it sounds good. Thank you that will be all I need.
-    - Thanks. That's all I need.
-    - [Missing Link](movie_name) sounds perfect.
+    - Thank you for your help. Have a nice day.
+    - [Red Joan](WORK_OF_ART) is great!
+    - I've heard [Shazam](WORK_OF_ART)! is really good. I think we'll watch that one.
+    - Great, thanks.
+    - That's great, that'll be all for today.
+    - I want [Captain Marvel](WORK_OF_ART).
+    - I want to see that.
+    - sounds very good
+    - That's good. That's all I need for now.
+    - That's great , and thanks a lot
+    - That is great .That was all that I needed for now.
+    - after is perfect
+    - [Hotel Mumbai](WORK_OF_ART) is a good movie.
+    - That one sounds good, thank you. That's all I need.
+    - Great, That's all I need
+    - Ok. That is all i need
+    - [Pillow talk](WORK_OF_ART) sounds good to me.
+    - [Ash Is Purest White](WORK_OF_ART) would be great.
+    - That's great. Thanks.
+    - may be [Little](WORK_OF_ART), I think which is perfect.
+    - [Breakthrough](WORK_OF_ART) sounds great.
     - Sounds perfect, that's all I wanted.
+    - Yes, [Pet Sematary](WORK_OF_ART) sounds great!
+    - Yes, that one sounds really good. That's all I needed today.
+    - Yes, I want to watch [The Curse of La Llorona](WORK_OF_ART).
+    - Okay, that works.
+    - Yes that is good information.
+    - [Teen Spirit](WORK_OF_ART) is perfect.
+    - [Captain Marvel](WORK_OF_ART) is perfect.
+    - That sounds perfect. That's all I need for now.
+    - [Captain Marvel](WORK_OF_ART) it is that's just the kind of movie I was looking to see.
+    - ok thats great, thank you very much.
     - Sounds good. That's everything for now.
+    - I would rather see [Breakthrough](WORK_OF_ART).
+    - Great. Thanks for the information.
+    - That sounds perfect, I'm all set.
+    - [Little](WORK_OF_ART) is perfect.
+    - Oh, I forgot about [Captain Marvel](WORK_OF_ART). That one would be perfect.
     - Sounds good, that is all.
+    - That sounds good, that will be all.
+    - That works
+    - Perfect.
+    - Awesome. Thank you for your help.
+    - [Ad Astra](WORK_OF_ART) is a good movie.
+    - [Captain Marvel](WORK_OF_ART) sounds great.
+    - Lets go with [Hellboy](WORK_OF_ART).
+    - Sure thing.
+    - That sounds good.
+    - Perfect! Thank you for your help.
+    - That will be suitable.
+    - Sure. That's all.
+    - I see, that sounds great! That is all I need for now.
+    - [The Curse of La Llorona](WORK_OF_ART) sounds great.
+    - Sounds great. That's all I need for now.
+    - That sounds perfect.
+    - [shazam](WORK_OF_ART) sounds good.
+    - Good looks. You've been a lot of help.
+    - [Fiddler is perfect](WORK_OF_ART).
+    - Oh yes! [A Madea Family Funeral](WORK_OF_ART). I've been wanting to see this picture.
+    - Yeah that one sounds better
+    - Ok that sounds good.
+    - That sounds perfect for me.
+    - [Long Shot](WORK_OF_ART) sounds great.
+    - Sounds great, Im ready.
+    - Thanks. That's all I need.
+    - That is great. I don't need anything further.
+    - Wonderful thanks. That is all.
+    - That sounds good. That's all I need for now.
+    - Thank you for the information.
+    - Thank you. Sounds good.
+    - Yes, I would like to see [Penguin Highway](WORK_OF_ART).
+    - Awesome, thanks. That'll be everything.
+    - [Red Joan](WORK_OF_ART) sounds great.
+    - Ok. Great. That's all for now.
+    - I love to watch [Pet Sematary](WORK_OF_ART).
+    - [Official Secrets](WORK_OF_ART) sounds prefect.
+    - [shazam](WORK_OF_ART) works for me.
+    - I would love to see [Captain Marvel](WORK_OF_ART)!
+    - Okay, sounds good.
+    - Awesome. That about does it.
+    - Oh i think [Pet Sematary](WORK_OF_ART) may be a great movie to watch
+    - [Dumbo](WORK_OF_ART) seem like a good choice.
+    - [How to Train Your Dragon: The Hidden World](WORK_OF_ART) sounds good.
+    - Sounds good, thanks. That's all I need!
+    - That sounds good, that is all I needed.
+    - Yeah, The [Last Dragon](WORK_OF_ART) sounds great
+    - Ok i got it ,Movie [Pet Sematary](WORK_OF_ART) is Perfect and it suits my taste.
+    - I might like it, thank you for the advice, bye.
+    - That will work.
+    - That is fine.
+    - Oh, It sounds good.
+    - Thank you
+    - [The Curse of La Llorona](WORK_OF_ART) sounds good.
+    - After sounds great.
+    - It is ideal for [Captain Marvel](WORK_OF_ART).
+    - Sure. I've never heard of it, but we'll give it a shot.
+    - The film Where would you go is fine for me.
+    - OK it's good
+    - That is perfect for me.
+    - Thanks thats everything
+    - Yeah, this sounds great.
+    - Yes, I want to see that. Thanks.
+    - That sounds perfect!
+    - I want to watch [Ash Is Purest White](WORK_OF_ART)?
+    - [shazam](WORK_OF_ART) sounds perfect!
+    - That's not too bad.
+    - That is perfect, that is all.
+    - Yeah! That works.
+    - [Shine a Light](WORK_OF_ART) sounds good.
+    - OK. That is all.
 - intent: negate
   examples: |
-    - No, thanks for helping me.
-    - No, I'm good.
-    - never
-    - No thats it
-    - Nope, thanks so much!
-    - That's it, I found a movie I wanted.
-    - No, not right now. Thanks.
-    - Nope. Thanks for your help.
-    - No, but thank you!
-    - No thanks.
-    - I'm fine, thank you.
-    - No, thanks for your help, I'm good.
-    - No. You've been very helpful.
-    - Nope, thanks.
-    - No thank you, that'll be all.
-    - No, that's it and thanks.
-    - No that's all, thank you for your help.
-    - No, that is all I needed.
-    - It's okay. Thank you and that's all.
-    - No, that's all I want for now.
-    - No, that will be all.
-    - No, that's all. Thanks anyways.
-    - No, but thanks for helping.
-    - No, thanks for your help.
-    - No, that is everything for today. Thank you for your time.
-    - No. I appreciate your help so far.
-    - No that's all thanks.
-    - That's all. Thank you.
-    - Nope, you've been great, thanks for your help.
-    - No, thanks.
-    - No, that will be all, thank you for your help.
-    - Nope! I'm good!
-    - No. Thanks for trying.
-    - Actually, no, but thanks so much.
-    - No that is all I needed for now.
-    - No, that would be all. Thanks so much.
-    - No, that would be all.
-    - No. Thanks for your help!
-    - No, thanks a lot
-    - No, that's all.
-    - Not right now, you did it all!
-    - No, I appreciate your help.
-    - No, thanks a lot for your help.
-    - That would be all. Thank you!
-    - Nope, thanks a lot!
-    - Not now, thanks.
-    - No thanks
-    - No for now it's OK
-    - No that is everything thanks.
-    - Nothing for now. I am thankful.
-    - No, thanks. That will be all for now!
-    - No, that's good thanks
-    - No, that's all. Thank you very much!
-    - No that is all, Thanks.
-    - I don't think so
-    - No. I am good.
-    - That is all, once again thanks for the help.
-    - not really
-    - No. Thanks for you help.
-    - No, that's all I need.
-    - No Thats all. Thanks a lot
-    - No thanks for the help
-    - No, thank you for your help.
-    - That's all. Thanks.
-    - Yes, that will be all for now.
-    - No. Thanks for your help.
-    - No. That will be all. Thank you!
-    - No, that is all thank you.
-    - Nope, thanks for the movie idea.
-    - No, That's all
-    - No, that's all for now. Thanks for your help.
-    - No thank you
-    - no, not for now.
-    - No. That's all for today.
-    - No that will be all.
-    - No, thanks a lot!
-    - No ,Thanks for your immense help
-    - Not right now, thanks.
-    - No, that's all, thanks.
-    - No that is all I need.
-    - No, that's all, thank you.
-    - No. Thank you very much. You've been very helpful.
-    - No, I think that's all I need. Thanks for your help.
-    - No, that is okay. Thanks.
-    - Nope, thank you!
-    - No. That is all. Thank you!
-    - No. Thanks a lot.
-    - No that is all i need.
-    - That is all today.
-    - No, not at the moment. Thanks a lot!
-    - Thanks for your help but I don't think I'll be needing anything else today.
-    - No. Thank you for you help.
-    - No that is all I needed. Thank you.
-    - No, thank you!
-    - Not at this time. Thank you for your assistance.
-    - No, It's all, thanks
-    - No, that's it. Thanks very much for your help.
-    - no
-    - No thanks, that was all!
-    - No. thank you for your help.
     - Nope, I'm all set.
-    - Nothing. That's all.
-    - I'm good. Thanks for the help.
-    - no, thanks for now.
-    - No, that will be all, but thank you very much for your help.
-    - No. Thanks anyways.
-    - Thank you that will be all.
-    - No. Thank you.
-    - don't like that
-    - No, I guess that's all I need for now. Thanks mucho.
-    - No, that's all. Thanks.
-    - No. That will be all. Thank you.
-    - No thanks, that's all.
-    - Nothing I can think of and thank you again for your help.
-    - No, not right now. Thanks so much for your help.
-    - Nope! That's all the help I need.
-    - No. Thanks for your help today.
-    - No, thanks. That's it for now.
-    - No, that's all I need. Thanks for your help!
-    - No, I'm all set, thank you.
-    - Nope. Thank you so much for your help.
-    - No thanks, that's all for now.
-    - No, that's all for now, thanks.
-    - No. I am all set. Thank You.
-    - no , thanks for your help . not now.
-    - No, thank you for your help!
-    - No. You have already been helpful.
-    - No, that will be all for now, thank you.
-    - No. Thanks a lot
-    - No that's it.
-    - No, thank you very much for your help, That's all i need. bye
-    - Nope, that'll be all. Thanks again!
-    - No, for now you've done what I need, thanks for that
-    - No thank you a lot.
-    - No. That'll be all.
-    - No, thanks and that's all.
-    - No. That was all. Thank you.
-    - Nope, thanks again.
-    - Nope, thanks much.
-    - Nothing else that will be all.
-    - No, thank you.
-    - No, that is all. Thanks for the help.
-    - No, that will do it. Thank you for your help.
-    - No, that is all. Thanks.
-    - Oh, darn. No, that will be all.
+    - No that's all for now. Thanks for your help.
+    - Nope! I'm good!
+    - No, that would be all. Thanks so much.
+    - It's okay. Thank you and that's all.
+    - Nope, thanks a lot!
+    - No. That is all. Thank you!
+    - No Thats all. Thanks a lot
     - That's all, thank you.
+    - No. Thanks anyways.
+    - That is all, once again thanks for the help.
+    - No, that will be all, thank you for your help.
+    - No, that is everything for today. Thank you for your time.
+    - That's it, I found a movie I wanted.
+    - No. Thanks for you help.
+    - No. Thank you for you help.
+    - Nope, that will be all for now but thanks for asking.
+    - No, I guess that's all I need for now. Thanks mucho.
+    - No, that's all. Thank you very much!
+    - No thanks
+    - not really
+    - That would be all. Thank you!
+    - No, that's it. Thanks very much for your help.
+    - I think this will do it. Thank you for your help.
+    - That's all. Thanks.
+    - No, thanks.
+    - No. Thanks for your help today.
+    - Nothing else that will be all.
     - No. Thank you for the help.
+    - Nope, that'll be all. Thanks again!
+    - No, thanks. That's it for now.
+    - No thanks, that's all for now.
+    - No, thanks a lot for your help.
+    - No that is all I needed for now.
+    - No, that's all for now. Thanks for your help.
+    - Nope. but thanks for your help
+    - No, that would be all. Thanks.
+    - No that is all, Thanks.
+    - No, thanks for helping me.
+    - No. That's all for today.
+    - No, I'm good.
+    - That is all today.
+    - No. That will be all. Thank you!
+    - no , thanks for your help . not now.
+    - No, thanks for your help, I'm good.
+    - No, thats it. Thanks.
+    - No, that will do it. Thank you for your help.
+    - No, that will be all. Thank you very much!
+    - No, that's it.
+    - No, that's all. Thanks.
+    - No ,Thanks for your immense help
+    - No. That'll be all.
+    - No, Thanks you for your help
+    - No thank you
+    - Nothing I can think of and thank you again for your help.
+    - Nope, thank you!
+    - Yes, that will be all for now.
+    - No, I appreciate your help.
+    - No, that's all I need. Thanks for your help!
+    - Nope, thanks so much!
+    - No, that's all, thank you.
+    - No, that's all. Thanks anyways.
+    - No, not right now. Thanks.
+    - Not right now, thanks.
+    - No that is all I needed. Thank you.
+    - Not now, thanks.
+    - No, that is all I need. Thank you for your kind assistance!
+    - Thanks for your help but I don't think I'll be needing anything else today.
+    - no, not for now.
+    - No, thank you very much for your help, That's all i need. bye
+    - Nope, thanks again.
+    - no
+    - That's all. Thank you.
+    - No. Thanks for your help!
+    - No thanks.
+    - No, that's all I need.
+    - Thank you but no. I'm good.
+    - Not now. Thanks!
+    - No. Thank you.
+    - No, that's all for now, thanks.
+    - No, that will be all for now, thank you.
+    - Nope. Thank you so much for your help.
+    - No thank you.
+    - I don't think so, thank you.
+    - I've got all I want. Thanks a lot.
+    - No. Thanks so much
+    - No. Thank you for your help.
+    - No, That's all
+    - No, that is all.
+    - No. You have already been helpful.
+    - Nope! That's all the help I need.
+    - No. thank you for your help.
+    - No, you've done enough thanks.
+    - No, that is all. Thanks for the help.
+    - I don't think so
+    - No, that would be all.
+    - No, I'm all set, thank you.
+    - No thank you, that'll be all.
+    - Nope. Thanks for your help.
+    - No that's it.
+    - No thanks, that was all!
+    - No, that's all I want for now.
+    - Nothing for now and thanks.
+    - No, thanks, It's all
+    - No thank you a lot.
+    - No, that's all.
+    - Nope, that's a lot.
+    - No, thank you.
+    - No, I think that's all I need. Thanks for your help.
+    - No, not at the moment. Thanks a lot!
+    - No, that's all, thanks.
+    - No. That will be all.
+    - No, but thanks for helping.
+    - No. Thanks for your help.
+    - No, not right now. Thanks so much for your help.
+    - No, that's it and thanks.
+    - No, It's all, thanks
+    - No that's all thanks.
+    - Oh, darn. No, that will be all.
+    - I'm fine, thank you.
+    - Nope, thanks.
+    - No,Thank you very much
+    - No, thanks for your help.
+    - No that is all i need.
+    - No that will be all.
+    - No. That will be all. Thank you.
+    - I'm good. Thanks for the help.
+    - No, that is okay. Thanks.
     - No, that's all. Thank you for your help!
+    - No, that will be all.
+    - No. I appreciate your help so far.
+    - No. Thanks a lot
+    - No for now it's OK
+    - Umm, no. I need to figure this out. I'll let you know if I need anything further.
+    - No. Thanks a lot.
+    - never
+    - No, that is all thank you.
+    - No, thanks. That will be all for now!
+    - Nope, thanks much.
+    - No, that's good thanks
+    - Actually, no, but thanks so much.
+    - No. I am good.
+    - No, for now you've done what I need, thanks for that
+    - No thanks for the help
+    - Not at this time. Thank you for your assistance.
+    - No, that is all. Thanks.
+    - No that is everything thanks.
 - intent: request
   examples: |
-    - Who's in it?
-    - Yes, that's right. What kind of movie is it and how much is the ticket?
-    - What's the address?
-    - How much are the tickets going to cost, and what is the genre of the movie?
-    - Do you know the address of the theater?
-    - Do you know the price of the ticket? Where is that theater?
-    - Can you tell me the genre of the movie please.
-    - How much was the ticket?
-    - Yes, all the information you have is correct. What theater would you suggest and how much will the tickets cost?
-    - How much are the tickets?
-    - I need an address.
-    - Who directed this movie?
-    - Yeah, that's perfect for me. What is the ticket price?
-    - Yes, that is correct. What is the address of the cinema.
-    - Yes, how much is the ticket and what is the address of the theater?
-    - What type of movie is it and what is the price of a ticket?
-    - Let me know the address of the theater along with ticket cost.
-    - What about its ticket cost?
-    - Yes, that's right. Which is the preferred theater?
-    - What genre?
-    - What is the address of the theatre and how much are the tickets?
-    - That is okay to proceed. Also I want to know the address and cost details.
-    - Alright. What is the address and how much does the ticket cost?
-    - What is the ticket cost and what is the theater address?
-    - How much is it? And what's the address?
-    - What is the genre of that movie?
-    - How much is it, and what's the address of the theater?
-    - What is the theater address?
-    - What's the price of a ticket?
-    - Yes, that sounds good. How much will this cost? Can you get me the address of the theater?
-    - That is perfect. please go ahead. What is the name of the theater that you have booked the show for me?
-    - What kind of movie is it?
-    - Can you tell me who directed it and which actors are featured in the film?
-    - What is the genre of the film?
     - Whis is the price of the ticket and where is it located at?
-    - What is the genre of the movie? Can you get me the address of the theater?
-    - May I know the address of the theater and the kind of movie it is?
-    - How much does it cost and what is the address of the theatre?
-    - Who acted in the movie?
-    - Do you know the theater's address as well as the ticket price?
-    - That sounds good. What is the address of the theater?
-    - How much is the ticket? And what's the address of the theater?
-    - How much are the tickets and what is the address?
-    - Can you get me the address of the theater and ticket price please?
-    - What is the price?
-    - Gosh, that's kind of late. How much is a ticket?
-    - What kind of film is it? How much does it cost?
-    - Can you tell me the names of the actors and the director of this movie?
-    - How much is the ticket cost? What kind of a movie is it?
-    - What is the cost of the ticket? Where it is located?
-    - ok that sounds good. Which theater the movie is?
-    - What's the theater's address?
-    - That is perfect. Please proceed and let me know the type of movie.
-    - Who acted in this movie and what genre is it?
-    - Who starred in it?
-    - What is the cost of the ticket and what is the address?
-    - the answer is below
-    - What's the damage? And where is the theater?
-    - Which type movie is it?
-    - It is good. What is the name of the theater and their address?
-    - What is the address?
-    - Tell me about the cost of the ticket for that movie?
-    - Who directed [Angry Birds 2](movie_name)? Is that a [comedy](genre) or what?
-    - Who directed the movie?
-    - What genre is this movie and who are the cast?
-    - What type of movie is it?
-    - What type of movie is it? And what's the theater's address?
-    - Who was in that?
+    - I haven't heard of it, are there any well-known actors in the movie?
+    - How much are the tickets going to cost, and what is the genre of the movie?
+    - That is correct. Let me know the type of movie and GPE of the theater.
     - What is the theater's address?
-    - Yes, confirmed. What genre is Hustlers?
-    - What type of movie is it? Where is the theater located?
-    - Yes. Which theatre is bes.
-    - Where is the theater? And what kind of movie is it?
-    - Where is that? How much does it cost?
-    - Can you tell me the address of the theater and the price of the ticket?
-    - Thanks. How much does the ticket cost? Also, what kind of movie is it again?
-    - What sort of movie is it?
+    - May I have the theater's address please?
+    - Who directed [Angry Birds 2](WORK_OF_ART)? Is that a [comedy](genre) or what?
     - You can tell me please the cost of ticket and what type of movie is?
-    - How much is a ticket?
-    - What type of movie it is?
-    - Who acted in it?
-    - Let me know the type of this movie to decide.
-    - Where is the theater located?
-    - Can I have the correct location of the theatre? I mean, address..
-    - How much is the ticket for?
-    - Yes and please give me their address.
-    - What genre is the flick?
-    - Where's that theater?
-    - Maybe. Who's the director?
-    - Yes, that's perfect. What's the address of the theater?
-    - Can you tell me the genre of the movie?
-    - For how much? What's the address?
-    - Who's in this movie?
-    - Who is the director of the movie?
-    - Yes, That is correct. Can you find me the address of the theater and the cost of the ticket?
-    - Can you find me the name of the actor and the genre of the movie?
-    - I have never seen that movie, what kind is it? What about the address?
-    - Can you also please tell me the price of the ticket?
-    - How much?
-    - What's the address of the theatre and how much is the ticket?
-    - Can you tell me the names of the Actors and Actresses that star in this movie?
-    - What's the genre of Hellboy?
-    - Can you please tell me the ticket price?
-    - Who acted and directed the movie?
-    - Who starred in the movie?
-    - What is the theater's address and how much is a ticket?
-    - Yeah, that's perfect for me. What type of film is it, and where is the theater located?
-    - What is the name of the director of the movie and which genre?
-    - Whats the address?
-    - Yes that's perfect, what's the theater address so I can find it?
-    - What type of movie is this?
-    - Who acted in this movie and who is the director?
-    - What is the ticket price?
-    - Ok, What genre is this movie?
-    - What is their address and what is the price of a ticket?
-    - Who played in that movie?
+    - Great, how do I get there?
+    - Can you tell me the name of the director of the movie?
+    - Can I have the correct GPE of the theatre? I mean, address..
+    - yes, it seems good for me. give me their address?
+    - What's the price of a ticket?
+    - How much is the ticket? What is the genere?
     - How much is it gonna cost?
-    - Where can I find the theater?
-    - That's right. What type of movie is it and how much does the ticket cost?
-    - How much is it?
-    - What's the theater address, and what's the type of move?
-    - What genre is it? How much does it cost?
-    - Sounds great. What genre? Address of theater?
-    - Yes, that is right. What is the ticket price?
-    - What is the cost and type of movie.
-    - What is the cost of the ticket?
-    - Who directed this movie? What's the genre?
-    - Please tell me who's starring in the film, as well as the genre.
-    - That is correct. Let me know the type of movie and location of the theater.
-    - Who are the actors of this movie, and who directed it?
-    - What type of the movie and what is the ticket cost?
-    - Okay..this is perfect...can i know the ticket cost?
-    - Where is the theatre and how much is the ticket?
-    - Super, what genre is that movie considered? Can I get the address of the place?
-    - What is the ticket charge, where is it located?
-    - How much is it for a ticket?
-    - Sure that will work for me . What is the address of the theater?
-    - What genre is the movie? What's the theater's address?
-    - Cool, I love fantasy. What's the address of the theater, and how much would a ticket cost?
-    - Where is it? What genre?
-    - Yes thank you. How much is it and what kind of movie is it?
-    - Who is the director and actors?
-    - How much is that?
-    - What's the genre?
-    - How much for a ticket?
-    - Fine, that works.
-    - Who is the director and who acted in the movie?
-    - How much is the ticket and what is the address?
-    - What is the theater location?
-    - What genre is that, and who's in it?
-    - How much does a ticket cost?
-    - Yes, that's good. Is there a theater that you recommend? And what's the address for it?
-    - What is the street address?
-    - Find me the details about ticket cost and the theater address.
+    - What type of movie is it?
+    - I would like to know how much the ticket costs?
+    - What's the theater's address?
+    - That is okay to proceed. Also I want to know the address and cost details.
+    - How much was the ticket?
+    - Yes, that's right. What kind of movie is it and how much is the ticket?
+    - Can you tell me the genre of the movie please.
+    - Who's in it?
     - what is the ticket cost?
-    - Where's the theater at? And how much is it?
-    - Beautiful. Now, what address do you have for the theater?
-    - Okay, how much do the tickets cost and can you provide me with the location of the theatre?
-    - Quick question, what genre is this movie classified as?
-    - What's their address and how much is the ticket?
+    - Yes, that is correct. What is the address of the cinema.
+    - Who directed this movie? What's the genre?
+    - What is the genre of the film?
+    - What is the type?
+    - Tell me about the cost of the ticket for that movie?
+    - That sounds good. What is the address of the theater?
+    - Yes thank you. How much is it and what kind of movie is it?
+    - That's great! How much does the ticket cost?
     - What's the address? And how much does it cost?
     - Whats the ticket fare and address of the theatre?
-    - May I know who directed this movie please?
-    - What genre does this movie belong to and how much does the ticket cost?
-    - I would like to know how much the ticket costs?
-    - I've never heard of her. What genre is the movie classified as and who directed it?
-    - I see, and who directed the movie?
-    - Where's the theater located?
-    - How much the ticket cost?
-    - Can you tell me the name of the director of the movie?
-    - Awesome. What will a ticket cost me? Also, what's this movie about?
-    - That's kind of pricy. Alright, what's the address of the theater?
-    - What is the genre of this movie. How much is the ticket?
-    - Where is the theater? What is this movie about?
-    - What is the cost for the ticket?
-    - I haven't heard of it, are there any well-known actors in the movie?
-    - How much were the tickets? What is the address of the movie theater?
-    - What type of movie is [Captain Marvel](movie_name)? I just want to make sure it is the one I had in mind.
-    - Where's the theater at?
-    - How much do tickets cost?
-    - What is the type?
-    - Perfect. Do you know the theater's address?
-    - Tell the genre of movie it is?
     - Who played in this movie?
-    - Let me know the cast and crew details of this movie to choose.
-    - That's great! How much does the ticket cost?
-    - Ok , great. will you tell me the address of that theater?
-    - What sort of movie is it and which theater is best?
-    - Who directed it?
-    - How much does that cost? Where's the theater?
-    - yes, it seems good for me. give me their address?
-    - Great, how do I get there?
-    - What is the address of [The Lot City Center](theater_name)?
-    - can you tell me, Who is the director of that movie?
-    - Do you know what genre the movie is?
-    - get the address of that theater
-    - Fine, what kind of movie is it? How much must I pay?
-    - That might be it - what genre is it?
+    - How much do tickets cost?
+    - What is the cost for the ticket?
+    - How much does the ticket cost and what is the address of the theater?
+    - Which type movie is it?
+    - Yes, that is right. What is the ticket price?
+    - It is good. What is the name of the theater and their address?
+    - Can you tell me the genre of the movie?
+    - Let me know the address of the theater along with ticket cost.
+    - I see, and who directed the movie?
+    - Where is the theater? What is this movie about?
+    - What genre is it? How much does it cost?
+    - May I know who directed this movie please?
     - Yes please. What theater is good? And what would the address of that theater be?
-    - what is the cost of the tickets and what is the address
-    - How much is the ticket? What is the address?
-    - What style movie is this?
+    - Ok , great. will you tell me the address of that theater?
+    - Tell the genre of movie it is?
+    - That is perfect. Please proceed and let me know the type of movie.
+    - How much does the ticket cost?
+    - Yes, that sounds good. How much will this cost? Can you get me the address of the theater?
+    - How much?
+    - ok that sounds good. Which theater the movie is?
+    - What is the cost and type of movie.
+    - Who acted in this movie and who is the director?
+    - Yeah, that's perfect for me. What type of film is it, and where is the theater located?
+    - What would you call that type of movie?
+    - What genre?
+    - What genre does this movie belong to and how much does the ticket cost?
+    - What type of movie is this?
+    - How much for a ticket?
+    - That sounds great! How much does this cost?
+    - Where's the theater at?
+    - Who starred in it?
+    - I need an address.
+    - Where is the theater and how much is it?
+    - What is the address?
+    - Yes, what's the address? What's a good one?
+    - Do you know the theater's address as well as the ticket price?
+    - What sort of movie is it and which theater is best?
+    - What is the theater's address and how much is a ticket?
+    - Can you tell me the names of the Actors and Actresses that star in this movie?
+    - Can you find me the name of the actor and the genre of the movie?
+    - Who is the director and actors?
+    - Ok that sounds good. How much is the ticket costs? what is the address of the theater?
+    - Can you tell me who directed it and which actors are featured in the film?
+    - Yes. Which theatre is bes.
+    - Can you tell me who directed it?
+    - What type of movie is it? And what's the theater's address?
+    - What's the address?
+    - Who directed this?
+    - Yes and please give me their address.
+    - Do you know the genre of movie and fare of ticket.
+    - Thanks. How much does the ticket cost? Also, what kind of movie is it again?
+    - Where can I find the theater?
+    - Can you please tell me the ticket price?
+    - How much is that?
+    - What about its ticket cost?
+    - What's the genre of Hellboy?
     - Yes, what is the address of the theater ans price of ticket?
+    - What sort of movie is it?
+    - Gosh, that's kind of late. How much is a ticket?
+    - What is the name of the director of the movie and which genre?
+    - Do you know the address of the theater?
+    - Who starred in the movie?
+    - Who acted in this movie and what genre is it?
+    - What genre of movie is it?
+    - the answer is below
+    - can you tell me, Who is the director of that movie?
+    - How much does it cost?
+    - Who is the director of the movie?
+    - How much does that cost? Where's the theater?
+    - What genre is it?
+    - Okay, Thank you, Please tell me the ticket cost and Which theater do you prefer for me?
+    - Who was in that?
+    - What genre is this movie and who are the cast?
+    - Yes, that's good. Is there a theater that you recommend? And what's the address for it?
+    - How much does it cost and what is the address of the theatre?
+    - What's the theater address, and what's the type of move?
+    - What genre is that, and who's in it?
+    - How much does a ticket cost?
+    - What is the ticket price?
+    - That's kind of pricy. Alright, what's the address of the theater?
+    - what is the cost of the tickets and what is the address
+    - Who are the actors of this movie, and who directed it?
+    - That is perfect. please go ahead. What is the name of the theater that you have booked the show for me?
+    - What genre is it and how much are tickets?
+    - What is the cost of the ticket?
+    - Yes, confirmed. What genre is Hustlers?
+    - Yes, That is correct. Can you find me the address of the theater and the cost of the ticket?
+    - How much are the tickets?
+    - How much are the tickets and what is the address?
+    - Can you give me the address to the theater?
+    - Who acted in it?
+    - And how much does it cost?
+    - What is the GPE of the theater?
+    - Who directed the movie?
+    - Can you tell me the address of the theater and the price of the ticket?
+    - Where is that? How much does it cost?
+    - Where is the theatre and how much is the ticket?
+    - Where's that theater?
+    - Yes, that's perfect. What's the address of the theater?
+    - How much is the ticket cost? What kind of a movie is it?
+    - What type of movie is [Captain Marvel](WORK_OF_ART)? I just want to make sure it is the one I had in mind.
+    - Who's in this movie?
+    - How much is it for a ticket?
+    - That might be it - what genre is it?
+    - Yes, that sounds good. What theatre is the movie at?
+    - What is the genre of this movie. How much is the ticket?
+    - Okay..this is perfect...can i know the ticket cost?
+    - What type of movie it is?
+    - Can I have the price of the ticket and the address to the theater?
+    - How much is the ticket for?
+    - Wait. How much are the tickets? Is this a [Horror](genre) movie?
+    - I have never seen that movie, what kind is it? What about the address?
+    - Maybe. Who's the director?
+    - Beautiful. Now, what address do you have for the theater?
+    - That sounds great! Which theater will that be at?
+    - What is the price?
+    - Yes that's perfect, what's the theater address so I can find it?
+    - Okay, how much do the tickets cost and can you provide me with the GPE of the theatre?
+    - How much is it?
+    - How much is the ticket? What's the address of the theater?
+    - Ok, What genre is this movie?
+    - Yes, that's right. Which is the preferred theater?
+    - What is the ticket cost and what is the theater address?
+    - That's right. What type of movie is it and how much does the ticket cost?
+    - May I know the address of the theater and the kind of movie it is?
+    - How much is a ticket?
+    - Quick question, what genre is this movie classified as?
+    - What is the cost of the ticket? Where it is located?
+    - Perfect. Do you know the theater's address?
+    - What's the address of the theater? What sort of movie is it?
+    - Who is the director and who acted in the movie?
+    - Where's the theater at and how much are tickets?
+    - Do you know the price of the ticket? Where is that theater?
+    - Where's the theater?
+    - Fine, what kind of movie is it? How much must I pay?
+    - Where's the theater at? And how much is it?
+    - Yes, how much is the ticket and what is the address of the theater?
+    - Can you also please tell me the price of the ticket?
+    - Let me know the type of this movie to decide.
+    - What is the address of the theatre and how much are the tickets?
+    - Cool, I love fantasy. What's the address of the theater, and how much would a ticket cost?
+    - What genre is this movie? And where is the theatre's located
+    - What kind of film is it? How much does it cost?
+    - Who played in that movie?
+    - What type of movie is it? Where is the theater located?
+    - Who is the director? What kind of movie is it?
+    - What's the genre?
+    - Can you tell me which genre this movie is in and who stars in it?
+    - What genre is the flick?
+    - What is the cost of the ticket and what is the address?
+    - Please tell me who's starring in the film, as well as the genre.
+    - Where's the theater located?
+    - May I know who played in this movie?
+    - Who directed it?
+    - Sounds great. What genre? Address of theater?
+    - What type of the movie and what is the ticket cost?
+    - How much is the ticket and what genre is the movie?
+    - How much do the tickets cost?
+    - What is the ticket charge, where is it located?
+    - Where is the theater? And what kind of movie is it?
+    - That is fine with me, may I have their address please?
+    - What's the damage? And where is the theater?
+    - What is the genre of the movie? Can you get me the address of the theater?
+    - What type of movie is it and what is the price of a ticket?
+    - Alright. What is the address and how much does the ticket cost?
+    - Where is it? What genre?
 - lookup: genre
   examples: |
     - Suspense
@@ -903,7 +900,7 @@ nlu:
     - Life history
     - scary
     - Rom-com
-- lookup: location
+- lookup: GPE
   examples: |
     - fairfield
     - San Bruno
@@ -967,7 +964,7 @@ nlu:
     - concord
     - Sonoma
     - Mill Valley
-- lookup: movie_name
+- lookup: WORK_OF_ART
   examples: |
     - How to Train your Dragon: The Hidden World
     - Citizen Kane
@@ -1063,7 +1060,7 @@ nlu:
     - The Mustang
     - Good Boys
     - Fiddler: A Miracle of Miracles
-- lookup: number_of_tickets
+- lookup: CARDINAL
   examples: |
     - 4
     - 3
@@ -1073,7 +1070,7 @@ nlu:
     - two
     - three
     - four
-- lookup: show_date
+- lookup: DATE
   examples: |
     - 10th of March
     - Next Tuesday
@@ -1150,162 +1147,3 @@ nlu:
     - next Thursday
     - Tuesday next week
     - 9th of March
-- lookup: show_time
-  examples: |
-    - evening 7:15
-    - 10:30 in the night
-    - 6:45 in the evening
-    - 2:30 in the afternoon
-    - evening 6
-    - ten in the night
-    - night 10:15
-    - quarter past 6 in the evening
-    - 9:45 pm
-    - 22:30
-    - two in the afternoon
-    - seven in the evening
-    - evening 6:15
-    - quarter to 7 in the evening
-    - evening 7:30
-    - 10:30 pm
-    - 22:45
-    - 8:30 pm
-    - quarter to 5 in the evening
-    - quarter to 11 in the night
-    - 19:15
-    - evening 7:45
-    - 8:15 in the night
-    - 21:15
-    - seven pm
-    - half past 9 in the night
-    - quarter past 10 in the night
-    - 22:15
-    - quarter past 4 in the evening
-    - 6:30 in the evening
-    - eleven pm
-    - 2:30 pm
-    - 21:45
-    - 10:45 pm
-    - afternoon 3:30
-    - 9:15 pm
-    - 9:30 in the night
-    - 11:15 am
-    - quarter to 8 in the evening
-    - 6:30 pm
-    - half past 11 in the morning
-    - night 9
-    - evening 4:45
-    - 10:15 in the night
-    - quarter to 4 in the afternoon
-    - half past 6 in the evening
-    - 8:15 pm
-    - 22:00
-    - 7:45 pm
-    - night 9:45
-    - 9:30 pm
-    - night 10
-    - 4:30 pm
-    - ten pm
-    - 11:30 in the night
-    - 11 in the night
-    - 11 o"clock in the night
-    - 10:15 pm
-    - 6:15 in the evening
-    - 7 pm
-    - night 10:30
-    - 10 o"clock in the night
-    - Nine pm
-    - nine pm
-    - half past 10 in the night
-    - quarter past 7 in the evening
-    - half past 8 in the night
-    - 7:30 pm
-    - 5:15 in the evening
-- lookup: show_type
-  examples: |
-    - imax
-    - regular
-    - 3d
-    - dontcare
-- lookup: theater_name
-  examples: |
-    - Sonoma Cinema
-    - The Lot City Center
-    - Century Napa Valley and XD
-    - THE LOT City Center
-    - New Parkway Theater
-    - Boulevard Cinema
-    - Embarcadero Center Cinema
-    - United Artists Stonestown Twin
-    - Reading Cinemas Rohnert Park
-    - Airport Stadium Cinemas
-    - AMC Saratoga
-    - Alamo Drafthouse Cinema
-    - Alameda Theatre & Cineplex
-    - Summerfield Cinemas
-    - Rheem Theatre
-    - Vogue Theatre
-    - Century Rowland Plaza
-    - Century at Tanforan
-    - Cinelux Tennant Station
-    - Pruneyard Cinemas
-    - Century Redwood City
-    - Century Daly City
-    - Century at Tanforan and XD
-    - 3rd Street Cinema
-    - Stanford Theatre
-    - Piedmont Theatre
-    - AMC Deer Valley
-    - Roxy Stadium Cinemas
-    - Century 25 Union Landing and XD
-    - Century Downtown
-    - Century Cinemas
-    - Century at Pacific Commons
-    - Edwards Fairfield
-    - AMC Eastridge
-    - AMC Metreon
-    - Century Napa Valley
-    - 3 Below Theaters and lounge
-    - Veranda Luxe Cinema
-    - Century 20 Oakridge and XD
-    - Century San Francisco Centre
-    - dontcare
-    - Century Redwood city
-    - AMC Brentwood
-    - Century Walnut Creek
-    - Livermore Cinema
-    - AMC Bay Street
-    - United Artists Berkeley
-    - CineLux Tennant Station
-    - Regal Jack London
-    - Tiburon Playhouse
-    - Rialto Cinemas
-    - West Wind Capitol Drive-in
-    - ShowPlace ICON
-    - Pruneyard cinemas
-    - Century at Hayward
-    - AMC NewPark
-    - Veranda LUXE Cinema
-    - Century Union Landing
-    - Vine Cinema
-    - Albany Twin
-    - Lark Theater
-    - Century Blackhawk Plaza
-    - Presidio Theatre
-    - 3 Below Theaters And Lounge
-    - Century Oakridge
-    - Roxie Theater
-    - AMC Mercado
-    - Contra Costa
-    - Balboa Theatre
-    - Century Cinema
-    - raven Film Center
-    - 3rd Street cinema
-    - edwards fairfield
-    - Century 20 Great Mall and XD
-    - Guild Theatre
-    - Regal Crow Canyon
-    - Cinemark
-    - Raven Film center
-    - CineLux Almaden
-    - Century Vallejo
