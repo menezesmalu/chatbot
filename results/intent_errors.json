@@ -1,10 +1,50 @@
 [
   {
-    "text": "Thanks, that is all.",
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "select",
+      "confidence": 0.9952259063720703
+    }
+  },
+  {
+    "text": "Not now, thanks",
+    "intent": "negate_intent",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.8890893459320068
+    }
+  },
+  {
+    "text": "Not right now, thanks.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "negate_intent",
+      "confidence": 0.6877861618995667
+    }
+  },
+  {
+    "text": "No, not right now. Thanks.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "negate_intent",
+      "confidence": 0.975659966468811
+    }
+  },
+  {
+    "text": "Awesome. Thank you for your help.",
     "intent": "select",
     "intent_prediction": {
       "name": "thank_you",
-      "confidence": 0.997795581817627
+      "confidence": 0.964943528175354
+    }
+  },
+  {
+    "text": "Thank you",
+    "intent": "select",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.9793076515197754
     }
   }
 ]

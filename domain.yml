@@ -17,10 +17,7 @@ intents:
 - thank_you
 - goodbye
 entities:
-- GPE
-- WORK_OF_ART
-- CARDINAL
-- DATE
+- GENRE
 slots:
   WORK_OF_ART:
     type: text
@@ -34,18 +31,9 @@ slots:
 responses:
   utter_introduce:
   - text: Hey! I can help you you find a movie or buy tickets, what you want?
-  utter_notfound:
-  - text: Can't help you with that. Do you have other option?
-  utter_when:
-  - text: when do you plan to watch?
   utter_where:
   - text: where's the best place for you?
   - text: where are you?
-  utter_cant_find:
-  - text: i'm sorry, but {WORK_OF_ART} is not on display there. Anywhere else?
-  utter_sorry:
-  - text: i'm sorry I coudn't help you.
-  - text: sorry :(
   utter_goodbye:
   - text: Goodbye. See you next time.
   - text: see you later, bye
@@ -64,7 +52,10 @@ responses:
   - text: grab your popcorn and enjoy your movie! it's all set
   utter_try_again:
   - text: sorry. let's try again.
+  utter_genre:
+    - text: what genre is your mood now?
+    - text: witch kind of movie you'd like to watch?
+    - text: first, i need to understand what's your genre mood for now.
 actions:
-- utter_confirm
 - utter_suggest_movie
-- utter_when
+

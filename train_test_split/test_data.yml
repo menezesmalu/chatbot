@@ -20,13 +20,11 @@ nlu:
 - intent: inform
   examples: |
     - In [Santa Rosa](GPE) please.
-    - I haven't seen a new movie a months. Can you find me an [Imax](show_type) show in [Campbell](GPE) to watch?
     - I am in [Oakland](GPE), so can you find me any nearby movies?
     - On the [3rd of this month](DATE), if possible.
     - Find movies in [Larkspur](GPE)
     - I wish to see it on the [9th](DATE).
     - What time is the movie available on [Tuesday next week](DATE)?
-    - I would like to watch the [regular](show_type) showing [next Monday](DATE). What time do they have available, then?
 - intent: inform_intent
   examples: |
     - [Breakthrough](WORK_OF_ART) sounds great. What times were available?

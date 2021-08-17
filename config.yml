@@ -13,7 +13,7 @@ pipeline:
     model: en_core_web_md
     case_sensitive: False
   - name: "SpacyEntityExtractor"
-    dimensions: ["DATE", "CARDINAL", "GPE", 'WORK_OF_ART']
+    dimensions: ["CARDINAL", "GPE", 'WORK_OF_ART']
   #default
   - name: WhitespaceTokenizer
   - name: RegexFeaturizer

@@ -7,46 +7,22 @@ stories:
     - intent: greet
     - action: utter_introduce
     - intent: request
-      entities:
-        - GPE: "San Fran"
-    - action: utter_when
+    - action: utter_genre
     - intent: inform
       entities:
-        - DATE: "3rd of this month"
-    - checkpoint: suggest_movie
-
-- story: request movie by date - negate
-  steps:
-    - intent: greet
-    - action: utter_introduce
-    - intent: request
-      entities:
-        - GPE: "San Fran"
-    - action: utter_when
-    - intent: inform
-      entities:
-        - DATE: "3rd of this month"
+        - gpe: "horror"
+    - action: utter_suggest_movie
     - checkpoint: suggest_movie
 
 - story: request movie by date - request_alts
   steps:
-    - intent: greet
-    - action: utter_introduce
-    - intent: request
-      entities:
-        - GPE: "San Fran"
-    - action: utter_when
-    - intent: inform
-      entities:
-        - DATE: "3rd of this month"
-    - action: utter_suggest_movie
+    - checkpoint: suggest_movie
     - intent: request_alts
     - action: utter_suggest_movie
 
 - story: accept suggested movie
   steps:
     - checkpoint: suggest_movie
-    - action: utter_suggest_movie
     - intent: thank_you
     - action: utter_goodbye
 
@@ -68,11 +44,6 @@ stories:
   - slot_was_set:
     - CARDINAL: 1
   - action: utter_ask_confirm
-  - checkpoint: buy_ticket
-
-- story: buy ticket - right
-  steps:
-  - checkpoint: buy_ticket
   - intent: affirm
   - action: utter_confirm
 

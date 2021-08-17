@@ -1,62 +1,55 @@
 {
-  "GPE": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 7,
-    "confused_with": {}
-  },
-  "genre": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 1,
-    "confused_with": {}
-  },
-  "DATE": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 10,
-    "confused_with": {}
-  },
-  "show_type": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2,
-    "confused_with": {}
-  },
-  "WORK_OF_ART": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 16,
-    "confused_with": {}
-  },
   "CARDINAL": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 1,
+    "support": 5,
+    "confused_with": {}
+  },
+  "GPE": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 36,
+    "confused_with": {}
+  },
+  "GENRE": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "WORK_OF_ART": {
+    "precision": 0.9608938547486033,
+    "recall": 1.0,
+    "f1-score": 0.9800569800569799,
+    "support": 172,
+    "confused_with": {}
+  },
+  "DATE": {
+    "precision": 0.7741935483870968,
+    "recall": 1.0,
+    "f1-score": 0.8727272727272727,
+    "support": 24,
     "confused_with": {}
   },
   "micro avg": {
-    "precision": 1.0,
+    "precision": 0.9455252918287937,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 37
+    "f1-score": 0.972,
+    "support": 243
   },
   "macro avg": {
-    "precision": 1.0,
+    "precision": 0.94701748062714,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 37
+    "f1-score": 0.9705568505568506,
+    "support": 243
   },
   "weighted avg": {
-    "precision": 1.0,
+    "precision": 0.9500180583458852,
     "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 37
+    "f1-score": 0.9733138070586629,
+    "support": 243
   }
 }
