@@ -47,3 +47,9 @@ stories:
   - intent: affirm
   - action: utter_confirm
 
+- story: ask fun fact
+  steps:
+    - intent: ask_fun_fact
+    - action: utter_ask_back
+    - intent: fun_fact_question
+    - action: action_get_fun_fact
