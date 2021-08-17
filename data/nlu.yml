@@ -1100,3 +1100,439 @@ nlu:
       - Thanks, sounds good to me.
       - Yes, that works for me
       - [How to Train Your Dragon: The Hidden World](WORK_OF_ART) sounds good.
+  - intent: ask_fun_fact
+    examples: |
+      - tell me something about movies
+      - give me some fun fact
+      - I wanna know something cool
+      - Tell me something
+  - intent: fun_fact_question
+    examples: |
+      - How did they make cars fall apart in old movies?
+      - How do they film the mirror scenes in movies?
+      - To what extent are child actors exposed to the violent aspects of the movie they perform in?
+      - What caused and ended the time loop in Groundhog Day?
+      - Is the Unix operating system featured in Jurassic Park real?
+      - Why isn't Bruce Willis's character in the Sixth Sense self-aware?
+      - What's the difference between “and” and “&” in movie credits?
+      - Why do people wear sunglasses in The Matrix?
+      - Why are films where the bad guy “wins” at the end so rare?
+      - Is the title “The Last Jedi” singular or plural?
+      - Why cast an A-lister for Groot?
+      - Of all the movies and TV shows ever made, which of them is set furthest in the future?
+      - How was “Hodor” adapted in other languages
+      - Why does the talk show host always sit on the right?
+      - Why didn't silent movies have subtitles?
+      - How did they make cars fall apart in old movies?
+      - How do they film the mirror scenes in movies?
+      - To what extent are child actors exposed to the violent aspects of the movie they perform in?
+      - What caused and ended the time loop in Groundhog Day?
+      - Is the Unix operating system featured in Jurassic Park real?
+      - Why isn't Bruce Willis's character in the Sixth Sense self-aware?
+      - What's the difference between “and” and “&” in movie credits?
+      - Why do people wear sunglasses in The Matrix?
+      - Why are films where the bad guy “wins” at the end so rare?
+      - Is the title “The Last Jedi” singular or plural?
+      - Why cast an A-lister for Groot?
+      - Of all the movies and TV shows ever made, which of them is set furthest in the future?
+      - How was “Hodor” adapted in other languages
+      - Why does the talk show host always sit on the right?
+      - Why didn't silent movies have subtitles?
+      - Which version of Blade Runner is Blade Runner 2049 a sequel of?
+      - How did Marty McFly and “Doc” Brown first meet?
+      - Why does Doctor Strange not bind Thanos in a time loop?
+      - Has a major film ever intentionally used live ammunition to film a scene?
+      - How do actors stop breathing when playing “dead”?
+      - Why did filmmakers need permission to film in black and white?
+      - Origin of movie trope where impaled character pulls/pushes blade/spear further into body?
+      - Why is the bride's name bleeped in Kill Bill Vol 1?
+      - At which dream level did Inception end?
+      - Was Kirk and Uhura's kiss in Star Trek really the first interracial kiss on TV?
+      - Who was the oldest actor to play a teenager?
+      - How did “Jack” (the narrator) manage to attract people to join Fight Club?
+      - Why don't Marty's parents ever mention how similar he looks to the Marty of 1955?
+      - Is there any definitive evidence that Teddy was or was not crazy?
+      - Why are the Simpsons yellow?
+      - How was this scene shot without hurting Charlie Chaplin?
+      - Why do movies still have credits?
+      - Why the greenish tint in the Matrix trilogy?
+      - What significance does Mike Yanagita have in Fargo?
+      - Why are the books in the Game of Thrones citadel library shelved spine inwards?
+      - Why are the railings in Rivendell so low?
+      - How accurate is this computer hardware in the movie Wall Street?
+      - What is going on in Mulholland Drive?
+      - Does this room exist in the Simpsons' house?
+      - How far did Forrest Gump run?
+      - Why does Firefly include a scene with a missing yoke?
+      - What really happened in Memento?
+      - Do Sheldon's equations reflect real math/physics research?
+      - Why are the American flags backwards on the warden's uniform in Orange is the New Black?
+      - Alice growing effect in 1972 “Alice's Adventures in Wonderland” - how was it done? It's not green screen
+      - First movie with product placement?
+      - How do actors memorize extremely long scripts?
+      - Why are “blockbusters” called blockbusters?
+      - Is it true that none of the cast knew what to expect in the famous “chestburster scene” in Alien?
+      - In what spot would the new Star Wars movie “Rogue One” go in the Machete Order?
+      - What has the greatest chance of being in Marcellus Wallace's briefcase?
+      - Why does Harry only make use of time travel in The Prisoner of Azkaban?
+      - Why is there no Robin in the Nolan-directed Batman movies?
+      - Why does George Mcfly employ Biff to wax his car after he had previously tried to rape his wife?
+      - What is the real reason for the Joker's scars?
+      - Did silent film actors actually say their lines or did they simply improvise “dialogue” while being filmed?
+      - Are there any indications why Roddenberry chose to make Star Trek a “battleship universe”?
+      - Who is the true villain of Peter Pan: Peter, or Hook?
+      - Why didn't Gollum take the ring back from Bilbo between The Hobbit and The Lord of the Rings?
+      - How is color determined when colorizing black and white movies?
+      - How was Looney Tunes originally watched?
+      - How do film makers record the President of the United States?
+      - Is the loudness of a movie in the theater set by the theater or by the publisher/studio?
+      - Why are so many American (spy) movies set in Europe?
+      - Do I need knowledge of American culture and history to enjoy Forrest Gump?
+      - Why did Warner Bros spend $25 million to CGI out Henry Cavill's mustache?
+      - Why aren't the characters floating two levels down?
+      - Why is Discovery One covered in sulphur in “2010: The Year We Make Contact”?
+      - Do they really crash super cars in action movies?
+      - Is this balcony with a protruding gargoyle a real place?
+      - Why did Neo have powers in the real world?
+      - What is the purpose of this “red room” in Stranger Things?
+      - Why did the Night King attack the furthest target first?
+      - Has there been a movie or a TV show where an abortion was portrayed without negative connotations?
+      - How is Team Scooby Doo (Mystery Inc.) funded?
+      - Why didn't Bilbo become a creature like Gollum?
+      - Why do British sitcoms have much fewer episodes than American ones?
+      - Do Star Trek characters wearing red shirts have the highest death rate on the original show?
+      - Why didn't Voldemort create a seventh Horcrux not knowing Harry was one?
+      - Why did Morpheus tell Trinity to stay off the freeway?
+      - What actually happens when a telephone rings in a movie or TV show?
+      - Why all the fancy technology in most movies?
+      - In Back to the Future Part II, how could old Biff have made it back to 2015?
+      - Banner's control of Hulk in Avengers
+      - Why didn't Hans Gruber know what Mr. Takagi looked like?
+      - Couldn't one or two or three dragons take care of the Army of the Dead in like a couple hours?
+      - Does the T-1000 know that the “big guy on a bike” is a T-800 before he meets him?
+      - What rules govern how TV show opening credits are structured?
+      - Why was there a 14 year gap between The Incredibles and The Incredibles 2?
+      - Why was there a robot in Rocky IV?
+      - How far back do I need to watch Doctor Who for it to still make sense?
+      - How did Indy know not to look into the Ark?
+      - Why does Zootopia have an intentional Breaking Bad reference?
+      - What were all the references in Deadpool?
+      - Why did the Joker take the risk of placing a gun in Harvey Dent's hand?
+      - How did Sherlock survive the fall?
+      - What do actors actually inhale when their characters snort cocaine or smoke crack?
+      - Switch in *The Matrix* - Two Actors?
+      - Was the dragon prowess intentionally downplayed in S08E04?
+      - How is this practical and very old scene shot?
+      - How do they get very young child actors to cooperate?
+      - Why doesn't “Ralph Breaks the Internet” have “wreck” in the title?
+      - Why does Quentin Tarantino add non-plot related dialogue in his movies?
+      - Why does Darth Vader not use the Force to prevent Luke from falling?
+      - Why does Thanos need *all* the infinity stones?
+      - Why is the 'You talking to me' speech from the movie 'Taxi Driver' so famous?
+      - How could the Starks convince the other Lords that this character was guilty?
+      - Is it really as easy to knock someone out in real life as in the movies?
+      - What kind of company is Initech?
+      - Why is the spoken German in many US films and TV shows so inaccurate?
+      - What does War Machine's “Canopy! Canopy!” line mean in “Avengers: Endgame”?
+      - Why did Victor die?
+      - What techniques are used by directors to make an actor cry?
+      - Were oranges an intentional use of symbolism by filmmakers?
+      - Why didn't Loki's mind control work on Tony Stark?
+      - How could the human race be saved in Interstellar?
+      - First example of “ringing in ears” sound design?
+      - Jaime's character change in Game of Thrones
+      - Why does Trinity's kiss revive Neo in The Matrix?
+      - How can I find tv shows/films similar to one I like?
+      - Is there a full canon version of Tyrion's jackass/honeycomb joke?
+      - How does the title 'The Imitation Game' justify the story of the movie?
+      - Why do Disney parents usually die?
+      - What was Hans Gruber's plan in Die Hard?
+      - Use Force Lightning can Yoda?
+      - Why the highlighted outline in animated cartoons?
+      - Where and when does the “idea” light bulb appear for the first time?
+      - Is Borden's true identity real, or another ruse?
+      - The most roles played by the same actor in a movie?
+      - What is the longest aired episode of a TV series?
+      - Why does the roadrunner say “beep beep”?
+      - What makes The Shawshank Redemption so cinematically important?
+      - Can a single bullet from a handgun kill three people in the way Deadpool did?
+      - Why do mouse cursors never align with actors' hand movements (or always move perfectly straight)?
+      - Why were people led to believe that the Apollo mission was fake in Interstellar?
+      - Is Amy right about Indiana Jones being irrelevant to the outcome?
+      - What was Chandler Bing's job?
+      - What are TPS Reports?
+      - Why did they avoid Charlie's name in the film title Willy Wonka & the Chocolate Factory?
+      - Why were mouse holes often represented in cartoons and movies like this?
+      - In Fight Club is Marla Singer a second figment of Jack's imagination?
+      - Point of the Dothraki's attack in GoT S8E3?
+      - Does Disney no longer produce hand-drawn cartoon films?
+      - Did any actor ever win an Oscar for their work in a horror movie?
+      - Why did cars in 70s and 80s TV and movies slide like they were driving on ice?
+      - Was Thanos really committed or just a hypocrite?
+      - Why does Bane's stock exchange robbery actually work to bankrupt Bruce Wayne?
+      - Why don't they show subtitles for the Spanish dialogue?
+      - How do productions like Stranger Things or other similarly “not modern but still within recent memory” productions acquire period props?
+      - How was this shot in Contact (1997) really made? [duplicate]
+      - Why were movies shot on film shot at 24 frames per second?
+      - Explanation of Jules' ending monologue
+      - Did Batman break his one rule?
+      - What is the origin of Scooby-Doo's name?
+      - Was a supercomputer really needed in “The Martian”?
+      - Why did Varys remove his rings?
+      - Did the White Walkers spare Sam?
+      - Why is Arya visibly scared in the library in Game of Thrones S8E3?
+      - Why is Spaceballs specifically numbered Chapter XI?
+      - Why does “No-one ever get it in the first take”?
+      - Why is James Bond less tech savvy in the Daniel Craig movies?
+      - Why do people repeatedly hit the phone hook switch when disconnected?
+      - Why doesn't Deadpool's healing ability heal his skin?
+      - Why is Vision so weak?
+      - How could Jon Snow do what he did in “Oathbreaker”?
+      - How does one identify Valyrian steel?
+      - How was the deserted London scene in the movie '28 Days Later' filmed?
+      - Was the original “Pink Panther” movie intended to be a comedy?
+      - Why do studios use Roman numerals in the copyright notice in the end credits?
+      - In the “300” movie, in the final battle, Why didn't Leonidas kill Xerxes?
+      - Why were sloths chosen to depict DMV workers?
+      - Why did Ramsay strike him?
+      - How do they phrase casting calls when casting an individual with a particular skin color?
+      - What's the point of actors occasionally directing a TV show episode?
+      - What is the main theme of The Dark Knight?
+      - Was the Gotham Hospital scene a goof-up?
+      - Why do people call Morgan Freeman's character Red?
+      - Does Mia mistake Vincent's heroin for cocaine because it's in a baggie rather than a balloon?
+      - How do actors avoid looking into the camera?
+      - Meaning of the Silence of the Lambs poster
+      - Why does Deadpool say “You're welcome, Canada,” after shooting Ryan Reynolds in the end credits?
+      - What was wrong with John Rambo’s appearance?
+      - Why is it so easy to become king of Wakanda?
+      - If Agent Smith is just an AI program, then how could he end up in the real world?
+      - What is Mycroft's job?
+      - Hollywood movies that no longer exist in any form
+      - Do the actors really go nude in the shooting of the movies?
+      - What does the woman from the future mean when she says she's “in insurance”?
+      - Why was Bruce's silence referred to as a “Walt Disney”?
+      - Why wasn't the poltergeist Peeves in the Harry Potter movies?
+      - Why does Gus walk away from his car?
+      - How did Hitchcock enforce the “no late admission” policy for Psycho?
+      - At what point is the orchestra told who the Academy Award winner will be?
+      - Why was Being John Malkovich based around John Malkovich?
+      - Which worse thing was Luke expecting in Star Wars: A New Hope?
+      - Why did Dormammu keep his promise?
+      - Why does Batman talk to himself in the batvoice?
+      - Can someone explain the sequence of events in 'Primer'?
+      - Is this bar slide trick shown on Cheers real or a visual effect?
+      - How was the DeLorean perceived in 1985?
+      - Is Batman Begins based on any Batman comic or was it entirely written from scratch?
+      - Why does Westley say Rodents of Unusual Size don't exist?
+      - How does a rifle fire backwards?
+      - In Back to the Future, how did Marty get the timing right with the lightning strike?
+      - How do actors make eye contact with CGI characters?
+      - Why does Obi-Wan say that he'll become more powerful if Vader kills him?
+      - How does Captain America know about Iron Man's parents' fate?
+      - Did they torture and kill a monkey during the filming of Andromeda Strain?
+      - Why were the villagers and the axe-wielding hitman brothers crawling towards a shrine?
+      - Why is Gandalf referred to as Mithrandir?
+      - Why did the girl try to kill herself in the 2009 Sherlock Holmes film?
+      - When/Why did American television change from primarily episodic to primarily serialized?
+      - What was the first movie to introduce “blue wire or red wire” bomb disposal?
+      - What is it called when a movie breaks the illusion of fantasy?
+      - What was the purpose of Saito's presence during the inception job?
+      - “Whatever doesn't kill you, simply makes you stranger” - what does it mean?
+      - Why do movie teams shoot alternate endings?
+      - Does Sheldon Cooper have Asperger's Syndrome?
+      - Why are there not any MRI machines available in Interstellar?
+      - Why did Tony Stark use a normal flip phone?
+      - What if a head shaving scene gets messed up?
+      - Why did Borden do that to his wife in The Prestige?
+      - Did 007 exist before James Bond?
+      - Game Over, Man…Game Over! - What's the source?
+      - Making nature documentaries: scripting then filming or the other way?
+      - What do the spear and watermelon jokes in “Airplane!” mean?
+      - What country is the movie Babe set in, in-universe?
+      - Did Neil Armstrong really do this on the Moon?
+      - Why do old gun fight scenes sound so weird and cartoonish?
+      - Why do low production studios intentionally release similar films shortly after a big banner?
+      - How did Mr. Bean manage to make money?
+      - Is this character hallucinating in “Stormborn” (S07E02)?
+      - Have GoT's showrunners reacted to the poor reception of the final season?
+      - Where is Jon going?
+      - Why is the movie titled “Eternal Sunshine of the Spotless Mind”?
+      - How and why did Disney reuse animation?
+      - Why does Hollywood not use foreigners in foreigners' roles?
+      - What happened to the bodies in American Psycho?
+      - Why does James Bond keep demanding a vodka martini that is shaken but not stirred?
+      - Are there any rules around when something can be described as “based on a true story”?
+      - Why do the lights go out when someone enters the dining room on this ship?
+      - Why can Arya still use the faces?
+      - How old is Charles Muntz during “Up”?
+      - Why does Walt leave his watch at the gas station?
+      - Was there a dinosaur-counter in the original Jurassic Park movie?
+      - Why does Neo's cubicle not look like the workplace of a programmer?
+      - Why did Vader passively accept being killed and replaced at Palpatine's command?
+      - How do they film movies that take place in a single season?
+      - Why hasn't the elevator been fixed?
+      - Is Bran literally the world's memory?
+      - What format do movie theaters now use?
+      - In what order should a newcomer watch Star Wars episodes?
+      - How did Thanos know about the power of “The Snap”?
+      - Did Roger Rabbit exist prior to the film “Who Framed Roger Rabbit?”
+      - Why do movies think the speed of sound is as fast as the speed of light?
+      - Why is there a disclaimer about not accepting money from tobacco companies at the end of movies?
+      - Is lens flare shot organically, or added in post-production?
+      - Are Agent Barton and Agent Romanoff ever called 'Hawkeye' and 'Black Widow' in the MCU?
+      - Kill Bill colour changes to Black and White
+      - Why does Luke leave the wampa’s cave?
+      - What accent did the actors use in Black Panther?
+      - What are the differences between the alternative versions of Blade Runner?
+      - Frozen Jack: Actor or Prop?
+      - “A galaxy far, far away…” — from where?
+      - What was the first crossover movie like The Avengers, using only movie franchises?
+      - Was The Nightmare Before Christmas meant to be a Halloween or Christmas Movie?
+      - Did the Fresh Prince producers ever consider reshooting the title sequence?
+      - Why did Lucius interrupt Bruce during their Sonar/Submarine discussion?
+      - 'Yeah but it's a dry heat' - reference to another film?
+      - Why exactly did Walt leave Gray Matter?
+      - Why the stoic acting style in 2001 Space Odyssey?
+      - Did Tyler Durden forget his name?
+      - Why are trailers called “trailers”?
+      - Why did the Predator not kill Arnold immediately as it killed everybody else?
+      - Why does T-1000 try to force Sarah Connor to call her son?
+      - What is the Ancient One's mistake?
+      - What did the title of Silence of the Lambs refer to?
+      - Are scorpions frequent in US suburb gardens or is this a plot exaggeration?
+      - Why was the Ancient One so hesitant to teach Dr. Strange the art of sorcery?
+      - What is the point of the Red Thread/Tape around evidence or newspaper clippings?
+      - Is Forrest Jr. actually Forrest's son?
+      - How do they make tattoos in movies?
+      - Why are laugh tracks only used in TV series but not in movies?
+      - What does Mr Bean have against the three-wheeled car?
+      - What happened to the humans in “Cars” (that is if they ever existed)?
+      - Where does Sherlock get his money?
+      - Why does Bane protect the girl?
+      - Director's Cut, Editor's Cut, Theatrical Cut. What do these mean?
+      - What properties did Disney buy from 21st Century Fox?
+      - Why does James Bond use his real name?
+      - Does Babyface Nelson represent anyone from The Odyssey?
+      - Why did three actors play Darth Vader?
+      - Why were the bells ignored in S8E5?
+      - What is Jack Nicholson tossing aside in this scene in The Shining?
+      - What God does Captain America believe in?
+      - Did this character show any indication of wanting to rule before S8E6?
+      - Ending of Donnie Darko
+      - Is Clue the only film that aired true, multiple endings in theaters?
+      - Is the Three-Eyed Raven incapable of emotion?
+      - How were Opening Titles and End Credits created before Computers?
+      - What happens to questions that aren't revealed during Jeopardy?
+      - Why did Lord Baelish betray Eddard Stark?
+      - Why did Steve Rogers choose this character in Endgame?
+      - Empire Strikes Back - Scene in Dagobah with Darth Vader
+      - What is a “soap”?
+      - Why didn't Hugo Weaving reprise his role as Red Skull?
+      - Why did they pick World War I over World War II in Wonder Woman?
+      - What do I need to know before watching 3D for the first time
+      - In Iron Man, why is Tony Stark fooled for so long?
+      - Why aren't the front of Oscar winner envelopes marked with the award they're for?
+      - How does Thanos know where all the infinity stones are?
+      - How did Angier know not to appear in The Prestige?
+      - Why did Obi-Wan have to explain full details about Mos Eisley to Luke?
+      - Why did Jon Snow do this immoral act if he is so honorable?
+      - Who is the titular “Last Jedi”?
+      - How did Alan Turing break the Enigma code using the hint given by the lady in the bar?
+      - Why is “Captain Marvel” translated as male in Portugal?
+      - What is the meaning of Teddy's last dialogue in Shutter Island?
+      - How was 1917 filmed as a continuous shot?
+      - Red's parole hearings in The Shawshank Redemption
+      - Did John McClane know Bill Clay was really Hans Gruber? If so, how?
+      - Why do the toys blink alternately?
+      - What did Black Widow say?
+      - How can weightlessness be simulated on film?
+      - Why does Archer say “Balls” whenever someone says “Benoit”?
+      - Did Spaceballs have to get permission for Pizza the Hutt
+      - Why do the kicks have to occur simultaneously?
+      - Was film actually “better” than digital media?
+      - Why do the Avengers have bad radio discipline?
+      - Where does the “One of us! One of us!” chant originate?
+      - Why doesn't Marty use the other DeLorean?
+      - Why does Jack Nicholson say “Here's Johnny!” in The Shining when his character is called Jack?
+      - How much does Joey owe Chandler?
+      - Why is Pulp Fiction's opening scene different to the one near the end?
+      - Is this an inconsistency in the Infinity War and Guardians of the Galaxy?
+      - How do they shoot binocular scenes?
+      - “No Country for Old Men”, why is it called so?
+      - The most actors playing the same role in one movie?
+      - What's so hard about guest-hosting Jeopardy?
+      - Why would a ship that is able to recycle all water consumed have trouble running out of water?
+      - What is the meaning of this poster for The Lobster?
+      - What is the best order to watch LotR/Hobbit franchise?
+      - Why does Christian Bale change his voice when playing Batman
+      - Why does 2001: A Space Odyssey not provide an explanation of its ending? Are we supposed to read the book?
+      - Is there any way for Wakandan people to regrow the Heart-Shaped Herb?
+      - Why does Dr Mann act so stupidly?
+      - Why is the movie title “Blazing Saddles”?
+      - Thanos And the Time Stone
+      - Where are Frodo, Gandalf and the others going at the end and why?
+      - Why is it Pet Sematary but not Pet Cemetery?
+      - What media format do TV stations use?
+      - Why are two of Riley's five emotions in Inside Out male?
+      - How did the T-Rex reach the vehicles in Jurassic Park?
+      - How much of Star Wars did George Lucas actually write?
+      - Why have this character involved in Infinity War at all?
+      - Why do Mickey's ears rotate and shift location when he is not facing the camera?
+      - What was the purpose of Candie's handshake in Django Unchained?
+      - Is the 2016 movie Trolls about opium addiction?
+      - Was Sheldon Cooper ever proven wrong?
+      - Why does Hulk act the way he does in Avengers: Infinity War?
+      - Discrepancy in Thanos's use of time stone in Infinity War
+      - How can Philip J. Fry be his own grandfather if he is sterile?
+      - Why is the number '4' so prominent in the Death Note?
+      - Why does Mike call Jimmy “Saul”?
+      - What is this camera effect used in Hot Fuzz?
+      - Why didn't Mal use her totem (spinning top) before she actually died?
+      - How did Jack get to the island, and how did he become so important so quickly?
+      - Why does “The Force Awakens” use an image language associated with national socialism for the First Order?
+      - Why do movie directors use brown tint on Mexico cities?
+      - How did Murph know about Edmunds?
+      - Why couldn't Bond have backup at the battle of Skyfall?
+      - Why do some movies start with a big rotating circle and countdown?
+      - Why do old movies sound like old movies?
+      - What is the purpose of taxi-cabs and buses in Pixar’s 'Cars 2' movie?
+      - What exactly is 70mm print and why does anyone care?
+      - Why didn't Bane reveal to the public that Bruce Wayne is Batman?
+      - Is Deadpool 2's after-credits scene canon or just a joke?
+      - Why do TV comedy programs have laugh tracks?
+      - What does the scene during the ending represent?
+      - Is the man with no name the same character?
+      - Who's the random kid standing in the gathering at the end?
+      - What does the Night King really want?
+      - Why did it take a rocket to lift off the Earth but just shuttles to lift off the other planets?
+      - What does the missing symbol on Quaid's arm symbolize?
+      - What was really behind the mysterious number sequence in Lost?
+      - What changes were made to the Star Wars Blu-ray and what effect did they have on the plot?
+      - Why does Bran want to find Drogon?
+      - Why is the new movie named Ocean's 8?
+      - Why is “The Matrix” called by that name?
+      - Why does Wolverine drink alcohol?
+      - Was “Tim” the enchanter an ad-libbed name?
+      - Significance of Cersei's obsession with elephants?
+      - Why did Vision end up in Iron Man's team?
+      - Why did Hank Pym choose Scott Lang?
+      - Why do the machines keep humans alive if they have nuclear reactors?
+      - What is the meaning of the “fly scene” in Breaking Bad?
+      - How was Jon Snow able to kill the White Walker in S05E08?
+      - K-PAX ending explanation
+      - Why didn't Loki use the Tesseract?
+      - Why does Lance consider cell phones unsafe?
+      - Why did Spider-Man take a detour to Dorset?
+      - Why was the Avengers movie called something different in the UK?
+      - Who's this lady in the war room?
+      - Was Tim's reaction to the electric fence realistic?
+      - What is rosebud?
+      - What is the significance of the sheriff's colored sunglasses in Kill Bill vol 1?
+      - What happened to Bruce Wayne/Batman's knee?
+      - What was up with Grand Maester Pycelle?
+      - How did Arya manage to disguise herself?
+      - Are scripts seeded to identify leaks?
+      - Is McConaughey's anecdote about not memorizing a four-page monologue real?
+      - Why didn't the Dursleys make witchcraft and wizardry public?
+      - Why did Arya not kill the Lannister soldiers she encountered in the Riverlands?
