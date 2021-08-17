@@ -1,838 +1,881 @@
 version: "2.0"
 nlu:
-- intent: bot_challenge
+- intent: ask_fun_fact
   examples: |
-    - am I talking to a human?
-    - are you a human?
-    - are you a bot?
+    - I wanna know something cool
+    - give me some fun fact
+    - Tell me something
+- intent: inform_genre
+  examples: |
+    - i want to watch an [Animation](GENRE) movie
+    - i was thinking about a [Horror](GENRE) movie
+    - Can you help me find an [Adventure](GENRE) movie showing ?
+    - I would like to find a movie to watch in the [Imaginative fiction](GENRE) genre.
+- intent: inform_tickets
+  examples: |
+    - I would like to buy a movie ticket for [four](CARDINAL) people.
+    - I'd like to purchase [three](CARDINAL) tickets right now.
+    - I need [1](CARDINAL) ticket
+    - i want [two](CARDINAL) tickets
+    - I would like [three](CARDINAL) tickets.
+    - I would like [seven](CARDINAL) tickets
+    - give me [three](CARDINAL) tickets, please
 - intent: goodbye
   examples: |
+    - bye bye
+    - good by
+    - see you later
+    - have a nice day
+    - goodbye
+    - cee you later
     - cu
     - good night
-    - see you around
-    - bye bye
-    - bye
-    - goodbye
-    - have a nice day
-    - good by
+- intent: confirm_movie
+  examples: |
+    - [Captain Marvel](WORK_OF_ART) works.
+    - [Red Joan](WORK_OF_ART) is great.
+    - Yeah, I heard of that one! [Captain Marvel](WORK_OF_ART) sounds good.
+    - [Shazam](WORK_OF_ART) would be great.
+    - [IT two](WORK_OF_ART) sounds perfect for me
+    - Thats great, [Hellboy](WORK_OF_ART) will do.
+    - [The best of enemies](WORK_OF_ART) will be good
+    - [Breakthrough](WORK_OF_ART) is perfect.
+- intent: request_ticket
+  examples: |
+    - i want to buy tickets
+    - let's buy the tickets
+    - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
+    - i would like to watch a movie. can you purchase?
+    - I would like to buy tickets
+    - i want to watch a movie
+    - get me tickets for it please.
+    - i would like to buy tickets
+- intent: inform_movie
+  examples: |
+    - Hey, can you help me get movie tickets to [IT Chapter Two](WORK_OF_ART).
+    - I would like to see [Little](WORK_OF_ART).
+    - i want to watch [life is beautiful](WORK_OF_ART)
+    - I was thinking about watch [hellboy](WORK_OF_ART)
+    - i wanna watch [life is beautiful](WORK_OF_ART)
+    - i would like to watch the [harry potter](WORK_OF_ART) movie
+    - Toy Story 4](WORK_OF_ART) is the one I've been wanting to see
+    - i am planning to book [life is beautiful](WORK_OF_ART)
+    - i would like to watch [life is beautiful](WORK_OF_ART)
+    - i need to watch [harry potter](WORK_OF_ART)
 - intent: greet
   examples: |
-    - hello
-    - goodmorning
-    - moin
-    - goodevening
-    - hey
+    - hello there
     - good evening
-    - let's go
-    - good morning
+    - hey
     - hey dude
+    - goodevening
+    - goodmorning
+    - hey there
+    - good morning
     - hi
-- intent: affirm_intent
+    - moin
+- intent: request_movie
   examples: |
-    - Yes, let's get the tickets now.
-    - Yes, get me [one](CARDINAL) ticket for next [Tuesday](DATE)
-    - Yes, I would like to buy tickets.
-    - Yes can I get them now? book for the [3rd of this month](DATE).
-    - Yes. Please book for [Saturday this week](DATE).
-    - Yes, I would like a regular show on the 3rd of this month for a 10:15 pm showing.
-    - Yes, let's buy the tickets.
-    - yes, Please buy the ticket and i need to watch in on [tuesday next week](DATE).
-    - Yes, I would like [three](CARDINAL) tickets.
-- intent: inform
-  examples: |
-    - Is it available at another time? How about on [March 4th](DATE)?
-    - Search for movies playing right now in [Napa](GPE).
-    - Hey, can you help me get movie tickets to [IT Chapter Two](WORK_OF_ART).
-    - I would like to find a movie to watch in the [Imaginative fiction](genre) genre.
-    - I'd like to see a movie, any genre is fine
-    - I want to go to [Palo Alto](GPE)
-    - I'd like [three](CARDINAL) tickets, please.
-    - I would like to buy a movie ticket in [Concord](GPE) on the [9th](DATE) for [four](CARDINAL) people.
-    - [March 7th](DATE), please.
-    - I'd prefer something else, in [Menlo Park](GPE), any theater.
-    - I want movies shown in [Union City](GPE).
-    - Help me find movies showing in [San Francisco](GPE).
-    - Can you help me find an [adventure](genre) movie showing in [concord](GPE)?
-    - I am in [Palo Alto](GPE)
-    - Can you look in the [Newark](GPE) area?
-    - Are there any good movies showing in [Pleasant Hill](GPE)?
-    - I'm in [San Jose](GPE).
-    - I want to see the movie in [San Fran](GPE).
-    - I wanna go to [Palo Alto](GPE)
-    - Please can you look for a good movie to watch for this week end, might be in [San Jose](GPE)?
-    - I'd like a GPE in [San Ramon](GPE).
-    - I'm in [San Ramon](GPE), please find a movie there.
-    - I'm in [Palo Alto](GPE)
-- intent: inform_intent
-  examples: |
-    - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
-    - [Captain Marvel](WORK_OF_ART) works. What are the times?
-    - I would like to buy tickets to [IT two](WORK_OF_ART), it sounds perfect.
-    - What time is the movie showing?
-    - We'd love to see [Missing Link](WORK_OF_ART). What are the showtimes?
-    - The best of enemies will be good, find the show time.
-    - [Hustlers](WORK_OF_ART) is great and can you purchase tickets for me?
-    - i want to watch a movie
-    - What time is [How to Train Your Dragon: The Hidden World](WORK_OF_ART) playing at?
-    - Not needed. Showtime please.
-    - [Red Joan](WORK_OF_ART) is great. When is it showing?
-    - My friends want to go see a movie, can you help?
-    - I want to watch a movie and I need your help to purchase the tickets for the movie.
+    - Hey, can you help me find a movie to watch?
     - I am bored and want to watch a movie.
-    - What time is [Breakthrough](WORK_OF_ART)? That sounds great!
-    - Please help me find a movie to watch.
-    - Hey [Toy Story 4](WORK_OF_ART), that is the one I've been wanting to see, get me tickets for it please.
-    - [The Curse of La Llorona](WORK_OF_ART) sounds good. When can i see it?
-    - Thats great, [Hellboy](WORK_OF_ART) will do. Show time please
-    - What time can I watch the movie?
-    - Hi! Can you help me find a movie?
-    - I'd like to watch [Hotel Mumbai](WORK_OF_ART). What time is the show?
-    - [Breakthrough](WORK_OF_ART) is perfect. What day and time is it showing?
-    - What are the showtimes for [Missing Link](WORK_OF_ART)?
-    - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
-    - Another time, please. What are the times available for it?
-    - i have to search for a movie to watch
-    - IT two sounds perfect for me, please buy me tickets for it.
-    - [Penguin Highway](WORK_OF_ART) is good and at what time can i watch it?
-    - i wanna buy tickets
-    - Not at this time. What time is it playing?
-    - i would like to buy tickets
     - I want to find a movie.
-    - I am searching for a movie to watch.
-    - I would like to see [Little](WORK_OF_ART). What time is it playing?
+    - Will you find me a movie to watch?
+    - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
     - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
-    - Yeah, I heard of that one! [Captain Marvel](WORK_OF_ART) sounds good. What are the showtimes?
+    - My friends want to go see a movie, can you help?
+    - i have to search for a movie to watch
+    - Find me a movie to watch.
     - Hey, I'm looking for a movie.
+    - I'd like to see a movie, can you find me one?
+    - Can you find me a movie?
+- intent: inform_location
+  examples: |
+    - I am in [Palo Alto](GPE)
+    - I want to go to [Palo Alto](GPE)
+    - In [Santa Rosa](GPE) please.
+    - Find movies in [Larkspur](GPE)
+    - I am in [Oakland](GPE), so can you find me any nearby movies?
+    - Please can you look for a good movie to watch, might be in [San Jose](GPE)?
+    - I wanna go to [Palo Alto](GPE)
+    - I'm in [San Ramon](GPE), please find a movie there.
+    - Can you look in the [Newark](GPE) area?
+    - I would like to buy a movie ticket in [Concord](GPE)
+    - I'm in [Palo Alto](GPE)
+    - Search for movies playing right now in [Napa](GPE).
+    - i'm wanna go to [Newark](GPE)
+    - I want movies shown in [Union City](GPE).
+    - i'm staying in [Newark](GPE)
 - intent: affirm
   examples: |
-    - Perfect, thanks so much.
-    - that sounds good
-    - Ok that sounds good to me.
-    - indeed
-    - Yes. This sounds good.
-    - correct
-    - That's absolutely correct.
-    - That's right, good deal.
-    - You got it.
-    - Yeah that's good.
-    - It is good.
-    - Yes, That sounds nice to me.
-    - Yes that's right
-    - That is confirmed to proceed.
-    - Yeah, that's right.
-    - Yes, perfect.
-    - Yes, everything you have have is correct.
-    - That is cool
-    - Yes that's correct
-    - Yes, that will be perfect.
-    - Yes I do.
-    - All are okay to proceed.
-    - Yes, that's perfect.
-    - You are one hundred percent correct.
-    - Yes that's all correct
-    - Yes, that all sounds correct.
-    - Sounds perfect to me.
-    - That's correct.
-    - Yes that's correct.
-    - Yes, that is exactly what I would like. Confirmed.
-    - Excellent, thanks for that.
     - Right, that's great.
-    - Yes. That's sounds good.
+    - y
+    - yes
+    - That's right, good deal.
     - Yes, that will be great.
-    - Yes, that is perfect.
-    - Yes that sounds fine.
+    - Yes that's right
+    - You got it.
+    - That is correct.
+    - Yes, that's perfect.
     - of course
-    - Yes, confirmed.
+    - that sounds good
+    - Yes that sounds fine.
+    - That's correct.
+    - Yes, perfect.
+    - All are okay to proceed.
+    - correct
+    - Yes I do.
+    - Yes, that's it.
+    - Yes that's all correct
+    - Yes, that sounds good.
+    - Ok that sounds good to me.
+    - Yes, That sounds perfect.
+    - indeed
+    - Yes, that is perfect.
+    - Yes, that will be perfect.
+    - Excellent, thanks for that.
+    - Yeah that's good.
+    - Yes, That sounds nice to me.
+    - Yes, everything you have have is correct.
+    - Yes. That's sounds good.
+    - Sounds perfect to me.
     - That's a go.
-    - Yes, that is all correct.
+    - Yes that's correct.
+    - Yes. This sounds good.
+    - Yeah, that's right.
+    - That is confirmed to proceed.
+    - Yes, that is exactly what I would like. Confirmed.
+    - That's absolutely correct.
+    - That is cool
+    - Yes, that would be fine.
 - intent: thank_you
   examples: |
-    - Thanks for helping.
-    - ok. thanks a lot for your help. thats all i need.
-    - Sure, that is all I need. Thank you!
-    - Great! You helped me a lot! Bye!
-    - Okay. Thank you so much!
-    - I don't need anything else. Thank you so much.
-    - Thanks and that's all.
-    - Thanks a bunch for your assistance.
-    - I see, that is all I need. Thank you!
-    - Great, thank you.
-    - Thank you for your assistance; that's all.
-    - Thanks for all the assistance.
-    - Thanks that's a real load off.
-    - Thanks so much for your work.
-    - Thanks for your immense help
-    - Thanks a lot.
-    - Great, you've been an amazing help, thank you.
     - Thanks very much for your help. That's all I needed help with.
-    - Thanks for helping, I appreciate it.
-    - Thanks for the help and that is everything I need.
-    - Thanks so much for booking those tickets and helping me
-    - Awesome, thank you for your help.
-    - I appreciate your help, thank you.
-    - Thanks so much!
+    - Thank you.
     - Thanks for everything! That is all I need.
-    - Thanks for everything.
-    - Thanks for doing that
-    - tks
-    - Thanks for your help, that's it for now.
-    - Thanks, I am good now.
-    - Ok thanks a lot.
-    - Thank you.That is all for now.
-    - Thank you for you help, that's all I need now.
-    - Thank you so much!
-    - Okay, thank you for your great help
+    - I see, that is all I need. Thank you!
+    - Thank you very much for the assistance. That's all I need for now.
     - Thank you very much. You've been very helpful.
     - I see, that is all I need. Thank you so much!
-    - I really do thank you for your help.
-    - Thank you!
-    - Great. Thanks for the assistance.
-    - Thanks for all your help. That's all I needed for now.
-    - Thank you very much for your help. That is what I want.
-    - OK, thanks so much, that's all for now then
-    - Thank you.
-    - Wow, great. Thank you.
-    - Thank you very much
-    - Thank you very much for the assistance. That's all I need for now.
+    - Ok thanks a lot.
+    - Thank you.That is all for now.
+    - Thanks for everything.
+    - Thanks for helping.
+    - Sure, that is all I need. Thank you!
+    - Thanks so much for booking those tickets and helping me
+    - I really thank you for your help.
+    - I appreciate your help, thank you.
     - Thank you for the assistance. That's all I need for now.
+    - I don't need anything else. Thank you so much.
+    - Great, thank you.
+    - Thanks for doing that
+    - ok. thanks a lot for your help. thats all i need.
+    - tks
+    - Thanks and that's all.
+    - Great, thanks for the help?
+    - Great! You helped me a lot! Bye!
+    - Thank you for your help, that is all I need.
+    - Thank you for your assistance; that's all.
+    - Thank you for your time.
+    - Great, you've been an amazing help, thank you.
+    - Thank you very much for your help. That is what I want.
+    - Thank you very much
+    - Thanks a lot.
+    - Thanks a bunch for your assistance.
+    - Thanks for all your help. That's all I needed for now.
+    - Thanks that's a real load off.
+    - I really do thank you for your help.
+    - Your help has been invaluable.
+    - Okay, thank you for your great help
+    - OK, thanks so much, that's all for now then
+    - Thanks for your immense help
+    - Great. Thanks for the assistance.
+    - Thank you!
+    - Thank you. That's all I need for now.
+    - Wow, great. Thank you.
+    - Awesome, thank you for your help.
+    - Thanks for helping, I appreciate it.
+    - Thank you for you help, that's all I need now.
+    - Okay. Thank you so much!
+    - Thanks for your help, that's it for now.
 - intent: request_alts
   examples: |
-    - Is there any other show times?
-    - Try some different movies?
-    - How about a different movie? What else have you got?
-    - Is there any other movies?
-    - Is there anything else showing?
-    - Not sure.. is there anything else?
-    - Anything else available to watch?
-    - Okay. I would like to see some other choices.
-    - Any other times.
-    - Please find some more options.
-    - Are there any other movie choices?
-    - sorry, whether can you find any other movies?
-    - please find some other movies.
-    - Those don't sound like my type of movies either, do you know of any others?
-    - No, not those. Please find some other titles.
-    - Is there anything else?
-    - Is there another time?
-    - I would prefer other proposals
-    - Can you find something else?
-    - Do you have other proposals?
-    - Are there any other showtimes?
-    - None of those sound good
-    - What other movies are playing?
-    - Find me something else.
-    - Are there any other times?
     - Are there any other show times available?
-    - Are there any other movies?
-    - What else do you propose to me?
-    - Do you suggest me another movie?
-    - Please go with another option.
-    - That doesn't sound like something I would like. Is there anything else?
-    - Is there any other time for the availability of that movie?
-    - Can you help me find some other movies?
-    - Are there other times?
-    - Let's hear the others.
-    - Not really, could help search for other movies?
-    - Are there any other movies playing?
-    - What other times are there?
-    - What about the other movies?
-    - None of those sound good, what else is there?
-    - Find something else, please.
-    - Nah I've already seen those. Find me something else.
-    - What else do you have?
-    - What are the others?
-    - Anything else available?
-    - Is the movie playing at another time?
-    - Can you still find some other movies?
+    - Find me something else please.
+    - Okay. I would like to see some other choices.
     - No. What else is playing?
     - Is there any other time the movie is playing?
-    - Any other films?
-    - Please find some other movies.
-    - No, find some other movies.
-    - Do you have any other suggestions?
-    - Are there any other times available?
-    - Are there other movies playing?
-    - Is the movie playing at some other time?
-    - Please find other movies.
-    - No thanks, can you find some others.
-    - No. Can I have some more?
-    - Could you find some other movies?
-    - What are the other options?
-    - Please find something else.
-    - No, is there anything else?
-    - Nah, none of those.
-    - What else is playing?
-    - Can you find anything else?
-    - No, something else please.
-    - Please search for other ones.
-    - What other movies are there?
-    - Are there any other movies option?
-    - Please find other options.
-    - Please search for even more movies.
-    - Are there any other times it's playing?
-    - What else is there?
-    - Anything else?
-    - Find me something else please.
     - Not really, can you recommend me something else?
+    - How about a different movie? What else have you got?
+    - What other times are there?
+    - What about the other movies?
+    - Not sure.. is there anything else?
+    - Nope, not the hilarious nightmare movies. Please find something else.
+    - I'm not sure I would like any of those. What else is showing?
     - No I'm not interested in those. Are any other movies playing?
+    - Could you find some other movies?
+    - Are there any other showtimes?
+    - That doesn't sound like something I would like. Is there anything else?
+    - None of those sound good, what else is there?
+    - Are there other times?
+    - Find me something else.
+    - Try some different movies?
+    - Could you find some other movies, please?
+    - Not really, could help search for other movies?
+    - sorry, whether can you find any other movies?
+    - Any other times.
+    - Please search for even more movies.
+    - Anything else?
+    - I'm not really into those, do you know any other good ones?
+    - No , i am not interested. Any other movies?
+    - Those don't sound like my type of movies either, do you know of any others?
+    - No thanks, can you find some others.
+    - Please search for other movies to see in downtown [San Fran](GPE).
+    - Are there any other movie choices?
+    - No, something else please.
+    - Is there anything else?
+    - No, please look for something else.
+    - What else is playing?
+    - Please find other movies.
+    - Are there any other movies?
+    - Do you suggest me another movie?
+    - What else do you propose to me?
+    - Any other times?
+    - Can you help me find some other movies?
+    - No. Any other options?
+    - What else is there?
+    - Please find some more options.
+    - Is the movie playing at some other time?
     - How about another time?
+    - Are there other movies playing?
+    - I think all are nice but I need to search for something else.
+    - please find some other movies.
+    - Please find something else.
+    - Nah, none of those.
+    - No, not those. Please find some other titles.
+    - Can you find anything else?
+    - What other movies are there?
+    - Anything else available to watch?
+    - Find something else.
+    - No. Can I have some more?
+    - Is there anything else/
+    - Let's hear the others.
+    - No, what other movies are there?
+    - Is there another time?
+    - Anything else available?
+    - Nah I've already seen those. Find me something else.
+    - No, is there anything else?
     - What are my other choices?
-- intent: negate_intent
-  examples: |
-    - No, i'm not interested in purchasing just yet.
-    - No, thank you for the information.
-    - No. I dont want to buy now.
-    - No thanks, I don't want to buy them yet. I am not positive that I will be able to go that day. I don't need anything else.
-    - No not now. That is everything for now thanks.
-    - Not at the moment
-    - No, I do not want to purchase tickets right now?
-    - No, I am just inquiring. I would not like to purchase the tickets now.
-    - I think we should wait to purchase them.
-    - No, I don't want to right now.
-    - No thank you, I do not require further help.
-    - No, I don't want to but tickets right now.
-    - No, I don't want to buy now.
-    - Not now, thanks
-    - No not now
-    - No, I don't want to purchase it right now.
-    - No, thank you. I don't want to buy right away.
-    - No, I don't want to get them right now.
-    - Not right now thanks
-    - No, not now, thanks.
-    - Not right now thanks, I don't think I need anything else.
-    - No, I'm not going to buy right away.
-    - Not just yet.
-    - No, not now.
-    - no, please don't purchase it now.
-    - No,not yet.
-    - No. I don't want to buy any tickets.
-    - No, I don't need to now.
-    - No, i don't want to buy it now.
-    - I'm not going to buy them right now.
-    - No, not at this very moment.
-    - No, not at the moment.
-    - No, not right now.
-    - No, I will purchase later thank you.
-    - No, not now
-    - I think I'll hold off.
-    - No, thanks , I don't want it now?
-    - Not yet.
-    - No, I do not intend to purchase the tickets now.
-    - I don't want to buy them just yet. I might be busy at that time.
-    - No, I am not going to purchase a ticket yet.
-    - Um, not now.
-    - No, not now. I'm going to do it in person.
-    - No, I want to buy tickets later.
-    - No, not now. That's it.
-    - No, I don't want to do it right now. That's all the info I wanted.
-    - Not now, no.
-    - Nope, not right now.
-    - No, I don't want to purchase them now.
-    - No not now. I'm fine for now.
-    - No, that's okay, not right now.
-    - No. Hold on. Maybe later.
-    - Not at this time.
-    - Nope, I don't need it right now.
-    - No, don't buy them now.
-    - No, I don't want now. That is all i need.
-    - No thank you. That's all I wanted.
-    - No, I will do it later.
-    - Not right now.
-    - No, I Don't want it now but later.
-    - No, I am not ready to purchase the ticket now.
-    - No, I will have to get the tickets later. I might have to do something with my brother that day.
-    - Not right now thanks.
-    - No not right now
-    - No, thanks. Let's wait on purchasing tickets.
-    - Not right this minute. Thanks
-    - Not right now, thank you.
-    - No, I will buy the tickets later.
-    - Not this second no
-    - Nope, I don't wanna purchase now.
-    - Not at the moment, no.
-    - Nah, I don't feel like buying right now. That's all.
-    - No, I don't want to purchase them ahead of time. I don't need to. But thank you!
-    - I don't want to buy them now.
-    - No, not right now, but thank you.
-    - No thanks, I will buy tickets later.
-    - No,I dont want now.That is all I need now
-    - Not right now, thanks. I'm all set.
-    - No, I don't need them.
-    - No, I do not wish to reserve the tickets now.
-    - No. I just needed information about the movie.
-    - I think I am not ready to purchase tickets, so no.
-    - No, I don't think so right now.
-    - No, I'll hold off that for now.
-    - No, I'm not ready to buy right now. That was all I wanted.
-    - No I don't want to purchase tickets right now. That is all that I need.
-    - No, I don't want . Thanks a lot for you kind help.
+    - Please find other options.
+    - Are there any other movies playing?
+    - Any other films?
+    - Check for other movies.
+    - Are there any other times it's playing?
+    - Please find some other movies.
+    - Is there any other show times?
+    - Are there any other movies option?
+    - Do you have any other suggestions?
+    - Please go with another option.
+    - Is the movie playing at another time?
+    - What other movies are playing?
+    - No, find some other movies.
+    - Can you find something else?
+    - Are there any other times available?
 - intent: select
   examples: |
-    - That's perfect, I'm all set.
-    - I'd love to see [Hobbs and Shaw](WORK_OF_ART).
-    - Terrific. That's all I need for now.
-    - Thank you for your help. Have a nice day.
-    - [Red Joan](WORK_OF_ART) is great!
-    - I've heard [Shazam](WORK_OF_ART)! is really good. I think we'll watch that one.
-    - Great, thanks.
-    - That's great, that'll be all for today.
-    - I want [Captain Marvel](WORK_OF_ART).
-    - I want to see that.
-    - sounds very good
-    - That's good. That's all I need for now.
-    - That's great , and thanks a lot
-    - That is great .That was all that I needed for now.
-    - after is perfect
-    - [Hotel Mumbai](WORK_OF_ART) is a good movie.
-    - That one sounds good, thank you. That's all I need.
-    - Great, That's all I need
-    - Ok. That is all i need
-    - [Pillow talk](WORK_OF_ART) sounds good to me.
-    - [Ash Is Purest White](WORK_OF_ART) would be great.
-    - That's great. Thanks.
     - may be [Little](WORK_OF_ART), I think which is perfect.
-    - [Breakthrough](WORK_OF_ART) sounds great.
+    - After sounds great.
+    - Yes, that works for me
+    - I would love to see [Captain Marvel](WORK_OF_ART)!
+    - Ok. That is all i need
+    - Thank you for your help. Have a nice day.
+    - I'd love to see [Hobbs and Shaw](WORK_OF_ART).
+    - Sounds great, Im ready.
+    - Okay, that's all the help I need.
+    - Awesome. Thank you for your help.
+    - [shazam](WORK_OF_ART) works for me.
+    - Thank you. Sounds good.
+    - That is perfect, that is all.
+    - [Red Joan](WORK_OF_ART) is great!
     - Sounds perfect, that's all I wanted.
-    - Yes, [Pet Sematary](WORK_OF_ART) sounds great!
-    - Yes, that one sounds really good. That's all I needed today.
-    - Yes, I want to watch [The Curse of La Llorona](WORK_OF_ART).
-    - Okay, that works.
-    - Yes that is good information.
-    - [Teen Spirit](WORK_OF_ART) is perfect.
     - [Captain Marvel](WORK_OF_ART) is perfect.
-    - That sounds perfect. That's all I need for now.
-    - [Captain Marvel](WORK_OF_ART) it is that's just the kind of movie I was looking to see.
-    - ok thats great, thank you very much.
-    - Sounds good. That's everything for now.
+    - [Shine a Light](WORK_OF_ART) sounds good.
+    - [Long Shot](WORK_OF_ART) sounds great.
+    - [Ash Is Purest White](WORK_OF_ART) would be great.
+    - Sure. I've never heard of it, but we'll give it a shot.
+    - That sounds perfect for me.
     - I would rather see [Breakthrough](WORK_OF_ART).
+    - That one sounds good, thank you. That's all I need.
+    - Okay, sounds good.
+    - Sounds perfect. That will be all.
+    - Thank you
+    - Yes, I would like to see [Penguin Highway](WORK_OF_ART).
+    - Sure. That's all.
+    - [Official Secrets](WORK_OF_ART) sounds prefect.
+    - I want to watch [Ash Is Purest White](WORK_OF_ART)?
+    - Great, That's all I need
+    - OK. That is all.
+    - That sounds perfect!
+    - [Fiddler is perfect](WORK_OF_ART).
+    - Ok. Great. That's all for now.
+    - That seems good. That'll be all.
+    - Yes, [Pet Sematary](WORK_OF_ART) sounds great!
+    - Perfect.
+    - [shazam](WORK_OF_ART) sounds good.
+    - That is great. I don't need anything further.
+    - Ok, that will work. That's all I need.
+    - Thank you for the information.
     - Great. Thanks for the information.
+    - That's great. Thanks.
+    - I love to watch [Pet Sematary](WORK_OF_ART).
+    - Alright, that sounds fine. I don't need help with anything else.
+    - That seems awesome.
+    - Sounds great. That's all I need for now.
+    - That will work.
+    - I see, that sounds great! That is all I need for now.
+    - That sounds good.
+    - That works for me.
+    - [Captain Marvel](WORK_OF_ART) sounds great.
+    - That sounds good. That's all I need for now.
+    - That's a little late, but it sounds good. Thank you that will be all I need.
+    - [Breakthrough](WORK_OF_ART) sounds great.
+    - That sounds perfect.
+    - I love [Dumbo](WORK_OF_ART).
+    - Perfect! Thank you for your help.
     - That sounds perfect, I'm all set.
     - [Little](WORK_OF_ART) is perfect.
-    - Oh, I forgot about [Captain Marvel](WORK_OF_ART). That one would be perfect.
-    - Sounds good, that is all.
-    - That sounds good, that will be all.
-    - That works
-    - Perfect.
-    - Awesome. Thank you for your help.
-    - [Ad Astra](WORK_OF_ART) is a good movie.
-    - [Captain Marvel](WORK_OF_ART) sounds great.
-    - Lets go with [Hellboy](WORK_OF_ART).
     - Sure thing.
-    - That sounds good.
-    - Perfect! Thank you for your help.
-    - That will be suitable.
-    - Sure. That's all.
-    - I see, that sounds great! That is all I need for now.
-    - [The Curse of La Llorona](WORK_OF_ART) sounds great.
-    - Sounds great. That's all I need for now.
-    - That sounds perfect.
-    - [shazam](WORK_OF_ART) sounds good.
-    - Good looks. You've been a lot of help.
-    - [Fiddler is perfect](WORK_OF_ART).
-    - Oh yes! [A Madea Family Funeral](WORK_OF_ART). I've been wanting to see this picture.
-    - Yeah that one sounds better
-    - Ok that sounds good.
-    - That sounds perfect for me.
-    - [Long Shot](WORK_OF_ART) sounds great.
-    - Sounds great, Im ready.
-    - Thanks. That's all I need.
-    - That is great. I don't need anything further.
-    - Wonderful thanks. That is all.
-    - That sounds good. That's all I need for now.
-    - Thank you for the information.
-    - Thank you. Sounds good.
-    - Yes, I would like to see [Penguin Highway](WORK_OF_ART).
-    - Awesome, thanks. That'll be everything.
-    - [Red Joan](WORK_OF_ART) sounds great.
-    - Ok. Great. That's all for now.
-    - I love to watch [Pet Sematary](WORK_OF_ART).
-    - [Official Secrets](WORK_OF_ART) sounds prefect.
-    - [shazam](WORK_OF_ART) works for me.
-    - I would love to see [Captain Marvel](WORK_OF_ART)!
-    - Okay, sounds good.
-    - Awesome. That about does it.
-    - Oh i think [Pet Sematary](WORK_OF_ART) may be a great movie to watch
-    - [Dumbo](WORK_OF_ART) seem like a good choice.
-    - [How to Train Your Dragon: The Hidden World](WORK_OF_ART) sounds good.
+    - [Captain Marvel](WORK_OF_ART) it is that's just the kind of movie I was looking to see.
+    - I like that, thanks!
     - Sounds good, thanks. That's all I need!
-    - That sounds good, that is all I needed.
-    - Yeah, The [Last Dragon](WORK_OF_ART) sounds great
-    - Ok i got it ,Movie [Pet Sematary](WORK_OF_ART) is Perfect and it suits my taste.
-    - I might like it, thank you for the advice, bye.
-    - That will work.
-    - That is fine.
-    - Oh, It sounds good.
-    - Thank you
-    - [The Curse of La Llorona](WORK_OF_ART) sounds good.
-    - After sounds great.
-    - It is ideal for [Captain Marvel](WORK_OF_ART).
-    - Sure. I've never heard of it, but we'll give it a shot.
-    - The film Where would you go is fine for me.
-    - OK it's good
-    - That is perfect for me.
-    - Thanks thats everything
+    - Ok. This is perfect
+    - Sounds good
+    - Sure that sounds great
+    - That's good then, that's all I need
+    - [Dumbo](WORK_OF_ART) seem like a good choice.
+    - Awesome. That about does it.
+    - [How to Train Your Dragon: The Hidden World](WORK_OF_ART) sounds good.
+    - Ok that sounds good.
+    - That's great , and thanks a lot
+    - Sounds good, that is all.
     - Yeah, this sounds great.
-    - Yes, I want to see that. Thanks.
-    - That sounds perfect!
-    - I want to watch [Ash Is Purest White](WORK_OF_ART)?
-    - [shazam](WORK_OF_ART) sounds perfect!
+    - Thanks, that is all.
+    - Oh, It sounds good.
+    - OK it's good
+    - That will be suitable.
+    - Awesome, thats all I need to know.
+    - Yes that is good information.
+    - Lets go with [Hellboy](WORK_OF_ART).
+    - Oh yes! [A Madea Family Funeral](WORK_OF_ART). I've been wanting to see this picture.
+    - I want [Captain Marvel](WORK_OF_ART).
+    - That sounds good, that is all I needed.
+    - Thanks. That's all I need.
+    - Awesome, thanks. That'll be everything.
+    - Yeah that one sounds better
+    - I might like it, thank you for the advice, bye.
+    - Oh i think [Pet Sematary](WORK_OF_ART) may be a great movie to watch
+    - That is great .That was all that I needed for now.
+    - [Ad Astra](WORK_OF_ART) is a good movie.
+    - Yeah, The [Last Dragon](WORK_OF_ART) sounds great
+    - [Missing Link](WORK_OF_ART) is good
+    - [The Curse of La Llorona](WORK_OF_ART) sounds great.
+    - Great, that will be fine.
+    - [Breakthrough](WORK_OF_ART) sound perfect.
     - That's not too bad.
-    - That is perfect, that is all.
-    - Yeah! That works.
-    - [Shine a Light](WORK_OF_ART) sounds good.
-    - OK. That is all.
+    - [Hellboy](WORK_OF_ART) is a good movie.
+    - It is ideal for [Captain Marvel](WORK_OF_ART).
+    - [Missing Link](WORK_OF_ART) sounds perfect.
+    - That sounds great!
+    - sounds very good
+    - I want to see that.
+    - Yes, I want to see that. Thanks.
+    - Good looks. You've been a lot of help.
+    - [Red Joan](WORK_OF_ART) sounds great.
+    - [Dumbo](WORK_OF_ART) sounds great!
+    - That is fine.
+    - I've heard [Shazam](WORK_OF_ART)! is really good. I think we'll watch that one.
+    - [The Curse of La Llorona](WORK_OF_ART) sounds good.
+    - That sounds good, that will be all.
 - intent: negate
   examples: |
-    - Nope, I'm all set.
-    - No that's all for now. Thanks for your help.
-    - Nope! I'm good!
-    - No, that would be all. Thanks so much.
-    - It's okay. Thank you and that's all.
-    - Nope, thanks a lot!
-    - No. That is all. Thank you!
-    - No Thats all. Thanks a lot
-    - That's all, thank you.
-    - No. Thanks anyways.
-    - That is all, once again thanks for the help.
+    - Nope, thanks. Done.
     - No, that will be all, thank you for your help.
-    - No, that is everything for today. Thank you for your time.
-    - That's it, I found a movie I wanted.
-    - No. Thanks for you help.
-    - No. Thank you for you help.
-    - Nope, that will be all for now but thanks for asking.
-    - No, I guess that's all I need for now. Thanks mucho.
-    - No, that's all. Thank you very much!
-    - No thanks
-    - not really
-    - That would be all. Thank you!
-    - No, that's it. Thanks very much for your help.
-    - I think this will do it. Thank you for your help.
-    - That's all. Thanks.
-    - No, thanks.
-    - No. Thanks for your help today.
-    - Nothing else that will be all.
-    - No. Thank you for the help.
-    - Nope, that'll be all. Thanks again!
-    - No, thanks. That's it for now.
-    - No thanks, that's all for now.
-    - No, thanks a lot for your help.
-    - No that is all I needed for now.
-    - No, that's all for now. Thanks for your help.
-    - Nope. but thanks for your help
-    - No, that would be all. Thanks.
-    - No that is all, Thanks.
-    - No, thanks for helping me.
-    - No. That's all for today.
-    - No, I'm good.
-    - That is all today.
-    - No. That will be all. Thank you!
-    - no , thanks for your help . not now.
-    - No, thanks for your help, I'm good.
-    - No, thats it. Thanks.
-    - No, that will do it. Thank you for your help.
-    - No, that will be all. Thank you very much!
-    - No, that's it.
-    - No, that's all. Thanks.
-    - No ,Thanks for your immense help
-    - No. That'll be all.
-    - No, Thanks you for your help
-    - No thank you
-    - Nothing I can think of and thank you again for your help.
-    - Nope, thank you!
-    - Yes, that will be all for now.
-    - No, I appreciate your help.
-    - No, that's all I need. Thanks for your help!
-    - Nope, thanks so much!
-    - No, that's all, thank you.
-    - No, that's all. Thanks anyways.
-    - No, not right now. Thanks.
-    - Not right now, thanks.
-    - No that is all I needed. Thank you.
-    - Not now, thanks.
-    - No, that is all I need. Thank you for your kind assistance!
-    - Thanks for your help but I don't think I'll be needing anything else today.
-    - no, not for now.
-    - No, thank you very much for your help, That's all i need. bye
-    - Nope, thanks again.
-    - no
-    - That's all. Thank you.
-    - No. Thanks for your help!
-    - No thanks.
-    - No, that's all I need.
-    - Thank you but no. I'm good.
-    - Not now. Thanks!
-    - No. Thank you.
-    - No, that's all for now, thanks.
-    - No, that will be all for now, thank you.
-    - Nope. Thank you so much for your help.
-    - No thank you.
-    - I don't think so, thank you.
-    - I've got all I want. Thanks a lot.
-    - No. Thanks so much
-    - No. Thank you for your help.
-    - No, That's all
-    - No, that is all.
-    - No. You have already been helpful.
-    - Nope! That's all the help I need.
-    - No. thank you for your help.
-    - No, you've done enough thanks.
-    - No, that is all. Thanks for the help.
-    - I don't think so
-    - No, that would be all.
-    - No, I'm all set, thank you.
-    - No thank you, that'll be all.
-    - Nope. Thanks for your help.
-    - No that's it.
-    - No thanks, that was all!
-    - No, that's all I want for now.
-    - Nothing for now and thanks.
-    - No, thanks, It's all
-    - No thank you a lot.
-    - No, that's all.
+    - Nope! I'm good!
     - Nope, that's a lot.
-    - No, thank you.
-    - No, I think that's all I need. Thanks for your help.
-    - No, not at the moment. Thanks a lot!
-    - No, that's all, thanks.
-    - No. That will be all.
-    - No, but thanks for helping.
-    - No. Thanks for your help.
-    - No, not right now. Thanks so much for your help.
-    - No, that's it and thanks.
-    - No, It's all, thanks
-    - No that's all thanks.
+    - No thanks, that's all for now.
+    - don't like that
     - Oh, darn. No, that will be all.
-    - I'm fine, thank you.
-    - Nope, thanks.
-    - No,Thank you very much
-    - No, thanks for your help.
-    - No that is all i need.
-    - No that will be all.
-    - No. That will be all. Thank you.
+    - No, thank you.
+    - No, that's all for now. Thanks for your help.
     - I'm good. Thanks for the help.
-    - No, that is okay. Thanks.
-    - No, that's all. Thank you for your help!
-    - No, that will be all.
-    - No. I appreciate your help so far.
-    - No. Thanks a lot
-    - No for now it's OK
-    - Umm, no. I need to figure this out. I'll let you know if I need anything further.
-    - No. Thanks a lot.
-    - never
-    - No, that is all thank you.
+    - No, thanks.
+    - No. Thank you.
+    - No, that would be all.
+    - No, thanks, It's all
+    - That's it, I found a movie I wanted.
     - No, thanks. That will be all for now!
-    - Nope, thanks much.
+    - No, that's all.
+    - no , thanks for your help . not now.
+    - No,Thank you very much
+    - No, thank you for your help!
+    - Nope, thanks a lot!
+    - No that's all for now. Thanks for your help.
+    - No, I'm all set, thank you.
+    - No thanks
+    - No. Thanks a lot
+    - I think this will do it. Thank you for your help.
+    - No, that is all. Thanks for the help.
+    - No it's all good for now
+    - No. I appreciate your help so far.
+    - No that is all i need.
+    - never
+    - I don't think so
+    - No Thats all. Thanks a lot
+    - No, not right now. Thanks.
+    - No, I appreciate your help.
     - No, that's good thanks
-    - Actually, no, but thanks so much.
-    - No. I am good.
-    - No, for now you've done what I need, thanks for that
-    - No thanks for the help
-    - Not at this time. Thank you for your assistance.
-    - No, that is all. Thanks.
+    - Not now. Thanks!
+    - No. Thanks so much
+    - Nothing. That's all.
+    - No, not at the moment. Thanks a lot!
+    - That's all. Thank you.
+    - No. thank you for your help.
+    - No, but thanks for helping.
+    - No, thanks. That's all now.
+    - No. Thanks for trying.
+    - No. That will be all. Thank you.
     - No that is everything thanks.
-- intent: request
+    - Nope. Thanks for your help.
+    - No, Thanks you for your help
+    - No. That is all. Thank you!
+    - no, not for now.
+    - No, thanks. That's it for now.
+    - Not right now, thanks.
+    - No not at the moment thank you though.
+    - No. That will be all. Thank you!
+    - No, that's all I need.
+    - No. I am all set. Thank You.
+    - No. You have already been helpful.
+    - No, that will be all.
+    - No, that's all I want for now.
+    - No, thanks a lot
+    - No, thanks for your help, I'm good.
+    - No. Thank you for you help.
+    - Thanks for your help but I don't think I'll be needing anything else today.
+    - No, that is everything for today. Thank you for your time.
+    - Nope. Nothing now
+    - No, that will be all, but thank you very much for your help.
+    - That's all, thank you.
+    - I don't think so, thank you.
+    - No. You've been very helpful.
+    - No that's it.
+    - No, thanks and that's all.
+    - No, that's all. Thanks.
+    - Nothing I can think of and thank you again for your help.
+    - No. That was all. Thank you.
+    - That's all. Thanks.
+    - no
+    - No, I'm good.
+    - Nope, that will be all for now but thanks for asking.
+    - That is all, once again thanks for the help.
+    - Actually, no, but thanks so much.
+    - No thanks for the help
+    - n
+    - No that's all for now thanks.
+    - No for now it's OK
+    - No that is all I need.
+    - No, that would be all. Thanks so much.
+    - Thank you that will be all.
+    - Nope, thank you!
+    - No thanks, that's all.
+    - No, but thank you!
+    - No, I guess that's all I need for now. Thanks mucho.
+    - No, It's all, thanks
+    - Nope. but thanks for your help
+    - No. That will be all.
+    - No. Thanks for your help today.
+    - No, that is all I needed.
+    - That is all today.
+    - No thank you
+    - No that is all I needed for now.
+    - No, that is all.
+    - No. That'll be all.
+    - No, that's it and thanks.
+    - No, that's all. Thank you for your help!
+    - No, that is all I need. Thank you for your kind assistance!
+    - No that will be all.
+    - No, that's all, thank you.
+    - No, that is okay. Thanks.
+    - No it's ok for now, thanks though
+    - No thank you.
+    - No, not right now. Thanks so much for your help.
+    - Nothing else that will be all.
+    - No, thank you very much for your help, That's all i need. bye
+    - No, thanks for helping me.
+    - No, that's it.
+    - No. Thanks for your help!
+    - Nothing for now and thanks.
+    - No thank you, that'll be all.
+    - No, that's all. Thanks anyways.
+    - It's okay. Thank you and that's all.
+    - No, that is all thank you.
+    - No. Thanks anyways.
+    - Nope, I'm all set.
+    - No. Thanks a lot.
+    - No, That's all
+    - Not now, thanks.
+    - Nope, thanks for the movie idea.
+    - No, thats it. Thanks.
+    - Nope, you've been great, thanks for your help.
+    - No, for now you've done what I need, thanks for that
+    - No, that is all. Thanks.
+    - No, that wo get me tickets for it please.uld be all. Thanks.
+    - No, thank you!
+    - No, that's all, thanks.
+    - No. Thank you very much. You've been very helpful.
+    - Nope! That's all the help I need.
+    - That would be all. Thank you!
+    - No, that's all for now, thanks.
+    - No, you were a great help, thank you!
+    - Nope, thanks much.
+    - No, thank you for your help.
+    - Yes, that will be all for now.
+    - Nope, thanks again.
+    - not really
+    - No, that's it. Thanks very much for your help.
+    - No thanks, that was all!
+    - No, that will do it. Thank you for your help.
+- intent: fun_fact_question
   examples: |
-    - Whis is the price of the ticket and where is it located at?
-    - I haven't heard of it, are there any well-known actors in the movie?
-    - How much are the tickets going to cost, and what is the genre of the movie?
-    - That is correct. Let me know the type of movie and GPE of the theater.
-    - What is the theater's address?
-    - May I have the theater's address please?
-    - Who directed [Angry Birds 2](WORK_OF_ART)? Is that a [comedy](genre) or what?
-    - You can tell me please the cost of ticket and what type of movie is?
-    - Great, how do I get there?
-    - Can you tell me the name of the director of the movie?
-    - Can I have the correct GPE of the theatre? I mean, address..
-    - yes, it seems good for me. give me their address?
-    - What's the price of a ticket?
-    - How much is the ticket? What is the genere?
-    - How much is it gonna cost?
-    - What type of movie is it?
-    - I would like to know how much the ticket costs?
-    - What's the theater's address?
-    - That is okay to proceed. Also I want to know the address and cost details.
-    - How much was the ticket?
-    - Yes, that's right. What kind of movie is it and how much is the ticket?
-    - Can you tell me the genre of the movie please.
-    - Who's in it?
-    - what is the ticket cost?
-    - Yes, that is correct. What is the address of the cinema.
-    - Who directed this movie? What's the genre?
-    - What is the genre of the film?
-    - What is the type?
-    - Tell me about the cost of the ticket for that movie?
-    - That sounds good. What is the address of the theater?
-    - Yes thank you. How much is it and what kind of movie is it?
-    - That's great! How much does the ticket cost?
-    - What's the address? And how much does it cost?
-    - Whats the ticket fare and address of the theatre?
-    - Who played in this movie?
-    - How much do tickets cost?
-    - What is the cost for the ticket?
-    - How much does the ticket cost and what is the address of the theater?
-    - Which type movie is it?
-    - Yes, that is right. What is the ticket price?
-    - It is good. What is the name of the theater and their address?
-    - Can you tell me the genre of the movie?
-    - Let me know the address of the theater along with ticket cost.
-    - I see, and who directed the movie?
-    - Where is the theater? What is this movie about?
-    - What genre is it? How much does it cost?
-    - May I know who directed this movie please?
-    - Yes please. What theater is good? And what would the address of that theater be?
-    - Ok , great. will you tell me the address of that theater?
-    - Tell the genre of movie it is?
-    - That is perfect. Please proceed and let me know the type of movie.
-    - How much does the ticket cost?
-    - Yes, that sounds good. How much will this cost? Can you get me the address of the theater?
-    - How much?
-    - ok that sounds good. Which theater the movie is?
-    - What is the cost and type of movie.
-    - Who acted in this movie and who is the director?
-    - Yeah, that's perfect for me. What type of film is it, and where is the theater located?
-    - What would you call that type of movie?
-    - What genre?
-    - What genre does this movie belong to and how much does the ticket cost?
-    - What type of movie is this?
-    - How much for a ticket?
-    - That sounds great! How much does this cost?
-    - Where's the theater at?
-    - Who starred in it?
-    - I need an address.
-    - Where is the theater and how much is it?
-    - What is the address?
-    - Yes, what's the address? What's a good one?
-    - Do you know the theater's address as well as the ticket price?
-    - What sort of movie is it and which theater is best?
-    - What is the theater's address and how much is a ticket?
-    - Can you tell me the names of the Actors and Actresses that star in this movie?
-    - Can you find me the name of the actor and the genre of the movie?
-    - Who is the director and actors?
-    - Ok that sounds good. How much is the ticket costs? what is the address of the theater?
-    - Can you tell me who directed it and which actors are featured in the film?
-    - Yes. Which theatre is bes.
-    - Can you tell me who directed it?
-    - What type of movie is it? And what's the theater's address?
-    - What's the address?
-    - Who directed this?
-    - Yes and please give me their address.
-    - Do you know the genre of movie and fare of ticket.
-    - Thanks. How much does the ticket cost? Also, what kind of movie is it again?
-    - Where can I find the theater?
-    - Can you please tell me the ticket price?
-    - How much is that?
-    - What about its ticket cost?
-    - What's the genre of Hellboy?
-    - Yes, what is the address of the theater ans price of ticket?
-    - What sort of movie is it?
-    - Gosh, that's kind of late. How much is a ticket?
-    - What is the name of the director of the movie and which genre?
-    - Do you know the address of the theater?
-    - Who starred in the movie?
-    - Who acted in this movie and what genre is it?
-    - What genre of movie is it?
-    - the answer is below
-    - can you tell me, Who is the director of that movie?
-    - How much does it cost?
-    - Who is the director of the movie?
-    - How much does that cost? Where's the theater?
-    - What genre is it?
-    - Okay, Thank you, Please tell me the ticket cost and Which theater do you prefer for me?
-    - Who was in that?
-    - What genre is this movie and who are the cast?
-    - Yes, that's good. Is there a theater that you recommend? And what's the address for it?
-    - How much does it cost and what is the address of the theatre?
-    - What's the theater address, and what's the type of move?
-    - What genre is that, and who's in it?
-    - How much does a ticket cost?
-    - What is the ticket price?
-    - That's kind of pricy. Alright, what's the address of the theater?
-    - what is the cost of the tickets and what is the address
-    - Who are the actors of this movie, and who directed it?
-    - That is perfect. please go ahead. What is the name of the theater that you have booked the show for me?
-    - What genre is it and how much are tickets?
-    - What is the cost of the ticket?
-    - Yes, confirmed. What genre is Hustlers?
-    - Yes, That is correct. Can you find me the address of the theater and the cost of the ticket?
-    - How much are the tickets?
-    - How much are the tickets and what is the address?
-    - Can you give me the address to the theater?
-    - Who acted in it?
-    - And how much does it cost?
-    - What is the GPE of the theater?
-    - Who directed the movie?
-    - Can you tell me the address of the theater and the price of the ticket?
-    - Where is that? How much does it cost?
-    - Where is the theatre and how much is the ticket?
-    - Where's that theater?
-    - Yes, that's perfect. What's the address of the theater?
-    - How much is the ticket cost? What kind of a movie is it?
-    - What type of movie is [Captain Marvel](WORK_OF_ART)? I just want to make sure it is the one I had in mind.
-    - Who's in this movie?
-    - How much is it for a ticket?
-    - That might be it - what genre is it?
-    - Yes, that sounds good. What theatre is the movie at?
-    - What is the genre of this movie. How much is the ticket?
-    - Okay..this is perfect...can i know the ticket cost?
-    - What type of movie it is?
-    - Can I have the price of the ticket and the address to the theater?
-    - How much is the ticket for?
-    - Wait. How much are the tickets? Is this a [Horror](genre) movie?
-    - I have never seen that movie, what kind is it? What about the address?
-    - Maybe. Who's the director?
-    - Beautiful. Now, what address do you have for the theater?
-    - That sounds great! Which theater will that be at?
-    - What is the price?
-    - Yes that's perfect, what's the theater address so I can find it?
-    - Okay, how much do the tickets cost and can you provide me with the GPE of the theatre?
-    - How much is it?
-    - How much is the ticket? What's the address of the theater?
-    - Ok, What genre is this movie?
-    - Yes, that's right. Which is the preferred theater?
-    - What is the ticket cost and what is the theater address?
-    - That's right. What type of movie is it and how much does the ticket cost?
-    - May I know the address of the theater and the kind of movie it is?
-    - How much is a ticket?
-    - Quick question, what genre is this movie classified as?
-    - What is the cost of the ticket? Where it is located?
-    - Perfect. Do you know the theater's address?
-    - What's the address of the theater? What sort of movie is it?
-    - Who is the director and who acted in the movie?
-    - Where's the theater at and how much are tickets?
-    - Do you know the price of the ticket? Where is that theater?
-    - Where's the theater?
-    - Fine, what kind of movie is it? How much must I pay?
-    - Where's the theater at? And how much is it?
-    - Yes, how much is the ticket and what is the address of the theater?
-    - Can you also please tell me the price of the ticket?
-    - Let me know the type of this movie to decide.
-    - What is the address of the theatre and how much are the tickets?
-    - Cool, I love fantasy. What's the address of the theater, and how much would a ticket cost?
-    - What genre is this movie? And where is the theatre's located
-    - What kind of film is it? How much does it cost?
-    - Who played in that movie?
-    - What type of movie is it? Where is the theater located?
-    - Who is the director? What kind of movie is it?
-    - What's the genre?
-    - Can you tell me which genre this movie is in and who stars in it?
-    - What genre is the flick?
-    - What is the cost of the ticket and what is the address?
-    - Please tell me who's starring in the film, as well as the genre.
-    - Where's the theater located?
-    - May I know who played in this movie?
-    - Who directed it?
-    - Sounds great. What genre? Address of theater?
-    - What type of the movie and what is the ticket cost?
-    - How much is the ticket and what genre is the movie?
-    - How much do the tickets cost?
-    - What is the ticket charge, where is it located?
-    - Where is the theater? And what kind of movie is it?
-    - That is fine with me, may I have their address please?
-    - What's the damage? And where is the theater?
-    - What is the genre of the movie? Can you get me the address of the theater?
-    - What type of movie is it and what is the price of a ticket?
-    - Alright. What is the address and how much does the ticket cost?
-    - Where is it? What genre?
+    - Why do the toys blink alternately?
+    - Did the White Walkers spare Sam?
+    - Did Batman break his one rule?
+    - What does the Night King really want?
+    - What was up with Grand Maester Pycelle?
+    - Why can Arya still use the faces?
+    - Use Force Lightning can Yoda?
+    - Meaning of the Silence of the Lambs poster
+    - How can I find tv shows/films similar to one I like?
+    - Why did the Night King attack the furthest target first?
+    - Why do the kicks have to occur simultaneously?
+    - Why did Steve Rogers choose this character in Endgame?
+    - Why were sloths chosen to depict DMV workers?
+    - Why is Vision so weak?
+    - Was the original “Pink Panther” movie intended to be a comedy?
+    - How was “Hodor” adapted in other languages
+    - Why didn't Loki's mind control work on Tony Stark?
+    - What is the meaning of the “fly scene” in Breaking Bad?
+    - Why was Bruce's silence referred to as a “Walt Disney”?
+    - Why cast an A-lister for Groot?
+    - What was really behind the mysterious number sequence in Lost?
+    - First movie with product placement?
+    - Why does 2001: A Space Odyssey not provide an explanation of its ending? Are we supposed to read the book?
+    - What is the purpose of this “red room” in Stranger Things?
+    - Which version of Blade Runner is Blade Runner 2049 a sequel of?
+    - Why is Arya visibly scared in the library in Game of Thrones S8E3?
+    - Why didn't Loki use the Tesseract?
+    - How do they film the mirror scenes in movies?
+    - Why does Wolverine drink alcohol?
+    - Why is the 'You talking to me' speech from the movie 'Taxi Driver' so famous?
+    - Why does Hulk act the way he does in Avengers: Infinity War?
+    - How does a rifle fire backwards?
+    - Why do people wear sunglasses in The Matrix?
+    - Red's parole hearings in The Shawshank Redemption
+    - Why didn't Bane reveal to the public that Bruce Wayne is Batman?
+    - What was the first crossover movie like The Avengers, using only movie franchises?
+    - Why does Harry only make use of time travel in The Prisoner of Azkaban?
+    - K-PAX ending explanation
+    - How is color determined when colorizing black and white movies?
+    - Explanation of Jules' ending monologue
+    - Why do old movies sound like old movies?
+    - First example of “ringing in ears” sound design?
+    - Why was Being John Malkovich based around John Malkovich?
+    - What is the meaning of this poster for The Lobster?
+    - Why did cars in 70s and 80s TV and movies slide like they were driving on ice?
+    - Did this character show any indication of wanting to rule before S8E6?
+    - Was the dragon prowess intentionally downplayed in S08E04?
+    - What is going on in Mulholland Drive?
+    - Is Deadpool 2's after-credits scene canon or just a joke?
+    - Why do British sitcoms have much fewer episodes than American ones?
+    - What does the scene during the ending represent?
+    - How were Opening Titles and End Credits created before Computers?
+    - Why were people led to believe that the Apollo mission was fake in Interstellar?
+    - What kind of company is Initech?
+    - What does the missing symbol on Quaid's arm symbolize?
+    - Is the 2016 movie Trolls about opium addiction?
+    - Why wasn't the poltergeist Peeves in the Harry Potter movies?
+    - Switch in *The Matrix* - Two Actors?
+    - Why does Westley say Rodents of Unusual Size don't exist?
+    - Why does Zootopia have an intentional Breaking Bad reference?
+    - Why are there not any MRI machines available in Interstellar?
+    - Why are the railings in Rivendell so low?
+    - Why did Lord Baelish betray Eddard Stark?
+    - What is the meaning of Teddy's last dialogue in Shutter Island?
+    - Can someone explain the sequence of events in 'Primer'?
+    - Why does Quentin Tarantino add non-plot related dialogue in his movies?
+    - How is Team Scooby Doo (Mystery Inc.) funded?
+    - Director's Cut, Editor's Cut, Theatrical Cut. What do these mean?
+    - Is Amy right about Indiana Jones being irrelevant to the outcome?
+    - What is Mycroft's job?
+    - Why do mouse cursors never align with actors' hand movements (or always move perfectly straight)?
+    - Why did the Joker take the risk of placing a gun in Harvey Dent's hand?
+    - Why does the roadrunner say “beep beep”?
+    - Why does James Bond use his real name?
+    - Why does Archer say “Balls” whenever someone says “Benoit”?
+    - Hollywood movies that no longer exist in any form
+    - Does Sheldon Cooper have Asperger's Syndrome?
+    - Why does Deadpool say “You're welcome, Canada,” after shooting Ryan Reynolds in the end credits?
+    - How much of Star Wars did George Lucas actually write?
+    - Was Kirk and Uhura's kiss in Star Trek really the first interracial kiss on TV?
+    - What actually happens when a telephone rings in a movie or TV show?
+    - How did Murph know about Edmunds?
+    - Is there a full canon version of Tyrion's jackass/honeycomb joke?
+    - Does the T-1000 know that the “big guy on a bike” is a T-800 before he meets him?
+    - Did Tyler Durden forget his name?
+    - How does the title 'The Imitation Game' justify the story of the movie?
+    - Why is the movie titled “Eternal Sunshine of the Spotless Mind”?
+    - Why exactly did Walt leave Gray Matter?
+    - Who's the random kid standing in the gathering at the end?
+    - How did Arya manage to disguise herself?
+    - How much does Joey owe Chandler?
+    - Can a single bullet from a handgun kill three people in the way Deadpool did?
+    - Why is Pulp Fiction's opening scene different to the one near the end?
+    - How far back do I need to watch Doctor Who for it to still make sense?
+    - Why do the machines keep humans alive if they have nuclear reactors?
+    - How and why did Disney reuse animation?
+    - Why does Walt leave his watch at the gas station?
+    - Why is the number '4' so prominent in the Death Note?
+    - Why didn't Gollum take the ring back from Bilbo between The Hobbit and The Lord of the Rings?
+    - What rules govern how TV show opening credits are structured?
+    - Does this room exist in the Simpsons' house?
+    - What really happened in Memento?
+    - Why did Borden do that to his wife in The Prestige?
+    - Why did Jon Snow do this immoral act if he is so honorable?
+    - Why does Bane's stock exchange robbery actually work to bankrupt Bruce Wayne?
+    - Why is Spaceballs specifically numbered Chapter XI?
+    - Why are the American flags backwards on the warden's uniform in Orange is the New Black?
+    - At which dream level did Inception end?
+    - Do the actors really go nude in the shooting of the movies?
+    - What format do movie theaters now use?
+    - How can weightlessness be simulated on film?
+    - Has there been a movie or a TV show where an abortion was portrayed without negative connotations?
+    - Why the greenish tint in the Matrix trilogy?
+    - How is this practical and very old scene shot?
+    - How old is Charles Muntz during “Up”?
+    - Why is there a disclaimer about not accepting money from tobacco companies at the end of movies?
+    - Why does Dr Mann act so stupidly?
+    - Why are trailers called “trailers”?
+    - Is Clue the only film that aired true, multiple endings in theaters?
+    - Why doesn't Deadpool's healing ability heal his skin?
+    - What is the Ancient One's mistake?
+    - In Back to the Future, how did Marty get the timing right with the lightning strike?
+    - Why did Obi-Wan have to explain full details about Mos Eisley to Luke?
+    - Why are so many American (spy) movies set in Europe?
+    - Game Over, Man…Game Over! - What's the source?
+    - What was the purpose of Saito's presence during the inception job?
+    - What significance does Mike Yanagita have in Fargo?
+    - How did Jack get to the island, and how did he become so important so quickly?
+    - Point of the Dothraki's attack in GoT S8E3?
+    - Did any actor ever win an Oscar for their work in a horror movie?
+    - What happens to questions that aren't revealed during Jeopardy?
+    - Why aren't the front of Oscar winner envelopes marked with the award they're for?
+    - Did Neil Armstrong really do this on the Moon?
+    - In the “300” movie, in the final battle, Why didn't Leonidas kill Xerxes?
+    - “No Country for Old Men”, why is it called so?
+    - “Whatever doesn't kill you, simply makes you stranger” - what does it mean?
+    - Is McConaughey's anecdote about not memorizing a four-page monologue real?
+    - Why is the new movie named Ocean's 8?
+    - What was the purpose of Candie's handshake in Django Unchained?
+    - How did the T-Rex reach the vehicles in Jurassic Park?
+    - Why are “blockbusters” called blockbusters?
+    - Why did Victor die?
+    - Why is it Pet Sematary but not Pet Cemetery?
+    - Why was there a 14 year gap between The Incredibles and The Incredibles 2?
+    - What media format do TV stations use?
+    - What do the spear and watermelon jokes in “Airplane!” mean?
+    - What does Mr Bean have against the three-wheeled car?
+    - What's the point of actors occasionally directing a TV show episode?
+    - Is it really as easy to knock someone out in real life as in the movies?
+    - Why was there a robot in Rocky IV?
+    - How do actors avoid looking into the camera?
+    - Couldn't one or two or three dragons take care of the Army of the Dead in like a couple hours?
+    - What do actors actually inhale when their characters snort cocaine or smoke crack?
+    - How was the DeLorean perceived in 1985?
+    - What happened to the bodies in American Psycho?
+    - Why didn't Hugo Weaving reprise his role as Red Skull?
+    - How was Jon Snow able to kill the White Walker in S05E08?
+    - Is Bran literally the world's memory?
+    - Discrepancy in Thanos's use of time stone in Infinity War
+    - What is the origin of Scooby-Doo's name?
+    - How do they film movies that take place in a single season?
+    - Why does Gus walk away from his car?
+    - Why hasn't the elevator been fixed?
+    - How did Angier know not to appear in The Prestige?
+    - Why is “Captain Marvel” translated as male in Portugal?
+    - Is there any way for Wakandan people to regrow the Heart-Shaped Herb?
+    - Why all the fancy technology in most movies?
+    - What was the first movie to introduce “blue wire or red wire” bomb disposal?
+    - Why did Varys remove his rings?
+    - How was Looney Tunes originally watched?
+    - Alice growing effect in 1972 “Alice's Adventures in Wonderland” - how was it done? It's not green screen
+    - How can Philip J. Fry be his own grandfather if he is sterile?
+    - Thanos And the Time Stone
+    - Why are the Simpsons yellow?
+    - Do Star Trek characters wearing red shirts have the highest death rate on the original show?
+    - Empire Strikes Back - Scene in Dagobah with Darth Vader
+    - Why did Morpheus tell Trinity to stay off the freeway?
+    - Why is the movie title “Blazing Saddles”?
+    - Why didn't Voldemort create a seventh Horcrux not knowing Harry was one?
+    - Why did Spider-Man take a detour to Dorset?
+    - Why do the lights go out when someone enters the dining room on this ship?
+    - Why does Bane protect the girl?
+    - Why do Mickey's ears rotate and shift location when he is not facing the camera?
+    - Why would a ship that is able to recycle all water consumed have trouble running out of water?
+    - Significance of Cersei's obsession with elephants?
+    - In what order should a newcomer watch Star Wars episodes?
+    - What was wrong with John Rambo’s appearance?
+    - Which worse thing was Luke expecting in Star Wars: A New Hope?
+    - What is the longest aired episode of a TV series?
+    - What does War Machine's “Canopy! Canopy!” line mean in “Avengers: Endgame”?
+    - Making nature documentaries: scripting then filming or the other way?
+    - Why do movie teams shoot alternate endings?
+    - Why does Jack Nicholson say “Here's Johnny!” in The Shining when his character is called Jack?
+    - Why does Thanos need *all* the infinity stones?
+    - How could Jon Snow do what he did in “Oathbreaker”?
+    - What is the significance of the sheriff's colored sunglasses in Kill Bill vol 1?
+    - Why are two of Riley's five emotions in Inside Out male?
+    - Why do movies think the speed of sound is as fast as the speed of light?
+    - Why does Firefly include a scene with a missing yoke?
+    - Why was the Ancient One so hesitant to teach Dr. Strange the art of sorcery?
+    - What do I need to know before watching 3D for the first time
+    - Who is the true villain of Peter Pan: Peter, or Hook?
+    - What did the title of Silence of the Lambs refer to?
+    - How do actors stop breathing when playing “dead”?
+    - How do they shoot binocular scenes?
+    - Is it true that none of the cast knew what to expect in the famous “chestburster scene” in Alien?
+    - Why does Trinity's kiss revive Neo in The Matrix?
+    - What caused and ended the time loop in Groundhog Day?
+    - Was film actually “better” than digital media?
+    - Was a supercomputer really needed in “The Martian”?
+    - Who is the titular “Last Jedi”?
+    - Is the Unix operating system featured in Jurassic Park real?
+    - Why is there no Robin in the Nolan-directed Batman movies?
+    - At what point is the orchestra told who the Academy Award winner will be?
+    - Why were the bells ignored in S8E5?
+    - Are there any rules around when something can be described as “based on a true story”?
+    - Of all the movies and TV shows ever made, which of them is set furthest in the future?
+    - What techniques are used by directors to make an actor cry?
+    - How do film makers record the President of the United States?
+    - Why the highlighted outline in animated cartoons?
+    - In Iron Man, why is Tony Stark fooled for so long?
+    - Why did it take a rocket to lift off the Earth but just shuttles to lift off the other planets?
+    - Why do old gun fight scenes sound so weird and cartoonish?
+    - Why did Neo have powers in the real world?
+    - Why does T-1000 try to force Sarah Connor to call her son?
+    - Have GoT's showrunners reacted to the poor reception of the final season?
+    - Is lens flare shot organically, or added in post-production?
+    - How did Alan Turing break the Enigma code using the hint given by the lady in the bar?
+    - Were oranges an intentional use of symbolism by filmmakers?
+    - Frozen Jack: Actor or Prop?
+    - Are scorpions frequent in US suburb gardens or is this a plot exaggeration?
+    - Why is “The Matrix” called by that name?
+    - Where is Jon going?
+    - How accurate is this computer hardware in the movie Wall Street?
+    - What has the greatest chance of being in Marcellus Wallace's briefcase?
+    - Why does George Mcfly employ Biff to wax his car after he had previously tried to rape his wife?
+    - Why do studios use Roman numerals in the copyright notice in the end credits?
+    - Is this character hallucinating in “Stormborn” (S07E02)?
+    - Why did Vision end up in Iron Man's team?
+    - Why have this character involved in Infinity War at all?
+    - What was Hans Gruber's plan in Die Hard?
+    - How do they make tattoos in movies?
+    - Was the Gotham Hospital scene a goof-up?
+    - What is Jack Nicholson tossing aside in this scene in The Shining?
+    - What properties did Disney buy from 21st Century Fox?
+    - How was 1917 filmed as a continuous shot?
+    - How do actors memorize extremely long scripts?
+    - What happened to the humans in “Cars” (that is if they ever existed)?
+    - What was Chandler Bing's job?
+    - The most roles played by the same actor in a movie?
+    - When/Why did American television change from primarily episodic to primarily serialized?
+    - Why is James Bond less tech savvy in the Daniel Craig movies?
+    - Are there any indications why Roddenberry chose to make Star Trek a “battleship universe”?
+    - Why does Lance consider cell phones unsafe?
+    - Did Spaceballs have to get permission for Pizza the Hutt
+    - Origin of movie trope where impaled character pulls/pushes blade/spear further into body?
+    - What happened to Bruce Wayne/Batman's knee?
+    - Why were mouse holes often represented in cartoons and movies like this?
+    - How did Thanos know about the power of “The Snap”?
+    - How did Hitchcock enforce the “no late admission” policy for Psycho?
+    - How did Sherlock survive the fall?
+    - Was Tim's reaction to the electric fence realistic?
+    - How was the deserted London scene in the movie '28 Days Later' filmed?
+    - “A galaxy far, far away…” — from where?
+    - To what extent are child actors exposed to the violent aspects of the movie they perform in?
+    - In Back to the Future Part II, how could old Biff have made it back to 2015?
+    - What were all the references in Deadpool?
+    - Why did they pick World War I over World War II in Wonder Woman?
+    - Why doesn't Marty use the other DeLorean?
+    - Did the Fresh Prince producers ever consider reshooting the title sequence?
+    - Why does Darth Vader not use the Force to prevent Luke from falling?
+    - Does Babyface Nelson represent anyone from The Odyssey?
+    - Why did Warner Bros spend $25 million to CGI out Henry Cavill's mustache?
+    - Why are laugh tracks only used in TV series but not in movies?
+    - Kill Bill colour changes to Black and White
+    - Is this an inconsistency in the Infinity War and Guardians of the Galaxy?
+    - Why does Hollywood not use foreigners in foreigners' roles?
+    - Is there any definitive evidence that Teddy was or was not crazy?
+    - Who was the oldest actor to play a teenager?
+    - How did Marty McFly and “Doc” Brown first meet?
+    - Why did three actors play Darth Vader?
+    - How did Mr. Bean manage to make money?
+    - Why does Doctor Strange not bind Thanos in a time loop?
+    - Why did filmmakers need permission to film in black and white?
+    - How do productions like Stranger Things or other similarly “not modern but still within recent memory” productions acquire period props?
+    - Was Sheldon Cooper ever proven wrong?
+    - What are the differences between the alternative versions of Blade Runner?
+    - Why didn't Hans Gruber know what Mr. Takagi looked like?
+    - In what spot would the new Star Wars movie “Rogue One” go in the Machete Order?
+    - How does Thanos know where all the infinity stones are?
+    - How was this scene shot without hurting Charlie Chaplin?
+    - What makes The Shawshank Redemption so cinematically important?
+    - Why does Luke leave the wampa’s cave?
+    - How do they get very young child actors to cooperate?
+    - What if a head shaving scene gets messed up?
+    - What is the point of the Red Thread/Tape around evidence or newspaper clippings?
+    - Ending of Donnie Darko
+    - Why does Bran want to find Drogon?
+    - Do Sheldon's equations reflect real math/physics research?
+    - Why do people call Morgan Freeman's character Red?
+    - Do they really crash super cars in action movies?
+    - What is this camera effect used in Hot Fuzz?
+    - Why is the bride's name bleeped in Kill Bill Vol 1?
+    - Why does James Bond keep demanding a vodka martini that is shaken but not stirred?
+    - What is a “soap”?
+    - What did Black Widow say?
+    - Did silent film actors actually say their lines or did they simply improvise “dialogue” while being filmed?
+    - Is Forrest Jr. actually Forrest's son?
+    - Why does Mike call Jimmy “Saul”?
+    - Why did Lucius interrupt Bruce during their Sonar/Submarine discussion?
+    - How far did Forrest Gump run?
+    - How does one identify Valyrian steel?
+    - Banner's control of Hulk in Avengers
+    - The most actors playing the same role in one movie?
+    - Why couldn't Bond have backup at the battle of Skyfall?
+    - Why do TV comedy programs have laugh tracks?
+    - Where and when does the “idea” light bulb appear for the first time?
+    - Why did Dormammu keep his promise?
+    - Does Disney no longer produce hand-drawn cartoon films?
+    - Why do people repeatedly hit the phone hook switch when disconnected?
+    - 'Yeah but it's a dry heat' - reference to another film?
+    - Why didn't Bilbo become a creature like Gollum?
+    - Why does the talk show host always sit on the right?
+    - Why didn't Mal use her totem (spinning top) before she actually died?
+    - Why is the spoken German in many US films and TV shows so inaccurate?
+    - Why do movies still have credits?
+    - Jaime's character change in Game of Thrones
+    - Why do the Avengers have bad radio discipline?
+    - Why are the books in the Game of Thrones citadel library shelved spine inwards?
+    - Why does Obi-Wan say that he'll become more powerful if Vader kills him?
 - lookup: genre
   examples: |
     - Suspense
@@ -887,250 +930,3 @@ nlu:
     - Life history
     - scary
     - Rom-com
-- lookup: GPE
-  examples: |
-    - fairfield
-    - San Bruno
-    - San Rafael
-    - Walnut creek
-    - Union City
-    - Concord
-    - Morgan Hill
-    - Berkeley
-    - Redwood City
-    - Sebastopol
-    - Brentwood
-    - Novato
-    - Hayward
-    - Walnut Creek
-    - Albany
-    - Vacaville
-    - Newark
-    - Menlo Park
-    - San Fran
-    - Larkspur
-    - Milpitas
-    - Vallejo
-    - Antioch
-    - Hillsborough
-    - SF
-    - Napa
-    - Santa Clara
-    - Tiburon
-    - Livermore
-    - San Leandro
-    - Dublin
-    - Redwood CIty
-    - Palo Alto
-    - Pleasant Hill
-    - Cloverdale
-    - Mountain View
-    - Santa ROsa
-    - Fremont
-    - Alameda
-    - Danville
-    - walnut creek
-    - Pittsburg
-    - mountain view
-    - San Jose
-    - Fairfield
-    - Moraga
-    - Santa Rosa
-    - Rohnert Park
-    - Petaluma
-    - Emeryville
-    - Martinez
-    - SFO
-    - Oakland
-    - San Francisco
-    - Campbell
-    - El Cerrito
-    - Daly City
-    - Healdsburg
-    - San Ramon
-    - concord
-    - Sonoma
-    - Mill Valley
-- lookup: WORK_OF_ART
-  examples: |
-    - How to Train your Dragon: The Hidden World
-    - Citizen Kane
-    - Toy story four
-    - The Upside
-    - The best of enemies
-    - After The Wedding
-    - Stage Door
-    - Shine a light
-    - Saaho
-    - A Faithful Man
-    - Shazam
-    - Missing link
-    - The Lord of the Rings
-    - The Farewell
-    - The Best of Enemies
-    - Say Anything
-    - Pillow talk
-    - Long Shot
-    - The Angry Birds Movie 2
-    - Curse of La Llorona
-    - Suburban Birds
-    - Where would you go
-    - Stockholm
-    - Hustlers
-    - A Madea Family Funeral
-    - Ash Is Purest White
-    - Wild Nights with Emily
-    - Farewell
-    - Hobbs and Shaw
-    - Pillow Talk
-    - 47 Meters Down
-    - Penguin Highway
-    - Captain Marvel
-    - Chhichhore
-    - Little
-    - This Is Not Berlin
-    - Toy Story Four
-    - The Last Dragon
-    - Ad Astra
-    - IT Chapter Two
-    - IT2
-    - How to Train Your Dragon: The Hidden World
-    - The Lord of the Rings three
-    - Mary Magdalene
-    - Luce
-    - Aftermath
-    - Fiddler
-    - The Curse of La Llorona
-    - After the Wedding
-    - Hellboy
-    - JT LeRoy
-    - Overcomer
-    - Once Upon a Time In Hollywood
-    - After
-    - Dr. Strangelove
-    - Angel Has Fallen
-    - Fighting with My family
-    - Pet Sematary
-    - Hackers
-    - Official Secrets
-    - Hotel Mumbai
-    - Brittany Runs a Marathon
-    - Auntie Mame
-    - Family
-    - Breakthrough
-    - Mission Mangal
-    - Angel has fallen
-    - Gloria Bell
-    - Dumbo
-    - Long shot
-    - the curse of la llorona
-    - Dogman
-    - Viva Las Vegas
-    - Teen Spirit
-    - Knock Down The House
-    - The Load
-    - The Poseidon Adventure
-    - Red Joan
-    - IT two
-    - High Life
-    - Josie and the Pussycats
-    - 47 Meters DOwn: Uncaged
-    - Body Double
-    - Jt Leroy
-    - Transit
-    - Shine a Light
-    - The Invisibles
-    - Toy Story 4
-    - Missing Link
-    - after
-    - Ladykillers
-    - The Mustang
-    - Good Boys
-    - Fiddler: A Miracle of Miracles
-- lookup: CARDINAL
-  examples: |
-    - 4
-    - 3
-    - 1
-    - 2
-    - one
-    - two
-    - three
-    - four
-- lookup: DATE
-  examples: |
-    - 10th of March
-    - Next Tuesday
-    - next wednesday
-    - 5th of March
-    - next Tuesday
-    - The 9th
-    - the 8th
-    - the 2nd
-    - March 9th
-    - the 3rd
-    - tuesday next week
-    - the 17th
-    - 6th of March
-    - 3rd of this month
-    - March 4th
-    - the 15th
-    - next Monday
-    - Thursday next week
-    - 6th of this month
-    - the 4th
-    - Next Friday
-    - 2nd of March
-    - this saturday
-    - march 7th
-    - 4th of March
-    - 9th of this month
-    - the 10th
-    - the 11th
-    - the 16th
-    - March 3rd
-    - 5th of this month
-    - 1st of March
-    - next Friday
-    - 8th of March
-    - today
-    - Saturday this week
-    - March 5th
-    - March 7th
-    - 8th of this month
-    - 16th of March
-    - March 10th
-    - the 1st
-    - 1st of march
-    - March 6th
-    - March 1st
-    - 7th of March
-    - this Sunday
-    - This Saturday
-    - March 11th
-    - 15th of March
-    - this Saturday
-    - March 8th
-    - 2nd of this month
-    - 1st of this month
-    - Friday next week
-    - tomorrow
-    - 4th of this month
-    - 3rd of March
-    - Tomorrow
-    - 10th of this month
-    - 7th of this month
-    - This Sunday
-    - Wednesday next week
-    - the 9th
-    - Sunday this week
-    - later today
-    - March 2nd
-    - Monday next week
-    - the 7th
-    - the 5th
-    - day after tomorrow
-    - 16th of this Month
-    - next Thursday
-    - Tuesday next week
-    - 9th of March

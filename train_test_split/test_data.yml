@@ -1,235 +1,249 @@
 version: "2.0"
 nlu:
-- intent: bot_challenge
+- intent: ask_fun_fact
   examples: |
-    - am I talking to a bot?
+    - tell me something about movies
+- intent: inform_genre
+  examples: |
+    - i'm in the mood for a [Comedy](GENRE) movie
+- intent: inform_tickets
+  examples: |
+    - I'd like [three](CARDINAL) tickets, please.
+    - get me [one](CARDINAL) ticket
 - intent: goodbye
   examples: |
-    - cee you later
-    - see you later
+    - bye
+    - see you around
+- intent: confirm_movie
+  examples: |
+    - [Penguin Highway](WORK_OF_ART) is good
+    - We'd love to see [Missing Link](WORK_OF_ART).
+- intent: request_ticket
+  examples: |
+    - i wanna buy tickets
+    - can you purchase tickets for me?
+- intent: inform_movie
+  examples: |
+    - i want to book [life is beautiful](WORK_OF_ART)
+    - I'd like to watch [Hotel Mumbai](WORK_OF_ART).
 - intent: greet
   examples: |
     - good afternoon
-    - hello there
-    - hey there
-- intent: affirm_intent
+    - hello
+    - let's go
+- intent: request_movie
   examples: |
-    - Yeah, I'd like to purchase [three](CARDINAL) tickets right now.
-    - Yes, let's go ahead and purchase them now before they sell out.
-    - Yes, I would like to buy them now.
-- intent: inform
+    - Hi! Can you help me find a movie?
+    - I am searching for a movie to watch.
+    - Please help me find a movie to watch.
+- intent: inform_location
   examples: |
-    - In [Santa Rosa](GPE) please.
-    - I am in [Oakland](GPE), so can you find me any nearby movies?
-    - On the [3rd of this month](DATE), if possible.
-    - Find movies in [Larkspur](GPE)
-    - I wish to see it on the [9th](DATE).
-    - What time is the movie available on [Tuesday next week](DATE)?
-- intent: inform_intent
-  examples: |
-    - [Breakthrough](WORK_OF_ART) sounds great. What times were available?
-    - I'd like to see a movie, can you find me one?
-    - i want to buy tickets
-    - [Shazam](WORK_OF_ART) would be great. What time is it showing?
-    - Hey, can you help me find a movie to watch?
-    - Can you find me a movie?
-    - What movies are there to watch?
-    - I need to utilize my day in a very calm way for that watching movie is a good choice. Will you find me a movie to watch?
-    - Find me a movie to watch.
+    - Can you help me find a movie showing in [concord](GPE)?
+    - Help me find movies showing in [San Francisco](GPE).
+    - Are there any good movies showing in [Pleasant Hill](GPE)?
+    - I want to see the movie in [San Fran](GPE).
 - intent: affirm
   examples: |
-    - Yep, that is correct.
-    - Yes, that's it.
-    - Yes, that is correct.
-    - That is correct.
-    - Yes, that would be fine.
-    - Yes, That sounds perfect.
-    - y
-    - Yes, that sounds good.
+    - Yes that's correct
+    - It is good.
+    - Yes, that all sounds correct.
+    - Perfect, thanks so much.
+    - Yes, that is all correct.
     - Yes is perfect for me.
-    - yes
+    - Yep, that is correct.
+    - Yes, that is correct.
+    - You are one hundred percent correct.
+    - Yes, confirmed.
 - intent: thank_you
   examples: |
-    - That will be all for now. Thank you!
-    - Thank you for your time.
-    - Great, thanks for the help?
-    - Thank you. That's all I need for now.
-    - Your help has been invaluable.
-    - Thank you for your assistance.
-    - Thanks for that.
-    - Thanks. That's all for now.
-    - Thank you for your help, that is all I need.
-    - Thanks for helping me.
-    - I really thank you for your help.
+    - Thanks so much for your work.
+    - Thanks for all the assistance.
     - Thanks for your help.
+    - Thanks for helping me.
+    - Thank you for your assistance.
+    - Thanks. That's all for now.
+    - Thanks, I am good now.
+    - Thanks for that.
+    - Thanks so much!
+    - Thank you so much!
+    - Thanks for the help and that is everything I need.
+    - That will be all for now. Thank you!
 - intent: request_alts
   examples: |
-    - Any other times?
-    - Is there any other show time for that.
-    - Nope, not the hilarious nightmare movies. Please find something else.
+    - Is there any other movies?
+    - What else do you have?
+    - None of those sound good
     - Look for any other movies
-    - I think all are nice but I need to search for something else.
-    - No, what other movies are there?
-    - No. please look for any other.
-    - Find something else.
+    - What are the other options?
+    - Do you have other proposals?
+    - Find something else, please.
+    - Can you still find some other movies?
     - I'd like to see something else.
-    - No. Any other options?
-    - Please search for other movies to see in downtown [San Fran](GPE).
-    - Is there anything else/
-    - Can you find other movies?
-    - I'm not sure I would like any of those. What else is showing?
-    - I'm not really into those, do you know any other good ones?
-    - Could you find some other movies, please?
-    - No , i am not interested. Any other movies?
+    - Are there any other times?
     - Are any other movies playing?
-    - Check for other movies.
+    - Is there any other time for the availability of that movie?
+    - What are the others?
+    - Is there anything else showing?
+    - Is there any other show time for that.
     - Does the movie play any other time?
-    - No, please look for something else.
-- intent: negate_intent
-  examples: |
-    - No, I don't want to buy them right now.
-    - No, I'm not ready to get the tickets yet. You've helped me with what I need for now. Thanks so much.
-    - No, I'm not looking to buy right now.
-    - No, I'm not ready.
-    - No thanks, I think I'll buy them later
-    - Nah, I'm not going to get them yet.
-    - No, not at the moment. Thank you, that will be all.
-    - No, Don't buy it now.
-    - No, I don't want them now.
-    - Not at the present time.
-    - No I will not purchase now
-    - No, I do not want to buy them right now.
-    - No not right now. That is everything for now thanks.
-    - Not at this time. Thanks.
-    - No. I will buy the tickets later.
-    - No not now.
-    - No,not now.
-    - No, not yet.
-    - No, I'll purchase later. That is all.
-    - No, I don't want to purchase now.
-    - No, I will wait to confirm with my friend before purchasing tickets.
+    - Can you find other movies?
+    - I would prefer other proposals
+    - Please search for other ones.
+    - No. please look for any other.
 - intent: select
   examples: |
-    - Ok, that will work. That's all I need.
-    - Sounds good
-    - That sounds great!
-    - Ok, [Shazam](WORK_OF_ART) will be perfect! I can't wait to see it!
-    - [Breakthrough](WORK_OF_ART) sound perfect.
-    - [Missing Link](WORK_OF_ART) is good
+    - Yeah! That works.
+    - That's great, that'll be all for today.
+    - Sounds good. That's everything for now.
+    - [shazam](WORK_OF_ART) sounds perfect!
     - That sounds just fine.
-    - Yes, that works for me
-    - That seems good. That'll be all.
-    - Thanks, that is all.
-    - Great, that will be fine.
-    - Okay, that's all the help I need.
-    - That's good then, that's all I need
+    - Thanks thats everything
+    - Wonderful thanks. That is all.
+    - Okay, that works.
+    - Yes, I want to watch [The Curse of La Llorona](WORK_OF_ART).
+    - Terrific. That's all I need for now.
+    - Ok i got it ,Movie [Pet Sematary](WORK_OF_ART) is Perfect and it suits my taste.
+    - That sounds perfect. That's all I need for now.
+    - The film Where would you go is fine for me.
     - That sounds great, [The Curse of La Llorona](WORK_OF_ART) it is!
-    - I love [Dumbo](WORK_OF_ART).
+    - ok thats great, thank you very much.
+    - That works
+    - [Pillow talk](WORK_OF_ART) sounds good to me.
+    - Ok, [Shazam](WORK_OF_ART) will be perfect! I can't wait to see it!
+    - That's good. That's all I need for now.
+    - Oh, I forgot about [Captain Marvel](WORK_OF_ART). That one would be perfect.
+    - Great, thanks.
+    - That's perfect, I'm all set.
+    - Yes, that one sounds really good. That's all I needed today.
+    - [Teen Spirit](WORK_OF_ART) is perfect.
     - Thanks, sounds good to me.
-    - Alright, that sounds fine. I don't need help with anything else.
-    - [Dumbo](WORK_OF_ART) sounds great!
-    - That's a little late, but it sounds good. Thank you that will be all I need.
-    - That works for me.
-    - That seems awesome.
-    - Sounds perfect. That will be all.
-    - Sure that sounds great
-    - [Hellboy](WORK_OF_ART) is a good movie.
-    - Ok. This is perfect
-    - Awesome, thats all I need to know.
-    - I like that, thanks!
-    - [Missing Link](WORK_OF_ART) sounds perfect.
+    - That is perfect for me.
+    - after is perfect
+    - [Hotel Mumbai](WORK_OF_ART) is a good movie.
 - intent: negate
   examples: |
-    - No. I am all set. Thank You.
-    - don't like that
-    - No, thanks a lot!
-    - No, that is all I needed.
-    - No. You've been very helpful.
-    - Nothing. That's all.
-    - No. That was all. Thank you.
-    - No it's all good for now
+    - No, that's all I need. Thanks for your help!
+    - No, you've done enough thanks.
+    - No. Thanks for you help.
     - No. Thanks for all your help.
-    - No, but thank you!
-    - n
     - no way
-    - No, that will be all, but thank you very much for your help.
-    - No not at the moment thank you though.
-    - No. Thanks for trying.
-    - No, thank you for your help!
-    - Nope, thanks for the movie idea.
-    - No, you were a great help, thank you!
-    - No thanks, that's all.
-    - Nope, you've been great, thanks for your help.
-    - No that's all, thank you for your help.
-    - no, thanks for now.
-    - No, thank you for your help.
-    - Nothing for now. I am thankful.
-    - No that is all I need.
-    - No that's all for now thanks.
-    - No, thanks a lot
-    - No it's ok for now, thanks though
+    - No that's all thanks.
+    - No ,Thanks for your immense help
+    - Nope, thanks.
+    - No. I am good.
+    - No, thanks for your help.
+    - No. Thank you for the help.
+    - Nope. Thank you so much for your help.
+    - I'm fine, thank you.
+    - Nope, that'll be all. Thanks again!
     - Not right now, you did it all!
-    - Thank you that will be all.
-    - No, thanks. That's all now.
-    - No, thank you!
+    - No, I think that's all I need. Thanks for your help.
+    - Not at this time. Thank you for your assistance.
+    - No, that will be all. Thank you very much!
+    - No thanks.
+    - No that is all, Thanks.
+    - I've got all I want. Thanks a lot.
+    - No, that will be all for now, thank you.
+    - No, that's all. Thank you very much!
     - No thats it
-    - Nope. Nothing now
-    - No, thanks and that's all.
-    - No. Thank you very much. You've been very helpful.
-    - Nope, thanks. Done.
-- intent: request
+    - No, thanks a lot!
+    - No thank you a lot.
+    - no, thanks for now.
+    - No. Thanks for your help.
+    - No that's all, thank you for your help.
+    - Nope, thanks so much!
+    - No, thanks a lot for your help.
+    - Nothing for now. I am thankful.
+    - No. That's all for today.
+    - No. Thank you for your help.
+    - No that is all I needed. Thank you.
+    - Umm, no. I need to figure this out. I'll let you know if I need anything further.
+    - Thank you but no. I'm good.
+- intent: fun_fact_question
   examples: |
-    - How much is the ticket? And what's the address of the theater?
-    - Super, what genre is that movie considered? Can I get the address of the place?
-    - That is all correct, what is the address of the theater?
-    - What's the address of the theatre and how much is the ticket?
-    - What is the genre?
-    - How much is the ticket and what is the address?
-    - How much is it? And what's the address?
-    - What is the theater address?
-    - I've never heard of her. What genre is the movie classified as and who directed it?
-    - Where is the theater located?
-    - Who is the actor in the movie?
-    - What's their address and how much is the ticket?
-    - How much per ticket?
-    - Can you get me the address of the theater and ticket price please?
-    - Yeah, that's perfect for me. What is the ticket price?
-    - I don't know, what genre is the movie classified as and can you tell me who directed it?
-    - Who directed this movie and what genre is it?
-    - What is the theater GPE?
-    - Tell me the address of the theater and what kind of movie is it?
-    - What kind of movie is it?
-    - How much were the tickets? What is the address of the movie theater?
-    - Can you tell me the names of the actors and the director of this movie?
-    - How much is it, and what's the address of the theater?
-    - What is the street address?
-    - Find me the details about ticket cost and the theater address.
-    - What is the genre of that movie?
-    - Who acted and directed the movie?
-    - Fine, that works.
-    - How much will the ticket cost, and where is the theater located?
-    - For how much? What's the address?
-    - How much the ticket cost?
-    - Yes, what is the address>
-    - Who acted in the movie?
-    - Can you tell me the cost of the movie and what kind of movie is it?
-    - What is their address and what is the price of a ticket?
-    - How much is the ticket? What is the address?
-    - Do you know what genre the movie is?
-    - Alright, how much is that ticket?
-    - What genre is the movie? What's the theater's address?
-    - Could you please find out the theater address, as well as the ticket price?
-    - Yes, all the information you have is correct. What theater would you suggest and how much will the tickets cost?
-    - Okay, nice. What genre is [Hellboy](genre) listed as?
-    - Sure that will work for me . What is the address of the theater?
-    - Can you please give me the address for the theater?
-    - and what is the ticket cost?
-    - What style movie is this?
-    - I'm not familiar with it, can you tell me who stars in the movie?
-    - get the address of that theater
-    - Who directed this movie?
-    - Awesome. What will a ticket cost me? Also, what's this movie about?
-    - Whats the address?
+    - What's the difference between “and” and “&” in movie credits?
+    - Is Batman Begins based on any Batman comic or was it entirely written from scratch?
+    - Why did Tony Stark use a normal flip phone?
+    - What does the woman from the future mean when she says she's “in insurance”?
+    - Why didn't silent movies have subtitles?
+    - Why don't they show subtitles for the Spanish dialogue?
+    - Why are films where the bad guy “wins” at the end so rare?
+    - Why is Discovery One covered in sulphur in “2010: The Year We Make Contact”?
+    - Is Borden's true identity real, or another ruse?
+    - Is the Three-Eyed Raven incapable of emotion?
+    - Where does the “One of us! One of us!” chant originate?
+    - What is it called when a movie breaks the illusion of fantasy?
+    - Why didn't the Dursleys make witchcraft and wizardry public?
+    - Why did the girl try to kill herself in the 2009 Sherlock Holmes film?
+    - Why does “The Force Awakens” use an image language associated with national socialism for the First Order?
+    - Is the man with no name the same character?
+    - How do actors make eye contact with CGI characters?
+    - What changes were made to the Star Wars Blu-ray and what effect did they have on the plot?
+    - Why the stoic acting style in 2001 Space Odyssey?
+    - Are scripts seeded to identify leaks?
+    - Did 007 exist before James Bond?
+    - Why isn't Bruce Willis's character in the Sixth Sense self-aware?
+    - How did Indy know not to look into the Ark?
+    - Why did Ramsay strike him?
+    - Why is it so easy to become king of Wakanda?
+    - Why doesn't “Ralph Breaks the Internet” have “wreck” in the title?
+    - What is the real reason for the Joker's scars?
+    - Why did Arya not kill the Lannister soldiers she encountered in the Riverlands?
+    - What God does Captain America believe in?
+    - Was “Tim” the enchanter an ad-libbed name?
+    - What exactly is 70mm print and why does anyone care?
+    - How was this shot in Contact (1997) really made? [duplicate]
+    - How do they phrase casting calls when casting an individual with a particular skin color?
+    - Are Agent Barton and Agent Romanoff ever called 'Hawkeye' and 'Black Widow' in the MCU?
+    - What are TPS Reports?
+    - What accent did the actors use in Black Panther?
+    - Why does Batman talk to himself in the batvoice?
+    - Was The Nightmare Before Christmas meant to be a Halloween or Christmas Movie?
+    - What country is the movie Babe set in, in-universe?
+    - Why is Gandalf referred to as Mithrandir?
+    - How could the human race be saved in Interstellar?
+    - Did John McClane know Bill Clay was really Hans Gruber? If so, how?
+    - Why does Neo's cubicle not look like the workplace of a programmer?
+    - Why do some movies start with a big rotating circle and countdown?
+    - In Fight Club is Marla Singer a second figment of Jack's imagination?
+    - Why did Hank Pym choose Scott Lang?
+    - How did “Jack” (the narrator) manage to attract people to join Fight Club?
+    - Why did they avoid Charlie's name in the film title Willy Wonka & the Chocolate Factory?
+    - Does Mia mistake Vincent's heroin for cocaine because it's in a baggie rather than a balloon?
+    - Why was the Avengers movie called something different in the UK?
+    - Is this bar slide trick shown on Cheers real or a visual effect?
+    - Why were the villagers and the axe-wielding hitman brothers crawling towards a shrine?
+    - Why don't Marty's parents ever mention how similar he looks to the Marty of 1955?
+    - How could the Starks convince the other Lords that this character was guilty?
+    - Did Roger Rabbit exist prior to the film “Who Framed Roger Rabbit?”
+    - What is the purpose of taxi-cabs and buses in Pixar’s 'Cars 2' movie?
+    - Why were movies shot on film shot at 24 frames per second?
+    - If Agent Smith is just an AI program, then how could he end up in the real world?
+    - Why did the Predator not kill Arnold immediately as it killed everybody else?
+    - Why do movie directors use brown tint on Mexico cities?
+    - Why do Disney parents usually die?
+    - Is this balcony with a protruding gargoyle a real place?
+    - Why did Vader passively accept being killed and replaced at Palpatine's command?
+    - Was Thanos really committed or just a hypocrite?
+    - Where does Sherlock get his money?
+    - Has a major film ever intentionally used live ammunition to film a scene?
+    - What is the best order to watch LotR/Hobbit franchise?
+    - How does Captain America know about Iron Man's parents' fate?
+    - Where are Frodo, Gandalf and the others going at the end and why?
+    - Who's this lady in the war room?
+    - Is the title “The Last Jedi” singular or plural?
+    - What is rosebud?
+    - Why aren't the characters floating two levels down?
+    - Did they torture and kill a monkey during the filming of Andromeda Strain?
+    - Why does “No-one ever get it in the first take”?
+    - Do I need knowledge of American culture and history to enjoy Forrest Gump?
+    - Why do low production studios intentionally release similar films shortly after a big banner?
+    - Was there a dinosaur-counter in the original Jurassic Park movie?
+    - How did they make cars fall apart in old movies?
+    - Why does Christian Bale change his voice when playing Batman
+    - What is the main theme of The Dark Knight?
+    - Is the loudness of a movie in the theater set by the theater or by the publisher/studio?
+    - What's so hard about guest-hosting Jeopardy?
 - lookup: genre
   examples: |
     - Suspense
@@ -284,250 +298,3 @@ nlu:
     - Life history
     - scary
     - Rom-com
-- lookup: GPE
-  examples: |
-    - fairfield
-    - San Bruno
-    - San Rafael
-    - Walnut creek
-    - Union City
-    - Concord
-    - Morgan Hill
-    - Berkeley
-    - Redwood City
-    - Sebastopol
-    - Brentwood
-    - Novato
-    - Hayward
-    - Walnut Creek
-    - Albany
-    - Vacaville
-    - Newark
-    - Menlo Park
-    - San Fran
-    - Larkspur
-    - Milpitas
-    - Vallejo
-    - Antioch
-    - Hillsborough
-    - SF
-    - Napa
-    - Santa Clara
-    - Tiburon
-    - Livermore
-    - San Leandro
-    - Dublin
-    - Redwood CIty
-    - Palo Alto
-    - Pleasant Hill
-    - Cloverdale
-    - Mountain View
-    - Santa ROsa
-    - Fremont
-    - Alameda
-    - Danville
-    - walnut creek
-    - Pittsburg
-    - mountain view
-    - San Jose
-    - Fairfield
-    - Moraga
-    - Santa Rosa
-    - Rohnert Park
-    - Petaluma
-    - Emeryville
-    - Martinez
-    - SFO
-    - Oakland
-    - San Francisco
-    - Campbell
-    - El Cerrito
-    - Daly City
-    - Healdsburg
-    - San Ramon
-    - concord
-    - Sonoma
-    - Mill Valley
-- lookup: WORK_OF_ART
-  examples: |
-    - How to Train your Dragon: The Hidden World
-    - Citizen Kane
-    - Toy story four
-    - The Upside
-    - The best of enemies
-    - After The Wedding
-    - Stage Door
-    - Shine a light
-    - Saaho
-    - A Faithful Man
-    - Shazam
-    - Missing link
-    - The Lord of the Rings
-    - The Farewell
-    - The Best of Enemies
-    - Say Anything
-    - Pillow talk
-    - Long Shot
-    - The Angry Birds Movie 2
-    - Curse of La Llorona
-    - Suburban Birds
-    - Where would you go
-    - Stockholm
-    - Hustlers
-    - A Madea Family Funeral
-    - Ash Is Purest White
-    - Wild Nights with Emily
-    - Farewell
-    - Hobbs and Shaw
-    - Pillow Talk
-    - 47 Meters Down
-    - Penguin Highway
-    - Captain Marvel
-    - Chhichhore
-    - Little
-    - This Is Not Berlin
-    - Toy Story Four
-    - The Last Dragon
-    - Ad Astra
-    - IT Chapter Two
-    - IT2
-    - How to Train Your Dragon: The Hidden World
-    - The Lord of the Rings three
-    - Mary Magdalene
-    - Luce
-    - Aftermath
-    - Fiddler
-    - The Curse of La Llorona
-    - After the Wedding
-    - Hellboy
-    - JT LeRoy
-    - Overcomer
-    - Once Upon a Time In Hollywood
-    - After
-    - Dr. Strangelove
-    - Angel Has Fallen
-    - Fighting with My family
-    - Pet Sematary
-    - Hackers
-    - Official Secrets
-    - Hotel Mumbai
-    - Brittany Runs a Marathon
-    - Auntie Mame
-    - Family
-    - Breakthrough
-    - Mission Mangal
-    - Angel has fallen
-    - Gloria Bell
-    - Dumbo
-    - Long shot
-    - the curse of la llorona
-    - Dogman
-    - Viva Las Vegas
-    - Teen Spirit
-    - Knock Down The House
-    - The Load
-    - The Poseidon Adventure
-    - Red Joan
-    - IT two
-    - High Life
-    - Josie and the Pussycats
-    - 47 Meters DOwn: Uncaged
-    - Body Double
-    - Jt Leroy
-    - Transit
-    - Shine a Light
-    - The Invisibles
-    - Toy Story 4
-    - Missing Link
-    - after
-    - Ladykillers
-    - The Mustang
-    - Good Boys
-    - Fiddler: A Miracle of Miracles
-- lookup: CARDINAL
-  examples: |
-    - 4
-    - 3
-    - 1
-    - 2
-    - one
-    - two
-    - three
-    - four
-- lookup: DATE
-  examples: |
-    - 10th of March
-    - Next Tuesday
-    - next wednesday
-    - 5th of March
-    - next Tuesday
-    - The 9th
-    - the 8th
-    - the 2nd
-    - March 9th
-    - the 3rd
-    - tuesday next week
-    - the 17th
-    - 6th of March
-    - 3rd of this month
-    - March 4th
-    - the 15th
-    - next Monday
-    - Thursday next week
-    - 6th of this month
-    - the 4th
-    - Next Friday
-    - 2nd of March
-    - this saturday
-    - march 7th
-    - 4th of March
-    - 9th of this month
-    - the 10th
-    - the 11th
-    - the 16th
-    - March 3rd
-    - 5th of this month
-    - 1st of March
-    - next Friday
-    - 8th of March
-    - today
-    - Saturday this week
-    - March 5th
-    - March 7th
-    - 8th of this month
-    - 16th of March
-    - March 10th
-    - the 1st
-    - 1st of march
-    - March 6th
-    - March 1st
-    - 7th of March
-    - this Sunday
-    - This Saturday
-    - March 11th
-    - 15th of March
-    - this Saturday
-    - March 8th
-    - 2nd of this month
-    - 1st of this month
-    - Friday next week
-    - tomorrow
-    - 4th of this month
-    - 3rd of March
-    - Tomorrow
-    - 10th of this month
-    - 7th of this month
-    - This Sunday
-    - Wednesday next week
-    - the 9th
-    - Sunday this week
-    - later today
-    - March 2nd
-    - Monday next week
-    - the 7th
-    - the 5th
-    - day after tomorrow
-    - 16th of this Month
-    - next Thursday
-    - Tuesday next week
-    - 9th of March

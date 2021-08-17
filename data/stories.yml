@@ -6,9 +6,9 @@ stories:
   steps:
     - intent: greet
     - action: utter_introduce
-    - intent: request
+    - intent: request_movie
     - action: utter_genre
-    - intent: inform
+    - intent: inform_genre
       entities:
         - gpe: "horror"
     - action: utter_suggest_movie
@@ -30,17 +30,17 @@ stories:
   steps:
   - intent: greet
   - action: utter_introduce
-  - intent: inform_intent
+  - intent: request_ticket
   - action: utter_choose_movie
-  - intent: inform
+  - intent: inform_movie
   - slot_was_set:
     - WORK_OF_ART: captain marvel
   - action: utter_where
-  - intent: inform
+  - intent: inform_location
   - slot_was_set:
     - GPE: Palo Alto
   - action: utter_nb_tickets
-  - intent: inform_intent
+  - intent: inform_tickets
   - slot_was_set:
     - CARDINAL: 1
   - action: utter_ask_confirm
@@ -53,3 +53,4 @@ stories:
     - action: utter_ask_back
     - intent: fun_fact_question
     - action: action_get_fun_fact
+

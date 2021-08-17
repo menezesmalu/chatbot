@@ -3,23 +3,26 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- select
-- inform
-- inform_intent
-- affirm
-- affirm_intent
+- inform_movie
 - greet
-- bot_challenge
-- negate
-- negate_intent
-- request
-- request_alts
-- thank_you
 - goodbye
+- affirm
+- negate
+- thank_you
+- confirm_movie
+- request_ticket
+- request_movie
+- inform_genre
+- request_alts
+- inform_location
+- inform_tickets
 - ask_fun_fact
 - fun_fact_question
 entities:
+- CARDINAL
 - GENRE
+- GPE
+- WORK_OF_ART
 slots:
   WORK_OF_ART:
     type: text
@@ -48,20 +51,20 @@ responses:
   utter_nb_tickets:
   - text: how many tickets you need?
   utter_ask_confirm:
-  - text: you want {CARDINAL} for {WORK_OF_ART} in {GPE}, right?
+  - text: you want {CARDINAL} tickets for {WORK_OF_ART} in {GPE}, right?
   utter_confirm:
   - text: you're all set! Good movie
   - text: grab your popcorn and enjoy your movie! it's all set
   utter_try_again:
   - text: sorry. let's try again.
   utter_genre:
-    - text: what genre is your mood now?
-    - text: witch kind of movie you'd like to watch?
-    - text: first, i need to understand what's your genre mood for now.
+  - text: what genre is your mood now?
+  - text: witch kind of movie you'd like to watch?
+  - text: first, i need to understand what's your genre mood for now.
   utter_ask_back:
-    - text: what do you wanna know about?
-    - text: ask me something, then!
+  - text: what do you wanna know about?
+  - text: ask me something, then!
 actions:
-- utter_suggest_movie
 - action_get_fun_fact
-
+- utter_suggest_movie
+- utter_where
