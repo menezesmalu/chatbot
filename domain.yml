@@ -16,6 +16,8 @@ intents:
 - request_alts
 - thank_you
 - goodbye
+- ask_fun_fact
+- fun_fact_question
 entities:
 - GENRE
 slots:
@@ -56,6 +58,10 @@ responses:
     - text: what genre is your mood now?
     - text: witch kind of movie you'd like to watch?
     - text: first, i need to understand what's your genre mood for now.
+  utter_ask_back:
+    - text: what do you wanna know about?
+    - text: ask me something, then!
 actions:
 - utter_suggest_movie
+- action_get_fun_fact
 
