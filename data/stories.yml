@@ -20,7 +20,7 @@ stories:
   steps:
     - checkpoint: suggest_movie
     - intent: request_alts
-    - action: utter_suggest_movie
+    - action: action_suggest_movie
 
 - story: accept suggested movie
   steps:

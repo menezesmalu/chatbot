@@ -13,6 +13,12 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from elasticsearch import Elasticsearch
 from rasa_sdk.events import SlotSet
+from random import randrange
+
+GENRE_MOVIES = {
+    "horror": ["Pet Sematary", "The Curse of La Llorona"],
+    "animation": ["Toy Story 4", "How to Train Your Dragon: The Hidden World"]
+}
 
 class ActionGetFunFact(Action):
     def name(self) -> Text:
@@ -76,3 +82,20 @@ class ResetSlotGenre(Action):
 
  
        
+class ActionSugestMovie(Action):
+
+    def name(self) -> Text:
+        return "action_suggest_movie"
+    
+    async def run(self, 
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List:
+        
+        selected_genre = tracker.get_slot("GENRE")
+        movies = GENRE_MOVIES[selected_genre]
+        random_movie = movies[randrange(len(movies))]
+
+        dispatcher.utter_message(f"What about {random_movie}?")
+
+        return []

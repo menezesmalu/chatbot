@@ -78,3 +78,5 @@ actions:
 - utter_genre
 - utter_suggest_movie
 - utter_where
+- action_suggest_movie
+
