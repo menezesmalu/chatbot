@@ -15,9 +15,55 @@ from elasticsearch import Elasticsearch
 from rasa_sdk.events import SlotSet
 from random import randrange
 
-GENRE_MOVIES = {
-    "horror": ["Pet Sematary", "The Curse of La Llorona"],
-    "animation": ["Toy Story 4", "How to Train Your Dragon: The Hidden World"]
+MOVIES = {
+    "documentary": [
+        "athelete A" ,
+        "three identical strangers",
+        "behind the curve",
+        "hot girls wanted",
+        "homecoming",
+        "the dawn wall"
+    ],
+    "adventure": [
+        "black widow",
+        "fast and furious",
+        "passengers",
+        "interstellar",
+        "fantastic beasts",
+        "captain marvel"
+    ],
+    "animation":[
+        "frozen",
+        "luca",
+        "coco",
+        "big hero 6",
+        "the lion king",
+        "barbie as the princess and the pauper"
+    ],
+    "comedy":[
+        "ocean's 8",
+        "pitch perfect",
+        "dr dolittle",
+        "clueless",
+        "legally blonde",
+        "baywatch"
+    ],
+    "horror": [
+        "the conjuring",
+        "get out",
+        "the unholy",
+        "it",
+        "anabelle"
+    ],
+    "drama": [
+        "little women",
+        "life is beautiful," 
+        "disobedience",
+        "dunkirk",
+        "the imitation game",
+        "the greatest showman",
+        "me before you"
+    ]
 }
 
 class ActionGetFunFact(Action):
@@ -82,20 +128,20 @@ class ResetSlotGenre(Action):
 
  
        
-class ActionSugestMovie(Action):
+class ActionSuggestMovie(Action):
 
     def name(self) -> Text:
         return "action_suggest_movie"
     
-    async def run(self, 
+    def run(self, 
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List:
         
         selected_genre = tracker.get_slot("GENRE")
-        movies = GENRE_MOVIES[selected_genre]
+        movies = MOVIES[selected_genre]
         random_movie = movies[randrange(len(movies))]
 
-        dispatcher.utter_message(f"What about {random_movie}?")
+        dispatcher.utter_message(response="utter_suggest_movie", WORK_OF_ART=random_movie)
 
         return []
