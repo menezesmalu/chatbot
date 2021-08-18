@@ -10,7 +10,9 @@ stories:
     - action: utter_genre
     - intent: inform_genre
       entities:
-        - gpe: "horror"
+      - GENRE: "horror"
+    - slot_was_set:
+      - GENRE: "horror"
     - action: utter_suggest_movie
     - checkpoint: suggest_movie
 
@@ -25,7 +27,8 @@ stories:
     - checkpoint: suggest_movie
     - intent: thank_you
     - action: utter_goodbye
-
+    - action: action_reset_genre
+    
 - story: buy tickets - infos
   steps:
   - intent: greet
@@ -33,19 +36,28 @@ stories:
   - intent: request_ticket
   - action: utter_choose_movie
   - intent: inform_movie
+    entities:
+    - WORK_OF_ART: litte
   - slot_was_set:
-    - WORK_OF_ART: captain marvel
+    - WORK_OF_ART: litte
   - action: utter_where
   - intent: inform_location
+    entities:
+    - GPE: Palo Alto
   - slot_was_set:
     - GPE: Palo Alto
   - action: utter_nb_tickets
   - intent: inform_tickets
+    entities:
+    - CARDINAL: 1
   - slot_was_set:
     - CARDINAL: 1
   - action: utter_ask_confirm
   - intent: affirm
   - action: utter_confirm
+  - action: action_reset_woa
+  - action: action_reset_tickets
+  - action: action_reset_gpe
 
 - story: ask fun fact
   steps:
@@ -53,4 +65,3 @@ stories:
     - action: utter_ask_back
     - intent: fun_fact_question
     - action: action_get_fun_fact
-

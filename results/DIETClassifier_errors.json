@@ -1,84 +1,237 @@
 [
   {
-    "text": "Oh, I forgot about Captain Marvel. That one would be perfect.",
-    "entities": [
-      {
-        "start": 19,
-        "end": 33,
-        "value": "Captain Marvel",
-        "entity": "WORK_OF_ART"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Hotel Mumbai is a good movie.",
-    "entities": [
-      {
-        "start": 0,
-        "end": 12,
-        "value": "Hotel Mumbai",
-        "entity": "WORK_OF_ART"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Why does Batman talk to himself in the batvoice?",
+    "text": "No, that wo get me tickets for it please.uld be all. Thanks.",
     "entities": [],
     "predicted_entities": [
       {
         "entity": "WORK_OF_ART",
-        "start": 16,
-        "end": 20,
-        "confidence_entity": 0.994238018989563,
-        "value": "talk",
+        "start": 31,
+        "end": 33,
+        "confidence_entity": 0.7324764728546143,
+        "value": "it",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Pillow talk sounds good to me.",
+    "text": "I think this will do it. Thank you for your help.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.4880896806716919,
+        "value": "it",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Captain Marvel works.",
     "entities": [
       {
         "start": 0,
-        "end": 11,
-        "value": "Pillow talk",
+        "end": 14,
+        "value": "Captain Marvel",
+        "entity": "WORK_OF_ART"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.4986889362335205,
+        "value": "Captain Marvel works",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "get me tickets for it please.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 19,
+        "end": 21,
+        "confidence_entity": 0.5604148507118225,
+        "value": "it",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you help me find an Adventure movie showing ?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 33,
+        "value": "Adventure",
+        "entity": "GENRE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "get me one ticket",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "one",
+        "entity": "CARDINAL"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is it really as easy to knock someone out in real life as in the movies?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 50,
+        "end": 54,
+        "confidence_entity": 0.9984593391418457,
+        "value": "life",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Was the original “Pink Panther” movie intended to be a comedy?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GENRE",
+        "start": 55,
+        "end": 61,
+        "confidence_entity": 0.9833127856254578,
+        "value": "comedy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What was the first crossover movie like The Avengers, using only movie franchises?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GPE",
+        "start": 71,
+        "end": 81,
+        "confidence_entity": 0.5987551212310791,
+        "value": "franchises",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is the best order to watch LotR/Hobbit franchise?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.9673454761505127,
+        "value": "best",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "GPE",
+        "start": 44,
+        "end": 53,
+        "confidence_entity": 0.9915724992752075,
+        "value": "franchise",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "The best of enemies will be good",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "The best of enemies",
         "entity": "WORK_OF_ART"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "Teen Spirit is perfect.",
+    "text": "Red Joan is great.",
     "entities": [
       {
         "start": 0,
-        "end": 11,
-        "value": "Teen Spirit",
+        "end": 8,
+        "value": "Red Joan",
         "entity": "WORK_OF_ART"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "shazam sounds perfect!",
+    "text": "I would like seven tickets",
+    "entities": [
+      {
+        "start": 13,
+        "end": 18,
+        "value": "seven",
+        "entity": "CARDINAL"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Search for movies playing right now in Napa.",
+    "entities": [
+      {
+        "start": 39,
+        "end": 43,
+        "value": "Napa",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Switch in *The Matrix* - Two Actors?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.5983790159225464,
+        "value": "Two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Why wasn't the poltergeist Peeves in the Harry Potter movies?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 41,
+        "end": 53,
+        "confidence_entity": 0.8812040686607361,
+        "value": "Harry Potter",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Shazam would be great.",
     "entities": [
       {
         "start": 0,
         "end": 6,
-        "value": "shazam",
-        "entity": "WORK_OF_ART"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Ok, Shazam will be perfect! I can't wait to see it!",
-    "entities": [
-      {
-        "start": 4,
-        "end": 10,
         "value": "Shazam",
         "entity": "WORK_OF_ART"
       }
@@ -86,43 +239,367 @@
     "predicted_entities": []
   },
   {
-    "text": "Ok i got it ,Movie Pet Sematary is Perfect and it suits my taste.",
+    "text": "I would like to find a movie to watch in the Imaginative fiction genre.",
     "entities": [
       {
-        "start": 19,
-        "end": 31,
-        "value": "Pet Sematary",
+        "start": 45,
+        "end": 64,
+        "value": "Imaginative fiction",
+        "entity": "GENRE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I would like to buy a movie ticket for four people.",
+    "entities": [
+      {
+        "start": 39,
+        "end": 43,
+        "value": "four",
+        "entity": "CARDINAL"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want two tickets",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "two",
+        "entity": "CARDINAL"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9979776740074158,
+        "value": "two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "In Santa Rosa please.",
+    "entities": [
+      {
+        "start": 3,
+        "end": 13,
+        "value": "Santa Rosa",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "GPE",
+        "start": 3,
+        "end": 8,
+        "confidence_entity": 0.9773783683776855,
+        "value": "Santa",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Toy Story 4](WORK_OF_ART) is the one I've been wanting to see",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9974206686019897,
+        "value": "Toy Story",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Why is Spaceballs specifically numbered Chapter XI?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 40,
+        "end": 47,
+        "confidence_entity": 0.9483328461647034,
+        "value": "Chapter",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How and why did Disney reuse animation?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GENRE",
+        "start": 29,
+        "end": 38,
+        "confidence_entity": 0.8140546679496765,
+        "value": "animation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Why is “Captain Marvel” translated as male in Portugal?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "WORK_OF_ART",
+        "start": 16,
+        "end": 22,
+        "confidence_entity": 0.8101422786712646,
+        "value": "Marvel",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "IT two sounds perfect for me",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "IT two",
         "entity": "WORK_OF_ART"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "What God does Captain America believe in?",
+    "text": "Penguin Highway is good",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Penguin Highway",
+        "entity": "WORK_OF_ART"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'd like to see a movie, can you find me one?",
     "entities": [],
     "predicted_entities": [
       {
-        "entity": "WORK_OF_ART",
-        "start": 14,
-        "end": 21,
-        "confidence_entity": 0.9966112971305847,
-        "value": "Captain",
+        "entity": "CARDINAL",
+        "start": 41,
+        "end": 44,
+        "confidence_entity": 0.9437436461448669,
+        "value": "one",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "How does Captain America know about Iron Man's parents' fate?",
-    "entities": [],
+    "text": "I need 1 ticket",
+    "entities": [
+      {
+        "start": 7,
+        "end": 8,
+        "value": "1",
+        "entity": "CARDINAL"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm in San Ramon, please find a movie there.",
+    "entities": [
+      {
+        "start": 7,
+        "end": 16,
+        "value": "San Ramon",
+        "entity": "GPE"
+      }
+    ],
     "predicted_entities": [
       {
-        "entity": "WORK_OF_ART",
-        "start": 9,
-        "end": 16,
-        "confidence_entity": 0.9939291477203369,
-        "value": "Captain",
+        "entity": "GPE",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.997711181640625,
+        "value": "San",
         "extractor": "DIETClassifier"
       }
     ]
+  },
+  {
+    "text": "Hey, can you help me get movie tickets to IT Chapter Two.",
+    "entities": [
+      {
+        "start": 42,
+        "end": 56,
+        "value": "IT Chapter Two",
+        "entity": "WORK_OF_ART"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "CARDINAL",
+        "start": 53,
+        "end": 56,
+        "confidence_entity": 0.9890817403793335,
+        "value": "Two",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Alice growing effect in 1972 “Alice's Adventures in Wonderland” - how was it done? It's not green screen",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GENRE",
+        "start": 38,
+        "end": 48,
+        "confidence_entity": 0.8742831945419312,
+        "value": "Adventures",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Did any actor ever win an Oscar for their work in a horror movie?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GENRE",
+        "start": 52,
+        "end": 58,
+        "confidence_entity": 0.9979386925697327,
+        "value": "horror",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Why is Pulp Fiction's opening scene different to the one near the end?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "GENRE",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.9495943188667297,
+        "value": "Fiction",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Breakthrough is perfect.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Breakthrough",
+        "entity": "WORK_OF_ART"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "We'd love to see Missing Link.",
+    "entities": [
+      {
+        "start": 17,
+        "end": 29,
+        "value": "Missing Link",
+        "entity": "WORK_OF_ART"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want to watch a comedy movie",
+    "entities": [
+      {
+        "start": 18,
+        "end": 24,
+        "value": "comedy",
+        "entity": "GENRE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm in the mood for a Comedy movie",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "Comedy",
+        "entity": "GENRE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want movies shown in Union City.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "Union City",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am in Oakland, so can you find me any nearby movies?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 15,
+        "value": "Oakland",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Find movies in Larkspur",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "Larkspur",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Are there any good movies showing in Pleasant Hill?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 50,
+        "value": "Pleasant Hill",
+        "entity": "GPE"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "toy story is the movie i want to see",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "toy story",
+        "entity": "WORK_OF_ART"
+      }
+    ],
+    "predicted_entities": []
   }
 ]

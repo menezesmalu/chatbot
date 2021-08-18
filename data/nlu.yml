@@ -368,6 +368,8 @@ nlu:
     - Will you find me a movie to watch?
     - I am searching for a movie to watch.
     - I'd like to see a movie, can you find me one?
+    - i want to find a movie
+    - i want to watch a [comedy](GENRE) movie
 - intent: inform_genre
   examples: |
     - Can you help me find an [Adventure](GENRE) movie showing ?
@@ -375,6 +377,8 @@ nlu:
     - i'm in the mood for a [Comedy](GENRE) movie
     - i want to watch an [Animation](GENRE) movie
     - i was thinking about a [Horror](GENRE) movie
+    - i want an [Animation](GENRE) movie
+    - i want a [horror](GENRE) movie
 - intent: request_alts
   examples: |
     - Nope, not the hilarious nightmare movies. Please find something else.
@@ -527,6 +531,24 @@ nlu:
     - i wanna watch [captain marvel](WORK_OF_ART)
     - i would like to watch [hellboy](WORK_OF_ART)
     - i plan to watch [hotel mumbai](WORK_OF_ART)
+    - i plan to watch [hellboy](WORK_OF_ART)
+    - i'd like to watch [little](WORK_OF_ART)
+    - i would like to see [captain marvel](WORK_OF_ART)
+    - i want to watch [captain marvel](WORK_OF_ART)
+    - i want to book [hellboy](WORK_OF_ART)
+    - i wanna watch [litte](WORK_OF_ART)
+    - i want to watch [hellboy](WORK_OF_ART)
+    - i was thinking about watch [it](WORK_OF_ART)
+    - [toy story](WORK_OF_ART) is the movie i want to see
+    - i would like to see [little](WORK_OF_ART)
+    - i'd like to watch [hotel mumbai](WORK_OF_ART)
+    - i want to watch [little](WORK_OF_ART)
+    - i wanna watch [little](WORK_OF_ART)
+    - i'm planning to book [hellboy](WORK_OF_ART)
+    - i was thinking about watch [hellboy](WORK_OF_ART)
+    - i need to watch [hellboy](WORK_OF_ART)
+    - i plan to watch [little](WORK_OF_ART)
+    - i'd like to watch [life is beautiful](WORK_OF_ART)
 - intent: ask_fun_fact
   examples: |
     - tell me something about movies

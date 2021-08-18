@@ -12,6 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from elasticsearch import Elasticsearch
+from rasa_sdk.events import SlotSet
 
 class ActionGetFunFact(Action):
     def name(self) -> Text:
@@ -40,3 +41,38 @@ class ActionGetFunFact(Action):
         dispatcher.utter_message(text=final_answer)
 
         return []
+
+class ResetSlotWOA(Action):
+
+    def name(self):
+        return "action_reset_woa"
+
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("WORK_OF_ART", None)]
+
+class ResetSlotTickets(Action):
+
+    def name(self):
+        return "action_reset_tickets"
+
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("CARDINAL", None)]
+
+class ResetSlotGPA(Action):
+
+    def name(self):
+        return "action_reset_gpe"
+
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("GPE", None)]
+
+class ResetSlotGenre(Action):
+
+    def name(self):
+        return "action_reset_genre"
+
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("GENRE", None)]
+
+ 
+       

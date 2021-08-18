@@ -1,114 +1,442 @@
 [
   {
+    "text": "hi",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3337237238883972
+    }
+  },
+  {
+    "text": "good night",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8898905515670776
+    }
+  },
+  {
+    "text": "That's a go.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4238210618495941
+    }
+  },
+  {
+    "text": "You got it.",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.9999890327453613
+    }
+  },
+  {
+    "text": "Captain Marvel works.",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.9877219200134277
+    }
+  },
+  {
+    "text": "Thats great, Hellboy will do.",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.9986245036125183
+    }
+  },
+  {
+    "text": "get me tickets for it please.",
+    "intent": "request_ticket",
+    "intent_prediction": {
+      "name": "inform_tickets",
+      "confidence": 0.7774122953414917
+    }
+  },
+  {
+    "text": "I am bored and want to watch a movie.",
+    "intent": "request_movie",
+    "intent_prediction": {
+      "name": "request_ticket",
+      "confidence": 0.7852813005447388
+    }
+  },
+  {
+    "text": "Can you help me find an Adventure movie showing ?",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.9546908736228943
+    }
+  },
+  {
+    "text": "I would like to buy a movie ticket in Concord",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "request_ticket",
+      "confidence": 0.8273371458053589
+    }
+  },
+  {
+    "text": "'Yeah but it's a dry heat' - reference to another film?",
+    "intent": "fun_fact_question",
+    "intent_prediction": {
+      "name": "request_alts",
+      "confidence": 0.9891864061355591
+    }
+  },
+  {
+    "text": "moin",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.40086573362350464
+    }
+  },
+  {
+    "text": "see you around",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.8790151476860046
+    }
+  },
+  {
+    "text": "never",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.49690869450569153
+    }
+  },
+  {
+    "text": "It's okay. Thank you and that's all.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.9991363286972046
+    }
+  },
+  {
+    "text": "Your help has been invaluable.",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 0.9768157005310059
+    }
+  },
+  {
+    "text": "The best of enemies will be good",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Red Joan is great.",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 0.43350571393966675
+    }
+  },
+  {
+    "text": "Hey, I'm looking for a movie.",
+    "intent": "request_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2953963875770569
+    }
+  },
+  {
+    "text": "Search for movies playing right now in Napa.",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "request_alts",
+      "confidence": 0.9950543642044067
+    }
+  },
+  {
+    "text": "good by",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.796921968460083
+    }
+  },
+  {
     "text": "Perfect, thanks so much.",
     "intent": "affirm",
     "intent_prediction": {
       "name": "thank_you",
-      "confidence": 0.9063781499862671
+      "confidence": 0.9998239278793335
     }
   },
   {
-    "text": "Thanks for your help.",
+    "text": "Umm, no. I need to figure this out. I'll let you know if I need anything further.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.4514271914958954
+    }
+  },
+  {
+    "text": "No, that is all I need. Thank you for your kind assistance!",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.995454728603363
+    }
+  },
+  {
+    "text": "Nothing for now and thanks.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.8957268595695496
+    }
+  },
+  {
+    "text": "I'm good. Thanks for the help.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.9992683529853821
+    }
+  },
+  {
+    "text": "Thank you very much. You've been very helpful.",
     "intent": "thank_you",
     "intent_prediction": {
       "name": "negate",
-      "confidence": 0.9926950931549072
+      "confidence": 0.999997615814209
     }
   },
   {
-    "text": "Hotel Mumbai is a good movie.",
-    "intent": "select",
+    "text": "Great! You helped me a lot! Bye!",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7021370530128479
+    }
+  },
+  {
+    "text": "tks",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.49852579832077026
+    }
+  },
+  {
+    "text": "Yeah, I heard of that one! Captain Marvel sounds good.",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9881529808044434
+    }
+  },
+  {
+    "text": "Shazam would be great.",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9783864617347717
+    }
+  },
+  {
+    "text": "I have some free time and I want to relax on that time. Can you search for some nice movies to watch?",
+    "intent": "request_movie",
+    "intent_prediction": {
+      "name": "request_alts",
+      "confidence": 0.999917209148407
+    }
+  },
+  {
+    "text": "I would like to find a movie to watch in the Imaginative fiction genre.",
+    "intent": "inform_genre",
     "intent_prediction": {
       "name": "fun_fact_question",
-      "confidence": 0.9318379163742065
+      "confidence": 0.9997487664222717
     }
   },
   {
-    "text": "Yes is perfect for me.",
+    "text": "I would like to buy a movie ticket for four people.",
+    "intent": "inform_tickets",
+    "intent_prediction": {
+      "name": "request_ticket",
+      "confidence": 0.9840348362922668
+    }
+  },
+  {
+    "text": "In Santa Rosa please.",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 0.7937629818916321
+    }
+  },
+  {
+    "text": "Toy Story 4](WORK_OF_ART) is the one I've been wanting to see",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 0.9793694019317627
+    }
+  },
+  {
+    "text": "What is a “soap”?",
+    "intent": "fun_fact_question",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7361326813697815
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9925022125244141
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7102970480918884
+    }
+  },
+  {
+    "text": "y",
     "intent": "affirm",
     "intent_prediction": {
-      "name": "select",
-      "confidence": 0.9941999912261963
+      "name": "greet",
+      "confidence": 0.6807947158813477
     }
   },
   {
-    "text": "Thanks for the help and that is everything I need.",
+    "text": "of course",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 0.9845784902572632
+    }
+  },
+  {
+    "text": "That is all, once again thanks for the help.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.8284050822257996
+    }
+  },
+  {
+    "text": "Thanks and that's all.",
     "intent": "thank_you",
     "intent_prediction": {
-      "name": "select",
-      "confidence": 0.988332211971283
+      "name": "negate",
+      "confidence": 1.0
     }
   },
   {
-    "text": "Thanks thats everything",
-    "intent": "select",
+    "text": "IT two sounds perfect for me",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9999662041664124
+    }
+  },
+  {
+    "text": "Penguin Highway is good",
+    "intent": "confirm_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.56862473487854
+    }
+  },
+  {
+    "text": "Hey, can you help me get movie tickets to IT Chapter Two.",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inform_tickets",
+      "confidence": 0.6580953598022461
+    }
+  },
+  {
+    "text": "Why do old movies sound like old movies?",
+    "intent": "fun_fact_question",
+    "intent_prediction": {
+      "name": "request_alts",
+      "confidence": 0.9988894462585449
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5872771143913269
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
     "intent_prediction": {
       "name": "negate",
-      "confidence": 0.9950863718986511
+      "confidence": 0.999337911605835
     }
   },
   {
     "text": "It is good.",
     "intent": "affirm",
     "intent_prediction": {
-      "name": "select",
-      "confidence": 0.99993896484375
-    }
-  },
-  {
-    "text": "That will be all for now. Thank you!",
-    "intent": "thank_you",
-    "intent_prediction": {
       "name": "negate",
-      "confidence": 0.9996984004974365
+      "confidence": 0.9845630526542664
     }
   },
   {
-    "text": "None of those sound good",
-    "intent": "request_alts",
-    "intent_prediction": {
-      "name": "select",
-      "confidence": 0.9999396800994873
-    }
-  },
-  {
-    "text": "I'm fine, thank you.",
-    "intent": "negate",
-    "intent_prediction": {
-      "name": "select",
-      "confidence": 0.7132666707038879
-    }
-  },
-  {
-    "text": "Yes, I want to watch The Curse of La Llorona.",
-    "intent": "select",
-    "intent_prediction": {
-      "name": "fun_fact_question",
-      "confidence": 0.6337833404541016
-    }
-  },
-  {
-    "text": "Ok, Shazam will be perfect! I can't wait to see it!",
-    "intent": "select",
-    "intent_prediction": {
-      "name": "fun_fact_question",
-      "confidence": 0.7377794981002808
-    }
-  },
-  {
-    "text": "after is perfect",
-    "intent": "select",
-    "intent_prediction": {
-      "name": "affirm",
-      "confidence": 0.9316422343254089
-    }
-  },
-  {
-    "text": "Yes, that all sounds correct.",
+    "text": "Excellent, thanks for that.",
     "intent": "affirm",
     "intent_prediction": {
-      "name": "select",
-      "confidence": 0.6308472752571106
+      "name": "thank_you",
+      "confidence": 0.9998909831047058
+    }
+  },
+  {
+    "text": "n",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6174697875976562
+    }
+  },
+  {
+    "text": "That's it, I found a movie I wanted.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.4004755914211273
+    }
+  },
+  {
+    "text": "Yes, that will be all for now.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.957667887210846
+    }
+  },
+  {
+    "text": "I've got all I want. Thanks a lot.",
+    "intent": "negate",
+    "intent_prediction": {
+      "name": "thank_you",
+      "confidence": 0.673305332660675
     }
   },
   {
@@ -116,55 +444,111 @@
     "intent": "thank_you",
     "intent_prediction": {
       "name": "negate",
-      "confidence": 0.9890792965888977
+      "confidence": 0.9995881915092468
     }
   },
   {
-    "text": "Wonderful thanks. That is all.",
-    "intent": "select",
+    "text": "I don't need anything else. Thank you so much.",
+    "intent": "thank_you",
     "intent_prediction": {
-      "name": "thank_you",
-      "confidence": 0.997799813747406
+      "name": "request_alts",
+      "confidence": 0.9689235091209412
     }
   },
   {
-    "text": "Ok i got it ,Movie Pet Sematary is Perfect and it suits my taste.",
-    "intent": "select",
+    "text": "That will be all for now. Thank you!",
+    "intent": "thank_you",
     "intent_prediction": {
-      "name": "fun_fact_question",
-      "confidence": 0.9417805671691895
+      "name": "negate",
+      "confidence": 0.9999375939369202
     }
   },
   {
-    "text": "The film Where would you go is fine for me.",
-    "intent": "select",
-    "intent_prediction": {
-      "name": "fun_fact_question",
-      "confidence": 0.9988473653793335
-    }
-  },
-  {
-    "text": "That's good. That's all I need for now.",
-    "intent": "select",
-    "intent_prediction": {
-      "name": "thank_you",
-      "confidence": 0.77713543176651
-    }
-  },
-  {
-    "text": "That is perfect for me.",
-    "intent": "select",
+    "text": "Breakthrough is perfect.",
+    "intent": "confirm_movie",
     "intent_prediction": {
       "name": "affirm",
-      "confidence": 0.9985324144363403
+      "confidence": 0.9946306347846985
     }
   },
   {
-    "text": "Not at this time. Thank you for your assistance.",
-    "intent": "negate",
+    "text": "We'd love to see Missing Link.",
+    "intent": "confirm_movie",
     "intent_prediction": {
-      "name": "thank_you",
-      "confidence": 0.9977868795394897
+      "name": "fun_fact_question",
+      "confidence": 0.9915995597839355
+    }
+  },
+  {
+    "text": "i want to watch a movie",
+    "intent": "request_ticket",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.896511435508728
+    }
+  },
+  {
+    "text": "i'm in the mood for a Comedy movie",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.570053219795227
+    }
+  },
+  {
+    "text": "No. Can I have some more?",
+    "intent": "request_alts",
+    "intent_prediction": {
+      "name": "negate",
+      "confidence": 0.9878723621368408
+    }
+  },
+  {
+    "text": "Please search for other movies to see in downtown San Fran.",
+    "intent": "request_alts",
+    "intent_prediction": {
+      "name": "inform_location",
+      "confidence": 0.5083233118057251
+    }
+  },
+  {
+    "text": "I want movies shown in Union City.",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "fun_fact_question",
+      "confidence": 0.9997355937957764
+    }
+  },
+  {
+    "text": "I am in Oakland, so can you find me any nearby movies?",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.7583724856376648
+    }
+  },
+  {
+    "text": "Find movies in Larkspur",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.4049171209335327
+    }
+  },
+  {
+    "text": "Are there any good movies showing in Pleasant Hill?",
+    "intent": "inform_location",
+    "intent_prediction": {
+      "name": "request_alts",
+      "confidence": 0.9658826589584351
+    }
+  },
+  {
+    "text": "toy story is the movie i want to see",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "request_movie",
+      "confidence": 0.5170474052429199
     }
   }
 ]

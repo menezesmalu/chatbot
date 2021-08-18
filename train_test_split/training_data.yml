@@ -3,879 +3,785 @@ nlu:
 - intent: ask_fun_fact
   examples: |
     - I wanna know something cool
+    - tell me something about movies
     - give me some fun fact
-    - Tell me something
 - intent: inform_genre
   examples: |
-    - i want to watch an [Animation](GENRE) movie
     - i was thinking about a [Horror](GENRE) movie
-    - Can you help me find an [Adventure](GENRE) movie showing ?
+    - i'm in the mood for a [Comedy](GENRE) movie
+    - i want an [Animation](GENRE) movie
     - I would like to find a movie to watch in the [Imaginative fiction](GENRE) genre.
+    - Can you help me find an [Adventure](GENRE) movie showing ?
 - intent: inform_tickets
   examples: |
+    - give me [three](CARDINAL) tickets, please
     - I would like to buy a movie ticket for [four](CARDINAL) people.
     - I'd like to purchase [three](CARDINAL) tickets right now.
-    - I need [1](CARDINAL) ticket
-    - i want [two](CARDINAL) tickets
-    - I would like [three](CARDINAL) tickets.
+    - get me [one](CARDINAL) ticket
     - I would like [seven](CARDINAL) tickets
-    - give me [three](CARDINAL) tickets, please
+    - I would like [three](CARDINAL) tickets.
+    - I'd like [three](CARDINAL) tickets, please.
+    - i want [two](CARDINAL) tickets
 - intent: goodbye
   examples: |
-    - bye bye
-    - good by
-    - see you later
-    - have a nice day
-    - goodbye
     - cee you later
-    - cu
+    - good by
     - good night
+    - see you around
+    - bye
+    - bye bye
+    - cu
+    - see you later
 - intent: confirm_movie
   examples: |
-    - [Captain Marvel](WORK_OF_ART) works.
-    - [Red Joan](WORK_OF_ART) is great.
-    - Yeah, I heard of that one! [Captain Marvel](WORK_OF_ART) sounds good.
     - [Shazam](WORK_OF_ART) would be great.
+    - [Penguin Highway](WORK_OF_ART) is good
+    - [Red Joan](WORK_OF_ART) is great.
     - [IT two](WORK_OF_ART) sounds perfect for me
-    - Thats great, [Hellboy](WORK_OF_ART) will do.
     - [The best of enemies](WORK_OF_ART) will be good
-    - [Breakthrough](WORK_OF_ART) is perfect.
+    - Thats great, [Hellboy](WORK_OF_ART) will do.
+    - [Captain Marvel](WORK_OF_ART) works.
+    - Yeah, I heard of that one! [Captain Marvel](WORK_OF_ART) sounds good.
 - intent: request_ticket
   examples: |
-    - i want to buy tickets
-    - let's buy the tickets
     - I have an extra day off work and want to go see a movie. Can you buy me a ticket?
-    - i would like to watch a movie. can you purchase?
-    - I would like to buy tickets
     - i want to watch a movie
     - get me tickets for it please.
+    - i want to buy tickets
+    - i would like to watch a movie. can you purchase?
+    - I would like to buy tickets
+    - i wanna buy tickets
     - i would like to buy tickets
+- intent: greet
+  examples: |
+    - hey dude
+    - moin
+    - let's go
+    - hi
+    - hey there
+    - goodmorning
+    - good morning
+    - good afternoon
+    - hey
+    - hello
+- intent: request_movie
+  examples: |
+    - Please help me find a movie to watch.
+    - My friends want to go see a movie, can you help?
+    - i want to find a movie
+    - I am searching for a movie to watch.
+    - I am bored and want to watch a movie.
+    - I'd like to see a movie, can you find me one?
+    - Can you find me a movie?
+    - Hey, I'm looking for a movie.
+    - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
+    - Hi! Can you help me find a movie?
+    - i have to search for a movie to watch
+    - Hey, can you help me find a movie to watch?
+    - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
+    - Will you find me a movie to watch?
+- intent: inform_location
+  examples: |
+    - I want movies shown in [Union City](GPE).
+    - Help me find movies showing in [San Francisco](GPE).
+    - i'm staying in [Newark](GPE)
+    - I want to go to [Palo Alto](GPE)
+    - Find movies in [Larkspur](GPE)
+    - Can you look in the [Newark](GPE) area?
+    - I am in [Palo Alto](GPE)
+    - I would like to buy a movie ticket in [Concord](GPE)
+    - Please can you look for a good movie to watch, might be in [San Jose](GPE)?
+    - I wanna go to [Palo Alto](GPE)
+    - i'm wanna go to [Newark](GPE)
+    - Search for movies playing right now in [Napa](GPE).
+    - I'm in [Palo Alto](GPE)
+    - I am in [Oakland](GPE), so can you find me any nearby movies?
+    - I'm in [San Ramon](GPE), please find a movie there.
 - intent: inform_movie
   examples: |
     - Hey, can you help me get movie tickets to [IT Chapter Two](WORK_OF_ART).
-    - I would like to see [Little](WORK_OF_ART).
+    - I'd like to watch [Hotel Mumbai](WORK_OF_ART).
+    - i'd like to watch [life is beautiful](WORK_OF_ART)
+    - i would like to see [little](WORK_OF_ART)
+    - i need to watch [hellboy](WORK_OF_ART)
+    - i wanna watch [litte](WORK_OF_ART)
+    - i plan to watch [hotel mumbai](WORK_OF_ART)
+    - i wanna watch [captain marvel](WORK_OF_ART)
+    - i plan to watch [little](WORK_OF_ART)
     - i want to watch [life is beautiful](WORK_OF_ART)
-    - I was thinking about watch [hellboy](WORK_OF_ART)
-    - i wanna watch [life is beautiful](WORK_OF_ART)
-    - i would like to watch the [harry potter](WORK_OF_ART) movie
-    - Toy Story 4](WORK_OF_ART) is the one I've been wanting to see
+    - i'm planning to book [hellboy](WORK_OF_ART)
     - i am planning to book [life is beautiful](WORK_OF_ART)
-    - i would like to watch [life is beautiful](WORK_OF_ART)
+    - I was thinking about watch [hellboy](WORK_OF_ART)
+    - i want to book [life is beautiful](WORK_OF_ART)
+    - i wanna watch [little](WORK_OF_ART)
+    - [toy story](WORK_OF_ART) is the movie i want to see
+    - i would like to see [captain marvel](WORK_OF_ART)
+    - i want to watch [little](WORK_OF_ART)
+    - i wanna watch [life is beautiful](WORK_OF_ART)
+    - i would like to watch [hellboy](WORK_OF_ART)
+    - i was thinking about watch [hellboy](WORK_OF_ART)
+    - i'd like to watch [little](WORK_OF_ART)
+    - i plan to watch [hellboy](WORK_OF_ART)
     - i need to watch [harry potter](WORK_OF_ART)
-- intent: greet
-  examples: |
-    - hello there
-    - good evening
-    - hey
-    - hey dude
-    - goodevening
-    - goodmorning
-    - hey there
-    - good morning
-    - hi
-    - moin
-- intent: request_movie
-  examples: |
-    - Hey, can you help me find a movie to watch?
-    - I am bored and want to watch a movie.
-    - I want to find a movie.
-    - Will you find me a movie to watch?
-    - I have some time to relax and I need to spend it with a Movie. Can you find me a good one to watch?
-    - I have some free time and I want to relax on that time. Can you search for some nice movies to watch?
-    - My friends want to go see a movie, can you help?
-    - i have to search for a movie to watch
-    - Find me a movie to watch.
-    - Hey, I'm looking for a movie.
-    - I'd like to see a movie, can you find me one?
-    - Can you find me a movie?
-- intent: inform_location
-  examples: |
-    - I am in [Palo Alto](GPE)
-    - I want to go to [Palo Alto](GPE)
-    - In [Santa Rosa](GPE) please.
-    - Find movies in [Larkspur](GPE)
-    - I am in [Oakland](GPE), so can you find me any nearby movies?
-    - Please can you look for a good movie to watch, might be in [San Jose](GPE)?
-    - I wanna go to [Palo Alto](GPE)
-    - I'm in [San Ramon](GPE), please find a movie there.
-    - Can you look in the [Newark](GPE) area?
-    - I would like to buy a movie ticket in [Concord](GPE)
-    - I'm in [Palo Alto](GPE)
-    - Search for movies playing right now in [Napa](GPE).
-    - i'm wanna go to [Newark](GPE)
-    - I want movies shown in [Union City](GPE).
-    - i'm staying in [Newark](GPE)
+    - i would like to watch the [harry potter](WORK_OF_ART) movie
+    - i'd like to watch [hotel mumbai](WORK_OF_ART)
 - intent: affirm
   examples: |
-    - Right, that's great.
-    - y
-    - yes
-    - That's right, good deal.
-    - Yes, that will be great.
-    - Yes that's right
-    - You got it.
-    - That is correct.
-    - Yes, that's perfect.
-    - of course
-    - that sounds good
-    - Yes that sounds fine.
-    - That's correct.
-    - Yes, perfect.
-    - All are okay to proceed.
-    - correct
-    - Yes I do.
-    - Yes, that's it.
-    - Yes that's all correct
-    - Yes, that sounds good.
-    - Ok that sounds good to me.
-    - Yes, That sounds perfect.
-    - indeed
-    - Yes, that is perfect.
-    - Yes, that will be perfect.
-    - Excellent, thanks for that.
     - Yeah that's good.
-    - Yes, That sounds nice to me.
-    - Yes, everything you have have is correct.
-    - Yes. That's sounds good.
-    - Sounds perfect to me.
-    - That's a go.
+    - That's correct.
+    - Yes, that's it.
     - Yes that's correct.
-    - Yes. This sounds good.
-    - Yeah, that's right.
-    - That is confirmed to proceed.
+    - of course
+    - That's a go.
+    - Ok that sounds good to me.
+    - correct
+    - Yep, that is correct.
+    - Yes I do.
     - Yes, that is exactly what I would like. Confirmed.
-    - That's absolutely correct.
-    - That is cool
+    - Yes, everything you have have is correct.
+    - Yeah, that's right.
+    - Yes that sounds fine.
     - Yes, that would be fine.
+    - Yes, confirmed.
+    - Perfect, thanks so much.
+    - That is cool
+    - Right, that's great.
+    - Yes that's right
+    - Yes is perfect for me.
+    - Yes, That sounds nice to me.
+    - Yes. That's sounds good.
+    - All are okay to proceed.
+    - You got it.
+    - Excellent, thanks for that.
+    - Yes, that is all correct.
+    - Yes that's all correct
+    - yes
+    - Yes, that all sounds correct.
+    - that sounds good
+    - indeed
+    - You are one hundred percent correct.
+    - Yes, that sounds good.
+    - That's right, good deal.
+    - Yes, that is correct.
+    - Yes that's correct
+    - y
+    - Yes, that will be perfect.
+    - Yes, That sounds perfect.
 - intent: thank_you
   examples: |
-    - Thanks very much for your help. That's all I needed help with.
-    - Thank you.
-    - Thanks for everything! That is all I need.
-    - I see, that is all I need. Thank you!
-    - Thank you very much for the assistance. That's all I need for now.
-    - Thank you very much. You've been very helpful.
-    - I see, that is all I need. Thank you so much!
-    - Ok thanks a lot.
-    - Thank you.That is all for now.
-    - Thanks for everything.
-    - Thanks for helping.
-    - Sure, that is all I need. Thank you!
-    - Thanks so much for booking those tickets and helping me
-    - I really thank you for your help.
-    - I appreciate your help, thank you.
-    - Thank you for the assistance. That's all I need for now.
+    - Awesome, thank you for your help.
+    - Thank you so much!
+    - OK, thanks so much, that's all for now then
     - I don't need anything else. Thank you so much.
-    - Great, thank you.
+    - Sure, that is all I need. Thank you!
+    - Thank you for you help, that's all I need now.
+    - Thanks for helping.
     - Thanks for doing that
-    - ok. thanks a lot for your help. thats all i need.
-    - tks
-    - Thanks and that's all.
-    - Great, thanks for the help?
+    - Okay. Thank you so much!
+    - Thank you.That is all for now.
+    - Thanks so much for your work.
+    - Great. Thanks for the assistance.
     - Great! You helped me a lot! Bye!
-    - Thank you for your help, that is all I need.
-    - Thank you for your assistance; that's all.
-    - Thank you for your time.
+    - Thank you.
+    - That will be all for now. Thank you!
     - Great, you've been an amazing help, thank you.
+    - Thanks for everything.
+    - Thanks for helping me.
+    - Thank you for your help, that is all I need.
+    - Your help has been invaluable.
+    - Thanks and that's all.
+    - Great, thank you.
+    - I see, that is all I need. Thank you so much!
     - Thank you very much for your help. That is what I want.
+    - Thanks so much!
     - Thank you very much
+    - Thanks for that.
     - Thanks a lot.
+    - Thank you very much for the assistance. That's all I need for now.
+    - Thanks for all the assistance.
     - Thanks a bunch for your assistance.
     - Thanks for all your help. That's all I needed for now.
-    - Thanks that's a real load off.
-    - I really do thank you for your help.
-    - Your help has been invaluable.
-    - Okay, thank you for your great help
-    - OK, thanks so much, that's all for now then
-    - Thanks for your immense help
-    - Great. Thanks for the assistance.
-    - Thank you!
-    - Thank you. That's all I need for now.
     - Wow, great. Thank you.
-    - Awesome, thank you for your help.
-    - Thanks for helping, I appreciate it.
-    - Thank you for you help, that's all I need now.
-    - Okay. Thank you so much!
-    - Thanks for your help, that's it for now.
+    - Thanks for the help and that is everything I need.
+    - I really thank you for your help.
+    - Thanks so much for booking those tickets and helping me
+    - Thanks for everything! That is all I need.
+    - I really do thank you for your help.
+    - tks
+    - Thanks, I am good now.
+    - I see, that is all I need. Thank you!
+    - Thanks for your immense help
+    - Ok thanks a lot.
+    - Thanks very much for your help. That's all I needed help with.
+    - Thank you for the assistance. That's all I need for now.
+    - Thank you. That's all I need for now.
+    - I appreciate your help, thank you.
+    - Thank you for your time.
 - intent: request_alts
   examples: |
-    - Are there any other show times available?
-    - Find me something else please.
-    - Okay. I would like to see some other choices.
-    - No. What else is playing?
-    - Is there any other time the movie is playing?
-    - Not really, can you recommend me something else?
-    - How about a different movie? What else have you got?
-    - What other times are there?
-    - What about the other movies?
-    - Not sure.. is there anything else?
-    - Nope, not the hilarious nightmare movies. Please find something else.
-    - I'm not sure I would like any of those. What else is showing?
-    - No I'm not interested in those. Are any other movies playing?
-    - Could you find some other movies?
-    - Are there any other showtimes?
     - That doesn't sound like something I would like. Is there anything else?
-    - None of those sound good, what else is there?
-    - Are there other times?
-    - Find me something else.
-    - Try some different movies?
-    - Could you find some other movies, please?
-    - Not really, could help search for other movies?
-    - sorry, whether can you find any other movies?
-    - Any other times.
-    - Please search for even more movies.
-    - Anything else?
-    - I'm not really into those, do you know any other good ones?
-    - No , i am not interested. Any other movies?
-    - Those don't sound like my type of movies either, do you know of any others?
-    - No thanks, can you find some others.
-    - Please search for other movies to see in downtown [San Fran](GPE).
-    - Are there any other movie choices?
-    - No, something else please.
-    - Is there anything else?
-    - No, please look for something else.
-    - What else is playing?
-    - Please find other movies.
-    - Are there any other movies?
-    - Do you suggest me another movie?
-    - What else do you propose to me?
-    - Any other times?
-    - Can you help me find some other movies?
-    - No. Any other options?
-    - What else is there?
-    - Please find some more options.
-    - Is the movie playing at some other time?
-    - How about another time?
-    - Are there other movies playing?
-    - I think all are nice but I need to search for something else.
-    - please find some other movies.
-    - Please find something else.
-    - Nah, none of those.
-    - No, not those. Please find some other titles.
-    - Can you find anything else?
-    - What other movies are there?
-    - Anything else available to watch?
-    - Find something else.
-    - No. Can I have some more?
-    - Is there anything else/
-    - Let's hear the others.
-    - No, what other movies are there?
-    - Is there another time?
-    - Anything else available?
-    - Nah I've already seen those. Find me something else.
-    - No, is there anything else?
-    - What are my other choices?
-    - Please find other options.
-    - Are there any other movies playing?
-    - Any other films?
-    - Check for other movies.
+    - Not really, can you recommend me something else?
     - Are there any other times it's playing?
-    - Please find some other movies.
-    - Is there any other show times?
-    - Are there any other movies option?
-    - Do you have any other suggestions?
-    - Please go with another option.
-    - Is the movie playing at another time?
-    - What other movies are playing?
+    - What are the others?
+    - What about the other movies?
+    - Find me something else.
+    - Find me something else please.
+    - Let's hear the others.
+    - Nah, none of those.
+    - What else do you propose to me?
+    - Is there another time?
+    - Check for other movies.
+    - I think all are nice but I need to search for something else.
+    - Nope, not the hilarious nightmare movies. Please find something else.
+    - Is there any other time the movie is playing?
+    - No. please look for any other.
+    - I would prefer other proposals
+    - Any other films?
+    - How about another time?
+    - What else do you have?
+    - Please find some more options.
+    - Find something else.
+    - I'm not really into those, do you know any other good ones?
+    - Please find something else.
+    - No thanks, can you find some others.
+    - How about a different movie? What else have you got?
+    - Find something else, please.
+    - Could you find some other movies?
     - No, find some other movies.
+    - Is there anything else?
+    - Do you have other proposals?
+    - Please find other movies.
+    - No, please look for something else.
+    - I'm not sure I would like any of those. What else is showing?
+    - What other movies are playing?
+    - Any other times?
+    - Nah I've already seen those. Find me something else.
+    - No, what other movies are there?
+    - What are my other choices?
+    - Anything else available?
+    - None of those sound good, what else is there?
+    - Can you find other movies?
+    - What are the other options?
+    - Can you still find some other movies?
+    - Are there any other movies option?
+    - sorry, whether can you find any other movies?
+    - Are any other movies playing?
+    - What else is playing?
+    - Anything else?
+    - Not really, could help search for other movies?
+    - Try some different movies?
+    - Is there any other show time for that.
+    - What else is there?
+    - No , i am not interested. Any other movies?
+    - No, not those. Please find some other titles.
+    - Is the movie playing at some other time?
+    - Are there any other movies playing?
+    - Are there other times?
+    - Those don't sound like my type of movies either, do you know of any others?
+    - Please go with another option.
+    - Not sure.. is there anything else?
+    - Can you help me find some other movies?
+    - Are there any other show times available?
+    - Does the movie play any other time?
+    - No I'm not interested in those. Are any other movies playing?
     - Can you find something else?
+    - Look for any other movies
+    - No. Can I have some more?
+    - Is there any other time for the availability of that movie?
+    - Can you find anything else?
+    - Do you have any other suggestions?
+    - No. What else is playing?
+    - Please search for other movies to see in downtown [San Fran](GPE).
+    - Are there other movies playing?
+    - Is there anything else showing?
+    - What other times are there?
+    - No, something else please.
+    - Are there any other movies?
+    - Please search for even more movies.
     - Are there any other times available?
-- intent: select
-  examples: |
-    - may be [Little](WORK_OF_ART), I think which is perfect.
-    - After sounds great.
-    - Yes, that works for me
-    - I would love to see [Captain Marvel](WORK_OF_ART)!
-    - Ok. That is all i need
-    - Thank you for your help. Have a nice day.
-    - I'd love to see [Hobbs and Shaw](WORK_OF_ART).
-    - Sounds great, Im ready.
-    - Okay, that's all the help I need.
-    - Awesome. Thank you for your help.
-    - [shazam](WORK_OF_ART) works for me.
-    - Thank you. Sounds good.
-    - That is perfect, that is all.
-    - [Red Joan](WORK_OF_ART) is great!
-    - Sounds perfect, that's all I wanted.
-    - [Captain Marvel](WORK_OF_ART) is perfect.
-    - [Shine a Light](WORK_OF_ART) sounds good.
-    - [Long Shot](WORK_OF_ART) sounds great.
-    - [Ash Is Purest White](WORK_OF_ART) would be great.
-    - Sure. I've never heard of it, but we'll give it a shot.
-    - That sounds perfect for me.
-    - I would rather see [Breakthrough](WORK_OF_ART).
-    - That one sounds good, thank you. That's all I need.
-    - Okay, sounds good.
-    - Sounds perfect. That will be all.
-    - Thank you
-    - Yes, I would like to see [Penguin Highway](WORK_OF_ART).
-    - Sure. That's all.
-    - [Official Secrets](WORK_OF_ART) sounds prefect.
-    - I want to watch [Ash Is Purest White](WORK_OF_ART)?
-    - Great, That's all I need
-    - OK. That is all.
-    - That sounds perfect!
-    - [Fiddler is perfect](WORK_OF_ART).
-    - Ok. Great. That's all for now.
-    - That seems good. That'll be all.
-    - Yes, [Pet Sematary](WORK_OF_ART) sounds great!
-    - Perfect.
-    - [shazam](WORK_OF_ART) sounds good.
-    - That is great. I don't need anything further.
-    - Ok, that will work. That's all I need.
-    - Thank you for the information.
-    - Great. Thanks for the information.
-    - That's great. Thanks.
-    - I love to watch [Pet Sematary](WORK_OF_ART).
-    - Alright, that sounds fine. I don't need help with anything else.
-    - That seems awesome.
-    - Sounds great. That's all I need for now.
-    - That will work.
-    - I see, that sounds great! That is all I need for now.
-    - That sounds good.
-    - That works for me.
-    - [Captain Marvel](WORK_OF_ART) sounds great.
-    - That sounds good. That's all I need for now.
-    - That's a little late, but it sounds good. Thank you that will be all I need.
-    - [Breakthrough](WORK_OF_ART) sounds great.
-    - That sounds perfect.
-    - I love [Dumbo](WORK_OF_ART).
-    - Perfect! Thank you for your help.
-    - That sounds perfect, I'm all set.
-    - [Little](WORK_OF_ART) is perfect.
-    - Sure thing.
-    - [Captain Marvel](WORK_OF_ART) it is that's just the kind of movie I was looking to see.
-    - I like that, thanks!
-    - Sounds good, thanks. That's all I need!
-    - Ok. This is perfect
-    - Sounds good
-    - Sure that sounds great
-    - That's good then, that's all I need
-    - [Dumbo](WORK_OF_ART) seem like a good choice.
-    - Awesome. That about does it.
-    - [How to Train Your Dragon: The Hidden World](WORK_OF_ART) sounds good.
-    - Ok that sounds good.
-    - That's great , and thanks a lot
-    - Sounds good, that is all.
-    - Yeah, this sounds great.
-    - Thanks, that is all.
-    - Oh, It sounds good.
-    - OK it's good
-    - That will be suitable.
-    - Awesome, thats all I need to know.
-    - Yes that is good information.
-    - Lets go with [Hellboy](WORK_OF_ART).
-    - Oh yes! [A Madea Family Funeral](WORK_OF_ART). I've been wanting to see this picture.
-    - I want [Captain Marvel](WORK_OF_ART).
-    - That sounds good, that is all I needed.
-    - Thanks. That's all I need.
-    - Awesome, thanks. That'll be everything.
-    - Yeah that one sounds better
-    - I might like it, thank you for the advice, bye.
-    - Oh i think [Pet Sematary](WORK_OF_ART) may be a great movie to watch
-    - That is great .That was all that I needed for now.
-    - [Ad Astra](WORK_OF_ART) is a good movie.
-    - Yeah, The [Last Dragon](WORK_OF_ART) sounds great
-    - [Missing Link](WORK_OF_ART) is good
-    - [The Curse of La Llorona](WORK_OF_ART) sounds great.
-    - Great, that will be fine.
-    - [Breakthrough](WORK_OF_ART) sound perfect.
-    - That's not too bad.
-    - [Hellboy](WORK_OF_ART) is a good movie.
-    - It is ideal for [Captain Marvel](WORK_OF_ART).
-    - [Missing Link](WORK_OF_ART) sounds perfect.
-    - That sounds great!
-    - sounds very good
-    - I want to see that.
-    - Yes, I want to see that. Thanks.
-    - Good looks. You've been a lot of help.
-    - [Red Joan](WORK_OF_ART) sounds great.
-    - [Dumbo](WORK_OF_ART) sounds great!
-    - That is fine.
-    - I've heard [Shazam](WORK_OF_ART)! is really good. I think we'll watch that one.
-    - [The Curse of La Llorona](WORK_OF_ART) sounds good.
-    - That sounds good, that will be all.
+    - No. Any other options?
 - intent: negate
   examples: |
-    - Nope, thanks. Done.
-    - No, that will be all, thank you for your help.
-    - Nope! I'm good!
-    - Nope, that's a lot.
-    - No thanks, that's all for now.
-    - don't like that
-    - Oh, darn. No, that will be all.
-    - No, thank you.
-    - No, that's all for now. Thanks for your help.
-    - I'm good. Thanks for the help.
-    - No, thanks.
-    - No. Thank you.
-    - No, that would be all.
-    - No, thanks, It's all
-    - That's it, I found a movie I wanted.
-    - No, thanks. That will be all for now!
-    - No, that's all.
-    - no , thanks for your help . not now.
-    - No,Thank you very much
-    - No, thank you for your help!
-    - Nope, thanks a lot!
-    - No that's all for now. Thanks for your help.
-    - No, I'm all set, thank you.
-    - No thanks
-    - No. Thanks a lot
-    - I think this will do it. Thank you for your help.
-    - No, that is all. Thanks for the help.
-    - No it's all good for now
-    - No. I appreciate your help so far.
-    - No that is all i need.
-    - never
-    - I don't think so
-    - No Thats all. Thanks a lot
-    - No, not right now. Thanks.
-    - No, I appreciate your help.
-    - No, that's good thanks
-    - Not now. Thanks!
-    - No. Thanks so much
-    - Nothing. That's all.
-    - No, not at the moment. Thanks a lot!
-    - That's all. Thank you.
-    - No. thank you for your help.
-    - No, but thanks for helping.
-    - No, thanks. That's all now.
-    - No. Thanks for trying.
-    - No. That will be all. Thank you.
-    - No that is everything thanks.
-    - Nope. Thanks for your help.
-    - No, Thanks you for your help
-    - No. That is all. Thank you!
-    - no, not for now.
-    - No, thanks. That's it for now.
-    - Not right now, thanks.
-    - No not at the moment thank you though.
-    - No. That will be all. Thank you!
-    - No, that's all I need.
-    - No. I am all set. Thank You.
-    - No. You have already been helpful.
-    - No, that will be all.
-    - No, that's all I want for now.
-    - No, thanks a lot
-    - No, thanks for your help, I'm good.
-    - No. Thank you for you help.
-    - Thanks for your help but I don't think I'll be needing anything else today.
-    - No, that is everything for today. Thank you for your time.
-    - Nope. Nothing now
-    - No, that will be all, but thank you very much for your help.
-    - That's all, thank you.
-    - I don't think so, thank you.
-    - No. You've been very helpful.
-    - No that's it.
-    - No, thanks and that's all.
-    - No, that's all. Thanks.
-    - Nothing I can think of and thank you again for your help.
-    - No. That was all. Thank you.
-    - That's all. Thanks.
-    - no
-    - No, I'm good.
-    - Nope, that will be all for now but thanks for asking.
-    - That is all, once again thanks for the help.
-    - Actually, no, but thanks so much.
-    - No thanks for the help
-    - n
-    - No that's all for now thanks.
-    - No for now it's OK
-    - No that is all I need.
-    - No, that would be all. Thanks so much.
-    - Thank you that will be all.
-    - Nope, thank you!
-    - No thanks, that's all.
-    - No, but thank you!
-    - No, I guess that's all I need for now. Thanks mucho.
-    - No, It's all, thanks
-    - Nope. but thanks for your help
-    - No. That will be all.
-    - No. Thanks for your help today.
-    - No, that is all I needed.
-    - That is all today.
-    - No thank you
-    - No that is all I needed for now.
-    - No, that is all.
-    - No. That'll be all.
-    - No, that's it and thanks.
-    - No, that's all. Thank you for your help!
-    - No, that is all I need. Thank you for your kind assistance!
-    - No that will be all.
-    - No, that's all, thank you.
-    - No, that is okay. Thanks.
-    - No it's ok for now, thanks though
-    - No thank you.
-    - No, not right now. Thanks so much for your help.
-    - Nothing else that will be all.
-    - No, thank you very much for your help, That's all i need. bye
-    - No, thanks for helping me.
-    - No, that's it.
-    - No. Thanks for your help!
-    - Nothing for now and thanks.
-    - No thank you, that'll be all.
-    - No, that's all. Thanks anyways.
-    - It's okay. Thank you and that's all.
-    - No, that is all thank you.
-    - No. Thanks anyways.
-    - Nope, I'm all set.
-    - No. Thanks a lot.
-    - No, That's all
-    - Not now, thanks.
-    - Nope, thanks for the movie idea.
-    - No, thats it. Thanks.
-    - Nope, you've been great, thanks for your help.
-    - No, for now you've done what I need, thanks for that
-    - No, that is all. Thanks.
-    - No, that wo get me tickets for it please.uld be all. Thanks.
-    - No, thank you!
-    - No, that's all, thanks.
-    - No. Thank you very much. You've been very helpful.
-    - Nope! That's all the help I need.
-    - That would be all. Thank you!
-    - No, that's all for now, thanks.
-    - No, you were a great help, thank you!
-    - Nope, thanks much.
-    - No, thank you for your help.
-    - Yes, that will be all for now.
-    - Nope, thanks again.
-    - not really
-    - No, that's it. Thanks very much for your help.
     - No thanks, that was all!
+    - Nothing for now and thanks.
+    - No that's all for now thanks.
+    - No thank you a lot.
+    - No. I am good.
+    - Nothing. That's all.
+    - Nothing I can think of and thank you again for your help.
+    - No, thank you!
+    - Nope, that'll be all. Thanks again!
+    - No. Thanks for your help.
+    - No thanks.
+    - No, that would be all. Thanks so much.
+    - No thats it
+    - No, thats it. Thanks.
+    - Nothing else that will be all.
+    - No, thanks.
+    - No, that's all I need.
+    - Nope, thanks again.
+    - No, thanks for your help, I'm good.
+    - No. Thank you.
+    - No, thank you for your help.
+    - No, that wo get me tickets for it please.uld be all. Thanks.
+    - No. That will be all.
+    - Nope, thanks.
+    - No, thanks a lot!
+    - Nope, thank you!
+    - no way
+    - No, I'm all set, thank you.
+    - I think this will do it. Thank you for your help.
+    - No, Thanks you for your help
+    - It's okay. Thank you and that's all.
+    - No, I'm good.
+    - Nope, thanks much.
+    - Nope. Thanks for your help.
+    - No that is all i need.
+    - No. Thanks for you help.
+    - That's it, I found a movie I wanted.
+    - No thanks, that's all.
+    - No, thanks a lot for your help.
+    - Not at this time. Thank you for your assistance.
+    - No, that's all, thanks.
+    - No that is all, Thanks.
+    - Nope, thanks for the movie idea.
+    - No, that is all I need. Thank you for your kind assistance!
+    - Yes, that will be all for now.
+    - Nope, I'm all set.
+    - No. Thank you for your help.
+    - No that's all thanks.
+    - I'm fine, thank you.
+    - No that will be all.
     - No, that will do it. Thank you for your help.
+    - No, that's all. Thanks.
+    - No thanks for the help
+    - No, that's all.
+    - No, thank you very much for your help, That's all i need. bye
+    - No. Thank you for the help.
+    - No, that's all for now. Thanks for your help.
+    - No. Thanks for your help today.
+    - Nope, thanks. Done.
+    - No, that will be all for now, thank you.
+    - No, thanks for your help.
+    - no , thanks for your help . not now.
+    - No, but thanks for helping.
+    - No thank you, that'll be all.
+    - No, that's all I need. Thanks for your help!
+    - No not at the moment thank you though.
+    - No, It's all, thanks
+    - No, that will be all. Thank you very much!
+    - No. Thanks for trying.
+    - No. Thanks a lot
+    - Thank you that will be all.
+    - No. That was all. Thank you.
+    - Not now, thanks.
+    - Nope. Nothing now
+    - No thanks, that's all for now.
+    - That's all, thank you.
+    - No that's all for now. Thanks for your help.
+    - Nope, thanks a lot!
+    - No, I appreciate your help.
+    - No, that's it and thanks.
+    - Nope! I'm good!
+    - No that is everything thanks.
+    - No, I think that's all I need. Thanks for your help.
+    - No,Thank you very much
+    - No, that is all. Thanks for the help.
+    - I've got all I want. Thanks a lot.
+    - No. That is all. Thank you!
+    - Nothing for now. I am thankful.
+    - No, that's all for now, thanks.
+    - No ,Thanks for your immense help
+    - no, thanks for now.
+    - I'm good. Thanks for the help.
+    - No, that is everything for today. Thank you for your time.
+    - Not right now, you did it all!
+    - No that's it.
+    - Nope, that's a lot.
+    - Not now. Thanks!
+    - Nope. but thanks for your help
+    - No, thanks, It's all
+    - No, that's all, thank you.
+    - No, thanks and that's all.
+    - n
+    - No, but thank you!
+    - No, that's all. Thanks anyways.
+    - No, that will be all, but thank you very much for your help.
+    - No, I guess that's all I need for now. Thanks mucho.
+    - No, that is all I needed.
+    - No, thanks. That's it for now.
+    - No, that is all.
+    - No, not right now. Thanks.
+    - No, that will be all, thank you for your help.
+    - No. Thanks so much
+    - No. Thanks anyways.
+    - No, that's all. Thank you for your help!
+    - No, that's all I want for now.
+    - No thank you
+    - Umm, no. I need to figure this out. I'll let you know if I need anything further.
+    - No, that is okay. Thanks.
+    - No, you were a great help, thank you!
+    - No. I am all set. Thank You.
+    - Nope, you've been great, thanks for your help.
+    - I don't think so, thank you.
+    - No, thanks for helping me.
+    - not really
+    - No, for now you've done what I need, thanks for that
+    - No that is all I needed. Thank you.
+    - Thank you but no. I'm good.
+    - No. thank you for your help.
+    - No, thank you for your help!
+    - Nope, that will be all for now but thanks for asking.
+    - Not right now, thanks.
+    - Thanks for your help but I don't think I'll be needing anything else today.
+    - No, you've done enough thanks.
+    - No. Thank you for you help.
+    - No. Thanks a lot.
+    - No it's ok for now, thanks though
+    - no, not for now.
+    - No, thanks. That's all now.
+    - No, that will be all.
+    - No, that's good thanks
+    - no
+    - No, not right now. Thanks so much for your help.
+    - No, thanks a lot
+    - No, that's all. Thank you very much!
+    - No. I appreciate your help so far.
+    - Nope! That's all the help I need.
+    - No, That's all
 - intent: fun_fact_question
   examples: |
-    - Why do the toys blink alternately?
-    - Did the White Walkers spare Sam?
-    - Did Batman break his one rule?
-    - What does the Night King really want?
-    - What was up with Grand Maester Pycelle?
-    - Why can Arya still use the faces?
-    - Use Force Lightning can Yoda?
-    - Meaning of the Silence of the Lambs poster
-    - How can I find tv shows/films similar to one I like?
-    - Why did the Night King attack the furthest target first?
-    - Why do the kicks have to occur simultaneously?
-    - Why did Steve Rogers choose this character in Endgame?
-    - Why were sloths chosen to depict DMV workers?
-    - Why is Vision so weak?
-    - Was the original “Pink Panther” movie intended to be a comedy?
-    - How was “Hodor” adapted in other languages
-    - Why didn't Loki's mind control work on Tony Stark?
-    - What is the meaning of the “fly scene” in Breaking Bad?
-    - Why was Bruce's silence referred to as a “Walt Disney”?
-    - Why cast an A-lister for Groot?
-    - What was really behind the mysterious number sequence in Lost?
-    - First movie with product placement?
-    - Why does 2001: A Space Odyssey not provide an explanation of its ending? Are we supposed to read the book?
-    - What is the purpose of this “red room” in Stranger Things?
-    - Which version of Blade Runner is Blade Runner 2049 a sequel of?
-    - Why is Arya visibly scared in the library in Game of Thrones S8E3?
-    - Why didn't Loki use the Tesseract?
-    - How do they film the mirror scenes in movies?
-    - Why does Wolverine drink alcohol?
-    - Why is the 'You talking to me' speech from the movie 'Taxi Driver' so famous?
-    - Why does Hulk act the way he does in Avengers: Infinity War?
-    - How does a rifle fire backwards?
-    - Why do people wear sunglasses in The Matrix?
-    - Red's parole hearings in The Shawshank Redemption
-    - Why didn't Bane reveal to the public that Bruce Wayne is Batman?
-    - What was the first crossover movie like The Avengers, using only movie franchises?
-    - Why does Harry only make use of time travel in The Prisoner of Azkaban?
-    - K-PAX ending explanation
-    - How is color determined when colorizing black and white movies?
-    - Explanation of Jules' ending monologue
-    - Why do old movies sound like old movies?
-    - First example of “ringing in ears” sound design?
-    - Why was Being John Malkovich based around John Malkovich?
-    - What is the meaning of this poster for The Lobster?
-    - Why did cars in 70s and 80s TV and movies slide like they were driving on ice?
-    - Did this character show any indication of wanting to rule before S8E6?
-    - Was the dragon prowess intentionally downplayed in S08E04?
-    - What is going on in Mulholland Drive?
-    - Is Deadpool 2's after-credits scene canon or just a joke?
-    - Why do British sitcoms have much fewer episodes than American ones?
-    - What does the scene during the ending represent?
-    - How were Opening Titles and End Credits created before Computers?
-    - Why were people led to believe that the Apollo mission was fake in Interstellar?
-    - What kind of company is Initech?
-    - What does the missing symbol on Quaid's arm symbolize?
-    - Is the 2016 movie Trolls about opium addiction?
-    - Why wasn't the poltergeist Peeves in the Harry Potter movies?
-    - Switch in *The Matrix* - Two Actors?
-    - Why does Westley say Rodents of Unusual Size don't exist?
-    - Why does Zootopia have an intentional Breaking Bad reference?
-    - Why are there not any MRI machines available in Interstellar?
-    - Why are the railings in Rivendell so low?
-    - Why did Lord Baelish betray Eddard Stark?
-    - What is the meaning of Teddy's last dialogue in Shutter Island?
-    - Can someone explain the sequence of events in 'Primer'?
-    - Why does Quentin Tarantino add non-plot related dialogue in his movies?
-    - How is Team Scooby Doo (Mystery Inc.) funded?
-    - Director's Cut, Editor's Cut, Theatrical Cut. What do these mean?
-    - Is Amy right about Indiana Jones being irrelevant to the outcome?
-    - What is Mycroft's job?
-    - Why do mouse cursors never align with actors' hand movements (or always move perfectly straight)?
-    - Why did the Joker take the risk of placing a gun in Harvey Dent's hand?
-    - Why does the roadrunner say “beep beep”?
-    - Why does James Bond use his real name?
-    - Why does Archer say “Balls” whenever someone says “Benoit”?
-    - Hollywood movies that no longer exist in any form
-    - Does Sheldon Cooper have Asperger's Syndrome?
-    - Why does Deadpool say “You're welcome, Canada,” after shooting Ryan Reynolds in the end credits?
+    - Why do some movies start with a big rotating circle and countdown?
+    - Why is the spoken German in many US films and TV shows so inaccurate?
+    - Why do movies think the speed of sound is as fast as the speed of light?
+    - In what order should a newcomer watch Star Wars episodes?
+    - Significance of Cersei's obsession with elephants?
     - How much of Star Wars did George Lucas actually write?
-    - Was Kirk and Uhura's kiss in Star Trek really the first interracial kiss on TV?
-    - What actually happens when a telephone rings in a movie or TV show?
-    - How did Murph know about Edmunds?
-    - Is there a full canon version of Tyrion's jackass/honeycomb joke?
-    - Does the T-1000 know that the “big guy on a bike” is a T-800 before he meets him?
-    - Did Tyler Durden forget his name?
-    - How does the title 'The Imitation Game' justify the story of the movie?
-    - Why is the movie titled “Eternal Sunshine of the Spotless Mind”?
-    - Why exactly did Walt leave Gray Matter?
-    - Who's the random kid standing in the gathering at the end?
-    - How did Arya manage to disguise herself?
-    - How much does Joey owe Chandler?
-    - Can a single bullet from a handgun kill three people in the way Deadpool did?
-    - Why is Pulp Fiction's opening scene different to the one near the end?
-    - How far back do I need to watch Doctor Who for it to still make sense?
-    - Why do the machines keep humans alive if they have nuclear reactors?
-    - How and why did Disney reuse animation?
-    - Why does Walt leave his watch at the gas station?
-    - Why is the number '4' so prominent in the Death Note?
-    - Why didn't Gollum take the ring back from Bilbo between The Hobbit and The Lord of the Rings?
-    - What rules govern how TV show opening credits are structured?
-    - Does this room exist in the Simpsons' house?
-    - What really happened in Memento?
-    - Why did Borden do that to his wife in The Prestige?
-    - Why did Jon Snow do this immoral act if he is so honorable?
-    - Why does Bane's stock exchange robbery actually work to bankrupt Bruce Wayne?
-    - Why is Spaceballs specifically numbered Chapter XI?
-    - Why are the American flags backwards on the warden's uniform in Orange is the New Black?
-    - At which dream level did Inception end?
-    - Do the actors really go nude in the shooting of the movies?
-    - What format do movie theaters now use?
-    - How can weightlessness be simulated on film?
-    - Has there been a movie or a TV show where an abortion was portrayed without negative connotations?
-    - Why the greenish tint in the Matrix trilogy?
-    - How is this practical and very old scene shot?
-    - How old is Charles Muntz during “Up”?
-    - Why is there a disclaimer about not accepting money from tobacco companies at the end of movies?
-    - Why does Dr Mann act so stupidly?
-    - Why are trailers called “trailers”?
-    - Is Clue the only film that aired true, multiple endings in theaters?
-    - Why doesn't Deadpool's healing ability heal his skin?
-    - What is the Ancient One's mistake?
-    - In Back to the Future, how did Marty get the timing right with the lightning strike?
-    - Why did Obi-Wan have to explain full details about Mos Eisley to Luke?
-    - Why are so many American (spy) movies set in Europe?
-    - Game Over, Man…Game Over! - What's the source?
-    - What was the purpose of Saito's presence during the inception job?
-    - What significance does Mike Yanagita have in Fargo?
-    - How did Jack get to the island, and how did he become so important so quickly?
-    - Point of the Dothraki's attack in GoT S8E3?
-    - Did any actor ever win an Oscar for their work in a horror movie?
-    - What happens to questions that aren't revealed during Jeopardy?
-    - Why aren't the front of Oscar winner envelopes marked with the award they're for?
-    - Did Neil Armstrong really do this on the Moon?
-    - In the “300” movie, in the final battle, Why didn't Leonidas kill Xerxes?
-    - “No Country for Old Men”, why is it called so?
-    - “Whatever doesn't kill you, simply makes you stranger” - what does it mean?
-    - Is McConaughey's anecdote about not memorizing a four-page monologue real?
-    - Why is the new movie named Ocean's 8?
-    - What was the purpose of Candie's handshake in Django Unchained?
-    - How did the T-Rex reach the vehicles in Jurassic Park?
-    - Why are “blockbusters” called blockbusters?
-    - Why did Victor die?
-    - Why is it Pet Sematary but not Pet Cemetery?
-    - Why was there a 14 year gap between The Incredibles and The Incredibles 2?
-    - What media format do TV stations use?
-    - What do the spear and watermelon jokes in “Airplane!” mean?
-    - What does Mr Bean have against the three-wheeled car?
-    - What's the point of actors occasionally directing a TV show episode?
-    - Is it really as easy to knock someone out in real life as in the movies?
-    - Why was there a robot in Rocky IV?
-    - How do actors avoid looking into the camera?
-    - Couldn't one or two or three dragons take care of the Army of the Dead in like a couple hours?
-    - What do actors actually inhale when their characters snort cocaine or smoke crack?
-    - How was the DeLorean perceived in 1985?
-    - What happened to the bodies in American Psycho?
-    - Why didn't Hugo Weaving reprise his role as Red Skull?
-    - How was Jon Snow able to kill the White Walker in S05E08?
-    - Is Bran literally the world's memory?
-    - Discrepancy in Thanos's use of time stone in Infinity War
-    - What is the origin of Scooby-Doo's name?
-    - How do they film movies that take place in a single season?
-    - Why does Gus walk away from his car?
+    - Why does Trinity's kiss revive Neo in The Matrix?
     - Why hasn't the elevator been fixed?
+    - Why can Arya still use the faces?
+    - What are the differences between the alternative versions of Blade Runner?
+    - Why does Doctor Strange not bind Thanos in a time loop?
+    - What is the main theme of The Dark Knight?
+    - Why aren't the front of Oscar winner envelopes marked with the award they're for?
+    - Was “Tim” the enchanter an ad-libbed name?
+    - Why did Lord Baelish betray Eddard Stark?
+    - Why are the Simpsons yellow?
+    - Why is the bride's name bleeped in Kill Bill Vol 1?
+    - Red's parole hearings in The Shawshank Redemption
+    - What is Jack Nicholson tossing aside in this scene in The Shining?
+    - Why didn't silent movies have subtitles?
+    - What's the difference between “and” and “&” in movie credits?
+    - How did “Jack” (the narrator) manage to attract people to join Fight Club?
+    - Is this an inconsistency in the Infinity War and Guardians of the Galaxy?
+    - Why the greenish tint in the Matrix trilogy?
+    - Was The Nightmare Before Christmas meant to be a Halloween or Christmas Movie?
+    - Why did the Night King attack the furthest target first?
+    - How was this scene shot without hurting Charlie Chaplin?
+    - What is a “soap”?
     - How did Angier know not to appear in The Prestige?
+    - Why did Tony Stark use a normal flip phone?
+    - Why does Westley say Rodents of Unusual Size don't exist?
+    - Was the dragon prowess intentionally downplayed in S08E04?
+    - Director's Cut, Editor's Cut, Theatrical Cut. What do these mean?
+    - What is it called when a movie breaks the illusion of fantasy?
+    - Why didn't Hans Gruber know what Mr. Takagi looked like?
+    - Do they really crash super cars in action movies?
+    - Did the White Walkers spare Sam?
+    - Why is it so easy to become king of Wakanda?
+    - How did Marty McFly and “Doc” Brown first meet?
+    - Did John McClane know Bill Clay was really Hans Gruber? If so, how?
+    - What do the spear and watermelon jokes in “Airplane!” mean?
+    - Are scorpions frequent in US suburb gardens or is this a plot exaggeration?
+    - Why did the Predator not kill Arnold immediately as it killed everybody else?
+    - Where does Sherlock get his money?
+    - Did Roger Rabbit exist prior to the film “Who Framed Roger Rabbit?”
+    - Where does the “One of us! One of us!” chant originate?
+    - Why did Neo have powers in the real world?
+    - Why does Firefly include a scene with a missing yoke?
+    - Why does Mike call Jimmy “Saul”?
+    - Why does Bane protect the girl?
+    - What is the best order to watch LotR/Hobbit franchise?
+    - Is there any definitive evidence that Teddy was or was not crazy?
+    - How is this practical and very old scene shot?
+    - Is the 2016 movie Trolls about opium addiction?
+    - Is the Unix operating system featured in Jurassic Park real?
+    - Why do movies still have credits?
+    - How does Thanos know where all the infinity stones are?
+    - Why is there a disclaimer about not accepting money from tobacco companies at the end of movies?
+    - Why were mouse holes often represented in cartoons and movies like this?
+    - Why is “The Matrix” called by that name?
+    - How did Sherlock survive the fall?
+    - Why do the kicks have to occur simultaneously?
+    - Did any actor ever win an Oscar for their work in a horror movie?
+    - How was this shot in Contact (1997) really made? [duplicate]
+    - Is the Three-Eyed Raven incapable of emotion?
+    - Why is the number '4' so prominent in the Death Note?
+    - How is color determined when colorizing black and white movies?
+    - Why does Quentin Tarantino add non-plot related dialogue in his movies?
+    - Do I need knowledge of American culture and history to enjoy Forrest Gump?
+    - Do the actors really go nude in the shooting of the movies?
+    - Why was the Avengers movie called something different in the UK?
+    - Couldn't one or two or three dragons take care of the Army of the Dead in like a couple hours?
+    - Why didn't Loki use the Tesseract?
+    - Why did Lucius interrupt Bruce during their Sonar/Submarine discussion?
+    - Why did Steve Rogers choose this character in Endgame?
+    - Was Kirk and Uhura's kiss in Star Trek really the first interracial kiss on TV?
+    - How was 1917 filmed as a continuous shot?
+    - Why don't they show subtitles for the Spanish dialogue?
+    - Why is Arya visibly scared in the library in Game of Thrones S8E3?
+    - Who is the titular “Last Jedi”?
+    - Is Borden's true identity real, or another ruse?
+    - Why do studios use Roman numerals in the copyright notice in the end credits?
+    - How do productions like Stranger Things or other similarly “not modern but still within recent memory” productions acquire period props?
+    - What is the origin of Scooby-Doo's name?
+    - Why does Zootopia have an intentional Breaking Bad reference?
+    - Why does Luke leave the wampa’s cave?
+    - Why didn't Gollum take the ring back from Bilbo between The Hobbit and The Lord of the Rings?
+    - Why do people wear sunglasses in The Matrix?
+    - Why does Deadpool say “You're welcome, Canada,” after shooting Ryan Reynolds in the end credits?
+    - Does this room exist in the Simpsons' house?
+    - Why are trailers called “trailers”?
+    - Why didn't Voldemort create a seventh Horcrux not knowing Harry was one?
+    - Was Tim's reaction to the electric fence realistic?
+    - How can Philip J. Fry be his own grandfather if he is sterile?
+    - What actually happens when a telephone rings in a movie or TV show?
+    - Frozen Jack: Actor or Prop?
+    - How much does Joey owe Chandler?
+    - How do actors avoid looking into the camera?
+    - Ending of Donnie Darko
+    - Why are the American flags backwards on the warden's uniform in Orange is the New Black?
+    - Thanos And the Time Stone
+    - Why did Vision end up in Iron Man's team?
+    - What is the Ancient One's mistake?
+    - How did Alan Turing break the Enigma code using the hint given by the lady in the bar?
+    - Why did Dormammu keep his promise?
+    - How did Murph know about Edmunds?
+    - What changes were made to the Star Wars Blu-ray and what effect did they have on the plot?
+    - What significance does Mike Yanagita have in Fargo?
+    - Why does Obi-Wan say that he'll become more powerful if Vader kills him?
+    - How does one identify Valyrian steel?
+    - In Back to the Future Part II, how could old Biff have made it back to 2015?
+    - Why were the bells ignored in S8E5?
+    - Why was there a 14 year gap between The Incredibles and The Incredibles 2?
+    - Why does Bane's stock exchange robbery actually work to bankrupt Bruce Wayne?
+    - What are TPS Reports?
+    - Explanation of Jules' ending monologue
+    - In the “300” movie, in the final battle, Why didn't Leonidas kill Xerxes?
+    - Making nature documentaries: scripting then filming or the other way?
+    - Who's the random kid standing in the gathering at the end?
+    - What is the meaning of this poster for The Lobster?
+    - Is McConaughey's anecdote about not memorizing a four-page monologue real?
+    - How could Jon Snow do what he did in “Oathbreaker”?
+    - Why were movies shot on film shot at 24 frames per second?
+    - Why does Batman talk to himself in the batvoice?
+    - What makes The Shawshank Redemption so cinematically important?
+    - What does the missing symbol on Quaid's arm symbolize?
+    - How did Indy know not to look into the Ark?
+    - Is lens flare shot organically, or added in post-production?
+    - Why didn't Loki's mind control work on Tony Stark?
+    - Why does Christian Bale change his voice when playing Batman
+    - What format do movie theaters now use?
+    - Does Mia mistake Vincent's heroin for cocaine because it's in a baggie rather than a balloon?
+    - Why are two of Riley's five emotions in Inside Out male?
+    - What happened to the humans in “Cars” (that is if they ever existed)?
+    - What has the greatest chance of being in Marcellus Wallace's briefcase?
+    - Why does Walt leave his watch at the gas station?
+    - In Back to the Future, how did Marty get the timing right with the lightning strike?
+    - Why did Hank Pym choose Scott Lang?
+    - Why is Gandalf referred to as Mithrandir?
+    - Where are Frodo, Gandalf and the others going at the end and why?
+    - Is the man with no name the same character?
+    - Why is the movie titled “Eternal Sunshine of the Spotless Mind”?
+    - What is rosebud?
+    - Kill Bill colour changes to Black and White
+    - How and why did Disney reuse animation?
+    - Did they torture and kill a monkey during the filming of Andromeda Strain?
+    - Is this balcony with a protruding gargoyle a real place?
+    - Point of the Dothraki's attack in GoT S8E3?
+    - Where is Jon going?
+    - How was the DeLorean perceived in 1985?
+    - How do actors stop breathing when playing “dead”?
+    - At what point is the orchestra told who the Academy Award winner will be?
+    - What caused and ended the time loop in Groundhog Day?
+    - Did Spaceballs have to get permission for Pizza the Hutt
+    - What was Chandler Bing's job?
+    - Why couldn't Bond have backup at the battle of Skyfall?
+    - How can I find tv shows/films similar to one I like?
+    - How do actors make eye contact with CGI characters?
+    - Did Tyler Durden forget his name?
+    - Was Thanos really committed or just a hypocrite?
+    - What is the point of the Red Thread/Tape around evidence or newspaper clippings?
+    - What was the purpose of Candie's handshake in Django Unchained?
+    - Why didn't Bilbo become a creature like Gollum?
+    - Are scripts seeded to identify leaks?
+    - What was the first crossover movie like The Avengers, using only movie franchises?
+    - Why do the Avengers have bad radio discipline?
+    - Does Sheldon Cooper have Asperger's Syndrome?
+    - Why did Jon Snow do this immoral act if he is so honorable?
+    - Is Clue the only film that aired true, multiple endings in theaters?
+    - Can someone explain the sequence of events in 'Primer'?
+    - Does the T-1000 know that the “big guy on a bike” is a T-800 before he meets him?
+    - At which dream level did Inception end?
+    - 'Yeah but it's a dry heat' - reference to another film?
+    - What do actors actually inhale when their characters snort cocaine or smoke crack?
+    - Why was there a robot in Rocky IV?
+    - How does a rifle fire backwards?
+    - Hollywood movies that no longer exist in any form
+    - Why does Wolverine drink alcohol?
+    - Why does James Bond keep demanding a vodka martini that is shaken but not stirred?
+    - Why are films where the bad guy “wins” at the end so rare?
+    - Meaning of the Silence of the Lambs poster
+    - Why the stoic acting style in 2001 Space Odyssey?
+    - Is it true that none of the cast knew what to expect in the famous “chestburster scene” in Alien?
+    - Why does Gus walk away from his car?
+    - What accent did the actors use in Black Panther?
+    - What was really behind the mysterious number sequence in Lost?
+    - Which worse thing was Luke expecting in Star Wars: A New Hope?
+    - Discrepancy in Thanos's use of time stone in Infinity War
+    - Why are the books in the Game of Thrones citadel library shelved spine inwards?
+    - Why do people repeatedly hit the phone hook switch when disconnected?
+    - Does Babyface Nelson represent anyone from The Odyssey?
+    - How do actors memorize extremely long scripts?
+    - Why aren't the characters floating two levels down?
+    - How accurate is this computer hardware in the movie Wall Street?
+    - Why did Warner Bros spend $25 million to CGI out Henry Cavill's mustache?
+    - What God does Captain America believe in?
+    - How did the T-Rex reach the vehicles in Jurassic Park?
+    - To what extent are child actors exposed to the violent aspects of the movie they perform in?
+    - Why was Bruce's silence referred to as a “Walt Disney”?
+    - Why do the toys blink alternately?
+    - Use Force Lightning can Yoda?
+    - Which version of Blade Runner is Blade Runner 2049 a sequel of?
+    - Why did Borden do that to his wife in The Prestige?
+    - How do they film the mirror scenes in movies?
+    - What is the longest aired episode of a TV series?
+    - How did Arya manage to disguise herself?
+    - How do they film movies that take place in a single season?
+    - Why does Dr Mann act so stupidly?
+    - Is this bar slide trick shown on Cheers real or a visual effect?
+    - Why didn't Hugo Weaving reprise his role as Red Skull?
+    - What is the meaning of the “fly scene” in Breaking Bad?
+    - How was “Hodor” adapted in other languages
+    - What does the scene during the ending represent?
+    - What was Hans Gruber's plan in Die Hard?
+    - How old is Charles Muntz during “Up”?
+    - Why is James Bond less tech savvy in the Daniel Craig movies?
+    - Why does Darth Vader not use the Force to prevent Luke from falling?
+    - Was Sheldon Cooper ever proven wrong?
+    - Why do old movies sound like old movies?
+    - Why the highlighted outline in animated cartoons?
+    - Why does the talk show host always sit on the right?
+    - What does Mr Bean have against the three-wheeled car?
+    - What did Black Widow say?
+    - Was the original “Pink Panther” movie intended to be a comedy?
+    - What was wrong with John Rambo’s appearance?
+    - Who was the oldest actor to play a teenager?
+    - Why does George Mcfly employ Biff to wax his car after he had previously tried to rape his wife?
+    - Why do the machines keep humans alive if they have nuclear reactors?
+    - First movie with product placement?
+    - Why did cars in 70s and 80s TV and movies slide like they were driving on ice?
+    - Why did Vader passively accept being killed and replaced at Palpatine's command?
+    - Why were sloths chosen to depict DMV workers?
+    - Is the loudness of a movie in the theater set by the theater or by the publisher/studio?
+    - Have GoT's showrunners reacted to the poor reception of the final season?
+    - The most actors playing the same role in one movie?
+    - Why did Morpheus tell Trinity to stay off the freeway?
+    - Why do British sitcoms have much fewer episodes than American ones?
+    - Why does Archer say “Balls” whenever someone says “Benoit”?
+    - What's the point of actors occasionally directing a TV show episode?
+    - Why do low production studios intentionally release similar films shortly after a big banner?
+    - Were oranges an intentional use of symbolism by filmmakers?
+    - How is Team Scooby Doo (Mystery Inc.) funded?
+    - Why is the 'You talking to me' speech from the movie 'Taxi Driver' so famous?
+    - How were Opening Titles and End Credits created before Computers?
+    - Why did Arya not kill the Lannister soldiers she encountered in the Riverlands?
+    - Why did they avoid Charlie's name in the film title Willy Wonka & the Chocolate Factory?
+    - Why exactly did Walt leave Gray Matter?
+    - Do Sheldon's equations reflect real math/physics research?
+    - What techniques are used by directors to make an actor cry?
+    - What is Mycroft's job?
+    - If Agent Smith is just an AI program, then how could he end up in the real world?
+    - Why do old gun fight scenes sound so weird and cartoonish?
+    - Why is Discovery One covered in sulphur in “2010: The Year We Make Contact”?
+    - Why is it Pet Sematary but not Pet Cemetery?
+    - Are there any rules around when something can be described as “based on a true story”?
+    - What is going on in Mulholland Drive?
+    - Game Over, Man…Game Over! - What's the source?
+    - Why don't Marty's parents ever mention how similar he looks to the Marty of 1955?
+    - Why does Bran want to find Drogon?
+    - “A galaxy far, far away…” — from where?
+    - How did Mr. Bean manage to make money?
+    - Why do TV comedy programs have laugh tracks?
+    - How does the title 'The Imitation Game' justify the story of the movie?
+    - Did Batman break his one rule?
+    - How do film makers record the President of the United States?
+    - Is there a full canon version of Tyrion's jackass/honeycomb joke?
+    - Who's this lady in the war room?
+    - Why do people call Morgan Freeman's character Red?
+    - How could the Starks convince the other Lords that this character was guilty?
+    - How did Hitchcock enforce the “no late admission” policy for Psycho?
+    - Why did Victor die?
+    - In Fight Club is Marla Singer a second figment of Jack's imagination?
+    - How did Thanos know about the power of “The Snap”?
+    - Why is the new movie named Ocean's 8?
+    - Why would a ship that is able to recycle all water consumed have trouble running out of water?
+    - Why were the villagers and the axe-wielding hitman brothers crawling towards a shrine?
+    - Did Neil Armstrong really do this on the Moon?
+    - Did 007 exist before James Bond?
+    - What does the Night King really want?
+    - Why did Obi-Wan have to explain full details about Mos Eisley to Luke?
+    - Why do mouse cursors never align with actors' hand movements (or always move perfectly straight)?
+    - Are there any indications why Roddenberry chose to make Star Trek a “battleship universe”?
+    - What kind of company is Initech?
+    - What do I need to know before watching 3D for the first time
+    - Why wasn't the poltergeist Peeves in the Harry Potter movies?
+    - Why does Jack Nicholson say “Here's Johnny!” in The Shining when his character is called Jack?
+    - Is this character hallucinating in “Stormborn” (S07E02)?
+    - How do they shoot binocular scenes?
+    - What exactly is 70mm print and why does anyone care?
+    - K-PAX ending explanation
+    - In Iron Man, why is Tony Stark fooled for so long?
+    - Why do Disney parents usually die?
+    - What properties did Disney buy from 21st Century Fox?
+    - How could the human race be saved in Interstellar?
+    - Can a single bullet from a handgun kill three people in the way Deadpool did?
+    - Why is there no Robin in the Nolan-directed Batman movies?
+    - Why does Lance consider cell phones unsafe?
+    - Why is Pulp Fiction's opening scene different to the one near the end?
+    - How did they make cars fall apart in old movies?
+    - What was the purpose of Saito's presence during the inception job?
+    - Why is Vision so weak?
+    - What happened to the bodies in American Psycho?
+    - What is the meaning of Teddy's last dialogue in Shutter Island?
+    - Was there a dinosaur-counter in the original Jurassic Park movie?
+    - How was Jon Snow able to kill the White Walker in S05E08?
+    - Why do Mickey's ears rotate and shift location when he is not facing the camera?
+    - Are Agent Barton and Agent Romanoff ever called 'Hawkeye' and 'Black Widow' in the MCU?
+    - Why does “No-one ever get it in the first take”?
+    - How do they phrase casting calls when casting an individual with a particular skin color?
+    - Why doesn't Marty use the other DeLorean?
+    - What happened to Bruce Wayne/Batman's knee?
+    - Why doesn't “Ralph Breaks the Internet” have “wreck” in the title?
+    - Did the Fresh Prince producers ever consider reshooting the title sequence?
+    - Why did filmmakers need permission to film in black and white?
+    - “Whatever doesn't kill you, simply makes you stranger” - what does it mean?
+    - Why do the lights go out when someone enters the dining room on this ship?
+    - Where and when does the “idea” light bulb appear for the first time?
+    - Alice growing effect in 1972 “Alice's Adventures in Wonderland” - how was it done? It's not green screen
+    - How far did Forrest Gump run?
+    - What rules govern how TV show opening credits are structured?
     - Why is “Captain Marvel” translated as male in Portugal?
+    - Why is Spaceballs specifically numbered Chapter XI?
+    - Why did three actors play Darth Vader?
+    - What really happened in Memento?
+    - In what spot would the new Star Wars movie “Rogue One” go in the Machete Order?
+    - Why didn't Bane reveal to the public that Bruce Wayne is Batman?
+    - Why were people led to believe that the Apollo mission was fake in Interstellar?
+    - Why does T-1000 try to force Sarah Connor to call her son?
+    - Why cast an A-lister for Groot?
     - Is there any way for Wakandan people to regrow the Heart-Shaped Herb?
     - Why all the fancy technology in most movies?
-    - What was the first movie to introduce “blue wire or red wire” bomb disposal?
-    - Why did Varys remove his rings?
-    - How was Looney Tunes originally watched?
-    - Alice growing effect in 1972 “Alice's Adventures in Wonderland” - how was it done? It's not green screen
-    - How can Philip J. Fry be his own grandfather if he is sterile?
-    - Thanos And the Time Stone
-    - Why are the Simpsons yellow?
-    - Do Star Trek characters wearing red shirts have the highest death rate on the original show?
-    - Empire Strikes Back - Scene in Dagobah with Darth Vader
-    - Why did Morpheus tell Trinity to stay off the freeway?
-    - Why is the movie title “Blazing Saddles”?
-    - Why didn't Voldemort create a seventh Horcrux not knowing Harry was one?
-    - Why did Spider-Man take a detour to Dorset?
-    - Why do the lights go out when someone enters the dining room on this ship?
-    - Why does Bane protect the girl?
-    - Why do Mickey's ears rotate and shift location when he is not facing the camera?
-    - Why would a ship that is able to recycle all water consumed have trouble running out of water?
-    - Significance of Cersei's obsession with elephants?
-    - In what order should a newcomer watch Star Wars episodes?
-    - What was wrong with John Rambo’s appearance?
-    - Which worse thing was Luke expecting in Star Wars: A New Hope?
-    - What is the longest aired episode of a TV series?
-    - What does War Machine's “Canopy! Canopy!” line mean in “Avengers: Endgame”?
-    - Making nature documentaries: scripting then filming or the other way?
-    - Why do movie teams shoot alternate endings?
-    - Why does Jack Nicholson say “Here's Johnny!” in The Shining when his character is called Jack?
-    - Why does Thanos need *all* the infinity stones?
-    - How could Jon Snow do what he did in “Oathbreaker”?
-    - What is the significance of the sheriff's colored sunglasses in Kill Bill vol 1?
-    - Why are two of Riley's five emotions in Inside Out male?
-    - Why do movies think the speed of sound is as fast as the speed of light?
-    - Why does Firefly include a scene with a missing yoke?
-    - Why was the Ancient One so hesitant to teach Dr. Strange the art of sorcery?
-    - What do I need to know before watching 3D for the first time
-    - Who is the true villain of Peter Pan: Peter, or Hook?
-    - What did the title of Silence of the Lambs refer to?
-    - How do actors stop breathing when playing “dead”?
-    - How do they shoot binocular scenes?
-    - Is it true that none of the cast knew what to expect in the famous “chestburster scene” in Alien?
-    - Why does Trinity's kiss revive Neo in The Matrix?
-    - What caused and ended the time loop in Groundhog Day?
-    - Was film actually “better” than digital media?
-    - Was a supercomputer really needed in “The Martian”?
-    - Who is the titular “Last Jedi”?
-    - Is the Unix operating system featured in Jurassic Park real?
-    - Why is there no Robin in the Nolan-directed Batman movies?
-    - At what point is the orchestra told who the Academy Award winner will be?
-    - Why were the bells ignored in S8E5?
-    - Are there any rules around when something can be described as “based on a true story”?
-    - Of all the movies and TV shows ever made, which of them is set furthest in the future?
-    - What techniques are used by directors to make an actor cry?
-    - How do film makers record the President of the United States?
-    - Why the highlighted outline in animated cartoons?
-    - In Iron Man, why is Tony Stark fooled for so long?
-    - Why did it take a rocket to lift off the Earth but just shuttles to lift off the other planets?
-    - Why do old gun fight scenes sound so weird and cartoonish?
-    - Why did Neo have powers in the real world?
-    - Why does T-1000 try to force Sarah Connor to call her son?
-    - Have GoT's showrunners reacted to the poor reception of the final season?
-    - Is lens flare shot organically, or added in post-production?
-    - How did Alan Turing break the Enigma code using the hint given by the lady in the bar?
-    - Were oranges an intentional use of symbolism by filmmakers?
-    - Frozen Jack: Actor or Prop?
-    - Are scorpions frequent in US suburb gardens or is this a plot exaggeration?
-    - Why is “The Matrix” called by that name?
-    - Where is Jon going?
-    - How accurate is this computer hardware in the movie Wall Street?
-    - What has the greatest chance of being in Marcellus Wallace's briefcase?
-    - Why does George Mcfly employ Biff to wax his car after he had previously tried to rape his wife?
-    - Why do studios use Roman numerals in the copyright notice in the end credits?
-    - Is this character hallucinating in “Stormborn” (S07E02)?
-    - Why did Vision end up in Iron Man's team?
-    - Why have this character involved in Infinity War at all?
-    - What was Hans Gruber's plan in Die Hard?
-    - How do they make tattoos in movies?
-    - Was the Gotham Hospital scene a goof-up?
-    - What is Jack Nicholson tossing aside in this scene in The Shining?
-    - What properties did Disney buy from 21st Century Fox?
-    - How was 1917 filmed as a continuous shot?
-    - How do actors memorize extremely long scripts?
-    - What happened to the humans in “Cars” (that is if they ever existed)?
-    - What was Chandler Bing's job?
-    - The most roles played by the same actor in a movie?
-    - When/Why did American television change from primarily episodic to primarily serialized?
-    - Why is James Bond less tech savvy in the Daniel Craig movies?
-    - Are there any indications why Roddenberry chose to make Star Trek a “battleship universe”?
-    - Why does Lance consider cell phones unsafe?
-    - Did Spaceballs have to get permission for Pizza the Hutt
-    - Origin of movie trope where impaled character pulls/pushes blade/spear further into body?
-    - What happened to Bruce Wayne/Batman's knee?
-    - Why were mouse holes often represented in cartoons and movies like this?
-    - How did Thanos know about the power of “The Snap”?
-    - How did Hitchcock enforce the “no late admission” policy for Psycho?
-    - How did Sherlock survive the fall?
-    - Was Tim's reaction to the electric fence realistic?
-    - How was the deserted London scene in the movie '28 Days Later' filmed?
-    - “A galaxy far, far away…” — from where?
-    - To what extent are child actors exposed to the violent aspects of the movie they perform in?
-    - In Back to the Future Part II, how could old Biff have made it back to 2015?
-    - What were all the references in Deadpool?
-    - Why did they pick World War I over World War II in Wonder Woman?
-    - Why doesn't Marty use the other DeLorean?
-    - Did the Fresh Prince producers ever consider reshooting the title sequence?
-    - Why does Darth Vader not use the Force to prevent Luke from falling?
-    - Does Babyface Nelson represent anyone from The Odyssey?
-    - Why did Warner Bros spend $25 million to CGI out Henry Cavill's mustache?
-    - Why are laugh tracks only used in TV series but not in movies?
-    - Kill Bill colour changes to Black and White
-    - Is this an inconsistency in the Infinity War and Guardians of the Galaxy?
-    - Why does Hollywood not use foreigners in foreigners' roles?
-    - Is there any definitive evidence that Teddy was or was not crazy?
-    - Who was the oldest actor to play a teenager?
-    - How did Marty McFly and “Doc” Brown first meet?
-    - Why did three actors play Darth Vader?
-    - How did Mr. Bean manage to make money?
-    - Why does Doctor Strange not bind Thanos in a time loop?
-    - Why did filmmakers need permission to film in black and white?
-    - How do productions like Stranger Things or other similarly “not modern but still within recent memory” productions acquire period props?
-    - Was Sheldon Cooper ever proven wrong?
-    - What are the differences between the alternative versions of Blade Runner?
-    - Why didn't Hans Gruber know what Mr. Takagi looked like?
-    - In what spot would the new Star Wars movie “Rogue One” go in the Machete Order?
-    - How does Thanos know where all the infinity stones are?
-    - How was this scene shot without hurting Charlie Chaplin?
-    - What makes The Shawshank Redemption so cinematically important?
-    - Why does Luke leave the wampa’s cave?
-    - How do they get very young child actors to cooperate?
-    - What if a head shaving scene gets messed up?
-    - What is the point of the Red Thread/Tape around evidence or newspaper clippings?
-    - Ending of Donnie Darko
-    - Why does Bran want to find Drogon?
-    - Do Sheldon's equations reflect real math/physics research?
-    - Why do people call Morgan Freeman's character Red?
-    - Do they really crash super cars in action movies?
-    - What is this camera effect used in Hot Fuzz?
-    - Why is the bride's name bleeped in Kill Bill Vol 1?
-    - Why does James Bond keep demanding a vodka martini that is shaken but not stirred?
-    - What is a “soap”?
-    - What did Black Widow say?
-    - Did silent film actors actually say their lines or did they simply improvise “dialogue” while being filmed?
-    - Is Forrest Jr. actually Forrest's son?
-    - Why does Mike call Jimmy “Saul”?
-    - Why did Lucius interrupt Bruce during their Sonar/Submarine discussion?
-    - How far did Forrest Gump run?
-    - How does one identify Valyrian steel?
-    - Banner's control of Hulk in Avengers
-    - The most actors playing the same role in one movie?
-    - Why couldn't Bond have backup at the battle of Skyfall?
-    - Why do TV comedy programs have laugh tracks?
-    - Where and when does the “idea” light bulb appear for the first time?
-    - Why did Dormammu keep his promise?
-    - Does Disney no longer produce hand-drawn cartoon films?
-    - Why do people repeatedly hit the phone hook switch when disconnected?
-    - 'Yeah but it's a dry heat' - reference to another film?
-    - Why didn't Bilbo become a creature like Gollum?
-    - Why does the talk show host always sit on the right?
-    - Why didn't Mal use her totem (spinning top) before she actually died?
-    - Why is the spoken German in many US films and TV shows so inaccurate?
-    - Why do movies still have credits?
-    - Jaime's character change in Game of Thrones
-    - Why do the Avengers have bad radio discipline?
-    - Why are the books in the Game of Thrones citadel library shelved spine inwards?
-    - Why does Obi-Wan say that he'll become more powerful if Vader kills him?
 - lookup: genre
   examples: |
     - Suspense

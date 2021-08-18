@@ -6,9 +6,17 @@ rules:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+  - action: action_reset_woa
+  - action: action_reset_tickets
+  - action: action_reset_gpe
+  - action: action_reset_genre
 
 - rule: back to begin everytime user denies.
   steps:
   - intent: negate
   - action: utter_try_again
   - action: utter_introduce
+  - action: action_reset_woa
+  - action: action_reset_tickets
+  - action: action_reset_gpe
+  - action: action_reset_genre
