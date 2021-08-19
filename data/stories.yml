@@ -13,7 +13,7 @@ stories:
       - GENRE: "horror"
     - slot_was_set:
       - GENRE: "horror"
-    - action: utter_suggest_movie
+    - action: action_suggest_movie
     - checkpoint: suggest_movie
 
 - story: request movie by date - request_alts
@@ -21,6 +21,17 @@ stories:
     - checkpoint: suggest_movie
     - intent: request_alts
     - action: action_suggest_movie
+
+- story: anoter genre [ TESTAR DE NOVO]
+  steps:
+  - action: utter_genre_not_found
+  - action: action_reset_genre
+  - intent: inform_genre
+    entities:
+    - GENRE: "horror"
+  - slot_was_set:
+    - GENRE: "horror"
+  - action: action_suggest_movie
 
 - story: accept suggested movie
   steps:

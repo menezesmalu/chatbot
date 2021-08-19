@@ -132,9 +132,7 @@ class ResetSlotGenre(Action):
 
     def run(self, dispatcher, tracker, domain):
         return [SlotSet("GENRE", None)]
-
- 
-       
+    
 class ActionSuggestMovie(Action):
 
     def name(self) -> Text:
@@ -146,9 +144,20 @@ class ActionSuggestMovie(Action):
             domain: Dict[Text, Any]) -> List:
         
         selected_genre = tracker.get_slot("GENRE")
-        movies = MOVIES[selected_genre]
-        random_movie = movies[randrange(len(movies))]
+        print(selected_genre)
 
-        dispatcher.utter_message(response="utter_suggest_movie", WORK_OF_ART=random_movie)
+        if selected_genre in MOVIES:
+            movies = MOVIES[selected_genre]
+            random_movie = movies[randrange(len(movies))]
+
+        else:
+            random_movie = None
+
+        print("random_movie")
+        print(random_movie)
+        if(random_movie == None):
+            dispatcher.utter_message(response="utter_genre_not_found", GENRE=selected_genre)
+        else:
+            dispatcher.utter_message(response="utter_suggest_movie", WORK_OF_ART=random_movie)
 
         return []
