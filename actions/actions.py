@@ -87,9 +87,16 @@ class ActionGetFunFact(Action):
             }
         }
         response = es.search(index="movies_index", body=body)
-        final_answer = response['hits']['hits'][0]['_source']['answer']
+        first_answer_score = response['hits']['hits'][0]['_score']
+        second_answer_score = response['hits']['hits'][1]['_score']
+        final_answer = ""
+        if first_answer_score >= 2*second_answer_score:
+            final_answer = response['hits']['hits'][0]['_source']['answer']
+        else:
+            question = response['hits']['hits'][0]['_source']['question']
+            answer = response['hits']['hits'][0]['_source']['answer']
+            final_answer = f"Hmmm, I didn't find exactly what you're looking for! But look what I found for \n\"{question}\"\n{answer}"
         
-
         dispatcher.utter_message(text=final_answer)
 
         return []
