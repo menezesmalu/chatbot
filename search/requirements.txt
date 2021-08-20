@@ -1,4 +1,2 @@
-selenium
-beautifulsoup4
 pandas
 elasticsearch
