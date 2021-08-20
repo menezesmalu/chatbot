@@ -22,10 +22,11 @@ stories:
     - intent: request_alts
     - action: action_suggest_movie
 
-- story: anoter genre [ TESTAR DE NOVO]
+- story: anoter genre
   steps:
-  - action: utter_genre_not_found
+  - checkpoint: suggest_movie
   - action: action_reset_genre
+  - action: utter_genre
   - intent: inform_genre
     entities:
     - GENRE: "horror"
@@ -76,3 +77,32 @@ stories:
     - action: utter_ask_back
     - intent: fun_fact_question
     - action: action_get_fun_fact
+
+- story: couldn't find genre
+  steps:
+  - intent: greet
+  - action: utter_introduce
+  - intent: request_movie
+  - action: utter_genre
+  - intent: inform_genre
+    entities:
+    - GENRE: vintage
+  - slot_was_set:
+    - GENRE: vintage
+  - action: action_suggest_movie
+  - action: utter_genre_not_found
+  - action: action_reset_genre
+  - slot_was_set:
+    - GENRE: null
+  - action: utter_genre
+  - intent: inform_genre
+    entities:
+    - GENRE: horror
+  - slot_was_set:
+    - GENRE: horror
+  - action: action_suggest_movie
+  - intent: thank_you
+  - action: utter_goodbye
+  - action: action_reset_genre
+  - slot_was_set:
+    - GENRE: null

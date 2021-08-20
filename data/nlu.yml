@@ -15,6 +15,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - hieee
 - intent: goodbye
   examples: |
     - cu
@@ -327,6 +328,8 @@ nlu:
     - Thanks so much!
     - OK, thanks so much, that's all for now then
     - tks
+    - thanks
+    - sounds good, thanks
 - intent: confirm_movie
   examples: |
     - [Breakthrough](WORK_OF_ART) is perfect.
@@ -370,6 +373,8 @@ nlu:
     - I'd like to see a movie, can you find me one?
     - i want to find a movie
     - i want to watch a [comedy](GENRE) movie
+    - find a movie
+    - find movie
 - intent: inform_genre
   examples: |
     - Can you help me find an [Adventure](GENRE) movie showing ?
@@ -379,6 +384,10 @@ nlu:
     - i was thinking about a [Horror](GENRE) movie
     - i want an [Animation](GENRE) movie
     - i want a [horror](GENRE) movie
+    - [vintage](GENRE)
+    - [horror](GENRE)
+    - [greek](GENRE)
+    - [french](GENRE)
 - intent: request_alts
   examples: |
     - Nope, not the hilarious nightmare movies. Please find something else.

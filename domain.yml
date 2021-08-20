@@ -3,16 +3,16 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- request_ticket
-- request_movie
-- inform_genre
-- inform_movie
-- nlu_fallback
+- thank_you
 - greet
 - goodbye
+- request_movie
+- inform_genre
+- request_ticket
+- inform_movie
+- nlu_fallback
 - affirm
 - negate
-- thank_you
 - confirm_movie
 - request_alts
 - inform_location
@@ -63,8 +63,11 @@ responses:
   - text: sorry. let's try again.
   utter_genre:
   - text: what genre is your mood now?
-  - text: witch kind of movie you'd like to watch?
+  - text: which kind of movie you'd like to watch?
   - text: first, i need to understand what's your genre mood for now.
+  utter_genre_not_found:
+  - text: oh, sorry, i couldn't find the genre {GENRE} in my database
+  - text: i apologise, but i don't know any {GENRE} movie
   utter_ask_back:
   - text: what do you wanna know about?
   - text: ask me something, then!
@@ -74,9 +77,11 @@ actions:
 - action_reset_gpe
 - action_reset_tickets
 - action_reset_woa
+- action_suggest_movie
 - utter_choose_movie
 - utter_genre
+- utter_genre_not_found
+- utter_goodbye
+- utter_introduce
 - utter_suggest_movie
 - utter_where
-- action_suggest_movie
-
