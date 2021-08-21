@@ -17,52 +17,52 @@ from random import randrange
 
 MOVIES = {
     "documentary": [
-        "athelete A" ,
-        "three identical strangers",
-        "behind the curve",
-        "hot girls wanted",
+        "Athelete A" ,
+        "Three Identical Strangers",
+        "Behind the Curve",
+        "Hot Girls Wanted",
         "homecoming",
         "the dawn wall"
     ],
     "adventure": [
-        "black widow",
-        "fast and furious",
-        "passengers",
-        "interstellar",
-        "fantastic beasts",
-        "captain marvel"
+        "Black Widow",
+        "Fast and Furious",
+        "Passengers",
+        "Interstellar",
+        "Fantastic Beasts",
+        "Captain Marvel"
     ],
     "animation":[
-        "frozen",
-        "luca",
-        "coco",
-        "big hero 6",
-        "the lion king",
-        "barbie as the princess and the pauper"
+        "Frozen",
+        "Luca",
+        "Coco",
+        "Big Hero 6",
+        "The Lion King",
+        "Barbie as the Princess and the Pauper"
     ],
     "comedy":[
-        "ocean's 8",
-        "pitch perfect",
-        "dr dolittle",
-        "clueless",
-        "legally blonde",
-        "baywatch"
+        "Ocean's 8",
+        "Pitch Perfect",
+        "Dr. Dolittle",
+        "Clueless",
+        "Legally Blonde",
+        "Baywatch"
     ],
     "horror": [
-        "the conjuring",
-        "get out",
-        "the unholy",
-        "it",
-        "anabelle"
+        "The Conjuring",
+        "Get Out",
+        "The Unholy",
+        "IT",
+        "Anabelle"
     ],
     "drama": [
-        "little women",
-        "life is beautiful," 
-        "disobedience",
-        "dunkirk",
-        "the imitation game",
-        "the greatest showman",
-        "me before you"
+        "Little Women",
+        "Life is Beautiful," 
+        "Disobedience",
+        "Dunkirk",
+        "The Imitation Game",
+        "The Greatest Showman",
+        "Me Before You"
     ]
 }
 
